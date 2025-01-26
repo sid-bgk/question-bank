@@ -1124,11 +1124,915 @@ export const questionBank = {
                                                 }
                                             ]
                                         }
+                                    ] 
+                                },
+                                {
+                                    id: "module-4",
+                                    name: "Module 4",
+                                    mcq: [
+                                        {
+                                            "question": "What is an array?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "A collection of various elements",
+                                                "A grouping of items of the same type",
+                                                "None of the mentioned",
+                                                "C as well as A"
+                                            ],
+                                            "answer": "A grouping of items of the same type"
+                                        },
+                                        {
+                                            "question": "How should an array be initialized correctly?",
+                                            "codeBlock": "int a[6] = {12, 41, 12, 51, 45, 5};",
+                                            "language": "c",
+                                            "options": [
+                                                "int a[6] = {12, 41, 12, 51, 45, 5};",
+                                                "int a{} = {12, 14, 12, 15, 45, 5};",
+                                                "int a{6} = {12, 14, 12};",
+                                                "int a(6) = {12, 14, 122, 51, 45, 15};"
+                                            ],
+                                            "answer": "int a[6] = {12, 41, 12, 51, 45, 5};"
+                                        },
+                                        {
+                                            "question": "Which statement about an array is most accurate?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "Data structure with hierarchical behavior",
+                                                "A container for objects of similar forms",
+                                                "Once initialized, arrays are immutable",
+                                                "An array is not a data structure"
+                                            ],
+                                            "answer": "A container for objects of similar forms"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int arr[] = {1, 2, 3, 4, 5};\nprintf(\"%d\", arr[2]);",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "3"
+                                        },
+                                        {
+                                            "question": "Which function is used to concatenate strings?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strcat()",
+                                                "strcopy()",
+                                                "strmerge()",
+                                                "strcombine()"
+                                            ],
+                                            "answer": "strcat()"
+                                        },
+                                        {
+                                            "question": "What is the return type of the strlen() function?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "int",
+                                                "char",
+                                                "float",
+                                                "double"
+                                            ],
+                                            "answer": "int"
+                                        },
+                                        {
+                                            "question": "What does the following code print?",
+                                            "codeBlock": "void func(int arr[]) {\n    arr[0] = 10;\n}\nint main() {\n    int arr[] = {1, 2, 3};\n    func(arr);\n    printf(\"%d\", arr[0]);\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "10",
+                                                "3",
+                                                "Compilation error"
+                                            ],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "What function is used to compare strings?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strcmp()",
+                                                "strcpy()",
+                                                "memcmp()",
+                                                "strncmp()"
+                                            ],
+                                            "answer": "strcmp()"
+                                        },
+                                        {
+                                            "question": "What is the correct syntax to declare a two-dimensional array?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "int arr[3,4];",
+                                                "int arr[3][4];",
+                                                "int arr{3,4};",
+                                                "arr[3][4] int;"
+                                            ],
+                                            "answer": "int arr[3][4];"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int main() {\n    int arr[] = {1, 2, 3, 4};\n    printf(\"%d\", *(arr + 3));\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "What will happen if an array index goes out of bounds?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "Segmentation fault",
+                                                "Undefined behavior",
+                                                "Compilation error",
+                                                "Runtime error"
+                                            ],
+                                            "answer": "Undefined behavior"
+                                        },
+                                        {
+                                            "question": "Which of the following is a valid string declaration?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "char str[] = \"Hello\";",
+                                                "char str = \"Hello\";",
+                                                "string str = \"Hello\";",
+                                                "str = \"Hello\";"
+                                            ],
+                                            "answer": "char str[] = \"Hello\";"
+                                        },
+                                        {
+                                            "question": "Which function is used to find the length of a string?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strlen()",
+                                                "strlength()",
+                                                "len()",
+                                                "string_length()"
+                                            ],
+                                            "answer": "strlen()"
+                                        },
+                                        {
+                                            "question": "How are arrays stored in memory?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "Random locations",
+                                                "Contiguous memory locations",
+                                                "Linked list structure",
+                                                "Heap memory"
+                                            ],
+                                            "answer": "Contiguous memory locations"
+                                        },
+                                        {
+                                            "question": "Which function is used to copy a string?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strcpy()",
+                                                "strcat()",
+                                                "strcmp()",
+                                                "strcopy()"
+                                            ],
+                                            "answer": "strcpy()"
+                                        },
+                                        {
+                                            "question": "What is the default value of uninitialized array elements in C?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "0",
+                                                "Garbage value",
+                                                "-1",
+                                                "Compiler dependent"
+                                            ],
+                                            "answer": "Garbage value"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int arr[] = {1, 2, 3, 4, 5};\nprintf(\"%d\", arr[4]);",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "5",
+                                                "Undefined"
+                                            ],
+                                            "answer": "5"
+                                        },
+                                        {
+                                            "question": "What is the size of the following array?",
+                                            "codeBlock": "int arr[10];",
+                                            "language": "c",
+                                            "options": [
+                                                "10 bytes",
+                                                "20 bytes",
+                                                "40 bytes",
+                                                "4 bytes"
+                                            ],
+                                            "answer": "40 bytes (assuming int is 4 bytes)"
+                                        },
+                                        {
+                                            "question": "Which of the following is correct about function declaration?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "It defines the function body",
+                                                "It provides function prototype",
+                                                "It executes the function",
+                                                "It does nothing"
+                                            ],
+                                            "answer": "It provides function prototype"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int arr[5] = {1, 2, 3};\nprintf(\"%d\", arr[4]);",
+                                            "language": "c",
+                                            "options": [
+                                                "0",
+                                                "Undefined behavior",
+                                                "3",
+                                                "Compilation error"
+                                            ],
+                                            "answer": "Undefined behavior"
+                                        },
+                                        {
+                                            "question": "What is the correct syntax for passing an array to a function?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "func(int arr[])",
+                                                "func(int *arr)",
+                                                "Both a and b",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Both a and b"
+                                        },
+                                        {
+                                            "question": "What is the base case in recursion?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "The first function call",
+                                                "The termination condition",
+                                                "A recursive function without conditions",
+                                                "None of the above"
+                                            ],
+                                            "answer": "The termination condition"
+                                        },
+                                        {
+                                            "question": "What is the purpose of return statement in a function?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "To terminate the function and return a value",
+                                                "To print output",
+                                                "To define the function",
+                                                "To call another function"
+                                            ],
+                                            "answer": "To terminate the function and return a value"
+                                        },
+                                        {
+                                            "question": "What does void indicate in a function declaration?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "The function returns an integer value",
+                                                "The function does not return any value",
+                                                "The function is of unknown type",
+                                                "None of the above"
+                                            ],
+                                            "answer": "The function does not return any value"
+                                        },
+                                        {
+                                            "question": "Which header file is required for string handling functions?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "#include <stdio.h>",
+                                                "#include <string.h>",
+                                                "#include <stdlib.h>",
+                                                "#include <strings>"
+                                            ],
+                                            "answer": "#include <string.h>"
+                                        },
+                                        {
+                                            "question": "Which function is used to reverse a string in C?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strrev()",
+                                                "reverse()",
+                                                "revstr()",
+                                                "strflip()"
+                                            ],
+                                            "answer": "strrev()"
+                                        },
+                                        {
+                                            "question": "Which function is used to compare two strings ignoring case?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "strcmp()",
+                                                "strcmpi()",
+                                                "stricmp()",
+                                                "strcasecmp()"
+                                            ],
+                                            "answer": "strcasecmp()"
+                                        },
+                                        {
+                                            "question": "What happens when an array index is accessed beyond its limit?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "Program crashes",
+                                                "Undefined behavior",
+                                                "Compilation error",
+                                                "Segmentation fault"
+                                            ],
+                                            "answer": "Undefined behavior"
+                                        },
+                                        {
+                                            "question": "Which operator is used to access elements in an array?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                ".",
+                                                "->",
+                                                "[]",
+                                                "()"
+                                            ],
+                                            "answer": "[]"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a function with no return value and no parameters?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "void func(int a, int b);",
+                                                "int func();",
+                                                "void func();",
+                                                "None of the above"
+                                            ],
+                                            "answer": "void func();"
+                                        },
+                                        {
+                                            "question": "How can we determine the number of elements in an array?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "sizeof(arr)",
+                                                "sizeof(arr) / sizeof(arr[0])",
+                                                "length(arr)",
+                                                "array_size(arr)"
+                                            ],
+                                            "answer": "sizeof(arr) / sizeof(arr[0])"
+                                        },
+                                        {
+                                            "question": "What does the following code output?",
+                                            "codeBlock": "char str[] = \"C programming\";\nprintf(\"%c\", str[2]);",
+                                            "language": "c",
+                                            "options": [
+                                                "C",
+                                                "p",
+                                                "r",
+                                                "o"
+                                            ],
+                                            "answer": "r"
+                                        },
+                                        {
+                                            "question": "What will be the output of the following code?",
+                                            "codeBlock": "int arr[] = {1, 2, 3, 4, 5};\nprintf(\"%d\", *(arr + 1));",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "Which of the following is a valid function declaration in C?",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "options": [
+                                                "void func;",
+                                                "func void();",
+                                                "void func();",
+                                                "func();"
+                                            ],
+                                            "answer": "void func();"
+                                        },
+                                        {
+                                            "question": "What will the following code print?",
+                                            "codeBlock": "int arr[] = {1, 2, 3, 4, 5};\nprintf(\"%d\", arr[3]);",
+                                            "language": "c",
+                                            "options": [
+                                                "3",
+                                                "4",
+                                                "5",
+                                                "Undefined"
+                                            ],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "What will be the output of the following code?",
+                                            "codeBlock": "int arr[] = {1, 2, 3, 4, 5};\nprintf(\"%d\", arr[2]);",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "3"
+                                        },
+                                        {
+                                            "question": "What does the following code print?",
+                                            "codeBlock": "void main() {\n    int arr[3] = {10, 20, 30};\n    printf(\"%d\", *(arr + 1));\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "10",
+                                                "20",
+                                                "30",
+                                                "Compilation error"
+                                            ],
+                                            "answer": "20"
+                                        },
+                                        {
+                                            "question": "What will the following code snippet output?",
+                                            "codeBlock": "int a = 5, b = 10;\nvoid swap(int *x, int *y) {\n   int temp = *x;\n   *x = *y;\n   *y = temp;\n}\nswap(&a, &b);\nprintf(\"%d %d\", a, b);",
+                                            "language": "c",
+                                            "options": [
+                                                "5 10",
+                                                "10 5",
+                                                "Compilation error",
+                                                "Undefined behavior"
+                                            ],
+                                            "answer": "10 5"
+                                        },
+                                        {
+                                            "question": "What will happen if an array index goes out of bounds?",
+                                            "codeBlock": "int arr[5];\narr[10] = 50;",
+                                            "language": "c",
+                                            "options": [
+                                                "Segmentation fault",
+                                                "Undefined behavior",
+                                                "Compilation error",
+                                                "Runtime error"
+                                            ],
+                                            "answer": "Undefined behavior"
+                                        },
+                                        {
+                                            "question": "What will be printed?",
+                                            "codeBlock": "char str[] = \"abcdef\";\nprintf(\"%c\", str[3]);",
+                                            "language": "c",
+                                            "options": [
+                                                "a",
+                                                "b",
+                                                "d",
+                                                "c"
+                                            ],
+                                            "answer": "d"
+                                        },
+                                        {
+                                            "question": "What does the following code snippet do?",
+                                            "codeBlock": "char str[] = \"Hello\";\nprintf(\"%c\", str[5]);",
+                                            "language": "c",
+                                            "options": [
+                                                "H",
+                                                "o",
+                                                "Null character",
+                                                "Undefined behavior"
+                                            ],
+                                            "answer": "Null character"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int main() {\n    int arr[] = {1, 2, 3, 4};\n    printf(\"%d\", *(arr + 3));\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "What will the following program output?",
+                                            "codeBlock": "int main() {\n    char str1[] = \"abc\", str2[] = \"abc\";\n    if (str1 == str2)\n        printf(\"Equal\");\n    else\n        printf(\"Not equal\");\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "Equal",
+                                                "Not equal",
+                                                "Compilation error",
+                                                "Undefined"
+                                            ],
+                                            "answer": "Not equal"
+                                        },
+                                        {
+                                            "question": "What is the output of this program?",
+                                            "codeBlock": "int main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", sizeof(arr)/sizeof(arr[0]));\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "3"
+                                        },
+                                        {
+                                            "question": "What will the following code output?",
+                                            "codeBlock": "int main() {\n    int arr[5] = {0};\n    printf(\"%d\", arr[4]);\n}",
+                                            "language": "c",
+                                            "options": [
+                                                "0",
+                                                "4",
+                                                "Undefined",
+                                                "Compilation error"
+                                            ],
+                                            "answer": "0"
+                                        }
+                                    ],
+                                    brief: [
+                                        {
+                                            "question": "Write a program in C to find the cube of any number using a function.",
+                                            "answer": "",
+                                            "codeBlock": "#include <stdio.h>\n\nint cube(int num) {\n    return num * num * num;\n}\n\nint main() {\n    int number;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &number);\n    printf(\"Cube of %d is %d\\n\", number, cube(number));\n    return 0;\n}",
+                                            "language": "c"
+                                        },
+                                        {
+                                            "question": "Write a program in C to calculate the factorial of a number using a function.",
+                                            "answer": "",
+                                            "codeBlock": "#include <stdio.h>\n\nint factorial(int num) {\n    if (num == 0 || num == 1)\n        return 1;\n    return num * factorial(num - 1);\n}\n\nint main() {\n    int number;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &number);\n    printf(\"Factorial of %d is %d\\n\", number, factorial(number));\n    return 0;\n}",
+                                            "language": "c"
+                                        },
+                                        {
+                                            "question": "Write a program in C to check if a given number is prime or not using a function.",
+                                            "answer": "",
+                                            "codeBlock": "#include <stdio.h>\n\nint isPrime(int num) {\n    if (num <= 1) return 0;\n    for (int i = 2; i <= num / 2; i++) {\n        if (num % i == 0)\n            return 0;\n    }\n    return 1;\n}\n\nint main() {\n    int number;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &number);\n    if (isPrime(number))\n        printf(\"%d is a prime number\\n\", number);\n    else\n        printf(\"%d is not a prime number\\n\", number);\n    return 0;\n}",
+                                            "language": "c"
+                                        },
+                                        {
+                                            "question": "What is an array in C?",
+                                            "answer": "An array is a collection of elements of the same data type stored in contiguous memory locations and accessed using an index.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        },
+                                        {
+                                            "question": "What is recursion in C programming?",
+                                            "answer": "Recursion is a technique where a function calls itself directly or indirectly to solve a problem by breaking it down into smaller subproblems.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        }
                                     ]
-                                                                                                  
-                                    
-                                    
-                                    
+                                    ,
+                                    case_study: [
+                                        {
+                                            "title": "Student Management System",
+                                            "description": "A university wants to develop a student management system to store and process student data efficiently. They decide to use arrays to store students' scores and retrieve their performance efficiently. The system provides functionality to calculate the average score of a student by iterating through the stored scores.",
+                                            "codeBlock": "#include <stdio.h>\nint main() {\n    int scores[5] = {90, 85, 78, 88, 92};\n    int sum = 0;\n    for (int i = 0; i < 5; i++) {\n        sum += scores[i];\n    }\n    float average = sum / 5.0;\n    printf(\"Average Score: %.2f\", average);\n    return 0;\n}",
+                                            "language": "c",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is the output of the above program?",
+                                                    "options": ["86.60", "87.00", "86.60f", "85.00"],
+                                                    "answer": "86.60"
+                                                },
+                                                {
+                                                    "question": "Which data structure is used in the above example to store student scores?",
+                                                    "options": ["Linked List", "Stack", "Queue", "Array"],
+                                                    "answer": "Array"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Library Book Tracking System",
+                                            "description": "A library system is being designed to store book IDs and allow retrieval of book details by using function calls. The system maintains an array of book IDs and provides a function to check if a specific book ID exists within the library database.",
+                                            "codeBlock": "#include <stdio.h>\nint checkBook(int bookIds[], int size, int searchId) {\n    for (int i = 0; i < size; i++) {\n        if (bookIds[i] == searchId) {\n            return 1;\n        }\n    }\n    return 0;\n}\nint main() {\n    int bookIds[5] = {101, 202, 303, 404, 505};\n    int searchId = 303;\n    if (checkBook(bookIds, 5, searchId)) {\n        printf(\"Book found.\\n\");\n    } else {\n        printf(\"Book not found.\\n\");\n    }\n    return 0;\n}",
+                                            "language": "c",
+                                            "mcq": [
+                                                {
+                                                    "question": "What will be the output of the above program if the searchId is 303?",
+                                                    "options": ["Book not found.", "Book found.", "Compilation Error", "Runtime Error"],
+                                                    "answer": "Book found."
+                                                },
+                                                {
+                                                    "question": "What parameter type is used to pass the book ID array to the function?",
+                                                    "options": ["By reference", "By pointer", "By value", "None of the above"],
+                                                    "answer": "By pointer"
+                                                }
+                                            ]
+                                        }
+                                    ]                 
+                                },
+                                {
+                                    id: "module-5",
+                                    name: "Module 5",
+                                    mcq: [
+                                        {
+                                          "question": "What does a pointer variable store?",
+                                          "options": ["Value of a variable", "Address of a variable", "Data type of a variable", "None of the above"],
+                                          "answer": "Address of a variable"
+                                        },
+                                        {
+                                          "question": "Which of the following operators is used to get the address of a variable?",
+                                          "options": ["*", "&", "->", "%"],
+                                          "answer": "&"
+                                        },
+                                        {
+                                          "question": "What will be the output of the following code?",
+                                          "codeBlock": "int num = 10;\nint *ptr = &num;\nprintf(\"%d\", *ptr);",
+                                          "language": "c",
+                                          "options": ["10", "Address of num", "Garbage value", "Compiler error"],
+                                          "answer": "10"
+                                        },
+                                        {
+                                          "question": "What is a structure in C?",
+                                          "options": ["A collection of similar data types", "A collection of different data types", "A function", "A pointer"],
+                                          "answer": "A collection of different data types"
+                                        },
+                                        {
+                                          "question": "What is the size of a union equal to?",
+                                          "options": ["Sum of all members", "Size of the largest member", "Size of the smallest member", "None of the above"],
+                                          "answer": "Size of the largest member"
+                                        },
+                                        {
+                                          "question": "What is the correct way to declare a pointer to an integer in C?",
+                                          "options": ["int ptr;", "int *ptr;", "pointer int ptr;", "int ptr*;"],
+                                          "answer": "int *ptr;"
+                                        },
+                                        {
+                                          "question": "Which function is used to allocate memory dynamically in C?",
+                                          "options": ["malloc()", "memalloc()", "allocmem()", "calloc()"],
+                                          "answer": "malloc()"
+                                        },
+                                        {
+                                          "question": "What will happen if memory allocation fails in C?",
+                                          "options": ["The program continues", "A null pointer is returned", "A runtime error occurs", "The system restarts"],
+                                          "answer": "A null pointer is returned"
+                                        },
+                                        {
+                                          "question": "How do you access a member of a structure using a pointer?",
+                                          "options": ["ptr.member", "ptr->member", "ptr*member", "ptr.member*"],
+                                          "answer": "ptr->member"
+                                        },
+                                        {
+                                          "question": "Which function is used to close a file in C?",
+                                          "options": ["closefile()", "fclose()", "endfile()", "fileclose()"],
+                                          "answer": "fclose()"
+                                        },
+                                        {
+                                          "question": "What will the following code output?",
+                                          "codeBlock": "char str[] = \"Hello\";\nprintf(\"%c\", *(str+1));",
+                                          "language": "c",
+                                          "options": ["H", "e", "l", "o"],
+                                          "answer": "e"
+                                        },
+                                        {
+                                          "question": "What is the size of a pointer in a 64-bit system?",
+                                          "options": ["2 bytes", "4 bytes", "8 bytes", "16 bytes"],
+                                          "answer": "8 bytes"
+                                        },
+                                        {
+                                          "question": "Which function is used to read a line of text from a file?",
+                                          "options": ["fgets()", "fscanf()", "fputs()", "fwrite()"],
+                                          "answer": "fgets()"
+                                        },
+                                        {
+                                          "question": "What does the free() function do in C?",
+                                          "options": ["Allocates memory", "Deallocates previously allocated memory", "Initializes memory", "None of the above"],
+                                          "answer": "Deallocates previously allocated memory"
+                                        },
+                                        {
+                                          "question": "What happens if you try to dereference a null pointer?",
+                                          "options": ["Undefined behavior", "Program termination", "Compiler warning", "Memory overflow"],
+                                          "answer": "Undefined behavior"
+                                        },
+                                        {
+                                          "question": "Which statement is correct about an array of pointers?",
+                                          "options": ["It stores values directly", "It stores addresses of other variables", "It cannot be used with dynamic memory", "It does not support pointer arithmetic"],
+                                          "answer": "It stores addresses of other variables"
+                                        },
+                                        {
+                                          "question": "Which function is used to open a file in C?",
+                                          "options": ["fileopen()", "open()", "fopen()", "startfile()"],
+                                          "answer": "fopen()"
+                                        },
+                                        {
+                                          "question": "What is the correct syntax to dynamically allocate memory for an integer array of size 10?",
+                                          "options": ["int *arr = malloc(10 * sizeof(int));", "int arr = malloc(10);", "malloc(arr, 10 * int);", "int arr[10] = malloc(sizeof(int));"],
+                                          "answer": "int *arr = malloc(10 * sizeof(int));"
+                                        },
+                                        {
+                                          "question": "Which of the following is an example of pointer arithmetic?",
+                                          "options": ["ptr++", "ptr = ptr + 1", "ptr--", "All of the above"],
+                                          "answer": "All of the above"
+                                        },
+                                        {
+                                          "question": "What is the output of the following code snippet?",
+                                          "codeBlock": "int arr[] = {1, 2, 3, 4};\nprintf(\"%d\", *(arr + 2));",
+                                          "language": "c",
+                                          "options": ["1", "2", "3", "4"],
+                                          "answer": "3"
+                                        },
+                                        {
+                                          "question": "What is a dangling pointer?",
+                                          "options": [
+                                            "A pointer that points to a valid memory location",
+                                            "A pointer that does not point to a valid memory location",
+                                            "A pointer that stores the value of another variable",
+                                            "A pointer that stores the address of another pointer"
+                                          ],
+                                          "answer": "A pointer that does not point to a valid memory location"
+                                        },
+                                        {
+                                          "question": "How can you dynamically allocate memory in C?",
+                                          "options": [
+                                            "Using malloc, calloc, and realloc",
+                                            "Using new and delete",
+                                            "Using file pointers",
+                                            "Using system memory functions"
+                                          ],
+                                          "answer": "Using malloc, calloc, and realloc"
+                                        },
+                                        {
+                                          "question": "What is the difference between a structure and a union?",
+                                          "options": [
+                                            "Structure allocates memory for all members, while union allocates memory for the largest member only",
+                                            "Both allocate memory for all members",
+                                            "Union allocates memory for all members, while structure allocates memory for the largest member only",
+                                            "They have the same memory allocation behavior"
+                                          ],
+                                          "answer": "Structure allocates memory for all members, while union allocates memory for the largest member only"
+                                        },
+                                        {
+                                          "question": "What is the purpose of the fopen() function in C?",
+                                          "options": [
+                                            "To close an open file",
+                                            "To read data from a file",
+                                            "To open a file and associate it with a stream",
+                                            "To delete a file from the system"
+                                          ],
+                                          "answer": "To open a file and associate it with a stream"
+                                        },
+                                        {
+                                          "question": "How do you pass a structure to a function in C?",
+                                          "options": [
+                                            "By value",
+                                            "By reference using pointers",
+                                            "Both a and b",
+                                            "Structures cannot be passed to functions"
+                                          ],
+                                          "answer": "Both a and b"
+                                        },
+                                        {
+                                          "question": "What does a pointer variable store?",
+                                          "options": [
+                                            "Value of a variable",
+                                            "Address of a variable",
+                                            "Data type of a variable",
+                                            "None of the above"
+                                          ],
+                                          "answer": "Address of a variable"
+                                        },
+                                        {
+                                          "question": "Which of the following operators is used to get the address of a variable?",
+                                          "options": [
+                                            "*",
+                                            "&",
+                                            "->",
+                                            "%"
+                                          ],
+                                          "answer": "&"
+                                        },
+                                        {
+                                          "question": "What will be the output of the following code?",
+                                          "codeBlock": "int num = 10;\nint *ptr = &num;\nprintf(\"%d\", *ptr);",
+                                          "language": "c",
+                                          "options": [
+                                            "10",
+                                            "Address of num",
+                                            "Garbage value",
+                                            "Compiler error"
+                                          ],
+                                          "answer": "10"
+                                        },
+                                        {
+                                          "question": "What is a structure in C?",
+                                          "options": [
+                                            "A collection of similar data types",
+                                            "A collection of different data types",
+                                            "A function",
+                                            "A pointer"
+                                          ],
+                                          "answer": "A collection of different data types"
+                                        },
+                                        {
+                                          "question": "What is the size of a union equal to?",
+                                          "options": [
+                                            "Sum of all members",
+                                            "Size of the largest member",
+                                            "Size of the smallest member",
+                                            "None of the above"
+                                          ],
+                                          "answer": "Size of the largest member"
+                                        }
+                                    ],
+                                    brief: [
+                                        {
+                                          "question": "What is a pointer, and what are the types of pointers?",
+                                          "answer": "A **pointer** is a variable that stores the memory address of another variable.\n\n**Types of pointers:**\n- Null pointer\n- Void pointer\n- Wild pointer\n- Dangling pointer\n- Function pointer\n- Near, Far, and Huge pointers",
+                                          "codeBlock": "",
+                                          "language": ""
+                                        },
+                                        {
+                                          "question": "Write a program (WAP) to calculate the factorial of a number using call by reference without return.",
+                                          "answer": "```c\n#include <stdio.h>\nvoid factorial(int *n, int *fact) {\n    *fact = 1;\n    for (int i = 1; i <= *n; i++) {\n        *fact *= i;\n    }\n}\nint main() {\n    int num = 5, result;\n    factorial(&num, &result);\n    printf(\"Factorial: %d\", result);\n    return 0;\n}\n```",
+                                          "codeBlock": "factorial(&num, &result);",
+                                          "language": "c"
+                                        },
+                                        {
+                                          "question": "Write a program (WAP) to calculate the factorial of a number using call by value with return.",
+                                          "answer": "```c\n#include <stdio.h>\nint factorial(int n) {\n    if (n == 0 || n == 1) return 1;\n    return n * factorial(n - 1);\n}\nint main() {\n    int num = 5;\n    printf(\"Factorial: %d\", factorial(num));\n    return 0;\n}\n```",
+                                          "codeBlock": "factorial(num);",
+                                          "language": "c"
+                                        },
+                                        {
+                                          "question": "Write a program (WAP) to input a string and reverse it using a pointer to function.",
+                                          "answer": "```c\n#include <stdio.h>\n#include <string.h>\nvoid reverse(char *str) {\n    int len = strlen(str);\n    for (int i = 0; i < len / 2; i++) {\n        char temp = str[i];\n        str[i] = str[len - i - 1];\n        str[len - i - 1] = temp;\n    }\n}\nint main() {\n    char str[] = \"Hello\";\n    reverse(str);\n    printf(\"Reversed: %s\", str);\n    return 0;\n}\n```",
+                                          "codeBlock": "reverse(str);",
+                                          "language": "c"
+                                        },
+                                        {
+                                          "question": "Distinguish between structure and union.",
+                                          "answer": "A **structure** allocates memory for all members separately, whereas a **union** allocates memory equal to the largest member only.\n\n**Structure Example:**\n```c\nstruct Employee {\n    int id;\n    float salary;\n};\n```\n**Union Example:**\n```c\nunion Data {\n    int id;\n    float salary;\n};\n```",
+                                          "codeBlock": "",
+                                          "language": ""
+                                        }
+                                      ]
+                                      ,
+                                    case_study: [
+                                        [
+                                          {
+                                            "title": "Managing Student Scores with Arrays",
+                                            "description": "A school wants to automate the management of student scores for different subjects. They plan to store scores using arrays and calculate the average score for each student. The system should allow adding new scores dynamically and ensure data consistency.",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "mcq": [
+                                              {
+                                                "question": "What is the correct way to declare an array of integers in C to store student scores?",
+                                                "options": ["int scores[];", "int scores[10];", "array scores[10];", "scores[10] int;"],
+                                                "answer": "int scores[10];"
+                                              },
+                                              {
+                                                "question": "How can you dynamically allocate memory for an array of student scores?",
+                                                "codeBlock": "int *scores = malloc(10 * sizeof(int));",
+                                                "language": "c",
+                                                "options": ["int *scores = malloc(10 * sizeof(int));", "int scores = malloc(10);", "malloc(scores, 10 * int);", "int scores[10] = malloc(sizeof(int));"],
+                                                "answer": "int *scores = malloc(10 * sizeof(int));"
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "title": "Implementing Functions for Employee Payroll System",
+                                            "description": "A company is developing an employee payroll system where salaries need to be computed based on hours worked and hourly rates. Functions will be used to modularize the code for better maintainability.",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "mcq": [
+                                              {
+                                                "question": "Which function prototype is correct for calculating employee salaries?",
+                                                "options": ["int calc_salary(int, float);", "float calc_salary(int, int);", "void calc_salary(int, float);", "calc_salary(int, float);"],
+                                                "answer": "int calc_salary(int, float);"
+                                              },
+                                              {
+                                                "question": "What is the correct way to return a value from a function in C?",
+                                                "options": ["return value;", "value return;", "return(value);", "return;"],
+                                                "answer": "return value;"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      ]                 
                                 }
                             ]
                         }
