@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 import { CodeBlock } from "./CodeBlock";
 import { AutoSelectToggle } from "./AuoSelectToggle";
 
@@ -53,7 +54,9 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
 
       {mcqs.map((q, index) => (
         <div key={index} className="mb-6">
-          <h3 className="text-lg font-semibold">{`Q${index + 1}: ${q.question}`}</h3>
+          <h3 className="text-lg font-semibold">
+            Q{index + 1}: <ReactMarkdown>{q.question}</ReactMarkdown>
+          </h3>
 
           {q.codeBlock && <CodeBlock code={q.codeBlock} language={q.language} />}
 
