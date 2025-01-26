@@ -11,6 +11,8 @@ interface CaseStudyProps {
       question: string;
       options: string[];
       answer: string;
+      codeBlock?: string;
+      language?: string;
     }[];
   }[];
 }

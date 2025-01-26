@@ -1990,8 +1990,7 @@ export const questionBank = {
                                       ]
                                       ,
                                     case_study: [
-                                        [
-                                          {
+                                        {
                                             "title": "Managing Student Scores with Arrays",
                                             "description": "A school wants to automate the management of student scores for different subjects. They plan to store scores using arrays and calculate the average score for each student. The system should allow adding new scores dynamically and ensure data consistency.",
                                             "codeBlock": "",
@@ -2010,9 +2009,7 @@ export const questionBank = {
                                                 "answer": "int *scores = malloc(10 * sizeof(int));"
                                               }
                                             ]
-                                          }
-                                        ],
-                                        [
+                                          },
                                           {
                                             "title": "Implementing Functions for Employee Payroll System",
                                             "description": "A company is developing an employee payroll system where salaries need to be computed based on hours worked and hourly rates. Functions will be used to modularize the code for better maintainability.",
@@ -2031,7 +2028,6 @@ export const questionBank = {
                                               }
                                             ]
                                           }
-                                        ]
                                       ]                 
                                 }
                             ]
