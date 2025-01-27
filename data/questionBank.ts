@@ -6959,8 +6959,7 @@ export const questionBank = {
                                                                                                           
                                 }
                             ]
-                        }
-                        ,
+                        },
                         {
                             name: "Basic Mathemetics - 1",
                             id: "basic-mathematics-1",
@@ -9463,6 +9462,2861 @@ export const questionBank = {
                                             ]
                                         }
                                     ]                                                                        
+                                }
+                            ]
+                        },
+                        {
+                            name: "Computer and Information Technology",
+                            id: "computer-and-information-technology",
+                            modules: [
+                                {
+                                    name: "Module 1",
+                                    id: "module-1",
+                                    mcq: [
+                                        {
+                                            "question": "**Identify the five primary components of a computer system.**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Central Processing Unit (CPU), CD-ROM, Mouse, Keyboard, Sound Card",
+                                                "Memory, Video Card, Monitor, Software, Hardware",
+                                                "Modem, Keyboard, Word Processor, Printer, Screen",
+                                                "Central Processing Unit (CPU), Memory, System Bus, Input, Output"
+                                            ],
+                                            "answer": "Central Processing Unit (CPU), Memory, System Bus, Input, Output"
+                                        },
+                                        {
+                                            "question": "**In what way do the primary components of a computer establish communication?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Via the system bus",
+                                                "Utilising memory",
+                                                "Through the keyboard",
+                                                "Via the monitor"
+                                            ],
+                                            "answer": "Via the system bus"
+                                        },
+                                        {
+                                            "question": "**What are the primary functions of the computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Receiving input and producing output",
+                                                "Processing information",
+                                                "Storing information",
+                                                "All of the above"
+                                            ],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "**What are the two principal components of the CPU?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Control Unit and Memory",
+                                                "Addresses and Register",
+                                                "Addresses and ALU",
+                                                "Control Unit and ALU"
+                                            ],
+                                            "answer": "Control Unit and ALU"
+                                        },
+                                        {
+                                            "question": "**The different types of memory units are:**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "ROM",
+                                                "PROM",
+                                                "All of the above"
+                                            ],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "**What is the primary purpose of a computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Entertainment",
+                                                "Data processing",
+                                                "Playing games",
+                                                "Cooking recipes"
+                                            ],
+                                            "answer": "Data processing"
+                                        },
+                                        {
+                                            "question": "**Which of the following is considered the brain of the computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Monitor",
+                                                "Keyboard",
+                                                "Central Processing Unit (CPU)",
+                                                "Mouse"
+                                            ],
+                                            "answer": "Central Processing Unit (CPU)"
+                                        },
+                                        {
+                                            "question": "**What does RAM stand for in computing?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Read Access Memory",
+                                                "Random Access Memory",
+                                                "Remote Access Module",
+                                                "Real-time Advanced Memory"
+                                            ],
+                                            "answer": "Random Access Memory"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a primary storage device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "CD-ROM",
+                                                "RAM",
+                                                "Hard Disk",
+                                                "USB Drive"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**What does ROM stand for?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Read-Only Memory",
+                                                "Random Operation Module",
+                                                "Read On Memory",
+                                                "Remote Object Memory"
+                                            ],
+                                            "answer": "Read-Only Memory"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an output device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Keyboard",
+                                                "Scanner",
+                                                "Monitor",
+                                                "Mouse"
+                                            ],
+                                            "answer": "Monitor"
+                                        },
+                                        {
+                                            "question": "**What type of software is an operating system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Application software",
+                                                "System software",
+                                                "Utility software",
+                                                "Device driver"
+                                            ],
+                                            "answer": "System software"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of application software?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Windows OS",
+                                                "Microsoft Word",
+                                                "BIOS",
+                                                "Antivirus"
+                                            ],
+                                            "answer": "Microsoft Word"
+                                        },
+                                        {
+                                            "question": "**What is the full form of CPU?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Central Processing Unit",
+                                                "Control Processing Unit",
+                                                "Central Performance Unit",
+                                                "Central Peripheral Unit"
+                                            ],
+                                            "answer": "Central Processing Unit"
+                                        },
+                                        {
+                                            "question": "**Which computer generation used vacuum tubes?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "First",
+                                                "Second",
+                                                "Third",
+                                                "Fourth"
+                                            ],
+                                            "answer": "First"
+                                        },
+                                        {
+                                            "question": "**Which language is directly understood by the computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Assembly language",
+                                                "Machine language",
+                                                "High-level language",
+                                                "Binary language"
+                                            ],
+                                            "answer": "Machine language"
+                                        },
+                                        {
+                                            "question": "**What is the purpose of an operating system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "To manage hardware resources",
+                                                "To run application software",
+                                                "To connect to the internet",
+                                                "To compile programs"
+                                            ],
+                                            "answer": "To manage hardware resources"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an input device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Printer",
+                                                "Monitor",
+                                                "Keyboard",
+                                                "Speaker"
+                                            ],
+                                            "answer": "Keyboard"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of secondary storage?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "Cache",
+                                                "Hard Disk",
+                                                "Registers"
+                                            ],
+                                            "answer": "Hard Disk"
+                                        },
+                                        {
+                                            "question": "**What does GUI stand for?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Graphical User Interface",
+                                                "General User Interface",
+                                                "Graphical Unified Interface",
+                                                "Global Unified Interface"
+                                            ],
+                                            "answer": "Graphical User Interface"
+                                        },
+                                        {
+                                            "question": "**Which part of the computer performs calculations and logical operations?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Control Unit",
+                                                "Arithmetic Logic Unit (ALU)",
+                                                "Memory",
+                                                "Cache"
+                                            ],
+                                            "answer": "Arithmetic Logic Unit (ALU)"
+                                        },
+                                        {
+                                            "question": "**Which computer component is responsible for storing permanent data?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "Hard Disk",
+                                                "Cache",
+                                                "Registers"
+                                            ],
+                                            "answer": "Hard Disk"
+                                        },
+                                        {
+                                            "question": "**What is the smallest unit of data in a computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Byte",
+                                                "Bit",
+                                                "Kilobyte",
+                                                "Nibble"
+                                            ],
+                                            "answer": "Bit"
+                                        },
+                                        {
+                                            "question": "**What is an example of system software?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "MS Word",
+                                                "Photoshop",
+                                                "Windows OS",
+                                                "Web Browser"
+                                            ],
+                                            "answer": "Windows OS"
+                                        },
+                                        {
+                                            "question": "**What is the function of a compiler?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Translate high-level code to machine code",
+                                                "Execute programs",
+                                                "Perform debugging",
+                                                "Manage hardware"
+                                            ],
+                                            "answer": "Translate high-level code to machine code"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of volatile memory?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Hard Disk",
+                                                "RAM",
+                                                "ROM",
+                                                "CD-ROM"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an optical storage device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Hard Disk",
+                                                "RAM",
+                                                "CD-ROM",
+                                                "Floppy Disk"
+                                            ],
+                                            "answer": "CD-ROM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is NOT an input device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Mouse",
+                                                "Keyboard",
+                                                "Printer",
+                                                "Scanner"
+                                            ],
+                                            "answer": "Printer"
+                                        },
+                                        {
+                                            "question": "**Which type of memory is non-volatile?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "Cache",
+                                                "ROM",
+                                                "Registers"
+                                            ],
+                                            "answer": "ROM"
+                                        },
+                                        {
+                                            "question": "**What does the abbreviation 'USB' stand for?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Universal Storage Bus",
+                                                "Universal System Bus",
+                                                "Universal Serial Bus",
+                                                "Unified System Board"
+                                            ],
+                                            "answer": "Universal Serial Bus"
+                                        },
+                                        {
+                                            "question": "**Which component of a computer temporarily holds data and instructions during processing?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "Hard Disk",
+                                                "ROM",
+                                                "Cache"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of a primary input device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Monitor",
+                                                "Mouse",
+                                                "Printer",
+                                                "Speakers"
+                                            ],
+                                            "answer": "Mouse"
+                                        },
+                                        {
+                                            "question": "**Which part of the CPU directs operations and coordinates computer components?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Arithmetic Logic Unit (ALU)",
+                                                "Control Unit (CU)",
+                                                "Memory Unit",
+                                                "Cache"
+                                            ],
+                                            "answer": "Control Unit (CU)"
+                                        },
+                                        {
+                                            "question": "**What is the function of an operating system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Hardware management",
+                                                "Data entry",
+                                                "Creating spreadsheets",
+                                                "Printing documents"
+                                            ],
+                                            "answer": "Hardware management"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an output device?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Scanner",
+                                                "Keyboard",
+                                                "Monitor",
+                                                "Joystick"
+                                            ],
+                                            "answer": "Monitor"
+                                        },
+                                        {
+                                            "question": "**Which generation of computers introduced the use of transistors?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "First",
+                                                "Second",
+                                                "Third",
+                                                "Fourth"
+                                            ],
+                                            "answer": "Second"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a portable computer?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Desktop",
+                                                "Mainframe",
+                                                "Laptop",
+                                                "Supercomputer"
+                                            ],
+                                            "answer": "Laptop"
+                                        },
+                                        {
+                                            "question": "**Which memory unit is known for its high speed and is used between CPU and RAM?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Cache Memory",
+                                                "Hard Disk",
+                                                "ROM",
+                                                "Flash Memory"
+                                            ],
+                                            "answer": "Cache Memory"
+                                        },
+                                        {
+                                            "question": "**What does the abbreviation 'HTTP' stand for?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Hypertext Transmission Protocol",
+                                                "Hyper Transfer Text Protocol",
+                                                "Hypertext Transfer Protocol",
+                                                "Hyper Transmission Text Protocol"
+                                            ],
+                                            "answer": "Hypertext Transfer Protocol"
+                                        },
+                                        {
+                                            "question": "**Which of the following is not an example of system software?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Windows OS",
+                                                "Linux",
+                                                "MS Word",
+                                                "MacOS"
+                                            ],
+                                            "answer": "MS Word"
+                                        },
+                                        {
+                                            "question": "**Which of the following devices is used for permanent storage of data?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "RAM",
+                                                "Cache",
+                                                "Hard Disk",
+                                                "Registers"
+                                            ],
+                                            "answer": "Hard Disk"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a type of primary memory?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "CD-ROM",
+                                                "Flash Drive",
+                                                "RAM",
+                                                "External Hard Drive"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is NOT a function of an operating system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Memory management",
+                                                "File management",
+                                                "Compiling code",
+                                                "Process management"
+                                            ],
+                                            "answer": "Compiling code"
+                                        },
+                                        {
+                                            "question": "**Which of the following is NOT an example of secondary storage?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "USB drive",
+                                                "Hard disk",
+                                                "CD-ROM",
+                                                "RAM"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**What does BIOS stand for?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Basic Input Output System",
+                                                "Basic Integrated Operating System",
+                                                "Binary Input Output System",
+                                                "Basic Interface Operating System"
+                                            ],
+                                            "answer": "Basic Input Output System"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an embedded system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Laptop",
+                                                "Smartphone",
+                                                "Washing Machine",
+                                                "Supercomputer"
+                                            ],
+                                            "answer": "Washing Machine"
+                                        },
+                                        {
+                                            "question": "**What type of software is used to control the basic operations of computer hardware?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "System software",
+                                                "Application software",
+                                                "Utility software",
+                                                "Firmware"
+                                            ],
+                                            "answer": "Firmware"
+                                        },
+                                        {
+                                            "question": "**Which of the following is NOT an example of an operating system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Windows",
+                                                "Linux",
+                                                "Google Chrome",
+                                                "macOS"
+                                            ],
+                                            "answer": "Google Chrome"
+                                        },
+                                        {
+                                            "question": "**Which of the following units is responsible for arithmetic calculations in a CPU?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Control Unit",
+                                                "Arithmetic Logic Unit (ALU)",
+                                                "Memory Unit",
+                                                "Input Unit"
+                                            ],
+                                            "answer": "Arithmetic Logic Unit (ALU)"
+                                        },
+                                        {
+                                            "question": "**Which type of memory is faster but has a limited storage capacity?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Hard Disk",
+                                                "Flash Memory",
+                                                "Cache Memory",
+                                                "RAM"
+                                            ],
+                                            "answer": "Cache Memory"
+                                        },
+                                        {
+                                            "question": "**What is the name of the process of starting a computer system?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Shut down",
+                                                "Hibernate",
+                                                "Booting",
+                                                "Formatting"
+                                            ],
+                                            "answer": "Booting"
+                                        },
+                                        {
+                                            "question": "**Which of the following devices is used to convert digital signals into analog signals?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Modem",
+                                                "Router",
+                                                "Switch",
+                                                "Hub"
+                                            ],
+                                            "answer": "Modem"
+                                        },
+                                        {
+                                            "question": "**What kind of printer uses impact technology to print documents?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Laser Printer",
+                                                "Inkjet Printer",
+                                                "Dot Matrix Printer",
+                                                "Thermal Printer"
+                                            ],
+                                            "answer": "Dot Matrix Printer"
+                                        },
+                                        {
+                                            "question": "**Which computer generation introduced artificial intelligence concepts?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "First",
+                                                "Second",
+                                                "Fourth",
+                                                "Fifth"
+                                            ],
+                                            "answer": "Fifth"
+                                        },
+                                        {
+                                            "question": "**What is an example of cloud storage?**",
+                                            "questionRead": "",
+                                            "options": [
+                                                "Google Drive",
+                                                "Hard Disk",
+                                                "USB Flash Drive",
+                                                "Blu-ray Disc"
+                                            ],
+                                            "answer": "Google Drive"
+                                        }
+                                    ],
+                                    brief: [
+                                        {
+                                            "question": "**What are the key components of a computer system?**",
+                                            "questionRead": "",
+                                            "answer": "**The key components of a computer system are:** \n- **Input Devices:** Used to enter data (e.g., keyboard, mouse). \n- **Processing Unit (CPU):** The brain of the computer, processes instructions. \n- **Memory (RAM/ROM):** Stores data and instructions temporarily or permanently. \n- **Storage Devices:** For long-term data storage (e.g., hard disk, SSD). \n- **Output Devices:** Display processed data (e.g., monitor, printer)."
+                                        },
+                                        {
+                                            "question": "**What are the different types of computer memory?**",
+                                            "questionRead": "",
+                                            "answer": "**Computer memory is classified into:** \n- **Primary Memory (RAM/ROM):** Stores data temporarily for quick access. RAM is volatile, while ROM is non-volatile. \n- **Secondary Storage:** Long-term storage like hard drives and SSDs. \n- **Cache Memory:** High-speed memory that stores frequently accessed data. \n- **Registers:** Small storage locations inside the CPU for immediate data processing."
+                                        },
+                                        {
+                                            "question": "**What is the function of an operating system?**",
+                                            "questionRead": "",
+                                            "answer": "**The operating system (OS) manages hardware and software resources. Its functions include:** \n- Managing files and directories. \n- Controlling input and output devices. \n- Managing memory allocation. \n- Running application programs. \n- Providing user interfaces like GUI and CLI."
+                                        },
+                                        {
+                                            "question": "**What are the main generations of computers?**",
+                                            "questionRead": "",
+                                            "answer": "**Computers have evolved over five generations:** \n- **First Generation (1940s-50s):** Used vacuum tubes, large size, slow processing. \n- **Second Generation (1950s-60s):** Used transistors, smaller and faster. \n- **Third Generation (1960s-70s):** Used integrated circuits (ICs). \n- **Fourth Generation (1970s-present):** Microprocessors and personal computers. \n- **Fifth Generation (Present-Future):** Artificial intelligence and advanced processing."
+                                        },
+                                        {
+                                            "question": "**What is the difference between hardware and software?**",
+                                            "questionRead": "",
+                                            "answer": "**Hardware refers to the physical components of a computer system, such as the CPU, memory, and peripherals. Software refers to the programs and operating systems that run on the hardware, allowing users to perform tasks and manage resources. Without software, hardware is non-functional, and without hardware, software cannot operate.**"
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Evolution of Computer Generations",
+                                            "description": "**XYZ Corporation** is planning to upgrade its computer infrastructure and is evaluating various computer generations for their new system. The company currently uses second-generation computers with transistors but is considering moving to more advanced systems. The management is particularly interested in understanding the features and advancements of third and fourth-generation computers. They need to decide which generation will provide better efficiency, cost-effectiveness, and reliability for their growing data processing needs.",
+                                            "mcq": [
+                                                {
+                                                    "question": "**Which of the following is a key feature of third-generation computers?**",
+                                                    "questionRead": "",
+                                                    "options": [
+                                                        "Use of vacuum tubes",
+                                                        "Use of transistors",
+                                                        "Use of integrated circuits (ICs)",
+                                                        "Use of artificial intelligence"
+                                                    ],
+                                                    "answer": "Use of integrated circuits (ICs)"
+                                                },
+                                                {
+                                                    "question": "**Which component made fourth-generation computers faster and more efficient?**",
+                                                    "questionRead": "",
+                                                    "options": [
+                                                        "Vacuum tubes",
+                                                        "Transistors",
+                                                        "Microprocessors",
+                                                        "Punch cards"
+                                                    ],
+                                                    "answer": "Microprocessors"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Choosing the Right Memory for a New Computer System",
+                                            "description": "**ABC Tech Solutions** is developing a new computing system for data-intensive applications. The company must choose between different types of memory, such as RAM, ROM, and cache memory, to optimize performance. The development team is considering using a combination of volatile and non-volatile memory to balance speed and data retention. Their goal is to ensure quick data access while also securing critical data even when the power is turned off.",
+                                            "mcq": [
+                                                {
+                                                    "question": "**Which type of memory is volatile and provides temporary storage?**",
+                                                    "questionRead": "",
+                                                    "options": [
+                                                        "RAM",
+                                                        "ROM",
+                                                        "Hard Disk",
+                                                        "SSD"
+                                                    ],
+                                                    "answer": "RAM"
+                                                },
+                                                {
+                                                    "question": "**Which memory type stores data permanently even when the power is off?**",
+                                                    "questionRead": "",
+                                                    "options": [
+                                                        "RAM",
+                                                        "Cache",
+                                                        "ROM",
+                                                        "Registers"
+                                                    ],
+                                                    "answer": "ROM"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                                                           
+                                },
+                                {
+                                    name: "Module 2",
+                                    id: "module-2",
+                                    mcq: [
+                                        {
+                                            "question": "Identify the four number systems commonly used in computer science.",
+                                            "options": ["Decimal, Binary, Octal, Hexadecimal", "Binary, Decimal, Fractional, Scientific", "Octal, Hexadecimal, Floating Point, Signed", "Decimal, Binary, Alphabetic, Numeric"],
+                                            "answer": "Decimal, Binary, Octal, Hexadecimal"
+                                        },
+                                        {
+                                            "question": "What is the base of the hexadecimal number system?",
+                                            "options": ["2", "8", "10", "16"],
+                                            "answer": "16"
+                                        },
+                                        {
+                                            "question": "In binary number system, how many digits are used?",
+                                            "options": ["2", "8", "10", "16"],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "Which number system uses digits 0-7?",
+                                            "options": ["Binary", "Decimal", "Octal", "Hexadecimal"],
+                                            "answer": "Octal"
+                                        },
+                                        {
+                                            "question": "Convert the decimal number 25 to binary.",
+                                            "options": ["11001", "10100", "11111", "10011"],
+                                            "answer": "11001"
+                                        },
+                                        {
+                                            "question": "What is the octal equivalent of the binary number 101101?",
+                                            "options": ["55", "65", "55", "45"],
+                                            "answer": "55"
+                                        },
+                                        {
+                                            "question": "What is the value of 2’s complement of binary number 1010?",
+                                            "questionRead": "_Take the one's complement of '1010' and add '1' to obtain the two's complement._",
+                                            "options": ["0101", "1101", "1011", "0110"],
+                                            "answer": "0110"
+                                        },
+                                        {
+                                            "question": "Boolean algebra is mainly used in:",
+                                            "options": ["Relational databases", "Digital electronics", "Mechanical calculations", "Financial modeling"],
+                                            "answer": "Digital electronics"
+                                        },
+                                        {
+                                            "question": "What is the result of the Boolean expression A + A'?",
+                                            "questionRead": "_A plus A complement results in:_",
+                                            "options": ["0", "1", "A", "A'"],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "The Boolean expression (A + B)’ is equivalent to:",
+                                            "questionRead": "_Apply De Morgan's theorem to the expression (A + B)’._",
+                                            "options": ["A' + B'", "A'B'", "A + B", "AB"],
+                                            "answer": "A'B'"
+                                        },
+                                        {
+                                            "question": "What is the base of the decimal number system?",
+                                            "options": ["2", "8", "10", "16"],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "Which number system is also known as base-2?",
+                                            "options": ["Decimal", "Binary", "Octal", "Hexadecimal"],
+                                            "answer": "Binary"
+                                        },
+                                        {
+                                            "question": "Which of the following represents the hexadecimal number system?",
+                                            "options": ["Base-2", "Base-8", "Base-10", "Base-16"],
+                                            "answer": "Base-16"
+                                        },
+                                        {
+                                            "question": "What is the octal representation of the decimal number 65?",
+                                            "options": ["101", "81", "101", "1010"],
+                                            "answer": "101"
+                                        },
+                                        {
+                                            "question": "Which Boolean algebra law states A + AB = A?",
+                                            "options": ["Distributive", "Absorption", "Associative", "Commutative"],
+                                            "answer": "Absorption"
+                                        },
+                                        {
+                                            "question": "In binary addition, what is the sum of 1 + 1?",
+                                            "options": ["0", "1", "10", "11"],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "What is the result of applying the NOT operation to 1?",
+                                            "options": ["0", "1", "10", "11"],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "Which logic gate implements the Boolean function A.B?",
+                                            "options": ["AND", "OR", "NOT", "XOR"],
+                                            "answer": "AND"
+                                        },
+                                        {
+                                            "question": "The smallest unit of data in a binary system is called?",
+                                            "options": ["Bit", "Byte", "Nibble", "Word"],
+                                            "answer": "Bit"
+                                        },
+                                        {
+                                            "question": "What is the 2's complement of the binary number 0101?",
+                                            "options": ["1011", "1101", "1010", "1111"],
+                                            "answer": "1011"
+                                        },
+                                        {
+                                            "question": "Which of the following is a binary number?",
+                                            "options": ["100110", "89AB", "78", "XYZ"],
+                                            "answer": "100110"
+                                        },
+                                        {
+                                            "question": "In Boolean algebra, A + A' is always equal to?",
+                                            "options": ["0", "1", "A", "A'"],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "What is the binary equivalent of the decimal number 9?",
+                                            "options": ["1000", "1001", "1010", "1111"],
+                                            "answer": "1001"
+                                        },
+                                        {
+                                            "question": "Which number system uses digits 0-7?",
+                                            "options": ["Binary", "Decimal", "Octal", "Hexadecimal"],
+                                            "answer": "Octal"
+                                        },
+                                        {
+                                            "question": "How many bits are there in a byte?",
+                                            "options": ["4", "8", "16", "32"],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "Which Boolean law states A + 1 = 1?",
+                                            "options": ["Identity", "Nullification", "Complement", "Distributive"],
+                                            "answer": "Nullification"
+                                        },
+                                        {
+                                            "question": "Which logic gate provides an output of 1 only when both inputs are different?",
+                                            "options": ["AND", "OR", "XOR", "NOR"],
+                                            "answer": "XOR"
+                                        },
+                                        {
+                                            "question": "What is the binary representation of decimal number 15?",
+                                            "options": ["1101", "1110", "1111", "1010"],
+                                            "answer": "1111"
+                                        },
+                                        {
+                                            "question": "What is the 1's complement of 1010?",
+                                            "options": ["0101", "1001", "1100", "1111"],
+                                            "answer": "0101"
+                                        },
+                                        {
+                                            "question": "What is the hexadecimal representation of decimal number 255?",
+                                            "options": ["FF", "1F", "F0", "AA"],
+                                            "answer": "FF"
+                                        },
+                                        {
+                                            "question": "What is the octal representation of binary number 101110?",
+                                            "options": ["56", "76", "57", "64"],
+                                            "answer": "56"
+                                        },
+                                        {
+                                            "question": "What is the smallest positive integer in 2's complement 4-bit system?",
+                                            "options": ["0001", "0000", "0001", "0010"],
+                                            "answer": "0001"
+                                        },
+                                        {
+                                            "question": "Which Boolean expression represents De Morgan's Theorem?",
+                                            "options": ["(A + B)' = A'.B'", "(AB)' = A' + B'", "A + (BC) = (A + B)(A + C)", "AB + A'C = C + AB"],
+                                            "answer": "(A + B)' = A'.B'"
+                                        },
+                                        {
+                                            "question": "Which Boolean function is used to create memory circuits?",
+                                            "options": ["AND", "OR", "NOT", "NOR"],
+                                            "answer": "NOR"
+                                        },
+                                        {
+                                            "question": "In Boolean algebra, the operation A.A' results in?",
+                                            "options": ["1", "A", "0", "A'"],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "What is the result of the Boolean expression A + 1?",
+                                            "options": ["1", "A", "A'", "0"],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "In binary subtraction, what is the result of 1 - 1?",
+                                            "options": ["0", "1", "10", "11"],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "Which of the following is the correct conversion of decimal 20 to binary?",
+                                            "options": ["10100", "11001", "10010", "10001"],
+                                            "answer": "10100"
+                                        },
+                                        {
+                                            "question": "What is the hexadecimal representation of the binary number 11110000?",
+                                            "options": ["F0", "0F", "FF", "F1"],
+                                            "answer": "F0"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a valid binary number?",
+                                            "options": ["1001", "1102", "0110", "1010"],
+                                            "answer": "1102"
+                                        },
+                                        {
+                                            "question": "What is the result of the binary addition 1010 + 1101?",
+                                            "questionRead": "*Read as '1010 plus 1101 in binary'.*",
+                                            "options": ["10111", "10011", "11000", "11111"],
+                                            "answer": "10111"
+                                        },
+                                        {
+                                            "question": "Convert the decimal number 45 to binary.",
+                                            "questionRead": "*Read as 'Convert 45 to binary'.*",
+                                            "options": ["101101", "101110", "110101", "110011"],
+                                            "answer": "101101"
+                                        },
+                                        {
+                                            "question": "Find the 2's complement of the binary number 1101.",
+                                            "questionRead": "*Find the two's complement of '1101'.*",
+                                            "options": ["0010", "1110", "0101", "0011"],
+                                            "answer": "0011"
+                                        },
+                                        {
+                                            "question": "Evaluate the Boolean expression: A + A'B",
+                                            "questionRead": "*Evaluate 'A OR (A' AND B)'.*",
+                                            "options": ["A + B", "B", "A", "0"],
+                                            "answer": "A + B"
+                                        },
+                                        {
+                                            "question": "What is the result of the binary subtraction 1001 - 0110?",
+                                            "questionRead": "*Read as '1001 minus 0110 in binary'.*",
+                                            "options": ["0011", "0101", "1110", "1011"],
+                                            "answer": "0011"
+                                        },
+                                        {
+                                            "question": "Simplify the Boolean expression: (A + B)'",
+                                            "questionRead": "*Apply De Morgan's theorem to '(A + B)'*",
+                                            "options": ["A' + B'", "A'B'", "AB", "A + B"],
+                                            "answer": "A'B'"
+                                        },
+                                        {
+                                            "question": "Convert the octal number 57 to binary.",
+                                            "questionRead": "*Convert octal '57' to binary.*",
+                                            "options": ["101111", "110101", "111010", "100101"],
+                                            "answer": "101111"
+                                        },
+                                        {
+                                            "question": "What is the result of the hexadecimal addition A3 + 5F?",
+                                            "questionRead": "*Read as 'A3 plus 5F in hexadecimal'.*",
+                                            "options": ["102", "F2", "162", "B2"],
+                                            "answer": "102"
+                                        },
+                                        {
+                                            "question": "Convert the binary number 110011 to decimal.",
+                                            "questionRead": "*Convert '110011' to decimal.*",
+                                            "options": ["51", "50", "48", "45"],
+                                            "answer": "51"
+                                        },
+                                        {
+                                            "question": "Simplify the Boolean expression: AB + A'B",
+                                            "questionRead": "*Simplify 'AB + A'B' using Boolean rules.*",
+                                            "options": ["B", "A", "1", "0"],
+                                            "answer": "B"
+                                        },
+                                        {
+                                            "question": "Find the one's complement of 101100.",
+                                            "questionRead": "*Find the one's complement of '101100'.*",
+                                            "options": ["010011", "110011", "001011", "101010"],
+                                            "answer": "010011"
+                                        },
+                                        {
+                                            "question": "Convert the binary number 100110 to hexadecimal.",
+                                            "questionRead": "*Convert '100110' to hexadecimal.*",
+                                            "options": ["36", "26", "16", "96"],
+                                            "answer": "26"
+                                        },
+                                        {
+                                            "question": "Evaluate the expression: A + AB",
+                                            "questionRead": "*Evaluate 'A OR (A AND B)'.*",
+                                            "options": ["A", "B", "AB", "A + B"],
+                                            "answer": "A"
+                                        },
+                                        {
+                                            "question": "What is the result of the binary multiplication 101 x 11?",
+                                            "questionRead": "*Read as '101 multiplied by 11 in binary'.*",
+                                            "options": ["1111", "1101", "1001", "10011"],
+                                            "answer": "1111"
+                                        },
+                                        {
+                                            "question": "Convert the decimal number 255 to hexadecimal.",
+                                            "questionRead": "*Convert '255' to hexadecimal.*",
+                                            "options": ["FF", "F0", "AA", "A5"],
+                                            "answer": "FF"
+                                        },
+                                        {
+                                            "question": "Find the output of A.B + A.B' using Boolean algebra.",
+                                            "questionRead": "*Simplify 'A AND B OR A AND B complement'.*",
+                                            "options": ["A", "B", "1", "0"],
+                                            "answer": "A"
+                                        },
+                                        {
+                                            "question": "Convert the hexadecimal number 1A to decimal.",
+                                            "questionRead": "*Convert '1A' to decimal.*",
+                                            "options": ["26", "31", "18", "20"],
+                                            "answer": "26"
+                                        },
+                                        {
+                                            "question": "What is the result of (A + B)(A + C)?",
+                                            "questionRead": "*Apply distributive law to '(A + B)(A + C)'.*",
+                                            "options": ["A + BC", "A + B + C", "AB + AC", "ABC"],
+                                            "answer": "A + BC"
+                                        },
+                                        {
+                                            "question": "Find the binary representation of the octal number 72.",
+                                            "questionRead": "*Convert octal '72' to binary.*",
+                                            "options": ["111010", "110010", "100100", "100101"],
+                                            "answer": "111010"
+                                        },
+                                        {
+                                            "question": "Find the 2's complement of binary number 1001.",
+                                            "questionRead": "*Find the two's complement of '1001'.*",
+                                            "options": ["0111", "1011", "1101", "1111"],
+                                            "answer": "0111"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is the binary number system?",
+                                            "answer": "The binary number system is a base-2 numeral system that uses only two digits, 0 and 1. It is fundamental to computing as it represents off (0) and on (1) states."
+                                        },
+                                        {
+                                            "question": "How do you convert a decimal number to binary?",
+                                            "answer": "To convert a decimal number to binary, divide it by 2 repeatedly, recording remainders. Write the remainders in reverse order to get the binary equivalent."
+                                        },
+                                        {
+                                            "question": "What is the purpose of using hexadecimal numbers in computing?",
+                                            "answer": "Hexadecimal numbers (base 16) provide a compact and readable representation of binary data, simplifying memory addresses and color codes."
+                                        },
+                                        {
+                                            "question": "What is the significance of One’s and Two’s complement?",
+                                            "answer": "One's complement flips all bits of a binary number, while Two's complement adds 1 to the one's complement, simplifying arithmetic operations."
+                                        },
+                                        {
+                                            "question": "What is De Morgan's theorem in Boolean algebra?",
+                                            "answer": "De Morgan's theorem states that the complement of a sum equals the product of complements, and the complement of a product equals the sum of complements."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Data Storage Optimization in a Banking System",
+                                            "description": "A banking system processes and stores vast amounts of customer data, including account balances, transaction histories, and personal details. To improve storage efficiency and processing speed, the IT team decided to switch from decimal representation to binary and hexadecimal systems. By using hexadecimal encoding, the system reduced storage space requirements and improved data retrieval speeds.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Why did the banking system switch to hexadecimal representation?",
+                                                    "options": ["To reduce storage space", "To increase decimal accuracy", "To enhance transaction speed", "To simplify calculations"],
+                                                    "answer": "To reduce storage space"
+                                                },
+                                                {
+                                                    "question": "How many bits does a single hexadecimal digit represent?",
+                                                    "options": ["2", "4", "8", "16"],
+                                                    "answer": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Boolean Logic in Automated Traffic Control Systems",
+                                            "description": "An automated traffic control system uses Boolean logic to manage traffic lights based on input sensors detecting vehicle flow. The system implements Boolean expressions to control green and red signals efficiently. Using expressions like A + B and A.B', the system ensures smooth traffic movement and reduces congestion at intersections.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which Boolean operation is used to allow traffic from either direction?",
+                                                    "options": ["AND", "OR", "NOT", "XOR"],
+                                                    "answer": "OR"
+                                                },
+                                                {
+                                                    "question": "What does the Boolean expression A.B' indicate in the traffic control system?",
+                                                    "options": ["Allow traffic from A and B", "Allow traffic from A only if B is not active", "Block traffic from A", "Allow traffic from B only"],
+                                                    "answer": "Allow traffic from A only if B is not active"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                              
+                                },
+                                {
+                                    name: "Module 3",
+                                    id: "module-3",
+                                    mcq: [
+                                        {
+                                            "question": "**What is the primary use of Information Technology (IT)?**",
+                                            "options": [
+                                                "Entertainment",
+                                                "Data storage, retrieval, transmission, and manipulation",
+                                                "Education",
+                                                "Travel"
+                                            ],
+                                            "answer": "Data storage, retrieval, transmission, and manipulation"
+                                        },
+                                        {
+                                            "question": "**How long does the history of information technology span?**",
+                                            "options": [
+                                                "Over 1,000 years",
+                                                "Over 2,000 years",
+                                                "Over 3,000 years",
+                                                "Over 5,000 years"
+                                            ],
+                                            "answer": "Over 5,000 years"
+                                        },
+                                        {
+                                            "question": "**What does the term ‘Information Technology’ encompass according to the Macmillan Dictionary?**",
+                                            "options": [
+                                                "Only data transmission",
+                                                "Only data storage",
+                                                "Acquisition, processing, storage, and dissemination of information",
+                                                "Only computer manufacturing"
+                                            ],
+                                            "answer": "Acquisition, processing, storage, and dissemination of information"
+                                        },
+                                        {
+                                            "question": "**Which system is primarily used for record-keeping in an organization?**",
+                                            "options": [
+                                                "DSS",
+                                                "EIS",
+                                                "TPS",
+                                                "MIS"
+                                            ],
+                                            "answer": "TPS"
+                                        },
+                                        {
+                                            "question": "**What does DSS stand for in Information Systems?**",
+                                            "options": [
+                                                "Data System Services",
+                                                "Decision Support System",
+                                                "Digital Security System",
+                                                "Data Storage System"
+                                            ],
+                                            "answer": "Decision Support System"
+                                        },
+                                        {
+                                            "question": "**What does IT stand for?**",
+                                            "options": [
+                                                "Internet Technology",
+                                                "Information Technology",
+                                                "Integrated Technology",
+                                                "Intelligent Technology"
+                                            ],
+                                            "answer": "Information Technology"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of system software?**",
+                                            "options": [
+                                                "Microsoft Word",
+                                                "Google Chrome",
+                                                "Operating System",
+                                                "Photoshop"
+                                            ],
+                                            "answer": "Operating System"
+                                        },
+                                        {
+                                            "question": "**Which of the following is not a characteristic of IT?**",
+                                            "options": [
+                                                "Storage of data",
+                                                "Transmission of data",
+                                                "Physical exercise",
+                                                "Processing of data"
+                                            ],
+                                            "answer": "Physical exercise"
+                                        },
+                                        {
+                                            "question": "**What does WWW stand for?**",
+                                            "options": [
+                                                "World Web Window",
+                                                "Wide Web World",
+                                                "World Wide Web",
+                                                "Web World Wide"
+                                            ],
+                                            "answer": "World Wide Web"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of primary memory?**",
+                                            "options": [
+                                                "Hard disk",
+                                                "RAM",
+                                                "USB Drive",
+                                                "CD-ROM"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an application software?**",
+                                            "options": [
+                                                "Windows OS",
+                                                "Linux",
+                                                "Microsoft Excel",
+                                                "Android"
+                                            ],
+                                            "answer": "Microsoft Excel"
+                                        },
+                                        {
+                                            "question": "**What does an Information System (IS) primarily consist of?**",
+                                            "options": [
+                                                "People, hardware, software, data, processes",
+                                                "Just software",
+                                                "Only computers",
+                                                "Networking devices"
+                                            ],
+                                            "answer": "People, hardware, software, data, processes"
+                                        },
+                                        {
+                                            "question": "**Which of the following storage devices uses magnetic technology?**",
+                                            "options": [
+                                                "SSD",
+                                                "Hard Disk",
+                                                "CD",
+                                                "Blu-ray Disc"
+                                            ],
+                                            "answer": "Hard Disk"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an input device?**",
+                                            "options": [
+                                                "Monitor",
+                                                "Keyboard",
+                                                "Speaker",
+                                                "Printer"
+                                            ],
+                                            "answer": "Keyboard"
+                                        },
+                                        {
+                                            "question": "**What is the full form of CPU?**",
+                                            "options": [
+                                                "Central Processing Unit",
+                                                "Central Processing Utility",
+                                                "Central Performance Unit",
+                                                "Central Peripheral Unit"
+                                            ],
+                                            "answer": "Central Processing Unit"
+                                        },
+                                        {
+                                            "question": "**Which software is used to browse the internet?**",
+                                            "options": [
+                                                "Microsoft Word",
+                                                "Web Browser",
+                                                "VLC Media Player",
+                                                "Windows Explorer"
+                                            ],
+                                            "answer": "Web Browser"
+                                        },
+                                        {
+                                            "question": "**Which of the following is considered volatile memory?**",
+                                            "options": [
+                                                "Hard Disk",
+                                                "ROM",
+                                                "RAM",
+                                                "Blu-ray"
+                                            ],
+                                            "answer": "RAM"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of cloud storage?**",
+                                            "options": [
+                                                "Google Drive",
+                                                "USB Drive",
+                                                "External HDD",
+                                                "CD-ROM"
+                                            ],
+                                            "answer": "Google Drive"
+                                        },
+                                        {
+                                            "question": "**Which IT field focuses on securing digital assets?**",
+                                            "options": [
+                                                "Web Development",
+                                                "Cyber Security",
+                                                "Data Entry",
+                                                "Networking"
+                                            ],
+                                            "answer": "Cyber Security"
+                                        },
+                                        {
+                                            "question": "**What does VPN stand for?**",
+                                            "options": [
+                                                "Virtual Public Network",
+                                                "Virtual Private Network",
+                                                "Verified Private Network",
+                                                "Verified Public Network"
+                                            ],
+                                            "answer": "Virtual Private Network"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a characteristic of cloud computing?**",
+                                            "options": [
+                                                "Physical storage",
+                                                "On-demand availability",
+                                                "Manual data processing",
+                                                "Offline storage"
+                                            ],
+                                            "answer": "On-demand availability"
+                                        },
+                                        {
+                                            "question": "**Which is the most commonly used programming language in web development?**",
+                                            "options": [
+                                                "Java",
+                                                "Python",
+                                                "HTML",
+                                                "C++"
+                                            ],
+                                            "answer": "HTML"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a popular search engine?**",
+                                            "options": [
+                                                "Windows",
+                                                "Google",
+                                                "Linux",
+                                                "VLC"
+                                            ],
+                                            "answer": "Google"
+                                        },
+                                        {
+                                            "question": "**What does HTTP stand for?**",
+                                            "options": [
+                                                "Hyper Text Transfer Protocol",
+                                                "Hyperlink Transfer Process",
+                                                "High Text Transmission Protocol",
+                                                "High Transfer Text Protocol"
+                                            ],
+                                            "answer": "Hyper Text Transfer Protocol"
+                                        },
+                                        {
+                                            "question": "**Which of the following is used for business data processing?**",
+                                            "options": [
+                                                "Database Management System",
+                                                "Microsoft Paint",
+                                                "Media Player",
+                                                "Windows OS"
+                                            ],
+                                            "answer": "Database Management System"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an output device?**",
+                                            "options": [
+                                                "Keyboard",
+                                                "Mouse",
+                                                "Monitor",
+                                                "Scanner"
+                                            ],
+                                            "answer": "Monitor"
+                                        },
+                                        {
+                                            "question": "**What is the main function of an operating system?**",
+                                            "options": [
+                                                "Process management",
+                                                "Web browsing",
+                                                "Document editing",
+                                                "Game development"
+                                            ],
+                                            "answer": "Process management"
+                                        },
+                                        {
+                                            "question": "**What does SQL stand for?**",
+                                            "options": [
+                                                "Structured Question Language",
+                                                "Standard Query Language",
+                                                "Structured Query Language",
+                                                "System Query Language"
+                                            ],
+                                            "answer": "Structured Query Language"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an open-source operating system?**",
+                                            "options": [
+                                                "Windows",
+                                                "MacOS",
+                                                "Linux",
+                                                "iOS"
+                                            ],
+                                            "answer": "Linux"
+                                        },
+                                        {
+                                            "question": "**Which type of software is used to detect and remove malware?**",
+                                            "options": [
+                                                "Web browser",
+                                                "Antivirus",
+                                                "Compiler",
+                                                "Text editor"
+                                            ],
+                                            "answer": "Antivirus"
+                                        },
+                                        {
+                                            "question": "**Which device connects multiple networks and routes data between them?**",
+                                            "options": [
+                                                "Switch",
+                                                "Router",
+                                                "Hub",
+                                                "Modem"
+                                            ],
+                                            "answer": "Router"
+                                        },
+                                        {
+                                            "question": "**Which technology allows multiple virtual machines to run on a single physical machine?**",
+                                            "options": [
+                                                "Cloud computing",
+                                                "Virtualization",
+                                                "Networking",
+                                                "Data processing"
+                                            ],
+                                            "answer": "Virtualization"
+                                        },
+                                        {
+                                            "question": "**What is the function of a firewall in a computer network?**",
+                                            "options": [
+                                                "To monitor network traffic",
+                                                "To store data",
+                                                "To provide internet access",
+                                                "To protect against unauthorized access"
+                                            ],
+                                            "answer": "To protect against unauthorized access"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of a relational database management system (RDBMS)?**",
+                                            "options": [
+                                                "MongoDB",
+                                                "MySQL",
+                                                "Cassandra",
+                                                "Neo4j"
+                                            ],
+                                            "answer": "MySQL"
+                                        },
+                                        {
+                                            "question": "**Which of the following storage devices has the highest data transfer speed?**",
+                                            "options": [
+                                                "HDD",
+                                                "SSD",
+                                                "CD-ROM",
+                                                "Floppy disk"
+                                            ],
+                                            "answer": "SSD"
+                                        },
+                                        {
+                                            "question": "**What does IP in 'IP address' stand for?**",
+                                            "options": [
+                                                "Internet Protocol",
+                                                "Internet Processing",
+                                                "Internal Protocol",
+                                                "Intranet Processing"
+                                            ],
+                                            "answer": "Internet Protocol"
+                                        },
+                                        {
+                                            "question": "**Which programming language is commonly used for web development on the server side?**",
+                                            "options": [
+                                                "HTML",
+                                                "JavaScript",
+                                                "PHP",
+                                                "CSS"
+                                            ],
+                                            "answer": "PHP"
+                                        },
+                                        {
+                                            "question": "**What is the primary purpose of cloud computing?**",
+                                            "options": [
+                                                "Data storage and processing",
+                                                "Gaming",
+                                                "Graphics designing",
+                                                "Browsing the web"
+                                            ],
+                                            "answer": "Data storage and processing"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an IoT (Internet of Things) device?**",
+                                            "options": [
+                                                "Smartphone",
+                                                "Laptop",
+                                                "Smart thermostat",
+                                                "Desktop computer"
+                                            ],
+                                            "answer": "Smart thermostat"
+                                        },
+                                        {
+                                            "question": "**Which protocol is used to send emails?**",
+                                            "options": [
+                                                "FTP",
+                                                "SMTP",
+                                                "HTTP",
+                                                "TCP"
+                                            ],
+                                            "answer": "SMTP"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a widely used cloud service provider?**",
+                                            "options": [
+                                                "Microsoft Azure",
+                                                "Adobe Photoshop",
+                                                "Oracle",
+                                                "VMware"
+                                            ],
+                                            "answer": "Microsoft Azure"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of a scripting language?**",
+                                            "options": [
+                                                "C++",
+                                                "Java",
+                                                "Python",
+                                                "Assembly"
+                                            ],
+                                            "answer": "Python"
+                                        },
+                                        {
+                                            "question": "**What is the role of a database administrator (DBA)?**",
+                                            "options": [
+                                                "Develop applications",
+                                                "Manage and maintain databases",
+                                                "Design web pages",
+                                                "Analyze financial data"
+                                            ],
+                                            "answer": "Manage and maintain databases"
+                                        },
+                                        {
+                                            "question": "**Which of the following file formats is used for images?**",
+                                            "options": [
+                                                ".mp3",
+                                                ".jpg",
+                                                ".docx",
+                                                ".exe"
+                                            ],
+                                            "answer": ".jpg"
+                                        },
+                                        {
+                                            "question": "**What does GUI stand for?**",
+                                            "options": [
+                                                "Graphical User Interface",
+                                                "General User Interaction",
+                                                "Global User Interface",
+                                                "Graphics Unified Interface"
+                                            ],
+                                            "answer": "Graphical User Interface"
+                                        },
+                                        {
+                                            "question": "**Which programming language is commonly used for developing Android applications?**",
+                                            "options": [
+                                                "Python",
+                                                "Java",
+                                                "C++",
+                                                "Swift"
+                                            ],
+                                            "answer": "Java"
+                                        },
+                                        {
+                                            "question": "**What is the purpose of an IP address?**",
+                                            "options": [
+                                                "Identify a computer on a network",
+                                                "Store files",
+                                                "Encrypt data",
+                                                "Connect printers"
+                                            ],
+                                            "answer": "Identify a computer on a network"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of a real-time operating system?**",
+                                            "options": [
+                                                "Windows 10",
+                                                "Linux",
+                                                "VxWorks",
+                                                "macOS"
+                                            ],
+                                            "answer": "VxWorks"
+                                        },
+                                        {
+                                            "question": "**What does URL stand for?**",
+                                            "options": [
+                                                "Uniform Resource Locator",
+                                                "Universal Resource Link",
+                                                "Unified Remote Locator",
+                                                "User Resource Locator"
+                                            ],
+                                            "answer": "Uniform Resource Locator"
+                                        },
+                                        {
+                                            "question": "**Which of the following is a primary function of a database management system (DBMS)?**",
+                                            "options": [
+                                                "To write code",
+                                                "To store, retrieve, and manage data",
+                                                "To create graphics",
+                                                "To develop mobile applications"
+                                            ],
+                                            "answer": "To store, retrieve, and manage data"
+                                        },
+                                        {
+                                            "question": "**Which one of the following is an example of a spreadsheet software?**",
+                                            "options": [
+                                                "Microsoft Word",
+                                                "Microsoft Excel",
+                                                "Adobe Photoshop",
+                                                "Google Chrome"
+                                            ],
+                                            "answer": "Microsoft Excel"
+                                        },
+                                        {
+                                            "question": "**What type of network covers a large geographical area, such as a city or a country?**",
+                                            "options": [
+                                                "LAN",
+                                                "WAN",
+                                                "MAN",
+                                                "PAN"
+                                            ],
+                                            "answer": "WAN"
+                                        },
+                                        {
+                                            "question": "**What does the term 'phishing' refer to in cybersecurity?**",
+                                            "options": [
+                                                "A type of firewall",
+                                                "An email scam to steal personal information",
+                                                "A network protocol",
+                                                "A type of virus"
+                                            ],
+                                            "answer": "An email scam to steal personal information"
+                                        },
+                                        {
+                                            "question": "**What is the primary purpose of an antivirus software?**",
+                                            "options": [
+                                                "To clean temporary files",
+                                                "To detect and remove malware",
+                                                "To browse the internet",
+                                                "To increase processing speed"
+                                            ],
+                                            "answer": "To detect and remove malware"
+                                        },
+                                        {
+                                            "question": "**Which of the following is an example of an email protocol?**",
+                                            "options": [
+                                                "FTP",
+                                                "IMAP",
+                                                "TCP",
+                                                "DNS"
+                                            ],
+                                            "answer": "IMAP"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "**What is Information Technology (IT)?**",
+                                            "answer": "Information Technology (IT) refers to the use of computers, networks, and electronic systems to store, process, transmit, and retrieve information. It includes both hardware (physical devices) and software (applications and operating systems) that support business operations and personal use."
+                                        },
+                                        {
+                                            "question": "**What are the key applications of Information Technology?**",
+                                            "answer": "Key applications of IT include business management, healthcare, education, finance, entertainment, and communication. It helps in automating processes, improving efficiency, enabling online services, and facilitating data-driven decision-making."
+                                        },
+                                        {
+                                            "question": "**What is the role of software in IT?**",
+                                            "answer": "Software in IT acts as a set of instructions that tells a computer how to perform specific tasks. It includes system software (like operating systems), application software (such as word processors and web browsers), and utility software (such as antivirus programs)."
+                                        },
+                                        {
+                                            "question": "**What is the difference between system software and application software?**",
+                                            "answer": "System software is responsible for managing hardware and basic system operations, such as operating systems and drivers. Application software, on the other hand, helps users perform specific tasks, such as document creation, email management, and web browsing."
+                                        },
+                                        {
+                                            "question": "**What are the main types of information systems?**",
+                                            "answer": "The main types of information systems include Transaction Processing Systems (TPS) for routine transactions, Management Information Systems (MIS) for business decision-making, Decision Support Systems (DSS) for complex problem-solving, and Executive Information Systems (EIS) for strategic planning."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Implementing Information Technology in Business",
+                                            "description": "XYZ Ltd., a mid-sized retail company, is looking to improve its operational efficiency by integrating modern Information Technology (IT) solutions. The company wants to automate its inventory management, sales tracking, and customer relationship management processes. After extensive research, they decided to implement a cloud-based IT system to streamline their operations and enhance data accessibility across multiple locations.",
+                                            "mcq": [
+                                                {
+                                                    "question": "**What is the primary benefit of implementing cloud-based IT solutions in XYZ Ltd.?**",
+                                                    "options": [
+                                                        "Reduced manual workload and improved efficiency",
+                                                        "Increased physical storage requirements",
+                                                        "Limited access to data from remote locations",
+                                                        "Higher costs without any performance improvement"
+                                                    ],
+                                                    "answer": "Reduced manual workload and improved efficiency"
+                                                },
+                                                {
+                                                    "question": "**Which of the following IT components is most relevant to automating inventory management at XYZ Ltd.?**",
+                                                    "options": [
+                                                        "Customer support system",
+                                                        "Enterprise Resource Planning (ERP) software",
+                                                        "Social media management",
+                                                        "Graphic design tools"
+                                                    ],
+                                                    "answer": "Enterprise Resource Planning (ERP) software"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Cybersecurity Challenges in Financial Institutions",
+                                            "description": "ABC Bank recently faced a cybersecurity breach that compromised sensitive customer data. The breach was caused by phishing attacks and weak password policies. The management has now decided to enhance their cybersecurity infrastructure by implementing multi-factor authentication (MFA) and conducting employee cybersecurity awareness training.",
+                                            "mcq": [
+                                                {
+                                                    "question": "**What was the primary cause of the cybersecurity breach at ABC Bank?**",
+                                                    "options": [
+                                                        "Hardware failure",
+                                                        "Phishing attacks and weak password policies",
+                                                        "Software bugs",
+                                                        "Data redundancy issues"
+                                                    ],
+                                                    "answer": "Phishing attacks and weak password policies"
+                                                },
+                                                {
+                                                    "question": "**Which security measure would help in preventing unauthorized access to ABC Bank's systems?**",
+                                                    "options": [
+                                                        "Multi-factor authentication (MFA)",
+                                                        "Increased social media presence",
+                                                        "Better marketing strategies",
+                                                        "Reducing customer transactions"
+                                                    ],
+                                                    "answer": "Multi-factor authentication (MFA)"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                        
+                                },
+                                {
+                                    name: "Module 4",
+                                    id: "module-4",
+                                    mcq: [
+                                        {
+                                            "question": "What is one of the main functions of an operating system?",
+                                            "options": ["Word Processing", "Process Management", "Hardware Design", "Graphic Design"],
+                                            "answer": "Process Management"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a type of operating system?",
+                                            "options": ["Batch Processing", "Multiprogramming", "Single-User Multitasking", "Hardware Management"],
+                                            "answer": "Hardware Management"
+                                        },
+                                        {
+                                            "question": "What does batch processing in an operating system involve?",
+                                            "options": [
+                                                "Executing one job at a time interactively",
+                                                "Grouping jobs together for execution",
+                                                "Running applications in parallel",
+                                                "Using a real-time scheduler"
+                                            ],
+                                            "answer": "Grouping jobs together for execution"
+                                        },
+                                        {
+                                            "question": "What is the primary difference between multiprogramming and multitasking operating systems?",
+                                            "options": [
+                                                "Multiprogramming uses a single CPU, multitasking uses multiple CPUs",
+                                                "Multiprogramming allows multiple programs in memory; multitasking allows concurrent execution",
+                                                "Multiprogramming supports one user, multitasking supports multiple users",
+                                                "Multiprogramming is for batch jobs only, multitasking is interactive"
+                                            ],
+                                            "answer": "Multiprogramming allows multiple programs in memory; multitasking allows concurrent execution"
+                                        },
+                                        {
+                                            "question": "What defines a multi-processor operating system?",
+                                            "options": [
+                                                "An OS running on multiple computers",
+                                                "An OS capable of using multiple processors to execute tasks",
+                                                "An OS designed for handheld devices",
+                                                "An OS with a single-user interface"
+                                            ],
+                                            "answer": "An OS capable of using multiple processors to execute tasks"
+                                        },
+                                        {
+                                            "question": "What is the primary responsibility of an operating system in data communication?",
+                                            "options": [
+                                                "Managing network connections and data transfer",
+                                                "Designing network cables",
+                                                "Configuring hardware settings",
+                                                "Running office applications"
+                                            ],
+                                            "answer": "Managing network connections and data transfer"
+                                        },
+                                        {
+                                            "question": "How does a multitasking operating system improve efficiency?",
+                                            "options": [
+                                                "By executing multiple processes simultaneously",
+                                                "By storing data securely",
+                                                "By limiting the number of running applications",
+                                                "By providing a graphical user interface"
+                                            ],
+                                            "answer": "By executing multiple processes simultaneously"
+                                        },
+                                        {
+                                            "question": "Which of the following is a memory management technique used in operating systems?",
+                                            "options": [
+                                                "Paging",
+                                                "Coding",
+                                                "Rendering",
+                                                "Scheduling"
+                                            ],
+                                            "answer": "Paging"
+                                        },
+                                        {
+                                            "question": "What is the role of an operating system in process scheduling?",
+                                            "options": [
+                                                "To allocate CPU time to processes",
+                                                "To delete processes",
+                                                "To create user interfaces",
+                                                "To perform antivirus scans"
+                                            ],
+                                            "answer": "To allocate CPU time to processes"
+                                        },
+                                        {
+                                            "question": "What is a key difference between real-time and distributed operating systems?",
+                                            "options": [
+                                                "Real-time OS operates in real-time constraints; distributed OS manages multiple systems",
+                                                "Real-time OS runs only in labs; distributed OS runs in homes",
+                                                "Real-time OS uses multiple processors; distributed OS uses a single processor",
+                                                "Real-time OS is faster than distributed OS"
+                                            ],
+                                            "answer": "Real-time OS operates in real-time constraints; distributed OS manages multiple systems"
+                                        },
+                                        {
+                                            "question": "What is one of the main functions of an operating system?",
+                                            "options": ["Word Processing", "Process Management", "Hardware Design", "Graphic Design"],
+                                            "answer": "Process Management"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a type of operating system?",
+                                            "options": ["Batch Processing", "Multiprogramming", "Single-User Multitasking", "Hardware Management"],
+                                            "answer": "Hardware Management"
+                                        },
+                                        {
+                                            "question": "What does batch processing in an operating system involve?",
+                                            "options": [
+                                                "Executing one job at a time interactively",
+                                                "Grouping jobs together for execution",
+                                                "Running applications in parallel",
+                                                "Using a real-time scheduler"
+                                            ],
+                                            "answer": "Grouping jobs together for execution"
+                                        },
+                                        {
+                                            "question": "What is the primary difference between multiprogramming and multitasking operating systems?",
+                                            "options": [
+                                                "Multiprogramming uses a single CPU, multitasking uses multiple CPUs",
+                                                "Multiprogramming allows multiple programs in memory; multitasking allows concurrent execution",
+                                                "Multiprogramming supports one user, multitasking supports multiple users",
+                                                "Multiprogramming is for batch jobs only, multitasking is interactive"
+                                            ],
+                                            "answer": "Multiprogramming allows multiple programs in memory; multitasking allows concurrent execution"
+                                        },
+                                        {
+                                            "question": "What defines a multi-processor operating system?",
+                                            "options": [
+                                                "An OS running on multiple computers",
+                                                "An OS capable of using multiple processors to execute tasks",
+                                                "An OS designed for handheld devices",
+                                                "An OS with a single-user interface"
+                                            ],
+                                            "answer": "An OS capable of using multiple processors to execute tasks"
+                                        },
+                                        {
+                                            "question": "Which scheduling algorithm is commonly used in time-sharing systems?",
+                                            "options": ["FIFO", "Round-Robin", "Priority Scheduling", "Shortest Job First"],
+                                            "answer": "Round-Robin"
+                                        },
+                                        {
+                                            "question": "What is a deadlock in an operating system?",
+                                            "options": [
+                                                "A process waiting indefinitely for resources",
+                                                "The immediate termination of all processes",
+                                                "An efficient memory management technique",
+                                                "A method to allocate resources dynamically"
+                                            ],
+                                            "answer": "A process waiting indefinitely for resources"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a real-time operating system?",
+                                            "options": ["Windows 10", "macOS", "RTOS for embedded devices", "Linux Ubuntu"],
+                                            "answer": "RTOS for embedded devices"
+                                        },
+                                        {
+                                            "question": "What is the main purpose of virtual memory in an operating system?",
+                                            "options": [
+                                                "Increases the physical RAM",
+                                                "Allows running larger applications with less RAM",
+                                                "Reduces CPU load",
+                                                "Increases disk fragmentation"
+                                            ],
+                                            "answer": "Allows running larger applications with less RAM"
+                                        },
+                                        {
+                                            "question": "Which operating system feature allows a user to interact via a command-line or GUI?",
+                                            "options": ["Process Management", "User Interface", "Kernel Management", "Device Drivers"],
+                                            "answer": "User Interface"
+                                        },
+                                        {
+                                            "question": "Which system call is used to create a new process?",
+                                            "options": ["fork()", "exec()", "wait()", "exit()"],
+                                            "answer": "fork()"
+                                        },
+                                        {
+                                            "question": "What does 'thrashing' refer to in an operating system?",
+                                            "options": [
+                                                "Continuous swapping of processes in and out of memory",
+                                                "Efficient execution of tasks",
+                                                "Managing CPU scheduling",
+                                                "Network congestion"
+                                            ],
+                                            "answer": "Continuous swapping of processes in and out of memory"
+                                        },
+                                        {
+                                            "question": "Which memory management technique uses contiguous memory allocation?",
+                                            "options": ["Paging", "Segmentation", "Partitioning", "Swapping"],
+                                            "answer": "Partitioning"
+                                        },
+                                        {
+                                            "question": "What is the function of the bootloader in an operating system?",
+                                            "options": [
+                                                "Load the OS into memory",
+                                                "Manage system security",
+                                                "Handle user authentication",
+                                                "Optimize memory usage"
+                                            ],
+                                            "answer": "Load the OS into memory"
+                                        },
+                                        {
+                                            "question": "What type of OS is commonly used for mobile devices?",
+                                            "options": ["Distributed OS", "Embedded OS", "Mainframe OS", "Server OS"],
+                                            "answer": "Embedded OS"
+                                        },
+                                        {
+                                            "question": "Which of the following OS types is commonly used for high-performance computing?",
+                                            "options": ["Real-Time OS", "Server OS", "Distributed OS", "Mainframe OS"],
+                                            "answer": "Distributed OS"
+                                        },
+                                        {
+                                            "question": "Which memory management technique involves dividing memory into fixed-size units?",
+                                            "options": ["Segmentation", "Paging", "Fragmentation", "Swapping"],
+                                            "answer": "Paging"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an OS function?",
+                                            "options": ["Process management", "File management", "Hardware design", "Memory management"],
+                                            "answer": "Hardware design"
+                                        },
+                                        {
+                                            "question": "Which component of an OS handles process execution and scheduling?",
+                                            "options": ["File Manager", "Memory Manager", "Process Scheduler", "Kernel"],
+                                            "answer": "Process Scheduler"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a distributed operating system?",
+                                            "options": ["Linux", "Windows", "Apache Hadoop", "Unix"],
+                                            "answer": "Apache Hadoop"
+                                        },
+                                        {
+                                            "question": "What is the role of the kernel in an operating system?",
+                                            "options": ["Handles user interface", "Manages system resources", "Manages peripheral devices", "Provides internet services"],
+                                            "answer": "Manages system resources"
+                                        },
+                                        {
+                                            "question": "Which type of operating system provides the fastest response time?",
+                                            "options": ["Real-Time OS", "Batch OS", "Multiprogramming OS", "Network OS"],
+                                            "answer": "Real-Time OS"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a component of an operating system?",
+                                            "options": ["CPU", "Kernel", "File System", "Device Drivers"],
+                                            "answer": "CPU"
+                                        },
+                                        {
+                                            "question": "What scheduling algorithm assigns the CPU to the process with the smallest burst time?",
+                                            "options": ["FCFS", "SJF", "Round-Robin", "Priority Scheduling"],
+                                            "answer": "SJF"
+                                        },
+                                        {
+                                            "question": "What is the primary function of the device driver?",
+                                            "options": ["User authentication", "Memory management", "Enables communication with hardware", "Manages process scheduling"],
+                                            "answer": "Enables communication with hardware"
+                                        },
+                                        {
+                                            "question": "Which part of the OS handles deadlock detection and prevention?",
+                                            "options": ["Memory Manager", "File System", "Process Manager", "Deadlock Handler"],
+                                            "answer": "Deadlock Handler"
+                                        },
+                                        {
+                                            "question": "Which command is used to list all running processes in Unix/Linux?",
+                                            "options": ["ls", "ps", "rm", "pwd"],
+                                            "answer": "ps"
+                                        },
+                                        {
+                                            "question": "In which memory management technique does the OS swap data between RAM and disk?",
+                                            "options": ["Segmentation", "Paging", "Virtual Memory", "Fragmentation"],
+                                            "answer": "Virtual Memory"
+                                        },
+                                        {
+                                            "question": "Which component of the OS is responsible for allocating system resources to processes?",
+                                            "options": ["File Manager", "Resource Allocator", "Process Manager", "System Monitor"],
+                                            "answer": "Resource Allocator"
+                                        },
+                                        {
+                                            "question": "What is the primary objective of process synchronization?",
+                                            "options": ["To avoid deadlock", "To enable multitasking", "To avoid race conditions", "To manage memory"],
+                                            "answer": "To avoid race conditions"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of an open-source operating system?",
+                                            "options": ["Windows", "macOS", "Linux", "iOS"],
+                                            "answer": "Linux"
+                                        },
+                                        {
+                                            "question": "Which scheduling algorithm allocates fixed time slices to processes?",
+                                            "options": ["First Come First Serve", "Shortest Job Next", "Round-Robin", "Priority Scheduling"],
+                                            "answer": "Round-Robin"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of an embedded operating system?",
+                                            "options": ["Android", "Linux", "Windows XP", "VxWorks"],
+                                            "answer": "VxWorks"
+                                        },
+                                        {
+                                            "question": "Which of the following techniques is used to improve CPU utilization?",
+                                            "options": ["Virtual Memory", "Multiprogramming", "Swapping", "Spooling"],
+                                            "answer": "Multiprogramming"
+                                        },
+                                        {
+                                            "question": "Which of the following best describes process starvation?",
+                                            "options": [
+                                                "A process waiting indefinitely due to resource unavailability",
+                                                "A process running longer than expected",
+                                                "A process taking too much memory",
+                                                "A process blocked by another process"
+                                            ],
+                                            "answer": "A process waiting indefinitely due to resource unavailability"
+                                        },
+                                        {
+                                            "question": "What is the purpose of the bootstrapping process?",
+                                            "options": [
+                                                "To start the operating system",
+                                                "To schedule processes",
+                                                "To free up memory",
+                                                "To enable device communication"
+                                            ],
+                                            "answer": "To start the operating system"
+                                        },
+                                        {
+                                            "question": "What does the term 'context switching' refer to?",
+                                            "options": [
+                                                "Switching between different CPUs",
+                                                "Changing from one process to another",
+                                                "Modifying memory contents",
+                                                "Changing user privileges"
+                                            ],
+                                            "answer": "Changing from one process to another"
+                                        },
+                                        {
+                                            "question": "Which of the following refers to the ability of an OS to run multiple tasks at the same time?",
+                                            "options": ["Multiprocessing", "Multitasking", "Multithreading", "Multiuser"],
+                                            "answer": "Multitasking"
+                                        },
+                                        {
+                                            "question": "What is the function of the memory management unit (MMU)?",
+                                            "options": [
+                                                "Handles CPU scheduling",
+                                                "Translates virtual addresses to physical addresses",
+                                                "Manages device drivers",
+                                                "Performs error detection"
+                                            ],
+                                            "answer": "Translates virtual addresses to physical addresses"
+                                        },
+                                        {
+                                            "question": "Which component of an OS is responsible for controlling I/O operations?",
+                                            "options": ["Kernel", "Shell", "Device Manager", "Memory Manager"],
+                                            "answer": "Device Manager"
+                                        },
+                                        {
+                                            "question": "Which of the following is responsible for converting user commands into instructions that the OS can understand?",
+                                            "options": ["Kernel", "Command Interpreter", "Scheduler", "Device Driver"],
+                                            "answer": "Command Interpreter"
+                                        },
+                                        {
+                                            "question": "What is the primary function of an interrupt in an operating system?",
+                                            "options": [
+                                                "To stop the execution of the current process",
+                                                "To allow a process to use I/O devices",
+                                                "To signal the processor to handle a high-priority task",
+                                                "To allocate memory to processes"
+                                            ],
+                                            "answer": "To signal the processor to handle a high-priority task"
+                                        },
+                                        {
+                                            "question": "Which file system is commonly used by Windows operating systems?",
+                                            "options": ["NTFS", "EXT4", "FAT32", "HFS+"],
+                                            "answer": "NTFS"
+                                        },
+                                        {
+                                            "question": "What does the acronym 'CPU' stand for?",
+                                            "options": [
+                                                "Central Processing Unit",
+                                                "Control Processing Unit",
+                                                "Central Peripheral Unit",
+                                                "Computer Processing Unit"
+                                            ],
+                                            "answer": "Central Processing Unit"
+                                        },
+                                        {
+                                            "question": "Which of the following terms is used to describe the running instance of a program?",
+                                            "options": ["Process", "Thread", "Kernel", "Module"],
+                                            "answer": "Process"
+                                        },
+                                        {
+                                            "question": "Which operating system is known for its open-source and multi-user capabilities?",
+                                            "options": ["Windows", "macOS", "Linux", "DOS"],
+                                            "answer": "Linux"
+                                        },
+                                        {
+                                            "question": "Which memory management technique divides the memory into fixed-size blocks?",
+                                            "options": ["Paging", "Segmentation", "Compaction", "Swapping"],
+                                            "answer": "Paging"
+                                        },
+                                        {
+                                            "question": "In which OS environment can multiple users access the system simultaneously?",
+                                            "options": ["Single-User", "Multi-User", "Embedded", "Real-Time"],
+                                            "answer": "Multi-User"
+                                        },
+                                        {
+                                            "question": "What is the main function of a shell in an operating system?",
+                                            "options": [
+                                                "Managing CPU scheduling",
+                                                "Providing user interaction with the OS",
+                                                "Handling I/O operations",
+                                                "Memory management"
+                                            ],
+                                            "answer": "Providing user interaction with the OS"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a command-line operating system?",
+                                            "options": ["Windows", "Linux Terminal", "Android", "iOS"],
+                                            "answer": "Linux Terminal"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What are the key functions of an operating system?",
+                                            "answer": "The key functions of an operating system include process management, memory management, file system management, device management, and providing a user interface. It ensures efficient utilization of system resources and enables users to interact with the system through a graphical or command-line interface."
+                                        },
+                                        {
+                                            "question": "What is a real-time operating system (RTOS)?",
+                                            "answer": "A real-time operating system (RTOS) is designed to process data and execute tasks within a defined time constraint. It is commonly used in applications requiring precise timing, such as embedded systems, robotics, and medical devices. RTOS provides predictable response times and ensures task scheduling based on priority."
+                                        },
+                                        {
+                                            "question": "What is the purpose of process scheduling in an operating system?",
+                                            "answer": "Process scheduling is the function of an operating system that determines the order in which processes are executed by the CPU. It ensures fair allocation of resources, reduces response time, and maximizes CPU utilization. Common scheduling algorithms include First-Come-First-Serve (FCFS), Round-Robin, and Shortest Job Next (SJN)."
+                                        },
+                                        {
+                                            "question": "What is the difference between multiprogramming and multitasking?",
+                                            "answer": "Multiprogramming allows multiple programs to reside in memory and execute concurrently, improving CPU utilization by switching between processes. Multitasking, on the other hand, enables users to run multiple tasks simultaneously by rapidly switching between them, giving the illusion of parallel execution."
+                                        },
+                                        {
+                                            "question": "What are the main types of memory management techniques used in operating systems?",
+                                            "answer": "The main memory management techniques include paging, segmentation, and virtual memory. Paging divides memory into fixed-size blocks to prevent fragmentation, while segmentation divides memory based on logical units. Virtual memory allows processes to execute even if they do not fit entirely in physical memory by using disk space as an extension."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study: Operating System Selection for a Banking System",
+                                            "description": "A large bank is planning to upgrade its computer systems to improve transaction processing and security. They need an operating system that can handle multiple transactions concurrently, provide real-time processing, and offer robust security features. The bank's IT team is considering options like Linux, Windows Server, and a real-time operating system (RTOS) to manage their workload efficiently.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which type of operating system is best suited for the bank’s requirement of real-time transaction processing?",
+                                                    "options": ["Batch Processing OS", "Real-Time OS", "Single-User OS", "Distributed OS"],
+                                                    "answer": "Real-Time OS"
+                                                },
+                                                {
+                                                    "question": "Which of the following features is critical for ensuring security in a banking operating system?",
+                                                    "options": ["User authentication and access control", "Graphical User Interface", "Gaming support", "File sharing capabilities"],
+                                                    "answer": "User authentication and access control"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study: Managing Resources in a University Computer Lab",
+                                            "description": "A university computer lab is used by multiple students to run various applications simultaneously. The lab requires an operating system that can efficiently manage resources like CPU, memory, and I/O devices while allowing students to run their programs without delays. The lab administrator is considering multiprogramming and multitasking operating systems to achieve better resource utilization.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which type of operating system would be most appropriate for the university lab’s needs?",
+                                                    "options": ["Single-tasking OS", "Multiprogramming OS", "Embedded OS", "Real-Time OS"],
+                                                    "answer": "Multiprogramming OS"
+                                                },
+                                                {
+                                                    "question": "What is the main advantage of using a multitasking operating system in the lab?",
+                                                    "options": ["Allows multiple users to log in at once", "Enables multiple processes to run concurrently", "Increases hardware lifespan", "Provides real-time execution"],
+                                                    "answer": "Enables multiple processes to run concurrently"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                   
+                                },
+                                {
+                                    name: "Module 5",
+                                    id: "module-5",
+                                    mcq: [
+                                        {
+                                            "question": "What does OOP stand for in programming?",
+                                            "options": [
+                                                "Object-Oriented Programming",
+                                                "Overloaded Operator Processing",
+                                                "Original Object Processing",
+                                                "Optimal Object Programming"
+                                            ],
+                                            "answer": "Object-Oriented Programming"
+                                        },
+                                        {
+                                            "question": "What is the main advantage of using functions in programming?",
+                                            "options": [
+                                                "To improve code readability and reusability",
+                                                "To increase program size",
+                                                "To avoid using variables",
+                                                "To compile faster"
+                                            ],
+                                            "answer": "To improve code readability and reusability"
+                                        },
+                                        {
+                                            "question": "Which of the following is a low-level programming language?",
+                                            "options": [
+                                                "Python",
+                                                "Assembly",
+                                                "Java",
+                                                "C#"
+                                            ],
+                                            "answer": "Assembly"
+                                        },
+                                        {
+                                            "question": "Which symbol is used to denote comments in C++?",
+                                            "options": [
+                                                "//",
+                                                "/* */",
+                                                "#",
+                                                "--"
+                                            ],
+                                            "answer": "//"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a fundamental programming construct?",
+                                            "options": [
+                                                "Sequence",
+                                                "Selection",
+                                                "Iteration",
+                                                "Duplication"
+                                            ],
+                                            "answer": "Duplication"
+                                        },
+                                        {
+                                            "question": "What is the purpose of an algorithm?",
+                                            "options": [
+                                                "To solve a problem step by step",
+                                                "To compile a program",
+                                                "To create a flowchart",
+                                                "To execute a program"
+                                            ],
+                                            "answer": "To solve a problem step by step"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a high-level programming language?",
+                                            "options": [
+                                                "Machine Code",
+                                                "Assembly",
+                                                "C++",
+                                                "Binary"
+                                            ],
+                                            "answer": "C++"
+                                        },
+                                        {
+                                            "question": "Which keyword is used to define a function in C++?",
+                                            "options": [
+                                                "define",
+                                                "func",
+                                                "void",
+                                                "function"
+                                            ],
+                                            "answer": "void"
+                                        },
+                                        {
+                                            "question": "What is the output of 5 + 3 * 2 in C++?",
+                                            "options": [
+                                                "16",
+                                                "11",
+                                                "10",
+                                                "13"
+                                            ],
+                                            "answer": "11"
+                                        },
+                                        {
+                                            "question": "Which of the following is true about a flowchart?",
+                                            "options": [
+                                                "It is used to design algorithms",
+                                                "It is a programming language",
+                                                "It compiles code",
+                                                "It executes programs"
+                                            ],
+                                            "answer": "It is used to design algorithms"
+                                        },
+                                        {
+                                            "question": "What is an advantage of pseudocode in programming?",
+                                            "options": [
+                                                "It provides a way to execute code directly",
+                                                "It allows precise hardware control",
+                                                "It helps in planning and structuring the program logic",
+                                                "It optimizes code execution speed"
+                                            ],
+                                            "answer": "It helps in planning and structuring the program logic"
+                                        },
+                                        {
+                                            "question": "Which of the following represents sequence logic in programming?",
+                                            "options": [
+                                                "Executing statements one after another",
+                                                "Using if-else conditions",
+                                                "Using loops to repeat operations",
+                                                "Calling recursive functions"
+                                            ],
+                                            "answer": "Executing statements one after another"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a commonly used programming language?",
+                                            "options": [
+                                                "Python",
+                                                "JavaScript",
+                                                "HTML",
+                                                "MS Word"
+                                            ],
+                                            "answer": "MS Word"
+                                        },
+                                        {
+                                            "question": "What is the first step in writing a basic program?",
+                                            "options": [
+                                                "Compile the program",
+                                                "Write pseudocode or an algorithm",
+                                                "Execute the program",
+                                                "Debug the program"
+                                            ],
+                                            "answer": "Write pseudocode or an algorithm"
+                                        },
+                                        {
+                                            "question": "Why is debugging important in programming?",
+                                            "options": [
+                                                "It helps in fixing errors and improving code reliability",
+                                                "It increases the program size",
+                                                "It speeds up execution time",
+                                                "It automatically generates code"
+                                            ],
+                                            "answer": "It helps in fixing errors and improving code reliability"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an object-oriented programming concept?",
+                                            "options": [
+                                                "Encapsulation",
+                                                "Inheritance",
+                                                "Compilation",
+                                                "Polymorphism"
+                                            ],
+                                            "answer": "Compilation"
+                                        },
+                                        {
+                                            "question": "Which of the following is a characteristic of an algorithm?",
+                                            "options": [
+                                                "Ambiguity",
+                                                "Infinite steps",
+                                                "Definiteness",
+                                                "Randomness"
+                                            ],
+                                            "answer": "Definiteness"
+                                        },
+                                        {
+                                            "question": "What does a flowchart primarily represent?",
+                                            "options": [
+                                                "A step-by-step process",
+                                                "A database schema",
+                                                "A user interface",
+                                                "A hardware configuration"
+                                            ],
+                                            "answer": "A step-by-step process"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a programming paradigm?",
+                                            "options": [
+                                                "Procedural",
+                                                "Functional",
+                                                "Logical",
+                                                "Relational"
+                                            ],
+                                            "answer": "Relational"
+                                        },
+                                        {
+                                            "question": "What does the 'if' statement do in programming?",
+                                            "options": [
+                                                "Iterates over a set of statements",
+                                                "Executes code conditionally",
+                                                "Defines a function",
+                                                "Declares a variable"
+                                            ],
+                                            "answer": "Executes code conditionally"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a valid data type in C++?",
+                                            "options": [
+                                                "int",
+                                                "float",
+                                                "boolean",
+                                                "real"
+                                            ],
+                                            "answer": "real"
+                                        },
+                                        {
+                                            "question": "What is the purpose of a loop in programming?",
+                                            "options": [
+                                                "To execute a block of code multiple times",
+                                                "To store data",
+                                                "To define functions",
+                                                "To handle exceptions"
+                                            ],
+                                            "answer": "To execute a block of code multiple times"
+                                        },
+                                        {
+                                            "question": "Which of the following is a valid C++ loop structure?",
+                                            "options": [
+                                                "for",
+                                                "loop",
+                                                "repeat",
+                                                "goto"
+                                            ],
+                                            "answer": "for"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of an iterative control structure?",
+                                            "options": [
+                                                "If-else",
+                                                "Switch-case",
+                                                "For-loop",
+                                                "Function call"
+                                            ],
+                                            "answer": "For-loop"
+                                        },
+                                        {
+                                            "question": "Which statement is used to exit a loop prematurely in C++?",
+                                            "options": [
+                                                "return",
+                                                "break",
+                                                "exit",
+                                                "continue"
+                                            ],
+                                            "answer": "break"
+                                        },
+                                        {
+                                            "question": "What is the correct syntax for declaring an integer variable in C++?",
+                                            "options": [
+                                                "int x;",
+                                                "integer x;",
+                                                "var x = int;",
+                                                "x : int;"
+                                            ],
+                                            "answer": "int x;"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a valid looping structure in C++?",
+                                            "options": [
+                                                "for",
+                                                "while",
+                                                "do-while",
+                                                "repeat-until"
+                                            ],
+                                            "answer": "repeat-until"
+                                        },
+                                        {
+                                            "question": "What is the primary purpose of pseudocode?",
+                                            "options": [
+                                                "To execute code",
+                                                "To design algorithms",
+                                                "To debug programs",
+                                                "To define databases"
+                                            ],
+                                            "answer": "To design algorithms"
+                                        },
+                                        {
+                                            "question": "Which of the following loops is guaranteed to execute at least once?",
+                                            "options": [
+                                                "for loop",
+                                                "while loop",
+                                                "do-while loop",
+                                                "infinite loop"
+                                            ],
+                                            "answer": "do-while loop"
+                                        },
+                                        {
+                                            "question": "What is the correct term for a mistake in a program that causes incorrect results?",
+                                            "options": [
+                                                "Syntax error",
+                                                "Logical error",
+                                                "Runtime error",
+                                                "Compilation error"
+                                            ],
+                                            "answer": "Logical error"
+                                        },
+                                        {
+                                            "question": "Which of the following operators is used for logical AND in C++?",
+                                            "options": [
+                                                "&",
+                                                "&&",
+                                                "||",
+                                                "!"
+                                            ],
+                                            "answer": "&&"
+                                        },
+                                        {
+                                            "question": "Which function is used to print output in C++?",
+                                            "options": [
+                                                "print()",
+                                                "cout",
+                                                "printf",
+                                                "display"
+                                            ],
+                                            "answer": "cout"
+                                        },
+                                        {
+                                            "question": "What does the 'continue' statement do in a loop?",
+                                            "options": [
+                                                "Terminates the loop",
+                                                "Skips the current iteration",
+                                                "Exits the program",
+                                                "Resumes from the start of the loop"
+                                            ],
+                                            "answer": "Skips the current iteration"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a feature of object-oriented programming?",
+                                            "options": [
+                                                "Encapsulation",
+                                                "Polymorphism",
+                                                "Abstraction",
+                                                "Compilation"
+                                            ],
+                                            "answer": "Compilation"
+                                        },
+                                        {
+                                            "question": "Which of the following best describes the role of an algorithm?",
+                                            "options": [
+                                                "A structured step-by-step solution to a problem",
+                                                "A piece of hardware",
+                                                "A programming language",
+                                                "A collection of databases"
+                                            ],
+                                            "answer": "A structured step-by-step solution to a problem"
+                                        },
+                                        {
+                                            "question": "What will be the output of the following C++ code?",
+                                            "codeBlock": "int x = 5;\\ncout << x++ << ' ' << ++x;",
+                                            "language": "cpp",
+                                            "options": [
+                                                "5 6",
+                                                "5 7",
+                                                "6 7",
+                                                "6 6"
+                                            ],
+                                            "answer": "5 7"
+                                        },
+                                        {
+                                            "question": "What will the following C++ code print?",
+                                            "codeBlock": "int a = 10, b = 20;\\ncout << (a > b ? a : b);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "10",
+                                                "20",
+                                                "true",
+                                                "false"
+                                            ],
+                                            "answer": "20"
+                                        },
+                                        {
+                                            "question": "What will the following loop output?",
+                                            "codeBlock": "for(int i = 0; i < 5; i++)\\n    cout << i << ' ';",
+                                            "language": "cpp",
+                                            "options": [
+                                                "0 1 2 3 4",
+                                                "1 2 3 4 5",
+                                                "0 1 2 3 4 5",
+                                                "0 1 2 3"
+                                            ],
+                                            "answer": "0 1 2 3 4"
+                                        },
+                                        {
+                                            "question": "What is the output of the following code?",
+                                            "codeBlock": "int x = 3;\\nint y = x << 1;\\ncout << y;",
+                                            "language": "cpp",
+                                            "options": [
+                                                "3",
+                                                "6",
+                                                "9",
+                                                "1"
+                                            ],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "What will be the value of `result` after executing this code?",
+                                            "codeBlock": "int result = 5 * (2 + 3);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "10",
+                                                "25",
+                                                "15",
+                                                "20"
+                                            ],
+                                            "answer": "25"
+                                        },
+                                        {
+                                            "question": "What does the following code snippet output?",
+                                            "codeBlock": "int x = 7;\\ncout << (x % 2 == 0 ? \"Even\" : \"Odd\");",
+                                            "language": "cpp",
+                                            "options": [
+                                                "Even",
+                                                "Odd",
+                                                "True",
+                                                "False"
+                                            ],
+                                            "answer": "Odd"
+                                        },
+                                        {
+                                            "question": "What will be the output of this loop?",
+                                            "codeBlock": "int i = 1;\\nwhile(i <= 3)\\n{\\n    cout << i;\\n    i++;\\n}",
+                                            "language": "cpp",
+                                            "options": [
+                                                "123",
+                                                "0123",
+                                                "111",
+                                                "Infinite Loop"
+                                            ],
+                                            "answer": "123"
+                                        },
+                                        {
+                                            "question": "What is the output of the following function call?",
+                                            "codeBlock": "void fun(int &x) { x = 20; }\\nint a = 10;\\nfun(a);\\ncout << a;",
+                                            "language": "cpp",
+                                            "options": [
+                                                "10",
+                                                "20",
+                                                "0",
+                                                "Compilation Error"
+                                            ],
+                                            "answer": "20"
+                                        },
+                                        {
+                                            "question": "What will be printed by this recursive function?",
+                                            "codeBlock": "void print(int n) {\\n   if(n > 0) {\\n       cout << n;\\n       print(n - 1);\\n   }\\n}\\nprint(3);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "321",
+                                                "123",
+                                                "333",
+                                                "000"
+                                            ],
+                                            "answer": "321"
+                                        },
+                                        {
+                                            "question": "What will the following program output?",
+                                            "codeBlock": "int x = 5, y = 10;\\nswap(x, y);\\ncout << x << ' ' << y;",
+                                            "language": "cpp",
+                                            "options": [
+                                                "5 10",
+                                                "10 5",
+                                                "Compilation Error",
+                                                "Undefined Behavior"
+                                            ],
+                                            "answer": "Compilation Error"
+                                        },
+                                        {
+                                            "question": "What is the output of this C++ code snippet?",
+                                            "codeBlock": "string str = \"Hello\";\\ncout << str.length();",
+                                            "language": "cpp",
+                                            "options": [
+                                                "5",
+                                                "6",
+                                                "Hello",
+                                                "Compilation Error"
+                                            ],
+                                            "answer": "5"
+                                        },
+                                        {
+                                            "question": "What does the following code do?",
+                                            "codeBlock": "int arr[5] = {1, 2, 3, 4, 5};\\ncout << arr[2];",
+                                            "language": "cpp",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "3"
+                                        },
+                                        {
+                                            "question": "What will the output of the following code be?",
+                                            "codeBlock": "int a = 10, b = 20;\\ncout << (a == b);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "0",
+                                                "1",
+                                                "true",
+                                                "false"
+                                            ],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "What is the value of x after the following code runs?",
+                                            "codeBlock": "int x = 10;\\nx += 5;\\ncout << x;",
+                                            "language": "cpp",
+                                            "options": [
+                                                "10",
+                                                "15",
+                                                "5",
+                                                "Compilation Error"
+                                            ],
+                                            "answer": "15"
+                                        },
+                                        {
+                                            "question": "What will the output of this do-while loop be?",
+                                            "codeBlock": "int i = 1;\\ndo { cout << i; i++; } while (i <= 3);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "123",
+                                                "0123",
+                                                "111",
+                                                "Infinite Loop"
+                                            ],
+                                            "answer": "123"
+                                        },
+                                        {
+                                            "question": "What will be the output of the following code snippet?",
+                                            "codeBlock": "int i = 0;\\ndo {\\n   cout << i;\\n} while (i > 0);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "0",
+                                                "1",
+                                                "Compilation Error",
+                                                "No Output"
+                                            ],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "What is the output of this function call?",
+                                            "codeBlock": "void display(int a = 10) { cout << a; }\\ndisplay();",
+                                            "language": "cpp",
+                                            "options": [
+                                                "10",
+                                                "0",
+                                                "Compilation Error",
+                                                "Undefined"
+                                            ],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "What does the following code return?",
+                                            "codeBlock": "bool isEven(int x) { return x % 2 == 0; }\\ncout << isEven(4);",
+                                            "language": "cpp",
+                                            "options": [
+                                                "0",
+                                                "1",
+                                                "true",
+                                                "false"
+                                            ],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "What will be the output of this code?",
+                                            "codeBlock": "int x = 0;\\nif (x)\\n    cout << \"True\";\\nelse\\n    cout << \"False\";",
+                                            "language": "cpp",
+                                            "options": [
+                                                "True",
+                                                "False",
+                                                "Compilation Error",
+                                                "Undefined"
+                                            ],
+                                            "answer": "False"
+                                        }
+                                    ]
+                                                                        
+                                    ,                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is an algorithm?",
+                                            "answer": "An algorithm is a step-by-step procedure for solving a problem or performing a task. It consists of a sequence of well-defined instructions that lead to a desired outcome."
+                                        },
+                                        {
+                                            "question": "What are the key features of object-oriented programming (OOP)?",
+                                            "answer": "The key features of OOP are encapsulation, inheritance, polymorphism, and abstraction. These principles help in creating modular, reusable, and maintainable code."
+                                        },
+                                        {
+                                            "question": "What is the purpose of using pseudocode in programming?",
+                                            "answer": "Pseudocode is used to design algorithms in a human-readable format before writing actual code. It helps programmers focus on logic without worrying about syntax."
+                                        },
+                                        {
+                                            "question": "What are the different types of control structures in programming?",
+                                            "answer": "The three main control structures are sequence (executing statements in order), selection (decision-making using if-else and switch), and iteration (loops such as for, while, do-while)."
+                                        },
+                                        {
+                                            "question": "Why are flowcharts important in programming?",
+                                            "answer": "Flowcharts provide a visual representation of an algorithm or process, making it easier to understand, debug, and communicate logic among team members."
+                                        }
+                                    ]
+                                    ,
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Algorithm Design for a Banking Application",
+                                            "description": "ABC Bank wants to develop an automated system for processing customer loan applications. The system should take customer details, verify eligibility criteria using an algorithm, and decide whether the loan can be approved. The algorithm follows a sequence of steps: collecting data, checking eligibility conditions, and providing an approval or rejection message. The flowchart representation of this process helps visualize the workflow for developers.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which of the following is the primary benefit of using flowcharts in the banking system development?",
+                                                    "options": [
+                                                        "It reduces programming complexity",
+                                                        "It eliminates the need for testing",
+                                                        "It makes the software faster",
+                                                        "It improves hardware performance"
+                                                    ],
+                                                    "answer": "It reduces programming complexity"
+                                                },
+                                                {
+                                                    "question": "What control structure is primarily used in the loan approval algorithm?",
+                                                    "options": [
+                                                        "Sequence",
+                                                        "Selection",
+                                                        "Iteration",
+                                                        "Recursion"
+                                                    ],
+                                                    "answer": "Selection"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Pseudocode for an E-commerce Order Processing System",
+                                            "description": "XYZ E-commerce wants to optimize their order processing by defining the logic in pseudocode before implementation. The pseudocode includes steps for checking product availability, processing payment, and generating an invoice. By using pseudocode, developers can ensure that all edge cases are considered before actual coding.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is the primary advantage of using pseudocode in the order processing system?",
+                                                    "options": [
+                                                        "It provides a detailed, syntax-free algorithm",
+                                                        "It speeds up code execution",
+                                                        "It acts as a programming language",
+                                                        "It eliminates the need for debugging"
+                                                    ],
+                                                    "answer": "It provides a detailed, syntax-free algorithm"
+                                                },
+                                                {
+                                                    "question": "Which step should come first in the order processing pseudocode?",
+                                                    "options": [
+                                                        "Generate invoice",
+                                                        "Check product availability",
+                                                        "Process payment",
+                                                        "Ship the order"
+                                                    ],
+                                                    "answer": "Check product availability"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                                                                                            
                                 }
                             ]
                         }

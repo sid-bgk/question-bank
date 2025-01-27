@@ -9,6 +9,7 @@ interface CaseStudyProps {
     language?: string;
     mcq: {
       question: string;
+      questionRead?: string;
       options: string[];
       answer: string;
       codeBlock?: string;

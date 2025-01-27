@@ -2,10 +2,12 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { CodeBlock } from "./CodeBlock";
 import { AutoSelectToggle } from "./AuoSelectToggle";
+import QuestionRead from "./QuestionRead";
 
 interface MCQComponentProps {
   mcqs: {
     question: string;
+    questionRead?: string;
     codeBlock?: string;
     language?: string;
     options: string[];
@@ -37,7 +39,7 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
       mcqs.forEach((q, index) => {
         newSelectedOptions[index] = q.answer;
       });
-      setFeedback({}); // Clear feedback when auto-select is on
+      setFeedback({});
       setSelectedOptions(newSelectedOptions);
     } else {
       setFeedback({});
@@ -54,9 +56,12 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
 
       {mcqs.map((q, index) => (
         <div key={index} className="mb-6">
-          <h3 className="text-lg font-semibold">
-            Q{index + 1}: <ReactMarkdown>{q.question}</ReactMarkdown>
+          <h3 className="text-lg font-semibold flex items-center">
+            <span className="mr-2">Q{index + 1}:</span>
+            <ReactMarkdown className="inline">{q.question}</ReactMarkdown>
           </h3>
+
+          {q.questionRead && <QuestionRead content={q.questionRead} />}
 
           {q.codeBlock && <CodeBlock code={q.codeBlock} language={q.language} />}
 
