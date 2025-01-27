@@ -5496,6 +5496,1467 @@ export const questionBank = {
                                         }
                                     ]
                                                                                                               
+                                },
+                                {
+                                    name: "Module 3",
+                                    id: "module-3",
+                                    mcq: [
+                                        {
+                                            "question": "Evaluation must be carried out throughout the design life cycle.",
+                                            "options": ["True", "False"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "Evaluation is divided into _____________ main goals.",
+                                            "options": ["One", "Two", "Three", "Four"],
+                                            "answer": "Three"
+                                        },
+                                        {
+                                            "question": "Evaluation techniques are of _____________ types.",
+                                            "options": ["One", "Two", "Three", "Four"],
+                                            "answer": "Two"
+                                        },
+                                        {
+                                            "question": "Expert analysis consists of _____________.",
+                                            "options": [
+                                                "Cognitive walkthrough",
+                                                "Heuristic Evaluation",
+                                                "The use of models",
+                                                "Use of previous work"
+                                            ],
+                                            "answer": "Cognitive walkthrough, Heuristic Evaluation, The use of models, Use of previous work"
+                                        },
+                                        {
+                                            "question": "Cognitive walkthrough was proposed by _____________.",
+                                            "options": [
+                                                "Jakob Nielsen and Rolf Molich",
+                                                "Polson and colleagues",
+                                                "Ben Shneiderman",
+                                                "Alan Cooper"
+                                            ],
+                                            "answer": "Polson and colleagues"
+                                        },
+                                        {
+                                            "question": "Users prefer to learn the system by exploring its functionality by training or manual rather than hands-on.",
+                                            "options": ["True", "False"],
+                                            "answer": "False"
+                                        },
+                                        {
+                                            "question": "Heuristic evaluation was developed by _____________.",
+                                            "options": [
+                                                "Jakob Nielsen and Rolf Molich",
+                                                "Donald Norman",
+                                                "Alan Cooper",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Jakob Nielsen and Rolf Molich"
+                                        },
+                                        {
+                                            "question": "Evaluator can provide severity rating on a scale of _____________.",
+                                            "options": ["0-3", "0-4", "1-3", "1-4"],
+                                            "answer": "0-4"
+                                        },
+                                        {
+                                            "question": "If the system has to be located in dangerous locations then _____________ studies is the good option.",
+                                            "options": ["Laboratory", "Field"],
+                                            "answer": "Laboratory"
+                                        },
+                                        {
+                                            "question": " _____________ study is preferable than _____________ studies because it allows to study interaction which occurs in real time.",
+                                            "options": ["Field, lab", "Lab, field", "Both of them", "None of them"],
+                                            "answer": "Field, lab"
+                                        },
+                                        {
+                                            "question": "Experiments change and manipulate the _____________ under controlled conditions.",
+                                            "options": ["Variables", "Participants", "Hypotheses", "Design"],
+                                            "answer": "Variables"
+                                        },
+                                        {
+                                            "question": "_____________ variables are those which can be changed whereas _____________ variables are those that can be measured.",
+                                            "options": ["Independent, dependent", "Dependent, independent"],
+                                            "answer": "Independent, dependent"
+                                        },
+                                        {
+                                            "question": "_____________ is the prediction of the outcome of an experiment.",
+                                            "options": ["Variables", "Participants", "Hypotheses", "Design"],
+                                            "answer": "Hypotheses"
+                                        },
+                                        {
+                                            "question": "In experimental condition, variables have been changed.",
+                                            "options": ["True", "False"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "Interview follows ______________ approach.",
+                                            "options": ["Top-down", "Bottom-up", "None of them", "Both of them"],
+                                            "answer": "Top-down"
+                                        },
+                                        {
+                                            "question": "_____________ technique is less flexible than _____________ technique.",
+                                            "options": ["Questionnaires, interview", "Interview, questionnaires"],
+                                            "answer": "Questionnaires, interview"
+                                        },
+                                        {
+                                            "question": "_____________ type of questions provide predefined responses to the respondent.",
+                                            "options": ["Scalar", "Ranked", "Multi-choice", "Open-ended"],
+                                            "answer": "Multi-choice"
+                                        },
+                                        {
+                                            "question": "Blood pressure, volume, and pulses indicate _____________.",
+                                            "options": [
+                                                "Electrical activity in muscles",
+                                                "Electrical activity in brain",
+                                                "Activity of sweat glands",
+                                                "None of them"
+                                            ],
+                                            "answer": "None of them"
+                                        },
+                                        {
+                                            "question": "_____________ activity is measured by electromyogram.",
+                                            "options": [
+                                                "Electrical activity in muscles",
+                                                "Electrical activity in brain",
+                                                "Activity of sweat glands",
+                                                "None of them"
+                                            ],
+                                            "answer": "Electrical activity in muscles"
+                                        },{
+                                            "question": "Which of the following is NOT a type of evaluation technique?",
+                                            "options": ["Expert Analysis", "User Participation", "System Testing", "Physiological Monitoring"],
+                                            "answer": "System Testing"
+                                        },
+                                        {
+                                            "question": "Who developed the heuristic evaluation technique?",
+                                            "options": ["Ben Shneiderman", "Polson and colleagues", "Jakob Nielsen and Rolf Molich", "Donald Norman"],
+                                            "answer": "Jakob Nielsen and Rolf Molich"
+                                        },
+                                        {
+                                            "question": "Which technique uses task decomposition to understand user interaction?",
+                                            "options": ["Observational Techniques", "Hierarchical Task Analysis", "Query Techniques", "Heuristic Evaluation"],
+                                            "answer": "Hierarchical Task Analysis"
+                                        },
+                                        {
+                                            "question": "Which type of study provides controlled experiments in a specialized setting?",
+                                            "options": ["Field Study", "Laboratory Study", "Observational Study", "Query Technique"],
+                                            "answer": "Laboratory Study"
+                                        },
+                                        {
+                                            "question": "Evaluation must be carried out throughout the design life cycle.",
+                                            "options": ["True", "False"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "Evaluation is divided into _____________ main goals.",
+                                            "options": ["One", "Two", "Three", "Four"],
+                                            "answer": "Three"
+                                        },
+                                        {
+                                            "question": "Evaluation techniques are of _____________ types.",
+                                            "options": ["One", "Two", "Three", "Four"],
+                                            "answer": "Two"
+                                        },
+                                        {
+                                            "question": "Which heuristic principle states that the system should always keep users informed?",
+                                            "options": ["Error prevention", "Consistency and standards", "Visibility of system status", "Help and documentation"],
+                                            "answer": "Visibility of system status"
+                                        },
+                                        {
+                                            "question": "Which method involves monitoring user's physiological responses during system interaction?",
+                                            "options": ["Heuristic Evaluation", "Cognitive Walkthrough", "Empirical Methods", "Physiological Monitoring"],
+                                            "answer": "Physiological Monitoring"
+                                        },
+                                        {
+                                            "question": "What is the main purpose of empirical evaluation?",
+                                            "options": ["To collect subjective feedback", "To conduct controlled experiments", "To assess system aesthetics", "To develop new interface designs"],
+                                            "answer": "To conduct controlled experiments"
+                                        },
+                                        {
+                                            "question": "Which evaluation technique focuses on learning through exploration?",
+                                            "options": ["Heuristic Evaluation", "Cognitive Walkthrough", "Empirical Methods", "Observational Techniques"],
+                                            "answer": "Cognitive Walkthrough"
+                                        },
+                                        {
+                                            "question": "Users prefer to learn the system by exploring its functionality by training or manual rather than hands-on.",
+                                            "options": ["True", "False"],
+                                            "answer": "False"
+                                        },
+                                        {
+                                            "question": "Cognitive walkthrough was proposed by _____________.",
+                                            "options": ["Jakob Nielsen and Rolf Molich", "Polson and colleagues", "Ben Shneiderman", "Alan Cooper"],
+                                            "answer": "Polson and colleagues"
+                                        },
+                                        {
+                                            "question": "If the system has to be located in dangerous locations then _____________ studies is the good option.",
+                                            "options": ["Laboratory", "Field"],
+                                            "answer": "Laboratory"
+                                        },
+                                        {
+                                            "question": "_____________ variables are those which can be changed whereas _____________ variables are those that can be measured.",
+                                            "options": ["Independent, dependent", "Dependent, independent"],
+                                            "answer": "Independent, dependent"
+                                        },
+                                        {
+                                            "question": "_____________ is the prediction of the outcome of an experiment.",
+                                            "options": ["Variables", "Participants", "Hypotheses", "Design"],
+                                            "answer": "Hypotheses"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of subjective evaluation?",
+                                            "options": ["Observational Studies", "Performance Metrics", "User Interviews", "Physiological Monitoring"],
+                                            "answer": "User Interviews"
+                                        },
+                                        {
+                                            "question": "Interview follows ______________ approach.",
+                                            "options": ["Top-down", "Bottom-up", "None of them", "Both of them"],
+                                            "answer": "Top-down"
+                                        },
+                                        {
+                                            "question": "_____________ technique is less flexible than _____________ technique.",
+                                            "options": ["Questionnaires, interview", "Interview, questionnaires"],
+                                            "answer": "Questionnaires, interview"
+                                        },
+                                        {
+                                            "question": "_____________ type of questions provide predefined responses to the respondent.",
+                                            "options": ["Scalar", "Ranked", "Multi-choice", "Open-ended"],
+                                            "answer": "Multi-choice"
+                                        },
+                                        {
+                                            "question": "Blood pressure, volume, and pulses indicate _____________.",
+                                            "options": ["Electrical activity in muscles", "Electrical activity in brain", "Activity of sweat glands", "None of them"],
+                                            "answer": "None of them"
+                                        },
+                                        {
+                                            "question": "What is the primary goal of evaluation in HCI?",
+                                            "options": ["To improve system functionality", "To identify aesthetic aspects", "To reduce software cost", "To increase complexity"],
+                                            "answer": "To improve system functionality"
+                                        },
+                                        {
+                                            "question": "Heuristic evaluation can be performed on _____________.",
+                                            "options": ["Fully developed systems", "Design prototypes", "Both", "Neither"],
+                                            "answer": "Both"
+                                        },
+                                        {
+                                            "question": "Which factor is NOT considered when choosing an evaluation method?",
+                                            "options": ["Cost", "Complexity", "System age", "User availability"],
+                                            "answer": "System age"
+                                        },{
+                                            "question": "Which of the following is NOT a goal of evaluation?",
+                                            "options": ["Assess system functionality", "Enhance marketing strategies", "Identify usability issues", "Assess user experience"],
+                                            "answer": "Enhance marketing strategies"
+                                        },
+                                        {
+                                            "question": "Which type of study is preferable for real-time interaction analysis?",
+                                            "options": ["Field Study", "Laboratory Study", "Observational Study", "Heuristic Evaluation"],
+                                            "answer": "Field Study"
+                                        },
+                                        {
+                                            "question": "Empirical methods of evaluation include:",
+                                            "options": ["Cognitive Walkthrough", "User Testing", "Heuristic Evaluation", "Model-Based Evaluation"],
+                                            "answer": "User Testing"
+                                        },
+                                        {
+                                            "question": "The severity of a usability issue in heuristic evaluation is rated on a scale of:",
+                                            "options": ["0-3", "1-5", "0-4", "1-10"],
+                                            "answer": "0-4"
+                                        },
+                                        {
+                                            "question": "Which evaluation method involves structured user feedback through predefined questions?",
+                                            "options": ["Heuristic Evaluation", "Cognitive Walkthrough", "Observational Techniques", "Questionnaires"],
+                                            "answer": "Questionnaires"
+                                        },
+                                        {
+                                            "question": "In usability testing, what is typically measured?",
+                                            "options": ["User emotions", "System cost", "Task completion time", "Software code quality"],
+                                            "answer": "Task completion time"
+                                        },
+                                        {
+                                            "question": "Which of the following is a key advantage of field studies?",
+                                            "options": ["Controlled environment", "Realistic user behavior", "Cheaper to conduct", "Limited participant involvement"],
+                                            "answer": "Realistic user behavior"
+                                        },
+                                        {
+                                            "question": "What is the main goal of cognitive walkthrough?",
+                                            "options": ["Evaluate system performance", "Assess learnability of the interface", "Test system security", "Analyze hardware compatibility"],
+                                            "answer": "Assess learnability of the interface"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an observational technique?",
+                                            "options": ["Think-Aloud Protocol", "Eye Tracking", "Task Analysis", "Questionnaires"],
+                                            "answer": "Questionnaires"
+                                        },
+                                        {
+                                            "question": "Which factor is NOT part of a heuristic evaluation?",
+                                            "options": ["Usability principles", "User interface consistency", "Marketing strategies", "Error prevention"],
+                                            "answer": "Marketing strategies"
+                                        },
+                                        {
+                                            "question": "Physiological monitoring in HCI evaluation includes:",
+                                            "options": ["Eye tracking", "Task complexity analysis", "Heuristic evaluation", "System functionality testing"],
+                                            "answer": "Eye tracking"
+                                        },
+                                        {
+                                            "question": "What is a major limitation of laboratory studies?",
+                                            "options": ["Lack of realism", "Low cost", "Uncontrolled variables", "Limited resources"],
+                                            "answer": "Lack of realism"
+                                        },
+                                        {
+                                            "question": "A good evaluation method should be:",
+                                            "options": ["Objective", "Subjective", "Complex", "Expensive"],
+                                            "answer": "Objective"
+                                        },
+                                        {
+                                            "question": "Which of the following provides qualitative feedback?",
+                                            "options": ["Surveys", "Interviews", "Performance Metrics", "Task Completion Rate"],
+                                            "answer": "Interviews"
+                                        },
+                                        {
+                                            "question": "Which factor determines the choice of an evaluation method?",
+                                            "options": ["Time constraints", "User involvement", "Budget", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "Which of the following techniques provides real-time feedback?",
+                                            "options": ["Eye Tracking", "Interviews", "Surveys", "Questionnaires"],
+                                            "answer": "Eye Tracking"
+                                        },
+                                        {
+                                            "question": "What is the main purpose of usability testing?",
+                                            "options": ["Improve hardware performance", "Ensure system security", "Identify usability issues", "Test software bugs"],
+                                            "answer": "Identify usability issues"
+                                        },
+                                        {
+                                            "question": "Which of the following methods involves watching users perform tasks?",
+                                            "options": ["Cognitive Walkthrough", "Observational Techniques", "Heuristic Evaluation", "Surveys"],
+                                            "answer": "Observational Techniques"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of objective evaluation?",
+                                            "options": ["Think-Aloud Protocol", "User Interviews", "Performance Metrics", "Surveys"],
+                                            "answer": "Performance Metrics"
+                                        },
+                                        {
+                                            "question": "What type of study is most useful for identifying usability issues in a natural work environment?",
+                                            "options": ["Field Study", "Laboratory Study", "Query Techniques", "System Testing"],
+                                            "answer": "Field Study"
+                                        },
+                                        {
+                                            "question": "What is the primary advantage of heuristic evaluation?",
+                                            "options": ["Requires minimal resources", "Provides real-time feedback", "Engages real users", "Analyzes system performance"],
+                                            "answer": "Requires minimal resources"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a method of evaluation through users?",
+                                            "options": ["Empirical methods", "Observational techniques", "Model-based evaluation", "Query techniques"],
+                                            "answer": "Model-based evaluation"
+                                        },
+                                        {
+                                            "question": "What is the primary goal of usability evaluation?",
+                                            "options": ["Enhance security", "Reduce cost", "Improve user experience", "Increase complexity"],
+                                            "answer": "Improve user experience"
+                                        },
+                                        {
+                                            "question": "A key characteristic of field studies is:",
+                                            "options": ["Controlled environment", "Real-world conditions", "Expensive equipment", "Minimal user involvement"],
+                                            "answer": "Real-world conditions"
+                                        },
+                                        {
+                                            "question": "Which technique evaluates how well users can accomplish tasks with a system?",
+                                            "options": ["Task Analysis", "Empirical Evaluation", "Cognitive Walkthrough", "Heuristic Evaluation"],
+                                            "answer": "Cognitive Walkthrough"
+                                        },
+                                        {
+                                            "question": "Observational techniques focus on:",
+                                            "options": ["User opinions", "User actions", "System errors", "Design complexity"],
+                                            "answer": "User actions"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What are the main goals of evaluation in HCI?",
+                                            "answer": "The main goals of evaluation in HCI are to assess the system's functionality, evaluate the user experience, and identify specific usability issues. Evaluation helps ensure the system meets user needs and performs as expected."
+                                        },
+                                        {
+                                            "question": "What is heuristic evaluation?",
+                                            "answer": "Heuristic evaluation is an expert-based usability inspection method where evaluators review the interface against predefined usability principles (heuristics). It was developed by Jakob Nielsen and Rolf Molich and helps identify usability problems early in the design process."
+                                        },
+                                        {
+                                            "question": "How does cognitive walkthrough differ from heuristic evaluation?",
+                                            "answer": "Cognitive walkthrough focuses on evaluating a system’s learnability by simulating a user’s thought process when performing tasks. In contrast, heuristic evaluation relies on usability experts reviewing the interface against established usability guidelines to identify potential issues."
+                                        },
+                                        {
+                                            "question": "What are the advantages of field studies in evaluation?",
+                                            "answer": "Field studies provide insights into how users interact with a system in their natural environment, offering realistic data on usability and behavior. They help identify real-world challenges that might not be evident in controlled settings like labs."
+                                        },
+                                        {
+                                            "question": "What is the role of usability testing in system evaluation?",
+                                            "answer": "Usability testing involves observing users as they interact with a system to identify usability issues, measure task efficiency, and assess user satisfaction. It helps designers understand how well users can complete tasks and identify areas for improvement."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Evaluating a Banking Application's Usability",
+                                            "description": "A leading bank recently launched an online banking portal and conducted usability testing to assess user experience. The goal was to identify pain points related to navigation, task completion, and error messages. The team used heuristic evaluation and cognitive walkthrough techniques. Experts evaluated the system against usability principles, and new users were asked to perform common tasks such as transferring funds and viewing account statements. Based on feedback, the bank found issues with visibility of system status and user control.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which evaluation method involves assessing the system against predefined usability principles?",
+                                                    "options": ["Heuristic Evaluation", "Cognitive Walkthrough", "Empirical Testing", "Field Study"],
+                                                    "answer": "Heuristic Evaluation"
+                                                },
+                                                {
+                                                    "question": "Which usability issue was identified in the banking application?",
+                                                    "options": ["Error handling", "Visibility of system status", "Aesthetic design", "Network latency"],
+                                                    "answer": "Visibility of system status"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Usability Evaluation of an E-commerce Platform",
+                                            "description": "An e-commerce company wanted to improve the usability of its website and conducted field studies to gather insights from real users in their environment. Observational techniques were used to analyze how users interacted with product pages and the checkout process. The study revealed that users faced difficulties in finding relevant product information and navigating through categories, leading to cart abandonment.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What was the primary evaluation method used in the e-commerce platform study?",
+                                                    "options": ["Laboratory Study", "Field Study", "Cognitive Walkthrough", "Heuristic Evaluation"],
+                                                    "answer": "Field Study"
+                                                },
+                                                {
+                                                    "question": "What usability issue led to cart abandonment?",
+                                                    "options": ["Slow website speed", "Difficult navigation", "Limited payment options", "Lack of security measures"],
+                                                    "answer": "Difficult navigation"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                      
+                                },
+                                {
+                                    name: "Module 4",
+                                    id: "module-4",
+                                    mcq: [
+                                        {
+                                            "question": "What is a cognitive model, and how does it help in HCI?",
+                                            "options": [
+                                                "A model that simulates only human motor processes",
+                                                "A model that simulates cognitive, perceptual, and motor processes",
+                                                "A model that focuses only on the system's performance",
+                                                "A model that deals only with memory storage"
+                                            ],
+                                            "answer": "A model that simulates cognitive, perceptual, and motor processes"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a type of cognitive model?",
+                                            "options": [
+                                                "Hierarchical models",
+                                                "Linguistic models",
+                                                "Physical models",
+                                                "Functional models"
+                                            ],
+                                            "answer": "Functional models"
+                                        },
+                                        {
+                                            "question": "What is a challenge of display-based systems in cognitive modeling?",
+                                            "options": [
+                                                "Low resolution of modern screens",
+                                                "Ignoring the system’s output",
+                                                "Inability to model user errors",
+                                                "Excessive reliance on textual input"
+                                            ],
+                                            "answer": "Ignoring the system’s output"
+                                        },
+                                        {
+                                            "question": "Which of the following elements is NOT part of face-to-face communication?",
+                                            "options": [
+                                                "Speech",
+                                                "Eye-gaze",
+                                                "Body language",
+                                                "Emails"
+                                            ],
+                                            "answer": "Emails"
+                                        },
+                                        {
+                                            "question": "Which type of text-based communication follows a strict sequence of messages?",
+                                            "options": [
+                                                "Discrete",
+                                                "Linear",
+                                                "Non-linear",
+                                                "Spatial"
+                                            ],
+                                            "answer": "Linear"
+                                        },
+                                        {
+                                            "question": "What is the key difference between synchronous and asynchronous communication?",
+                                            "options": [
+                                                "Synchronous communication is always written",
+                                                "Asynchronous communication happens in real-time",
+                                                "Synchronous communication occurs in real-time",
+                                                "Asynchronous communication involves phone calls"
+                                            ],
+                                            "answer": "Synchronous communication occurs in real-time"
+                                        },
+                                        {
+                                            "question": "What is the purpose of task decomposition in HCI?",
+                                            "options": [
+                                                "To break down tasks into subtasks",
+                                                "To combine tasks into a single process",
+                                                "To remove unnecessary tasks",
+                                                "To increase the complexity of tasks"
+                                            ],
+                                            "answer": "To break down tasks into subtasks"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an approach to task analysis?",
+                                            "options": [
+                                                "Task decomposition",
+                                                "Knowledge-based analysis",
+                                                "Entity-relation analysis",
+                                                "Algorithm-based analysis"
+                                            ],
+                                            "answer": "Algorithm-based analysis"
+                                        },
+                                        {
+                                            "question": "Which method is used to define hierarchical task analysis?",
+                                            "options": [
+                                                "Breaking tasks into subtasks and plans",
+                                                "Listing all available system features",
+                                                "Defining system output structures",
+                                                "Designing user-friendly interfaces"
+                                            ],
+                                            "answer": "Breaking tasks into subtasks and plans"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a level of dialog in an interactive system?",
+                                            "options": [
+                                                "Lexical",
+                                                "Syntactic",
+                                                "Semantic",
+                                                "Graphical"
+                                            ],
+                                            "answer": "Graphical"
+                                        },
+                                        {
+                                            "question": "What does dialog semantics focus on?",
+                                            "options": [
+                                                "The meaning of interaction",
+                                                "The grammar of commands",
+                                                "The graphical representation",
+                                                "The placement of buttons"
+                                            ],
+                                            "answer": "The meaning of interaction"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a model-based specification method?",
+                                            "options": [
+                                                "BNF",
+                                                "VDM",
+                                                "TAG",
+                                                "KLM"
+                                            ],
+                                            "answer": "VDM"
+                                        },
+                                        {
+                                            "question": "Which of the following properties is supported by the PIE model?",
+                                            "options": [
+                                                "Complexity",
+                                                "Predictability",
+                                                "Adaptability",
+                                                "Customization"
+                                            ],
+                                            "answer": "Predictability"
+                                        },
+                                        {
+                                            "question": "What is hypertext?",
+                                            "options": [
+                                                "A linear arrangement of text",
+                                                "A network of linked pages",
+                                                "A command-based input method",
+                                                "An output-only system"
+                                            ],
+                                            "answer": "A network of linked pages"
+                                        },
+                                        {
+                                            "question": "Which protocol does the World Wide Web use to transfer data?",
+                                            "options": [
+                                                "FTP",
+                                                "HTTP",
+                                                "SMTP",
+                                                "TCP"
+                                            ],
+                                            "answer": "HTTP"
+                                        },
+                                        {
+                                            "question": "What makes multimedia different from hypertext?",
+                                            "options": [
+                                                "It contains only textual content",
+                                                "It incorporates audio, video, and graphics",
+                                                "It is always static and non-interactive",
+                                                "It requires special hardware"
+                                            ],
+                                            "answer": "It incorporates audio, video, and graphics"
+                                        },
+                                        {
+                                            "question": "What is the key difference between hypertext and hypermedia?",
+                                            "options": [
+                                                "Hypertext includes graphics, hypermedia does not",
+                                                "Hypermedia includes multimedia elements, hypertext does not",
+                                                "Hypertext is linear, hypermedia is non-linear",
+                                                "Hypertext is only used on the internet"
+                                            ],
+                                            "answer": "Hypermedia includes multimedia elements, hypertext does not"
+                                        },
+                                        {
+                                            "question": "Which of the following is a key application theme for ubiquitous computing?",
+                                            "options": [
+                                                "Context-aware computing",
+                                                "Online gaming",
+                                                "E-commerce",
+                                                "Digital marketing"
+                                            ],
+                                            "answer": "Context-aware computing"
+                                        },
+                                        {
+                                            "question": "Which of the following is a challenge in designing ubiquitous computing systems?",
+                                            "options": [
+                                                "User privacy and data security",
+                                                "Creating more desktop applications",
+                                                "Eliminating graphical interfaces",
+                                                "Reducing storage capacities"
+                                            ],
+                                            "answer": "User privacy and data security"
+                                        },
+                                        {
+                                            "question": "What is augmented reality?",
+                                            "options": [
+                                                "A technology that replaces the real world",
+                                                "A technology that enhances the real world with virtual elements",
+                                                "A computer simulation of human thought processes",
+                                                "A software framework for data management"
+                                            ],
+                                            "answer": "A technology that enhances the real world with virtual elements"
+                                        },{
+                                            "question": "Which model focuses on representing human cognitive processes?",
+                                            "options": ["Hierarchical model", "Physical model", "Linguistic model", "Device model"],
+                                            "answer": "Hierarchical model"
+                                        },
+                                        {
+                                            "question": "What does GOMS stand for in cognitive modeling?",
+                                            "options": ["Goals, Operations, Methods, Selection", "Graphs, Operations, Metrics, Standards", "Goals, Organization, Mapping, Syntax", "Graphs, Operations, Methods, Systems"],
+                                            "answer": "Goals, Operations, Methods, Selection"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a linguistic model?",
+                                            "options": ["BNF", "KLM", "GOMS", "HTA"],
+                                            "answer": "BNF"
+                                        },
+                                        {
+                                            "question": "What is the primary focus of task decomposition?",
+                                            "options": ["Breaking tasks into subtasks", "Combining multiple tasks", "Enhancing system design", "Increasing user satisfaction"],
+                                            "answer": "Breaking tasks into subtasks"
+                                        },
+                                        {
+                                            "question": "Which type of task analysis focuses on identifying objects and relationships?",
+                                            "options": ["Hierarchical analysis", "Knowledge-based analysis", "Entity-relation analysis", "Physical analysis"],
+                                            "answer": "Entity-relation analysis"
+                                        },
+                                        {
+                                            "question": "Dialog semantics in HCI primarily focuses on:",
+                                            "options": ["User interaction meaning", "Syntax of commands", "System architecture", "Task execution"],
+                                            "answer": "User interaction meaning"
+                                        },
+                                        {
+                                            "question": "Which formal method defines system states and operations?",
+                                            "options": ["BNF", "HTA", "VDM", "KLM"],
+                                            "answer": "VDM"
+                                        },
+                                        {
+                                            "question": "Which model is used to analyze user goals and sub-goals?",
+                                            "options": ["GOMS", "HTA", "BNF", "VDM"],
+                                            "answer": "HTA"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a component of the PIE model?",
+                                            "options": ["Predictability", "Interaction", "Execution", "Efficiency"],
+                                            "answer": "Efficiency"
+                                        },
+                                        {
+                                            "question": "Which system focuses on non-linear navigation?",
+                                            "options": ["Hypertext", "Flat file systems", "Hierarchical databases", "Relational databases"],
+                                            "answer": "Hypertext"
+                                        },
+                                        {
+                                            "question": "Which protocol underpins the World Wide Web?",
+                                            "options": ["FTP", "HTTP", "SMTP", "TCP"],
+                                            "answer": "HTTP"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of hypermedia?",
+                                            "options": ["A static web page", "An interactive multimedia webpage", "A text document", "A spreadsheet"],
+                                            "answer": "An interactive multimedia webpage"
+                                        },
+                                        {
+                                            "question": "Which factor is crucial for effective ubiquitous computing?",
+                                            "options": ["User privacy", "More memory", "Faster CPU", "More power consumption"],
+                                            "answer": "User privacy"
+                                        },
+                                        {
+                                            "question": "What technology combines the real world with virtual elements?",
+                                            "options": ["Virtual reality", "Augmented reality", "Mixed reality", "Artificial intelligence"],
+                                            "answer": "Augmented reality"
+                                        },
+                                        {
+                                            "question": "What is the main challenge in designing ubiquitous systems?",
+                                            "options": ["Battery life", "User experience", "Privacy and security", "Connectivity"],
+                                            "answer": "Privacy and security"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an evaluation method?",
+                                            "options": ["Task analysis", "Cognitive walkthrough", "Heuristic evaluation", "Empirical evaluation"],
+                                            "answer": "Task analysis"
+                                        },
+                                        {
+                                            "question": "What type of user interface provides predefined response options?",
+                                            "options": ["Scalar", "Multi-choice", "Open-ended", "Ranked"],
+                                            "answer": "Multi-choice"
+                                        },
+                                        {
+                                            "question": "Which model breaks tasks into goals and sub-goals?",
+                                            "options": ["BNF", "HTA", "VDM", "GOMS"],
+                                            "answer": "HTA"
+                                        },
+                                        {
+                                            "question": "What is the primary purpose of dialog notation?",
+                                            "options": ["Define user interactions", "Improve system speed", "Enhance UI design", "Document system requirements"],
+                                            "answer": "Define user interactions"
+                                        },
+                                        {
+                                            "question": "Which analysis technique focuses on user roles and relationships?",
+                                            "options": ["Entity-relation analysis", "Knowledge-based analysis", "Hierarchical analysis", "Cognitive walkthrough"],
+                                            "answer": "Entity-relation analysis"
+                                        },{
+                                            "question": "What is the primary goal of the cognitive complexity theory (CCT)?",
+                                            "options": [
+                                                "To analyze system performance",
+                                                "To model cognitive user behavior",
+                                                "To improve data processing speed",
+                                                "To create user interfaces"
+                                            ],
+                                            "answer": "To model cognitive user behavior"
+                                        },
+                                        {
+                                            "question": "Which of the following describes the hierarchical task analysis (HTA)?",
+                                            "options": [
+                                                "It focuses on breaking down tasks into subtasks",
+                                                "It emphasizes system performance metrics",
+                                                "It improves storage management",
+                                                "It analyzes computer hardware components"
+                                            ],
+                                            "answer": "It focuses on breaking down tasks into subtasks"
+                                        },
+                                        {
+                                            "question": "What does the term 'dialog notation' refer to in HCI?",
+                                            "options": [
+                                                "The representation of system responses to user actions",
+                                                "The graphical design of user interfaces",
+                                                "The development of task models",
+                                                "The management of system memory"
+                                            ],
+                                            "answer": "The representation of system responses to user actions"
+                                        },
+                                        {
+                                            "question": "Which of the following is a key advantage of task decomposition?",
+                                            "options": [
+                                                "It simplifies complex processes",
+                                                "It increases the complexity of tasks",
+                                                "It enhances system speed",
+                                                "It reduces hardware requirements"
+                                            ],
+                                            "answer": "It simplifies complex processes"
+                                        },
+                                        {
+                                            "question": "In HCI, which model describes the structure and sequence of interactions?",
+                                            "options": [
+                                                "Cognitive Model",
+                                                "Dialog Model",
+                                                "Physical Model",
+                                                "GOMS Model"
+                                            ],
+                                            "answer": "Dialog Model"
+                                        },
+                                        {
+                                            "question": "Which term describes the process of analyzing work practices in HCI?",
+                                            "options": [
+                                                "Cognitive modeling",
+                                                "Task analysis",
+                                                "User experience design",
+                                                "Software engineering"
+                                            ],
+                                            "answer": "Task analysis"
+                                        },
+                                        {
+                                            "question": "What type of interface structure does hypertext follow?",
+                                            "options": [
+                                                "Linear",
+                                                "Hierarchical",
+                                                "Non-linear",
+                                                "Sequential"
+                                            ],
+                                            "answer": "Non-linear"
+                                        },
+                                        {
+                                            "question": "Which of the following describes an augmented reality system?",
+                                            "options": [
+                                                "A system that replaces the real world with a virtual one",
+                                                "A system that enhances the real world with virtual objects",
+                                                "A system that provides textual interaction only",
+                                                "A system that simulates artificial intelligence"
+                                            ],
+                                            "answer": "A system that enhances the real world with virtual objects"
+                                        },
+                                        {
+                                            "question": "Which element is NOT part of the GOMS model?",
+                                            "options": [
+                                                "Goals",
+                                                "Operators",
+                                                "Methods",
+                                                "Interactions"
+                                            ],
+                                            "answer": "Interactions"
+                                        },
+                                        {
+                                            "question": "What is the primary focus of communication and collaboration models?",
+                                            "options": [
+                                                "Understanding how users interact with systems",
+                                                "Evaluating system speed and performance",
+                                                "Improving software algorithms",
+                                                "Managing computer networks"
+                                            ],
+                                            "answer": "Understanding how users interact with systems"
+                                        },
+                                        {
+                                            "question": "Which model represents human cognitive and motor actions?",
+                                            "options": [
+                                                "BNF",
+                                                "KLM",
+                                                "VDM",
+                                                "HTA"
+                                            ],
+                                            "answer": "KLM"
+                                        },
+                                        {
+                                            "question": "Which model describes physical human actions in interaction?",
+                                            "options": [
+                                                "Cognitive Model",
+                                                "Linguistic Model",
+                                                "Physical and Device Model",
+                                                "Task Analysis Model"
+                                            ],
+                                            "answer": "Physical and Device Model"
+                                        },
+                                        {
+                                            "question": "Which feature differentiates hypermedia from hypertext?",
+                                            "options": [
+                                                "Use of multimedia elements",
+                                                "Strict linear navigation",
+                                                "Limited to text content",
+                                                "Lack of interactive features"
+                                            ],
+                                            "answer": "Use of multimedia elements"
+                                        },
+                                        {
+                                            "question": "What does the acronym KLM stand for in HCI?",
+                                            "options": [
+                                                "Key Logical Model",
+                                                "Keystroke Level Model",
+                                                "Knowledge Learning Model",
+                                                "Keyboard Layout Model"
+                                            ],
+                                            "answer": "Keystroke Level Model"
+                                        },
+                                        {
+                                            "question": "Which formal method focuses on when things happen and who is responsible?",
+                                            "options": [
+                                                "Algebraic",
+                                                "Extended logics",
+                                                "Model-based",
+                                                "Heuristic-based"
+                                            ],
+                                            "answer": "Extended logics"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a heuristic evaluation technique?",
+                                            "options": [
+                                                "VDM",
+                                                "GOMS",
+                                                "User testing",
+                                                "Task decomposition"
+                                            ],
+                                            "answer": "User testing"
+                                        },
+                                        {
+                                            "question": "What is the primary benefit of using a cognitive walkthrough?",
+                                            "options": [
+                                                "Identifying usability issues without users",
+                                                "Increasing software development speed",
+                                                "Enhancing system security",
+                                                "Reducing power consumption"
+                                            ],
+                                            "answer": "Identifying usability issues without users"
+                                        },
+                                        {
+                                            "question": "Which of the following best describes the term 'interaction model'?",
+                                            "options": [
+                                                "A framework for evaluating user actions",
+                                                "A hardware design specification",
+                                                "A model for system development",
+                                                "A network communication protocol"
+                                            ],
+                                            "answer": "A framework for evaluating user actions"
+                                        },
+                                        {
+                                            "question": "What does the PIE model represent in HCI?",
+                                            "options": [
+                                                "Performance, Input, and Execution",
+                                                "Predictability, Interaction, and Execution",
+                                                "Programming, Implementation, and Evaluation",
+                                                "Performance, Interaction, and Experience"
+                                            ],
+                                            "answer": "Predictability, Interaction, and Execution"
+                                        },
+                                        {
+                                            "question": "What is the purpose of heuristic evaluation?",
+                                            "options": [
+                                                "To provide expert reviews of an interface",
+                                                "To analyze system performance",
+                                                "To measure software efficiency",
+                                                "To create system documentation"
+                                            ],
+                                            "answer": "To provide expert reviews of an interface"
+                                        },
+                                        {
+                                            "question": "Which notation is commonly used for dialog representation?",
+                                            "options": [
+                                                "BNF",
+                                                "GOMS",
+                                                "HTA",
+                                                "VDM"
+                                            ],
+                                            "answer": "BNF"
+                                        },
+                                        {
+                                            "question": "What is a major advantage of task-based analysis?",
+                                            "options": [
+                                                "Simplifies complex systems",
+                                                "Increases design complexity",
+                                                "Improves storage management",
+                                                "Reduces processing power"
+                                            ],
+                                            "answer": "Simplifies complex systems"
+                                        },{
+                                            "question": "Which of the following is a key element of task decomposition?",
+                                            "options": [
+                                                "Breaking tasks into manageable subtasks",
+                                                "Combining different tasks into a single process",
+                                                "Increasing the complexity of tasks",
+                                                "Reducing the number of tasks"
+                                            ],
+                                            "answer": "Breaking tasks into manageable subtasks"
+                                        },
+                                        {
+                                            "question": "Which model is used to analyze user goals and operations?",
+                                            "options": [
+                                                "HTA",
+                                                "GOMS",
+                                                "BNF",
+                                                "VDM"
+                                            ],
+                                            "answer": "GOMS"
+                                        },
+                                        {
+                                            "question": "What type of system does hypermedia represent?",
+                                            "options": [
+                                                "Linear text system",
+                                                "Network-based multimedia system",
+                                                "Command-line interface",
+                                                "Graphical file explorer"
+                                            ],
+                                            "answer": "Network-based multimedia system"
+                                        },
+                                        {
+                                            "question": "Which of the following best describes ubiquitous computing?",
+                                            "options": [
+                                                "Computing available anytime, anywhere",
+                                                "Centralized computing",
+                                                "Offline-only systems",
+                                                "Desktop-based computing"
+                                            ],
+                                            "answer": "Computing available anytime, anywhere"
+                                        },
+                                        {
+                                            "question": "Which notation is used to define syntax and structure in HCI?",
+                                            "options": [
+                                                "GOMS",
+                                                "BNF",
+                                                "KLM",
+                                                "HTA"
+                                            ],
+                                            "answer": "BNF"
+                                        },
+                                        {
+                                            "question": "What is a major challenge in the design of ubiquitous computing systems?",
+                                            "options": [
+                                                "User privacy and security",
+                                                "Limited hardware capabilities",
+                                                "Excessive storage requirements",
+                                                "Complex networking requirements"
+                                            ],
+                                            "answer": "User privacy and security"
+                                        },
+                                        {
+                                            "question": "What type of interaction model is the PIE model?",
+                                            "options": [
+                                                "A black-box model focusing on user input and output",
+                                                "A model based on physical device interactions",
+                                                "A linguistic-based model",
+                                                "A purely cognitive model"
+                                            ],
+                                            "answer": "A black-box model focusing on user input and output"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a benefit of cognitive modeling?",
+                                            "options": [
+                                                "Improving system usability",
+                                                "Predicting user errors",
+                                                "Increasing system speed",
+                                                "Simulating user performance"
+                                            ],
+                                            "answer": "Increasing system speed"
+                                        }
+                                    ]
+                                    ,                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is a cognitive model, and how does it benefit HCI?",
+                                            "answer": "A cognitive model represents human cognitive, perceptual, and motor processes to simulate user interactions with systems. It helps predict user behavior, improve interface design, and reduce cognitive load. Examples include GOMS and KLM models."
+                                        },
+                                        {
+                                            "question": "What are the different types of task analysis used in HCI?",
+                                            "answer": "Task analysis includes task decomposition (breaking down tasks into subtasks), knowledge-based analysis (identifying necessary knowledge for tasks), and entity-relation-based analysis (analyzing objects and their relationships)."
+                                        },
+                                        {
+                                            "question": "How does hypertext differ from traditional text systems?",
+                                            "answer": "Hypertext is a non-linear structure of linked documents, allowing users to navigate through hyperlinks, unlike traditional text systems, which follow a sequential order."
+                                        },
+                                        {
+                                            "question": "What challenges are associated with ubiquitous computing?",
+                                            "answer": "Challenges include privacy and security concerns, seamless integration of physical and virtual environments, power consumption, and ensuring consistent user experiences across devices."
+                                        },
+                                        {
+                                            "question": "What is the PIE model, and how does it contribute to HCI?",
+                                            "answer": "The PIE (Predictability, Interaction, Execution) model focuses on user inputs and system outputs, improving usability by ensuring observability and predictability in system interactions."
+                                        }
+                                    ]
+                                    ,
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Enhancing User Interaction with Hypertext Systems",
+                                            "description": "A leading educational institution is transitioning from traditional textbooks to an interactive hypertext-based learning system. The new system allows students to explore content through interconnected links rather than sequential reading. The goal is to improve engagement and provide easier access to related topics. However, students report difficulty navigating large volumes of content, leading to cognitive overload.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is a key advantage of hypertext-based learning systems compared to traditional textbooks?",
+                                                    "options": [
+                                                        "Provides a linear reading experience",
+                                                        "Allows non-linear navigation and exploration",
+                                                        "Requires less cognitive effort",
+                                                        "Reduces the need for multimedia integration"
+                                                    ],
+                                                    "answer": "Allows non-linear navigation and exploration"
+                                                },
+                                                {
+                                                    "question": "What could be a solution to help students manage cognitive overload in the hypertext system?",
+                                                    "options": [
+                                                        "Reducing hyperlink usage",
+                                                        "Implementing a guided navigation structure",
+                                                        "Increasing content complexity",
+                                                        "Limiting system interactions"
+                                                    ],
+                                                    "answer": "Implementing a guided navigation structure"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Improving Usability through Cognitive Task Analysis",
+                                            "description": "A software company is developing a new application for customer relationship management (CRM). To ensure a user-friendly experience, they conduct cognitive task analysis to understand how users complete tasks like data entry and report generation. Early evaluations show that users struggle with finding the correct workflow, leading to inefficiencies and frustration.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is the primary benefit of cognitive task analysis in software development?",
+                                                    "options": [
+                                                        "Enhancing system performance speed",
+                                                        "Understanding user workflow and task completion",
+                                                        "Reducing software development costs",
+                                                        "Eliminating the need for user training"
+                                                    ],
+                                                    "answer": "Understanding user workflow and task completion"
+                                                },
+                                                {
+                                                    "question": "Which of the following can help improve the CRM system’s usability based on task analysis?",
+                                                    "options": [
+                                                        "Reducing the number of features",
+                                                        "Providing intuitive task flows and guidance",
+                                                        "Increasing system complexity",
+                                                        "Ignoring user feedback"
+                                                    ],
+                                                    "answer": "Providing intuitive task flows and guidance"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                                                                                          
+                                },
+                                {
+                                    name: "Module 5",
+                                    id: "module-5",
+                                    mcq: [
+                                        {
+                                            "question": "A piece of icon or image on a web page associated with another web page is called as _____________",
+                                            "options": ["URL", "Hyperlink", "Plugin", "Extension"],
+                                            "answer": "Hyperlink"
+                                        },
+                                        {
+                                            "question": "Web browser is ……..",
+                                            "options": [
+                                                "A program that can display a web page",
+                                                "A program used to view HTML documents",
+                                                "Which enables user to access the resources of the internet",
+                                                "All of the above"
+                                            ],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "URL stands for …………….",
+                                            "options": [
+                                                "Unique reference label",
+                                                "Uniform reference label",
+                                                "Uniform resource locator",
+                                                "Unique resource locator"
+                                            ],
+                                            "answer": "Uniform resource locator"
+                                        },
+                                        {
+                                            "question": "PIE model is a black-box model.",
+                                            "options": ["True", "False"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "Email is a linear kind of execution.",
+                                            "options": ["True", "False"],
+                                            "answer": "False"
+                                        },{
+                                            "question": "What is the primary goal of a research framework in HCI?",
+                                            "options": ["To explore subtopics", "To design ideas", "To generate new research", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a speech interface?",
+                                            "options": ["Google Assistant", "Microsoft Excel", "Adobe Photoshop", "None of the above"],
+                                            "answer": "Google Assistant"
+                                        },
+                                        {
+                                            "question": "Which technology is used by speech interfaces to recognize human speech?",
+                                            "options": ["Optical Recognition", "Speech Recognition", "Pattern Matching", "Text to Speech"],
+                                            "answer": "Speech Recognition"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an example of a speech interface?",
+                                            "options": ["Alexa", "Siri", "Google Maps", "Cortana"],
+                                            "answer": "Google Maps"
+                                        },
+                                        {
+                                            "question": "Which factor is important while designing speech interfaces?",
+                                            "options": ["User experience", "Hardware specifications", "Server speed", "None of the above"],
+                                            "answer": "User experience"
+                                        },
+                                        {
+                                            "question": "What is the first step in designing an effective speech interface?",
+                                            "options": ["Selecting the right programming language", "Understanding the users", "Choosing a platform", "Installing speech libraries"],
+                                            "answer": "Understanding the users"
+                                        },
+                                        {
+                                            "question": "Which of the following is a best practice in designing speech interfaces?",
+                                            "options": ["Asking better questions", "Ignoring user feedback", "Providing complex responses", "Limiting user options"],
+                                            "answer": "Asking better questions"
+                                        },
+                                        {
+                                            "question": "What is the key advantage of prototyping tools in speech interface design?",
+                                            "options": ["Slowing down development", "Improving user experience", "Reducing system performance", "Avoiding updates"],
+                                            "answer": "Improving user experience"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of information visualization?",
+                                            "options": ["Spreadsheets", "Bar charts", "Reports", "Text documents"],
+                                            "answer": "Bar charts"
+                                        },
+                                        {
+                                            "question": "What type of data is typically visualized in information visualization?",
+                                            "options": ["Numerical", "Non-numerical", "Both", "None"],
+                                            "answer": "Both"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an application of information visualization?",
+                                            "options": ["Exploratory analysis", "Data presentation", "Data security", "Confirmation analysis"],
+                                            "answer": "Data security"
+                                        },
+                                        {
+                                            "question": "What is the purpose of ubiquitous computing?",
+                                            "options": ["To provide computing anywhere", "To fix computing in one place", "To restrict computing to desktops", "To replace manual computing"],
+                                            "answer": "To provide computing anywhere"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of ubiquitous computing?",
+                                            "options": ["Laptops", "Smartphones", "Desktops", "Calculators"],
+                                            "answer": "Smartphones"
+                                        },
+                                        {
+                                            "question": "What is a major challenge in ubiquitous computing?",
+                                            "options": ["Limited storage", "Power consumption", "User experience", "Limited screen size"],
+                                            "answer": "User experience"
+                                        },
+                                        {
+                                            "question": "Which of the following is a characteristic of ubiquitous computing?",
+                                            "options": ["Fixed interaction", "Seamless integration", "Limited access", "High cost"],
+                                            "answer": "Seamless integration"
+                                        },
+                                        {
+                                            "question": "Which of the following is a key theme in ubiquitous computing?",
+                                            "options": ["Context-aware computing", "Desktop computing", "Text-based computing", "None of the above"],
+                                            "answer": "Context-aware computing"
+                                        },
+                                        {
+                                            "question": "What is the primary advantage of context-aware computing?",
+                                            "options": ["It enhances user experience", "It limits user options", "It makes computing difficult", "None of the above"],
+                                            "answer": "It enhances user experience"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of context-aware computing?",
+                                            "options": ["GPS-based navigation", "Word processors", "Text editors", "Calculators"],
+                                            "answer": "GPS-based navigation"
+                                        },
+                                        {
+                                            "question": "What is the most common form of structured information visualization?",
+                                            "options": ["Text-based", "Hierarchical", "Random", "Sequential"],
+                                            "answer": "Hierarchical"
+                                        },
+                                        {
+                                            "question": "What is a key advantage of hypertext?",
+                                            "options": ["Linear navigation", "Non-linear navigation", "Static content", "None of the above"],
+                                            "answer": "Non-linear navigation"
+                                        },
+                                        {
+                                            "question": "Which protocol is commonly used for web communication?",
+                                            "options": ["HTTP", "FTP", "SMTP", "POP3"],
+                                            "answer": "HTTP"
+                                        },
+                                        {
+                                            "question": "What technology is commonly used to display web content?",
+                                            "options": ["HTML", "C++", "Python", "Java"],
+                                            "answer": "HTML"
+                                        },
+                                        {
+                                            "question": "What is an example of ubiquitous computing device?",
+                                            "options": ["Smart fridge", "Washing machine", "Oven", "Microwave"],
+                                            "answer": "Smart fridge"
+                                        },
+                                        {
+                                            "question": "Which of the following is an advantage of automated capture in ubicomp?",
+                                            "options": ["Reduces manual effort", "Increases complexity", "Slows down processing", "None of the above"],
+                                            "answer": "Reduces manual effort"
+                                        },
+                                        {
+                                            "question": "Which of the following is a visualization technique?",
+                                            "options": ["Graphs", "Emails", "Notes", "Essays"],
+                                            "answer": "Graphs"
+                                        },
+                                        {
+                                            "question": "What is the core function of ubiquitous computing?",
+                                            "options": ["Provide computing access everywhere", "Restrict user movement", "Increase hardware size", "Reduce usability"],
+                                            "answer": "Provide computing access everywhere"
+                                        },
+                                        {
+                                            "question": "Which of the following is a type of information visualization?",
+                                            "options": ["Data mining", "Bar charts", "Machine learning", "Text processing"],
+                                            "answer": "Bar charts"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT a key element in speech interfaces?",
+                                            "options": ["Recognition", "Training", "Storage", "Synthesis"],
+                                            "answer": "Storage"
+                                        },
+                                        {
+                                            "question": "What is the biggest challenge in designing ubiquitous computing?",
+                                            "options": ["Context-awareness", "Cost", "Processing speed", "Display size"],
+                                            "answer": "Context-awareness"
+                                        },{
+                                            "question": "Which of the following is an essential element of a speech interface?",
+                                            "options": ["Audio input", "Graphics processing", "Text editing", "Database storage"],
+                                            "answer": "Audio input"
+                                        },
+                                        {
+                                            "question": "Which of the following devices commonly uses speech interfaces?",
+                                            "options": ["Smartphones", "Printers", "Projectors", "Scanners"],
+                                            "answer": "Smartphones"
+                                        },
+                                        {
+                                            "question": "What is the primary function of information visualization?",
+                                            "options": ["To summarize data visually", "To store large datasets", "To analyze text documents", "To generate machine learning models"],
+                                            "answer": "To summarize data visually"
+                                        },
+                                        {
+                                            "question": "Which of the following is a feature of ubiquitous computing?",
+                                            "options": ["Fixed user location", "Always-on connectivity", "Limited portability", "Centralized processing"],
+                                            "answer": "Always-on connectivity"
+                                        },
+                                        {
+                                            "question": "Which data type is commonly visualized using information visualization techniques?",
+                                            "options": ["Structured data", "Unstructured data", "Both structured and unstructured data", "None of the above"],
+                                            "answer": "Both structured and unstructured data"
+                                        },
+                                        {
+                                            "question": "What is the most significant benefit of context-aware computing?",
+                                            "options": ["Personalized user experiences", "Increased data storage", "Faster processing speeds", "Enhanced graphics quality"],
+                                            "answer": "Personalized user experiences"
+                                        },
+                                        {
+                                            "question": "What is a major application of ubiquitous computing?",
+                                            "options": ["Smart homes", "Manual data entry", "Paper-based filing systems", "Traditional telephony"],
+                                            "answer": "Smart homes"
+                                        },
+                                        {
+                                            "question": "Which of the following represents a non-linear way of navigating information?",
+                                            "options": ["Hypertext", "Books", "Newspapers", "PDF documents"],
+                                            "answer": "Hypertext"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of structured data?",
+                                            "options": ["Database records", "Social media posts", "Handwritten notes", "Audio recordings"],
+                                            "answer": "Database records"
+                                        },
+                                        {
+                                            "question": "What is the primary purpose of a research framework in HCI?",
+                                            "options": ["To provide guidelines for experiments", "To build computer hardware", "To generate random data", "To create entertainment software"],
+                                            "answer": "To provide guidelines for experiments"
+                                        },
+                                        {
+                                            "question": "What is the main benefit of automated data capture in ubiquitous computing?",
+                                            "options": ["Reduced manual effort", "Increased errors", "Decreased efficiency", "Higher costs"],
+                                            "answer": "Reduced manual effort"
+                                        },
+                                        {
+                                            "question": "Which of the following is an important factor when designing a speech interface?",
+                                            "options": ["User needs", "Battery life", "Screen size", "Processing speed"],
+                                            "answer": "User needs"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of information visualization?",
+                                            "options": ["Pie chart", "Audio file", "Text document", "Spreadsheet"],
+                                            "answer": "Pie chart"
+                                        },
+                                        {
+                                            "question": "What term is used to describe computing available anywhere and anytime?",
+                                            "options": ["Ubiquitous computing", "Cloud computing", "Parallel computing", "Batch processing"],
+                                            "answer": "Ubiquitous computing"
+                                        },
+                                        {
+                                            "question": "Which of the following is a key feature of hypertext?",
+                                            "options": ["Interactive linking", "Linear navigation", "Static content", "Fixed layout"],
+                                            "answer": "Interactive linking"
+                                        },
+                                        {
+                                            "question": "Which factor is critical for designing a successful speech interface?",
+                                            "options": ["User comfort", "Screen resolution", "Battery consumption", "Data storage"],
+                                            "answer": "User comfort"
+                                        },
+                                        {
+                                            "question": "Which of the following best describes ubiquitous computing?",
+                                            "options": ["Invisible computing everywhere", "Computing in a single location", "Restricted access to data", "Limited connectivity"],
+                                            "answer": "Invisible computing everywhere"
+                                        },
+                                        {
+                                            "question": "What is the main benefit of using visual aids for data representation?",
+                                            "options": ["Easy pattern recognition", "Faster processing", "Increased data storage", "Reduced errors"],
+                                            "answer": "Easy pattern recognition"
+                                        },
+                                        {
+                                            "question": "Which of the following elements is crucial in context-aware computing?",
+                                            "options": ["Location", "Color scheme", "Screen brightness", "Battery life"],
+                                            "answer": "Location"
+                                        },
+                                        {
+                                            "question": "What makes speech interfaces challenging to design?",
+                                            "options": ["Accents and dialects", "Network speed", "Screen size", "Battery life"],
+                                            "answer": "Accents and dialects"
+                                        },
+                                        {
+                                            "question": "Which of the following is NOT an advantage of ubiquitous computing?",
+                                            "options": ["Better accessibility", "Improved privacy", "Seamless user experience", "Automation of tasks"],
+                                            "answer": "Improved privacy"
+                                        }
+                                    ]
+                                    ,                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is a speech interface?",
+                                            "answer": "A speech interface is a software system that allows interaction between humans and voice-enabled devices using speech recognition technology. Examples include virtual assistants like Siri, Alexa, and Google Assistant."
+                                        },
+                                        {
+                                            "question": "What are the benefits of information visualization?",
+                                            "answer": "Information visualization helps in understanding complex data by representing it visually, making it easier to detect patterns and trends. It allows users to explore data efficiently and make informed decisions."
+                                        },
+                                        {
+                                            "question": "What is ubiquitous computing?",
+                                            "answer": "Ubiquitous computing refers to the concept where computing is accessible everywhere at any time, seamlessly integrated into everyday objects and activities. Examples include smart home systems, wearable devices, and IoT applications."
+                                        },
+                                        {
+                                            "question": "What are some applications of context-aware computing?",
+                                            "answer": "Context-aware computing is used in applications like smart homes, GPS-based navigation, and healthcare systems. It enhances user experience by providing relevant services based on the user's context, such as location and activity."
+                                        },
+                                        {
+                                            "question": "How does hypertext enhance user experience?",
+                                            "answer": "Hypertext allows users to navigate through information non-linearly by clicking on links, making it easier to access related content. It improves usability in web browsing, online documentation, and educational materials."
+                                        }
+                                    ]
+                                    ,
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Implementing Speech Interfaces in Smart Homes",
+                                            "description": "A smart home company is looking to enhance its product line by integrating speech interfaces. The goal is to allow users to control home appliances using voice commands through devices like Amazon Alexa and Google Assistant. The company faces challenges in ensuring seamless recognition of voice commands across different accents and environments. They are also focusing on providing clear responses and feedback to the users to enhance the user experience. To overcome these challenges, the company is conducting extensive testing with diverse user groups and using machine learning models to improve recognition accuracy.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is a primary challenge in implementing speech interfaces in smart homes?",
+                                                    "options": ["Battery life", "Voice recognition across different accents", "Screen size", "Hardware cost"],
+                                                    "answer": "Voice recognition across different accents"
+                                                },
+                                                {
+                                                    "question": "Which technology is crucial for improving speech recognition accuracy?",
+                                                    "options": ["Cloud storage", "Machine learning", "Augmented reality", "Blockchain"],
+                                                    "answer": "Machine learning"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Information Visualization for Business Analytics",
+                                            "description": "A financial company is implementing information visualization tools to help analysts better understand market trends and customer behavior. They have introduced dashboards with visual elements such as charts, graphs, and heatmaps. The goal is to enable decision-makers to quickly identify patterns and insights from large datasets. The company is also providing training to employees on how to effectively use these visualization tools to make data-driven decisions.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is a key benefit of using information visualization in business analytics?",
+                                                    "options": ["Faster data processing", "Easier pattern recognition", "Increased data storage", "Reduced data entry errors"],
+                                                    "answer": "Easier pattern recognition"
+                                                },
+                                                {
+                                                    "question": "Which of the following is an example of an information visualization tool?",
+                                                    "options": ["Google Docs", "Microsoft Excel charts", "PDF reader", "Text editor"],
+                                                    "answer": "Microsoft Excel charts"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                    
+                                                                                                          
                                 }
                             ]
                         }
