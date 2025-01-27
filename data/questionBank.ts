@@ -6960,6 +6960,2512 @@ export const questionBank = {
                                 }
                             ]
                         }
+                        ,
+                        {
+                            name: "Basic Mathemetics - 1",
+                            id: "basic-mathematics-1",
+                            modules: [
+                                {
+                                    name: "Module 1",
+                                    id: "module-1",
+                                    mcq: [
+                                        {
+                                            "question": "Which of the following is a correct set?",
+                                            "options": [
+                                                "A collection of most dangerous animals of the world.",
+                                                "A team of 5 best footballers of the world.",
+                                                "The collection of ten most interesting books.",
+                                                "The collection of all the days of a week beginning with the letter S."
+                                            ],
+                                            "answer": "The collection of all the days of a week beginning with the letter S."
+                                        },
+                                        {
+                                            "question": "The builder form of the following set is X = {5,10,15,20,25}:",
+                                            "options": [
+                                                "X = {x: x = 5n, n ∈ N, 1 ≤ n ≤ 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 < n ≤ 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 ≤ n < 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 < n < 5}"
+                                            ],
+                                            "answer": "X = {x: x = 5n, n ∈ N, 1 ≤ n ≤ 5}"
+                                        },
+                                        {
+                                            "question": "The Roster form of the set X = {x : x = n³, n ∈ N, 1 ≤ n < 6}:",
+                                            "options": [
+                                                "X = {1,8,27,64,125}",
+                                                "X = {1,4,9,16,25}",
+                                                "X = {1,2,3,4,5}",
+                                                "X = {1,4,9,16,25,36}"
+                                            ],
+                                            "answer": "X = {1,8,27,64,125}"
+                                        },
+                                        {
+                                            "question": "The Roster form of the set X = {x: x = 2n, n ∈ N, 1 ≤ n ≤ 5}:",
+                                            "options": [
+                                                "X = {2,4,6,8,10}",
+                                                "X = {1,4,6,8,10,12}"
+                                            ],
+                                            "answer": "X = {2,4,6,8,10}"
+                                        },
+                                        {
+                                            "question": "Which of the following is a correct set?",
+                                            "options": [
+                                                "A collection of most dangerous animals of the world.",
+                                                "A team of 5 best footballers of the world.",
+                                                "The collection of ten most interesting books.",
+                                                "The collection of all the days of a week beginning with the letter S."
+                                            ],
+                                            "answer": "The collection of all the days of a week beginning with the letter S."
+                                        },
+                                        {
+                                            "question": "What is the Roster form of the set X = {x : x = n^3, n ∈ N, 1 ≤ n < 6}?",
+                                            "options": [
+                                                "{1,8,27,64,125}",
+                                                "{1,4,9,16,25}",
+                                                "{1,2,3,4,5}",
+                                                "{1,4,9,16,25,36}"
+                                            ],
+                                            "answer": "{1,8,27,64,125}"
+                                        },
+                                        {
+                                            "question": "The builder form of the following set is X = {5,10,15,20,25}:",
+                                            "options": [
+                                                "X = {x: x = 5n, n ∈ N, 1 ≤ n ≤ 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 < n ≤ 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 ≤ n < 5}",
+                                                "X = {x: x = 5n, n ∈ N, 1 < n < 5}"
+                                            ],
+                                            "answer": "X = {x: x = 5n, n ∈ N, 1 ≤ n ≤ 5}"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a finite set?",
+                                            "options": [
+                                                "Set of real numbers",
+                                                "Set of whole numbers",
+                                                "Set of vowels in the English alphabet",
+                                                "Set of integers"
+                                            ],
+                                            "answer": "Set of vowels in the English alphabet"
+                                        },
+                                        {
+                                            "question": "What is the result of A ∩ B when A = {1,2,3} and B = {2,3,4}?",
+                                            "options": [
+                                                "{1,2,3,4}",
+                                                "{2,3}",
+                                                "{1}",
+                                                "∅"
+                                            ],
+                                            "answer": "{2,3}"
+                                        },
+                                        {
+                                            "question": "The power set of {1,2} contains how many subsets?",
+                                            "options": [
+                                                "2",
+                                                "3",
+                                                "4",
+                                                "5"
+                                            ],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "Which matrix is known as the identity matrix?",
+                                            "options": [
+                                                "A matrix with all elements as zero",
+                                                "A square matrix with ones on the diagonal and zeros elsewhere",
+                                                "A matrix with identical rows",
+                                                "A diagonal matrix with non-zero values"
+                                            ],
+                                            "answer": "A square matrix with ones on the diagonal and zeros elsewhere"
+                                        },
+                                        {
+                                            "question": "The determinant of a singular matrix is always:",
+                                            "options": [
+                                                "1",
+                                                "0",
+                                                "-1",
+                                                "Non-zero"
+                                            ],
+                                            "answer": "0"
+                                        },
+                                        {
+                                            "question": "If matrix A has order 3x2 and matrix B has order 2x4, the resulting matrix from multiplication AB will have order:",
+                                            "options": [
+                                                "3x4",
+                                                "2x3",
+                                                "4x2",
+                                                "3x2"
+                                            ],
+                                            "answer": "3x4"
+                                        },
+                                        {
+                                            "question": "If A and B are two sets such that A ⊆ B, then:",
+                                            "options": [
+                                                "A ∩ B = A",
+                                                "A ∩ B = B",
+                                                "A ∪ B = A",
+                                                "A ∪ B = ∅"
+                                            ],
+                                            "answer": "A ∩ B = A"
+                                        },{
+                                            "question": "Which of the following represents an empty set?",
+                                            "options": [
+                                                "{0}",
+                                                "{}",
+                                                "{1}",
+                                                "{x | x is a positive number}"
+                                            ],
+                                            "answer": "{}"
+                                        },
+                                        {
+                                            "question": "If A = {1,2,3} and B = {3,4,5}, then A ∪ B is:",
+                                            "options": [
+                                                "{1,2,3}",
+                                                "{3,4,5}",
+                                                "{1,2,3,4,5}",
+                                                "{3}"
+                                            ],
+                                            "answer": "{1,2,3,4,5}"
+                                        },
+                                        {
+                                            "question": "The intersection of two disjoint sets is:",
+                                            "options": [
+                                                "A non-empty set",
+                                                "A null set",
+                                                "A universal set",
+                                                "The same set"
+                                            ],
+                                            "answer": "A null set"
+                                        },
+                                        {
+                                            "question": "The total number of elements in the power set of a set with 3 elements is:",
+                                            "options": [
+                                                "3",
+                                                "6",
+                                                "8",
+                                                "9"
+                                            ],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "Which of the following matrices is a diagonal matrix?",
+                                            "options": [
+                                                "[[1, 0], [0, 1]]",
+                                                "[[1, 2], [3, 4]]",
+                                                "[[0, 0], [0, 0]]",
+                                                "[[1, 1], [1, 1]]"
+                                            ],
+                                            "answer": "[[1, 0], [0, 1]]"
+                                        },
+                                        {
+                                            "question": "What is the identity element for the union operation on sets?",
+                                            "options": [
+                                                "Universal set",
+                                                "Null set",
+                                                "Set itself",
+                                                "Empty set"
+                                            ],
+                                            "answer": "Null set"
+                                        },
+                                        {
+                                            "question": "If the determinant of a matrix is zero, the matrix is called:",
+                                            "options": [
+                                                "Singular",
+                                                "Non-singular",
+                                                "Orthogonal",
+                                                "Symmetric"
+                                            ],
+                                            "answer": "Singular"
+                                        },
+                                        {
+                                            "question": "A set that contains all possible subsets of a given set is called:",
+                                            "options": [
+                                                "Universal set",
+                                                "Power set",
+                                                "Empty set",
+                                                "Proper set"
+                                            ],
+                                            "answer": "Power set"
+                                        },
+                                        {
+                                            "question": "What is the result of the Cartesian product of A = {1,2} and B = {a,b}?",
+                                            "options": [
+                                                "{(1,a), (1,b), (2,a), (2,b)}",
+                                                "{(1,a), (2,b)}",
+                                                "{(1,1), (2,2)}",
+                                                "{a,b,1,2}"
+                                            ],
+                                            "answer": "{(1,a), (1,b), (2,a), (2,b)}"
+                                        },
+                                        {
+                                            "question": "Which of the following statements is true for De Morgan's law?",
+                                            "options": [
+                                                "(A ∪ B)' = A' ∩ B'",
+                                                "(A ∩ B)' = A' ∪ B'",
+                                                "Both A and B",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Both A and B"
+                                        },
+                                        {
+                                            "question": "The rank of a matrix is determined by:",
+                                            "options": [
+                                                "The number of non-zero rows",
+                                                "The number of columns",
+                                                "The number of rows",
+                                                "The determinant value"
+                                            ],
+                                            "answer": "The number of non-zero rows"
+                                        },
+                                        {
+                                            "question": "The number of elements in the universal set is always:",
+                                            "options": [
+                                                "Finite",
+                                                "Infinite",
+                                                "Zero",
+                                                "Equal to subsets"
+                                            ],
+                                            "answer": "Infinite"
+                                        },
+                                        {
+                                            "question": "A matrix that is equal to its transpose is called:",
+                                            "options": [
+                                                "Singular",
+                                                "Diagonal",
+                                                "Symmetric",
+                                                "Skew-symmetric"
+                                            ],
+                                            "answer": "Symmetric"
+                                        },
+                                        {
+                                            "question": "If A and B are two sets, then A - B represents:",
+                                            "options": [
+                                                "Elements in A but not in B",
+                                                "Elements in B but not in A",
+                                                "Union of A and B",
+                                                "Intersection of A and B"
+                                            ],
+                                            "answer": "Elements in A but not in B"
+                                        },
+                                        {
+                                            "question": "The complement of a universal set is:",
+                                            "options": [
+                                                "Universal set",
+                                                "Empty set",
+                                                "Subset",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Empty set"
+                                        },
+                                        {
+                                            "question": "A matrix having the same number of rows and columns is called:",
+                                            "options": [
+                                                "Square matrix",
+                                                "Rectangular matrix",
+                                                "Zero matrix",
+                                                "Diagonal matrix"
+                                            ],
+                                            "answer": "Square matrix"
+                                        },
+                                        {
+                                            "question": "If a set contains 'n' elements, how many proper subsets does it have?",
+                                            "options": [
+                                                "2^n",
+                                                "2^n - 1",
+                                                "n!",
+                                                "2^n + 1"
+                                            ],
+                                            "answer": "2^n - 1"
+                                        },
+                                        {
+                                            "question": "The intersection of a set with itself is:",
+                                            "options": [
+                                                "The set itself",
+                                                "An empty set",
+                                                "Universal set",
+                                                "None of the above"
+                                            ],
+                                            "answer": "The set itself"
+                                        },
+                                        {
+                                            "question": "The row matrix has:",
+                                            "options": [
+                                                "Only one row",
+                                                "Only one column",
+                                                "Equal rows and columns",
+                                                "No elements"
+                                            ],
+                                            "answer": "Only one row"
+                                        },{
+                                            "question": "Which of the following is not a type of set?",
+                                            "options": [
+                                                "Empty set",
+                                                "Finite set",
+                                                "Infinite set",
+                                                "Mixed set"
+                                            ],
+                                            "answer": "Mixed set"
+                                        },
+                                        {
+                                            "question": "If A = {2,4,6} and B = {1,2,3}, then A ∩ B is:",
+                                            "options": [
+                                                "{2}",
+                                                "{1,2,3,4,6}",
+                                                "{2,3,4}",
+                                                "∅"
+                                            ],
+                                            "answer": "{2}"
+                                        },
+                                        {
+                                            "question": "Which of the following operations on sets results in elements common to both sets?",
+                                            "options": [
+                                                "Union",
+                                                "Intersection",
+                                                "Difference",
+                                                "Complement"
+                                            ],
+                                            "answer": "Intersection"
+                                        },
+                                        {
+                                            "question": "The universal set contains:",
+                                            "options": [
+                                                "All possible elements",
+                                                "Only elements of a specific set",
+                                                "No elements",
+                                                "Equal number of elements as a subset"
+                                            ],
+                                            "answer": "All possible elements"
+                                        },
+                                        {
+                                            "question": "The number of subsets of a set containing 4 elements is:",
+                                            "options": [
+                                                "8",
+                                                "16",
+                                                "4",
+                                                "12"
+                                            ],
+                                            "answer": "16"
+                                        },
+                                        {
+                                            "question": "What is the result of the complement of an empty set?",
+                                            "options": [
+                                                "Empty set",
+                                                "Universal set",
+                                                "Subset of the empty set",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Universal set"
+                                        },
+                                        {
+                                            "question": "Which matrix operation is not possible between a 2x3 and a 3x2 matrix?",
+                                            "options": [
+                                                "Addition",
+                                                "Multiplication",
+                                                "Subtraction",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Addition"
+                                        },
+                                        {
+                                            "question": "The set {x | x is an even prime number} contains how many elements?",
+                                            "options": [
+                                                "0",
+                                                "1",
+                                                "2",
+                                                "Infinite"
+                                            ],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "A matrix in which all elements except the diagonal elements are zero is called:",
+                                            "options": [
+                                                "Zero matrix",
+                                                "Scalar matrix",
+                                                "Diagonal matrix",
+                                                "Triangular matrix"
+                                            ],
+                                            "answer": "Diagonal matrix"
+                                        },
+                                        {
+                                            "question": "The determinant of an identity matrix of any order is:",
+                                            "options": [
+                                                "0",
+                                                "1",
+                                                "-1",
+                                                "None of the above"
+                                            ],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "If A is a set, the complement of the complement of A is:",
+                                            "options": [
+                                                "A",
+                                                "Universal set",
+                                                "Empty set",
+                                                "A' (Complement of A)"
+                                            ],
+                                            "answer": "A"
+                                        },
+                                        {
+                                            "question": "If A and B are two sets such that A ⊆ B, then A ∩ B is:",
+                                            "options": [
+                                                "A",
+                                                "B",
+                                                "A ∪ B",
+                                                "∅"
+                                            ],
+                                            "answer": "A"
+                                        },
+                                        {
+                                            "question": "The union of two sets A and B contains:",
+                                            "options": [
+                                                "Elements common in both sets",
+                                                "Elements in A but not in B",
+                                                "All elements in A or B",
+                                                "None of the above"
+                                            ],
+                                            "answer": "All elements in A or B"
+                                        },
+                                        {
+                                            "question": "The rank of a matrix is defined as:",
+                                            "options": [
+                                                "Number of rows",
+                                                "Number of non-zero rows in reduced form",
+                                                "Number of columns",
+                                                "Order of the matrix"
+                                            ],
+                                            "answer": "Number of non-zero rows in reduced form"
+                                        },
+                                        {
+                                            "question": "If A and B are disjoint sets, then their intersection is:",
+                                            "options": [
+                                                "A",
+                                                "B",
+                                                "Empty set",
+                                                "Universal set"
+                                            ],
+                                            "answer": "Empty set"
+                                        },
+                                        {
+                                            "question": "Which property states that A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)?",
+                                            "options": [
+                                                "Commutative property",
+                                                "Associative property",
+                                                "Distributive property",
+                                                "Identity property"
+                                            ],
+                                            "answer": "Distributive property"
+                                        },
+                                        {
+                                            "question": "A set with only one element is called a:",
+                                            "options": [
+                                                "Finite set",
+                                                "Singleton set",
+                                                "Null set",
+                                                "Infinite set"
+                                            ],
+                                            "answer": "Singleton set"
+                                        },
+                                        {
+                                            "question": "The transpose of a matrix is obtained by:",
+                                            "options": [
+                                                "Changing the elements' values",
+                                                "Swapping rows and columns",
+                                                "Reversing the order of rows",
+                                                "Adding the elements"
+                                            ],
+                                            "answer": "Swapping rows and columns"
+                                        },
+                                        {
+                                            "question": "If a set contains 'n' elements, the number of subsets it can have is:",
+                                            "options": [
+                                                "n",
+                                                "2^n",
+                                                "n!",
+                                                "n^2"
+                                            ],
+                                            "answer": "2^n"
+                                        },
+                                        {
+                                            "question": "A square matrix in which all diagonal elements are equal is called:",
+                                            "options": [
+                                                "Identity matrix",
+                                                "Diagonal matrix",
+                                                "Scalar matrix",
+                                                "Skew-symmetric matrix"
+                                            ],
+                                            "answer": "Scalar matrix"
+                                        },
+                                        {
+                                            "question": "Which of the following statements is true for symmetric matrices?",
+                                            "options": [
+                                                "A = A'",
+                                                "A ≠ A'",
+                                                "A is always singular",
+                                                "A is always square"
+                                            ],
+                                            "answer": "A = A'"
+                                        }
+                                    ],
+                                    brief: [
+                                        {
+                                            "question": "What is a universal set?",
+                                            "answer": "A universal set is the set that contains all possible elements related to a particular discussion or problem. It is usually denoted by the symbol 'U' and serves as the reference set for all subsets under consideration."
+                                        },
+                                        {
+                                            "question": "State and explain De Morgan's laws.",
+                                            "answer": "De Morgan's laws describe the relationship between union and intersection of sets. They are: (1) The complement of the union of two sets is equal to the intersection of their complements: (A ∪ B)' = A' ∩ B'. (2) The complement of the intersection of two sets is equal to the union of their complements: (A ∩ B)' = A' ∪ B'."
+                                        },
+                                        {
+                                            "question": "What is the difference between a finite and infinite set?",
+                                            "answer": "A finite set is a set that contains a countable number of elements, meaning it has a specific, fixed size. For example, {1,2,3} is a finite set. An infinite set has an uncountable or limitless number of elements, such as the set of natural numbers N = {1,2,3,...}."
+                                        },
+                                        {
+                                            "question": "What are the types of matrices?",
+                                            "answer": "Some common types of matrices include: (1) Row matrix - a matrix with only one row, (2) Column matrix - a matrix with only one column, (3) Square matrix - a matrix where the number of rows and columns are equal, (4) Diagonal matrix - a square matrix with non-zero elements only on the diagonal, (5) Identity matrix - a diagonal matrix with ones on the diagonal, (6) Zero matrix - a matrix with all elements equal to zero."
+                                        },
+                                        {
+                                            "question": "What is the Cartesian product of two sets?",
+                                            "answer": "The Cartesian product of two sets A and B, denoted as A × B, is the set of all ordered pairs (a, b) where 'a' belongs to set A and 'b' belongs to set B. For example, if A = {1,2} and B = {x,y}, then A × B = {(1,x), (1,y), (2,x), (2,y)}."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Application of Set Theory in Real Life",
+                                            "description": "A university conducted a survey to analyze the students who are enrolled in Mathematics and Science courses. Out of 200 students, 120 are enrolled in Mathematics, 80 are enrolled in Science, and 50 are enrolled in both subjects. The university aims to determine the number of students who are enrolled in either Mathematics or Science, and those who are not enrolled in any of these courses.",
+                                            "mcq": [
+                                                {
+                                                    "question": "How many students are enrolled in either Mathematics or Science?",
+                                                    "options": [
+                                                        "150",
+                                                        "200",
+                                                        "170",
+                                                        "130"
+                                                    ],
+                                                    "answer": "150"
+                                                },
+                                                {
+                                                    "question": "How many students are not enrolled in either Mathematics or Science?",
+                                                    "options": [
+                                                        "50",
+                                                        "30",
+                                                        "70",
+                                                        "20"
+                                                    ],
+                                                    "answer": "50"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Use of Matrices in Business Analysis",
+                                            "description": "A company tracks the monthly sales data of two products in two different regions. The sales are represented in matrix form as follows: Product A sales matrix [ [120, 150], [200, 250] ] and Product B sales matrix [ [100, 130], [180, 210] ]. The management wants to analyze the total sales and identify the highest selling product-region combination.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What will be the total sales matrix if the two product matrices are added?",
+                                                    "options": [
+                                                        "[ [220, 280], [380, 460] ]",
+                                                        "[ [120, 150], [200, 250] ]",
+                                                        "[ [100, 130], [180, 210] ]",
+                                                        "[ [240, 300], [400, 500] ]"
+                                                    ],
+                                                    "answer": "[ [220, 280], [380, 460] ]"
+                                                },
+                                                {
+                                                    "question": "Which region-product combination has the highest sales?",
+                                                    "options": [
+                                                        "Product A, Region 2",
+                                                        "Product B, Region 2",
+                                                        "Product A, Region 1",
+                                                        "Product B, Region 1"
+                                                    ],
+                                                    "answer": "Product A, Region 2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                                                                                             
+                                },
+                                {
+                                    name: "Module 2",
+                                    id: "module-2",
+                                    mcq: [
+                                        {
+                                            "question": "Which of the following is a statement?",
+                                            "options": ["Open the door", "Do your homework", "Switch on the fan", "Two plus two is four"],
+                                            "answer": "Two plus two is four"
+                                        },
+                                        {
+                                            "question": "Which of the following is a statement?",
+                                            "options": ["May you live long!", "May God bless you!", "The sun is a star", "Hurrah! we have won the match"],
+                                            "answer": "The sun is a star"
+                                        },
+                                        {
+                                            "question": "Which of the following is **not** a statement?",
+                                            "options": ["Every set is a finite set", "8 is less than 6", "Where are you going?", "The sum of all interior angles of a triangle is 180 degrees"],
+                                            "answer": "Where are you going?"
+                                        },
+                                        {
+                                            "question": "Which of the following is **not** a statement?",
+                                            "options": ["Please do me a favor", "2 is an even integer", "2 + 1 = 3", "The number 17 is prime"],
+                                            "answer": "Please do me a favor"
+                                        },
+                                        {
+                                            "question": "Let P, Q, and R be three atomic propositional declarations. Let X denote (P ∨ Q) → R, and Y denote (P → R)∨(Q → R). Which of the following is a tautology?",
+                                            "questionRead": "Tautology is a formula that is always true, regardless of the truth values of its components.",
+                                            "options": ["X ≡ Y", "X → Y", "Y → X", "¬Y → X"],
+                                            "answer": "X → Y"
+                                        },
+                                        {
+                                            "question": "Consider the following propositional statements:\n P1: [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]\n P2: [(A ∨ B) → C] ≡ [(A → C) ∨ (B → C)]\nWhich one of the following is true?",
+                                            "questionRead": "Consider the logical equivalence of conditionals and conjunctions.",
+                                            "options": ["P1 is tautology, but not P2", "P2 is tautology, but not P1", "P1 and P2 are both tautologies", "Both P1 and P2 are not tautologies"],
+                                            "answer": "P1 is tautology, but not P2"
+                                        },
+                                        {
+                                            "question": "Negation of the conditional statement “If it rains, I shall go to school” is:",
+                                            "options": ["It rains and I shall go to school", "It rains and I shall not go to school", "It does not rain and I shall go to school", "None of these"],
+                                            "answer": "It rains and I shall not go to school"
+                                        },
+                                        {
+                                            "question": "Which of the following is a contradiction?",
+                                            "questionRead": "A contradiction is a compound statement that is always false.",
+                                            "options": ["(P ∧ Q) ∧ ~(P ∨ Q)", "P ∨ (~P ∧ Q)", "(P ⇒ Q) ⇒ P", "None of these"],
+                                            "answer": "(P ∧ Q) ∧ ~(P ∨ Q)"
+                                        },
+                                        {
+                                            "question": "~(~P) ∧ Q is equal to:",
+                                            "questionRead": "Use De Morgan's laws to simplify the expression.",
+                                            "options": ["~P ∨ Q", "P ∧ Q", "P ∧ ~Q", "~P ∧ ~Q"],
+                                            "answer": "P ∧ Q"
+                                        },
+                                        {
+                                            "question": "If P, Q, R are simple propositions, then (P ∧ Q) ∧ (Q ∧ R) is true when:",
+                                            "options": ["P, Q, R are all false", "P, Q, R are all true", "P, Q are all true and R is false", "P is true and Q and R are false"],
+                                            "answer": "P, Q, R are all true"
+                                        },
+                                        {
+                                            "question": "Which of the following is a tautology?",
+                                            "options": ["(P ∧ Q) → P", "(P ∨ Q) → P", "P → (P ∨ Q)", "None of these"],
+                                            "answer": "P → (P ∨ Q)"
+                                        },
+                                        {
+                                            "question": "If P and Q are two propositions, then P ∨ Q is false when:",
+                                            "options": ["P is true and Q is false", "P is false and Q is true", "P and Q both are false", "P and Q both are true"],
+                                            "answer": "P and Q both are false"
+                                        },
+                                        {
+                                            "question": "The negation of the statement 'All birds can fly' is:",
+                                            "options": ["No bird can fly", "Some birds cannot fly", "All birds cannot fly", "None of these"],
+                                            "answer": "Some birds cannot fly"
+                                        },
+                                        {
+                                            "question": "Which of the following is logically equivalent to P → Q?",
+                                            "options": ["~P ∨ Q", "P ∧ ~Q", "P ∨ Q", "~P ∧ Q"],
+                                            "answer": "~P ∨ Q"
+                                        },
+                                        {
+                                            "question": "The contrapositive of 'If it rains, then the ground is wet' is:",
+                                            "options": ["If the ground is not wet, then it does not rain", "If it does not rain, then the ground is not wet", "If the ground is wet, then it rains", "None of these"],
+                                            "answer": "If the ground is not wet, then it does not rain"
+                                        },
+                                        {
+                                            "question": "Which of the following is a contradiction?",
+                                            "options": ["(P ∧ Q) ∧ ~(P ∨ Q)", "P ∨ (~P ∧ Q)", "(P ⇒ Q) ⇒ P", "None of these"],
+                                            "answer": "(P ∧ Q) ∧ ~(P ∨ Q)"
+                                        },
+                                        {
+                                            "question": "Which of the following is a valid statement?",
+                                            "options": ["Please close the door", "I like chocolate", "x + 2 = 5", "How are you?"],
+                                            "answer": "x + 2 = 5"
+                                        },
+                                        {
+                                            "question": "Which of the following is the inverse of 'If it is raining, then the ground is wet'?",
+                                            "options": ["If the ground is wet, then it is raining", "If it is not raining, then the ground is not wet", "If the ground is not wet, then it is not raining", "None of these"],
+                                            "answer": "If it is not raining, then the ground is not wet"
+                                        },
+                                        {
+                                            "question": "Identify the bi-conditional statement among the following:",
+                                            "options": ["If P then Q", "P if and only if Q", "P or Q", "None of these"],
+                                            "answer": "P if and only if Q"
+                                        },
+                                        {
+                                            "question": "The compound proposition P ↔ Q is logically equivalent to:",
+                                            "options": ["(P → Q) ∨ (Q → P)", "(P ∨ Q) → (Q ∧ P)", "(P → Q) ∧ (Q → P)", "None of these"],
+                                            "answer": "(P → Q) ∧ (Q → P)"
+                                        },
+                                        {
+                                            "question": "If P = {1,2,3,4} and Q = {3,4,5,6}, find P ∩ Q.",
+                                            "questionRead": "The intersection ( ∩ ) of two sets includes only the elements common to both sets.",
+                                            "options": ["{3,4}", "{1,2,3,4,5,6}", "{1,2,5,6}", "∅"],
+                                            "answer": "{3,4}"
+                                        },
+                                        {
+                                            "question": "If A = {a,b,c} and B = {b,c,d}, find A ∪ B.",
+                                            "questionRead": "The union ( ∪ ) of two sets includes all unique elements from both sets.",
+                                            "options": ["{a,b,c,d}", "{b,c}", "{a,d}", "{a,b}"],
+                                            "answer": "{a,b,c,d}"
+                                        },
+                                        {
+                                            "question": "Find the Cartesian product A × B if A = {1,2} and B = {x,y}.",
+                                            "questionRead": "The Cartesian product A × B is read as 'A cross B' and consists of ordered pairs (a, b) where a ∈ A and b ∈ B.",
+                                            "options": ["{(1,x), (1,y), (2,x), (2,y)}", "{(x,1), (y,1), (x,2), (y,2)}", "{(1,2), (x,y)}", "None of these"],
+                                            "answer": "{(1,x), (1,y), (2,x), (2,y)}"
+                                        },
+                                        {
+                                            "question": "If P → Q and P is false, what can be inferred?",
+                                            "questionRead": "The implication P → Q is read as 'If P then Q' and is false only when P is true and Q is false.",
+                                            "options": ["Q must be true", "Q must be false", "P → Q is true", "None of these"],
+                                            "answer": "P → Q is true"
+                                        },
+                                        {
+                                            "question": "Evaluate (~P ∨ Q) if P is false and Q is true.",
+                                            "questionRead": "The expression (~P ∨ Q) is read as 'Not P or Q'. Use truth values to evaluate.",
+                                            "options": ["True", "False", "Cannot be determined", "None of these"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "Simplify the Boolean expression: (A ∧ B) ∨ (~A ∧ B)",
+                                            "questionRead": "The expression (A ∧ B) ∨ (~A ∧ B) is read as 'A and B or not A and B'. Apply distributive properties to simplify.",
+                                            "options": ["B", "A", "A ∨ B", "None of these"],
+                                            "answer": "B"
+                                        },
+                                        {
+                                            "question": "Which of the following is logically equivalent to [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]?",
+                                            "questionRead": "The expression [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)] is read as 'A and B implies C is logically equivalent to A implies C and B implies C'.",
+                                            "options": ["Tautology", "Contradiction", "Contingency", "None of these"],
+                                            "answer": "Tautology"
+                                        },
+                                        {
+                                            "question": "Find the truth value of P ∧ (~P ∨ Q), when P is false and Q is true.",
+                                            "questionRead": "The expression P ∧ (~P ∨ Q) is read as 'P and (not P or Q)'. Evaluate using given values.",
+                                            "options": ["True", "False", "Cannot be determined", "None of these"],
+                                            "answer": "False"
+                                        },
+                                        {
+                                            "question": "Evaluate the Boolean expression: (A + B)'",
+                                            "questionRead": "The expression (A + B)' is read as 'not (A or B)'. Apply De Morgan's Law to simplify.",
+                                            "options": ["A'B'", "A' + B'", "AB", "None of these"],
+                                            "answer": "A'B'"
+                                        },
+                                        {
+                                            "question": "Which of the following is logically equivalent to (P → Q) ∧ (Q → R)?",
+                                            "questionRead": "The expression (P → Q) ∧ (Q → R) is read as 'P implies Q and Q implies R'. Use transitivity to simplify.",
+                                            "options": ["P → R", "P ∧ Q", "P ∨ R", "None of these"],
+                                            "answer": "P → R"
+                                        },
+                                        {
+                                            "question": "Find the negation of the statement: 'All dogs bark'.",
+                                            "options": ["No dog barks", "Some dogs do not bark", "Some dogs bark", "None of these"],
+                                            "answer": "Some dogs do not bark"
+                                        },
+                                        {
+                                            "question": "If A = {1,3,5,7} and B = {2,3,4,5}, find A ∩ B.",
+                                            "questionRead": "The expression A ∩ B is read as 'A intersection B' and includes only elements common to both sets.",
+                                            "options": ["{3,5}", "{1,7}", "{2,4}", "∅"],
+                                            "answer": "{3,5}"
+                                        },
+                                        {
+                                            "question": "Find the negation of (P ∨ Q).",
+                                            "questionRead": "The negation of (P ∨ Q) is read as 'not (P or Q)'. Apply De Morgan's Law.",
+                                            "options": ["~P ∨ Q", "~P ∧ ~Q", "P ∧ Q", "None of these"],
+                                            "answer": "~P ∧ ~Q"
+                                        },
+                                        {
+                                            "question": "Evaluate the logical expression: (P → Q) ↔ (~Q → ~P).",
+                                            "questionRead": "The biconditional ( ↔ ) means 'if and only if'. This expression is also known as the contrapositive.",
+                                            "options": ["Always true", "Always false", "Depends on values of P and Q", "None of these"],
+                                            "answer": "Always true"
+                                        },
+                                        {
+                                            "question": "Which of the following is the correct representation of De Morgan's law?",
+                                            "questionRead": "De Morgan's laws state how negation distributes over conjunction and disjunction.",
+                                            "options": ["¬(A ∧ B) ≡ ¬A ∨ ¬B", "¬(A ∧ B) ≡ A ∨ B", "¬(A ∨ B) ≡ ¬A ∧ B", "None of these"],
+                                            "answer": "¬(A ∧ B) ≡ ¬A ∨ ¬B"
+                                        },
+                                        {
+                                            "question": "What is the logical equivalent of the expression (p → q) ∧ (q → r)?",
+                                            "questionRead": "*Read as 'p implies q and q implies r'.*",
+                                            "options": ["p → r", "p ∨ r", "p ∧ r", "None of these"],
+                                            "answer": "p → r"
+                                        },
+                                        {
+                                            "question": "The simplified form of the Boolean expression (A ∧ B) ∨ (~A ∧ B) is:",
+                                            "questionRead": "*Read as 'A and B or not A and B'.*",
+                                            "options": ["A", "B", "A ∨ B", "None of these"],
+                                            "answer": "B"
+                                        },
+                                        {
+                                            "question": "Which of the following is logically equivalent to ¬(p ∧ q)?",
+                                            "questionRead": "*Read as 'not (p and q)'.*",
+                                            "options": ["¬p ∨ ¬q", "¬p ∧ ¬q", "p ∧ q", "None of these"],
+                                            "answer": "¬p ∨ ¬q"
+                                        },
+                                        {
+                                            "question": "Evaluate the Boolean expression ~(A ∨ B) if A is false and B is true.",
+                                            "questionRead": "*Read as 'not (A or B)'.*",
+                                            "options": ["True", "False", "Cannot be determined", "None of these"],
+                                            "answer": "False"
+                                        },
+                                        {
+                                            "question": "Find the negation of the statement: 'If it rains, then the ground is wet'.",
+                                            "questionRead": "*Read as 'if it rains then the ground is wet'.*",
+                                            "options": ["It rains and the ground is not wet", "If it does not rain, the ground is not wet", "The ground is wet if it rains", "None of these"],
+                                            "answer": "It rains and the ground is not wet"
+                                        },
+                                        {
+                                            "question": "Find the intersection A ∩ B if A = {1,3,5} and B = {3,5,7}.",
+                                            "questionRead": "*Read as 'A intersection B'.*",
+                                            "options": ["{3,5}", "{1,3,5,7}", "{1,5}", "∅"],
+                                            "answer": "{3,5}"
+                                        },
+                                        {
+                                            "question": "Which of the following is logically equivalent to [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]?",
+                                            "questionRead": "*Read as 'A and B implies C is logically equivalent to A implies C and B implies C'.*",
+                                            "options": ["Tautology", "Contradiction", "Contingency", "None of these"],
+                                            "answer": "Tautology"
+                                        },
+                                        {
+                                            "question": "Which of the following represents the contrapositive of P → Q?",
+                                            "questionRead": "*Read as 'if P then Q'.*",
+                                            "options": ["Q → P", "¬Q → ¬P", "P ∧ Q", "None of these"],
+                                            "answer": "¬Q → ¬P"
+                                        },
+                                        {
+                                            "question": "What is the logical equivalent of (p ↔ q)?",
+                                            "questionRead": "*Read as 'p if and only if q'.*",
+                                            "options": ["(p → q) ∧ (q → p)", "(p → q) ∨ (q → p)", "¬p ∨ q", "None of these"],
+                                            "answer": "(p → q) ∧ (q → p)"
+                                        },
+                                        {
+                                            "question": "Simplify the expression (p ∧ q) ∨ (¬p ∧ q).",
+                                            "questionRead": "*Read as 'p and q or not p and q'.*",
+                                            "options": ["p", "q", "p ∧ q", "None of these"],
+                                            "answer": "q"
+                                        },
+                                        {
+                                            "question": "Which of the following is a tautology?",
+                                            "questionRead": "*Read as 'p or not p'.*",
+                                            "options": ["p ∨ ¬p", "p ∧ ¬p", "p → p", "None of these"],
+                                            "answer": "p ∨ ¬p"
+                                        },
+                                        {
+                                            "question": "Which of the following represents the union of A and B, where A = {1,2} and B = {2,3}?",
+                                            "questionRead": "*Read as 'A union B'.*",
+                                            "options": ["{1,2}", "{2,3}", "{1,2,3}", "None of these"],
+                                            "answer": "{1,2,3}"
+                                        },
+                                        {
+                                            "question": "Which of the following represents the negation of P ∧ Q?",
+                                            "questionRead": "*Read as 'not (P and Q)'.*",
+                                            "options": ["¬P ∧ Q", "¬P ∨ ¬Q", "P ∨ Q", "None of these"],
+                                            "answer": "¬P ∨ ¬Q"
+                                        },
+                                        {
+                                            "question": "If (p ∨ q) ∧ r is true, then which of the following is necessarily true?",
+                                            "questionRead": "*Read as 'p or q and r'.*",
+                                            "options": ["r is true", "p is true", "q is true", "None of these"],
+                                            "answer": "r is true"
+                                        },
+                                        {
+                                            "question": "What is the simplified form of the Boolean expression (A + B)'?",
+                                            "questionRead": "*Read as 'not (A or B)'.*",
+                                            "options": ["A'B'", "A' + B'", "AB", "None of these"],
+                                            "answer": "A'B'"
+                                        },
+                                        {
+                                            "question": "Which of the following logical operations is associative?",
+                                            "questionRead": "*Read as 'AND or OR applied to multiple terms'.*",
+                                            "options": ["AND", "OR", "IMPLIES", "Both AND and OR"],
+                                            "answer": "Both AND and OR"
+                                        },
+                                        {
+                                            "question": "Find the negation of the statement: 'Some dogs are black'.",
+                                            "questionRead": "*Read as 'some dogs are black'.*",
+                                            "options": ["No dog is black", "All dogs are black", "Some dogs are not black", "None of these"],
+                                            "answer": "No dog is black"
+                                        },
+                                        {
+                                            "question": "Evaluate the Boolean expression: (~P ∨ Q) if P is false and Q is true.",
+                                            "questionRead": "*Read as 'not P or Q'.*",
+                                            "options": ["True", "False", "Cannot be determined", "None of these"],
+                                            "answer": "True"
+                                        },
+                                        {
+                                            "question": "The negation of 'All students passed' is:",
+                                            "questionRead": "*Read as 'all students passed'.*",
+                                            "options": ["Some students failed", "No student passed", "All students failed", "None of these"],
+                                            "answer": "Some students failed"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is a tautology in mathematical logic?",
+                                            "answer": "A **tautology** is a logical statement that is always true, regardless of the truth values of its individual components. For example, the statement 'P ∨ ~P' (P or not P) is a tautology because it is true whether P is true or false."
+                                        },
+                                        {
+                                            "question": "What is the contrapositive of a conditional statement?",
+                                            "answer": "The **contrapositive** of a conditional statement 'If P then Q' (P → Q) is 'If not Q then not P' (~Q → ~P). The contrapositive is always logically equivalent to the original conditional statement."
+                                        },
+                                        {
+                                            "question": "Explain De Morgan's Laws.",
+                                            "answer": "De Morgan's Laws provide a way to distribute negation over conjunction and disjunction:\n1. ¬(P ∧ Q) ≡ ¬P ∨ ¬Q (The negation of 'P and Q' is 'not P or not Q').\n2. ¬(P ∨ Q) ≡ ¬P ∧ ¬Q (The negation of 'P or Q' is 'not P and not Q')."
+                                        },
+                                        {
+                                            "question": "What is the difference between conjunction and disjunction?",
+                                            "answer": "In logic, **conjunction (∧)** means 'and', and it is true only if both statements are true (e.g., P ∧ Q).\n**Disjunction (∨)** means 'or', and it is true if at least one of the statements is true (e.g., P ∨ Q)."
+                                        },
+                                        {
+                                            "question": "What is a contingency in propositional logic?",
+                                            "answer": "A **contingency** is a propositional statement that is neither always true (tautology) nor always false (contradiction). Its truth value depends on the values of its components."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Logical Equivalence in Circuit Design",
+                                            "description": "A digital circuit designer is working on optimizing a circuit by reducing the number of logic gates. The circuit implements the Boolean expression (A ∧ B) ∨ (~A ∧ B). The designer wants to simplify the expression to optimize the circuit performance. Using logical equivalences, the designer finds that the expression simplifies to B.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is the simplified form of the Boolean expression (A ∧ B) ∨ (~A ∧ B)?",
+                                                    "questionRead": "The given expression can be simplified using the distributive property of Boolean algebra.",
+                                                    "options": ["A", "B", "A ∨ B", "None of these"],
+                                                    "answer": "B"
+                                                },
+                                                {
+                                                    "question": "Which Boolean algebra property is used to simplify (A ∧ B) ∨ (~A ∧ B) to B?",
+                                                    "questionRead": "Consider factoring the common term in the expression.",
+                                                    "options": ["Absorption Law", "Distributive Law", "Idempotent Law", "Complement Law"],
+                                                    "answer": "Distributive Law"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Propositional Logic in Decision Making",
+                                            "description": "A company uses propositional logic to analyze their business decisions. They state: 'If product quality improves, then customer satisfaction increases.' They also believe that if customer satisfaction increases, revenue will rise. Based on these, they derive the conclusion that 'If product quality improves, then revenue will rise.'",
+                                            "mcq": [
+                                                {
+                                                    "question": "What type of logical reasoning is applied to conclude 'If product quality improves, then revenue will rise'?",
+                                                    "questionRead": "The conclusion follows by combining two conditional statements.",
+                                                    "options": ["Modus Tollens", "Contradiction", "Hypothetical Syllogism", "Conjunction"],
+                                                    "answer": "Hypothetical Syllogism"
+                                                },
+                                                {
+                                                    "question": "Which of the following represents the contrapositive of the statement 'If product quality improves, then customer satisfaction increases'?",
+                                                    "questionRead": "The contrapositive of P → Q is ~Q → ~P.",
+                                                    "options": ["If customer satisfaction does not increase, then product quality does not improve.", "If product quality improves, then customer satisfaction will not increase.", "If customer satisfaction increases, then product quality improves.", "None of these"],
+                                                    "answer": "If customer satisfaction does not increase, then product quality does not improve."
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                           
+                                },
+                                {
+                                    name: "Module 3",
+                                    id: "module-3",
+                                    mcq: [
+                                        {
+                                            "question": "If a binary operation * on a set S satisfies the associative law, then (S, *) is called:",
+                                            "questionRead": "",
+                                            "options": ["Monoid", "Group", "Semi-group", "Ring"],
+                                            "answer": "Semi-group"
+                                        },
+                                        {
+                                            "question": "In a group, the identity element is:",
+                                            "questionRead": "",
+                                            "options": ["Unique", "Not unique", "Can be more than one", "None of the above"],
+                                            "answer": "Unique"
+                                        },
+                                        {
+                                            "question": "A group in which the order of multiplication does not matter is called:",
+                                            "questionRead": "",
+                                            "options": ["Finite group", "Cyclic group", "Abelian group", "None of the above"],
+                                            "answer": "Abelian group"
+                                        },
+                                        {
+                                            "question": "If (G, *) is a group, the inverse of an element a in G is denoted by:",
+                                            "questionRead": "*a inverse*",
+                                            "options": ["a^2", "a^-1", "a*", "None of the above"],
+                                            "answer": "a^-1"
+                                        },
+                                        {
+                                            "question": "A monoid (M, *) is said to be a group if every element of M has:",
+                                            "questionRead": "",
+                                            "options": ["An inverse", "An identity element", "A commutative operation", "None of the above"],
+                                            "answer": "An inverse"
+                                        },
+                                        {
+                                            "question": "The order of an element a in a group G is the smallest positive integer n such that:",
+                                            "questionRead": "*a to the power n equals 1*",
+                                            "options": ["a^n = 1", "a^n = a", "a^n = 0", "None of the above"],
+                                            "answer": "a^n = 1"
+                                        },
+                                        {
+                                            "question": "If a subgroup H of a group G has the same order as G, then H is:",
+                                            "questionRead": "",
+                                            "options": ["Normal subgroup", "Improper subgroup", "Proper subgroup", "None of the above"],
+                                            "answer": "Improper subgroup"
+                                        },
+                                        {
+                                            "question": "If every element of a group is its own inverse, the group is called:",
+                                            "questionRead": "",
+                                            "options": ["Cyclic group", "Abelian group", "Trivial group", "None of the above"],
+                                            "answer": "Trivial group"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a group?",
+                                            "questionRead": "",
+                                            "options": ["Set of natural numbers under addition", "Set of integers under multiplication", "Set of rational numbers under addition", "Set of even numbers under multiplication"],
+                                            "answer": "Set of rational numbers under addition"
+                                        },
+                                        {
+                                            "question": "A binary operation * on set S is said to be associative if:",
+                                            "questionRead": "",
+                                            "options": ["(a * b) * c = a * (b * c)", "(a * b) * c ≠ a * (b * c)", "a * (b * c) = c * (a * b)", "None of the above"],
+                                            "answer": "(a * b) * c = a * (b * c)"
+                                        },
+                                        {
+                                            "question": "The identity element in a group is:",
+                                            "questionRead": "",
+                                            "options": ["Unique", "Not unique", "Can be more than one", "None of the above"],
+                                            "answer": "Unique"
+                                        },
+                                        {
+                                            "question": "If every element of a group is its own inverse, the group is called:",
+                                            "questionRead": "",
+                                            "options": ["Cyclic group", "Abelian group", "Trivial group", "None of the above"],
+                                            "answer": "Trivial group"
+                                        },
+                                        {
+                                            "question": "A monoid is a semi-group with:",
+                                            "questionRead": "",
+                                            "options": ["An identity element", "An inverse element", "Commutative property", "None of the above"],
+                                            "answer": "An identity element"
+                                        },
+                                        {
+                                            "question": "In an abelian group, the operation satisfies:",
+                                            "questionRead": "",
+                                            "options": ["Associativity", "Commutativity", "Closure", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "A group with a finite number of elements is called:",
+                                            "questionRead": "",
+                                            "options": ["Infinite group", "Finite group", "Cyclic group", "Abelian group"],
+                                            "answer": "Finite group"
+                                        },
+                                        {
+                                            "question": "The order of an element 'a' in a group is the smallest positive integer n such that:",
+                                            "questionRead": "*a to the power n equals identity element*",
+                                            "options": ["a^n = 1", "a^n = a", "a^n = 0", "None of the above"],
+                                            "answer": "a^n = 1"
+                                        },
+                                        {
+                                            "question": "If a subgroup H of a group G has the same order as G, then H is:",
+                                            "questionRead": "",
+                                            "options": ["Normal subgroup", "Improper subgroup", "Proper subgroup", "None of the above"],
+                                            "answer": "Improper subgroup"
+                                        },
+                                        {
+                                            "question": "A subgroup H of G is normal if:",
+                                            "questionRead": "",
+                                            "options": ["ghg⁻¹ ∈ H for all g in G", "H is commutative", "H has finite order", "None of the above"],
+                                            "answer": "ghg⁻¹ ∈ H for all g in G"
+                                        },
+                                        {
+                                            "question": "A cyclic group is generated by:",
+                                            "questionRead": "",
+                                            "options": ["A single element", "Multiple elements", "No element", "None of the above"],
+                                            "answer": "A single element"
+                                        },
+                                        {
+                                            "question": "Which of the following is not an example of a group?",
+                                            "questionRead": "",
+                                            "options": ["Set of integers under addition", "Set of real numbers under multiplication", "Set of nonzero rational numbers under multiplication", "Set of natural numbers under multiplication"],
+                                            "answer": "Set of natural numbers under multiplication"
+                                        },
+                                        {
+                                            "question": "The inverse of an element 'a' in a group G is denoted by:",
+                                            "questionRead": "*a inverse*",
+                                            "options": ["a^2", "a^-1", "a*", "None of the above"],
+                                            "answer": "a^-1"
+                                        },
+                                        {
+                                            "question": "If (G, *) is a group, which of the following holds true?",
+                                            "questionRead": "",
+                                            "options": ["Closure", "Associativity", "Identity element", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "A group G is called cyclic if:",
+                                            "questionRead": "",
+                                            "options": ["It has finite order", "It has infinite order", "It can be generated by a single element", "None of the above"],
+                                            "answer": "It can be generated by a single element"
+                                        },
+                                        {
+                                            "question": "Which of the following properties must a set with a binary operation satisfy to be a group?",
+                                            "questionRead": "",
+                                            "options": ["Closure, Associativity, Identity, Inverses", "Commutativity, Associativity, Identity", "Distributivity, Closure, Inverses", "None of the above"],
+                                            "answer": "Closure, Associativity, Identity, Inverses"
+                                        },
+                                        {
+                                            "question": "In a group G, for every element a, the inverse element is:",
+                                            "questionRead": "",
+                                            "options": ["Unique", "Not unique", "Can be multiple", "None of the above"],
+                                            "answer": "Unique"
+                                        },
+                                        {
+                                            "question": "A group is called an abelian group if it satisfies which property?",
+                                            "questionRead": "",
+                                            "options": ["Closure", "Associativity", "Commutativity", "Inverse"],
+                                            "answer": "Commutativity"
+                                        },
+                                        {
+                                            "question": "Which of the following is a subgroup of (Z, +)?",
+                                            "questionRead": "",
+                                            "options": ["Set of even integers", "Set of odd integers", "Set of positive integers", "Set of natural numbers"],
+                                            "answer": "Set of even integers"
+                                        },
+                                        {
+                                            "question": "A group G is said to be of finite order if:",
+                                            "questionRead": "",
+                                            "options": ["It contains a finite number of elements", "It has an infinite number of elements", "It is cyclic", "It has an identity element"],
+                                            "answer": "It contains a finite number of elements"
+                                        },
+                                        {
+                                            "question": "If a group has only one element, it is called:",
+                                            "questionRead": "",
+                                            "options": ["Cyclic group", "Finite group", "Trivial group", "Infinite group"],
+                                            "answer": "Trivial group"
+                                        },
+                                        {
+                                            "question": "The order of a group G is:",
+                                            "questionRead": "",
+                                            "options": ["The number of elements in G", "The identity element of G", "The sum of all elements in G", "None of the above"],
+                                            "answer": "The number of elements in G"
+                                        },
+                                        {
+                                            "question": "If the order of an element 'a' in a group is n, then:",
+                                            "questionRead": "*a to the power n equals identity element*",
+                                            "options": ["a^n = 1", "a^n = a", "a^n = 0", "None of the above"],
+                                            "answer": "a^n = 1"
+                                        },
+                                        {
+                                            "question": "Which of the following is not necessarily a property of a group?",
+                                            "questionRead": "",
+                                            "options": ["Associativity", "Commutativity", "Identity element", "Inverse element"],
+                                            "answer": "Commutativity"
+                                        },
+                                        {
+                                            "question": "Which of the following statements is true for all groups?",
+                                            "questionRead": "",
+                                            "options": ["Every group is commutative", "Every group has a unique identity element", "Every group has an even number of elements", "Every group is cyclic"],
+                                            "answer": "Every group has a unique identity element"
+                                        },
+                                        {
+                                            "question": "A subgroup H of a group G is called proper if:",
+                                            "questionRead": "",
+                                            "options": ["H is equal to G", "H is a subset of G and H ≠ G", "H contains the identity element", "H is not associative"],
+                                            "answer": "H is a subset of G and H ≠ G"
+                                        },
+                                        {
+                                            "question": "The set of integers under addition forms:",
+                                            "questionRead": "",
+                                            "options": ["A group", "A monoid", "A semi-group", "A ring"],
+                                            "answer": "A group"
+                                        },
+                                        {
+                                            "question": "If every element of a group has finite order, the group is called:",
+                                            "questionRead": "",
+                                            "options": ["Infinite group", "Periodic group", "Cyclic group", "Trivial group"],
+                                            "answer": "Periodic group"
+                                        },
+                                        {
+                                            "question": "Which of the following is true for an identity element e in a group G?",
+                                            "questionRead": "",
+                                            "options": ["e * a = a * e = a for all a in G", "e * a = a for some a in G", "e * e = a for all a in G", "None of the above"],
+                                            "answer": "e * a = a * e = a for all a in G"
+                                        },
+                                        {
+                                            "question": "If a group has prime order p, then:",
+                                            "questionRead": "",
+                                            "options": ["It is always cyclic", "It must be infinite", "It has no identity element", "None of the above"],
+                                            "answer": "It is always cyclic"
+                                        },
+                                        {
+                                            "question": "If the order of a group G is 6, how many subgroups can G have?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "6", "8"],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "In a cyclic group of order 10, how many generators exist?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "5", "10"],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "If the order of an element a in a group is 12, what is the order of a^3?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "6", "12"],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "If a group has 8 elements and contains an element of order 4, what is the order of the subgroup generated by this element?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "6", "8"],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "In a group of order 15, the possible orders of its elements are:",
+                                            "questionRead": "",
+                                            "options": ["1, 3, 5, 15", "1, 5, 15", "1, 3, 15", "1, 3, 5"],
+                                            "answer": "1, 3, 5, 15"
+                                        },
+                                        {
+                                            "question": "The order of the symmetric group S3 is:",
+                                            "questionRead": "",
+                                            "options": ["3", "6", "9", "12"],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "If H is a subgroup of G and |G| = 20, |H| must divide:",
+                                            "questionRead": "",
+                                            "options": ["5", "10", "20", "None of the above"],
+                                            "answer": "20"
+                                        },
+                                        {
+                                            "question": "The number of elements of order 2 in a group of order 6 is:",
+                                            "questionRead": "",
+                                            "options": ["1", "2", "3", "4"],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "If the order of a cyclic group is 18, how many elements have order 9?",
+                                            "questionRead": "",
+                                            "options": ["0", "2", "4", "6"],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "If a cyclic group of order 20 has an element of order 5, how many such elements exist?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "6", "8"],
+                                            "answer": "4"
+                                        },
+                                        {
+                                            "question": "If a group G has an element of order 8, what is the order of the cyclic subgroup generated by it?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "8", "16"],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "If G is a cyclic group of order 12, how many subgroups does it have?",
+                                            "questionRead": "",
+                                            "options": ["3", "4", "6", "8"],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "In a cyclic group of order 9, what is the number of elements of order 3?",
+                                            "questionRead": "",
+                                            "options": ["0", "2", "4", "6"],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "The number of subgroups of order 5 in a cyclic group of order 15 is:",
+                                            "questionRead": "",
+                                            "options": ["0", "1", "3", "5"],
+                                            "answer": "1"
+                                        },
+                                        {
+                                            "question": "In a cyclic group of order 16, what is the number of elements of order 8?",
+                                            "questionRead": "",
+                                            "options": ["0", "2", "4", "8"],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "If a group has an element of order 7, which of the following can be the order of the group?",
+                                            "questionRead": "",
+                                            "options": ["14", "21", "28", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "If G is a cyclic group of order 24, how many generators does it have?",
+                                            "questionRead": "",
+                                            "options": ["4", "6", "8", "12"],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "In a cyclic group of order 11, how many elements are generators?",
+                                            "questionRead": "",
+                                            "options": ["2", "4", "8", "10"],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "If G is a group of order 35, the possible orders of elements are:",
+                                            "questionRead": "",
+                                            "options": ["1, 5, 7, 35", "1, 5, 7", "1, 7, 35", "1, 5, 35"],
+                                            "answer": "1, 5, 7, 35"
+                                        },
+                                        {
+                                            "question": "If the order of an element in a cyclic group is 30, how many elements have order 6?",
+                                            "questionRead": "",
+                                            "options": ["0", "2", "4", "6"],
+                                            "answer": "2"
+                                        }
+                                    ]
+                                    ,                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is a group in mathematics?",
+                                            "questionRead": "",
+                                            "answer": "**A group** is a set G equipped with a binary operation * that satisfies four properties: closure, associativity, the existence of an identity element, and the existence of inverse elements. A group can be finite or infinite, depending on the number of elements in the set."
+                                        },
+                                        {
+                                            "question": "What is the difference between a monoid and a group?",
+                                            "questionRead": "",
+                                            "answer": "**A monoid** is a set with an associative binary operation and an identity element, but it does not require inverse elements. A **group**, on the other hand, includes all properties of a monoid but also requires that every element has an inverse."
+                                        },
+                                        {
+                                            "question": "What is an Abelian group?",
+                                            "questionRead": "",
+                                            "answer": "**An Abelian group** (or commutative group) is a group in which the binary operation is commutative. This means that for any two elements a and b in the group, the equation a * b = b * a holds. Examples include the set of integers under addition."
+                                        },
+                                        {
+                                            "question": "What is the order of an element in a group?",
+                                            "questionRead": "",
+                                            "answer": "The **order of an element a** in a group G is the smallest positive integer n such that a^n equals the identity element of the group. If no such integer exists, the element is said to have infinite order."
+                                        },
+                                        {
+                                            "question": "What is a cyclic group?",
+                                            "questionRead": "",
+                                            "answer": "A **cyclic group** is a group that can be generated by a single element. This means that all elements of the group can be written as powers of a single element called a generator. If the group has a finite order n, it contains elements {e, g, g^2, ..., g^(n-1)}."
+                                        }
+                                    ]
+                                    ,
+                                    case_study: [
+                                        {
+                                            "title": "Understanding Group Properties in Cryptography",
+                                            "description": "Alice is working on implementing cryptographic algorithms that rely on group theory. She is using a set of integers under modular addition and needs to ensure that the chosen set forms a group. She is verifying whether the set satisfies closure, associativity, identity, and inverse properties.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which of the following properties is NOT required for Alice's set to be a group?",
+                                                    "questionRead": "",
+                                                    "options": ["Closure", "Associativity", "Distributivity", "Existence of inverses"],
+                                                    "answer": "Distributivity"
+                                                },
+                                                {
+                                                    "question": "If Alice selects the set of integers under modular addition with modulus 7, what is the identity element?",
+                                                    "questionRead": "",
+                                                    "options": ["0", "1", "7", "None of the above"],
+                                                    "answer": "0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Application of Cyclic Groups in Robotics",
+                                            "description": "A robotics engineer is designing a robotic arm that rotates at fixed angles using modular arithmetic. The engineer realizes that the set of rotations forms a cyclic group and wants to determine the number of distinct positions achievable by the robotic arm.",
+                                            "mcq": [
+                                                {
+                                                    "question": "If the robotic arm moves in 30-degree increments and completes a full cycle at 360 degrees, how many distinct positions does it have?",
+                                                    "questionRead": "",
+                                                    "options": ["6", "8", "12", "10"],
+                                                    "answer": "12"
+                                                },
+                                                {
+                                                    "question": "What is the generator of the cyclic group formed by the robotic arm's movements?",
+                                                    "questionRead": "",
+                                                    "options": ["15 degrees", "30 degrees", "45 degrees", "60 degrees"],
+                                                    "answer": "30 degrees"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                        
+                                },
+                                {
+                                    name: "Module 4",
+                                    id: "module-4",
+                                    mcq: [
+                                        {
+                                            "question": "What is a graph in graph theory?",
+                                            "options": [
+                                                "A collection of nodes and edges",
+                                                "A collection of numbers",
+                                                "A set of equations",
+                                                "None of the above"
+                                            ],
+                                            "answer": "A collection of nodes and edges"
+                                        },
+                                        {
+                                            "question": "Which of the following is a type of graph?",
+                                            "options": [
+                                                "Directed graph",
+                                                "Undirected graph",
+                                                "Weighted graph",
+                                                "All of the above"
+                                            ],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "In a simple graph, the number of edges can be at most:",
+                                            "options": [
+                                                "n",
+                                                "n²",
+                                                "n(n-1)/2",
+                                                "2n"
+                                            ],
+                                            "questionRead": "_'n(n-1)/2'_",
+                                            "answer": "n(n-1)/2"
+                                        },
+                                        {
+                                            "question": "A connected graph is one in which:",
+                                            "options": [
+                                                "Every vertex is connected to at least one other vertex",
+                                                "There is a path between every pair of vertices",
+                                                "Every vertex has an edge to itself",
+                                                "None of the above"
+                                            ],
+                                            "answer": "There is a path between every pair of vertices"
+                                        },
+                                        {
+                                            "question": "A tree is a special type of graph which:",
+                                            "options": [
+                                                "Has cycles",
+                                                "Has exactly one path between any two vertices",
+                                                "Contains a loop",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Has exactly one path between any two vertices"
+                                        },
+                                        {
+                                            "question": "Which of the following is a traversal algorithm for graphs?",
+                                            "options": [
+                                                "Depth First Search (DFS)",
+                                                "Breadth First Search (BFS)",
+                                                "Both (a) and (b)",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Both (a) and (b)"
+                                        },
+                                        {
+                                            "question": "A graph with no cycles is called:",
+                                            "options": [
+                                                "Acyclic graph",
+                                                "Cyclic graph",
+                                                "Tree",
+                                                "Bipartite graph"
+                                            ],
+                                            "answer": "Acyclic graph"
+                                        },
+                                        {
+                                            "question": "In graph theory, the adjacency matrix representation of a graph uses:",
+                                            "options": [
+                                                "List representation",
+                                                "Matrix representation",
+                                                "Linked list representation",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Matrix representation"
+                                        },
+                                        {
+                                            "question": "The shortest path algorithm used in graphs is:",
+                                            "options": [
+                                                "Dijkstra's Algorithm",
+                                                "Prim's Algorithm",
+                                                "Kruskal's Algorithm",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Dijkstra's Algorithm"
+                                        },
+                                        {
+                                            "question": "A complete graph is one in which:",
+                                            "options": [
+                                                "Every vertex is connected to every other vertex",
+                                                "No edges exist",
+                                                "There are self-loops",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Every vertex is connected to every other vertex"
+                                        },
+                                        {
+                                            "question": "What is the degree of a vertex in a graph?",
+                                            "options": [
+                                                "Number of edges incident to the vertex",
+                                                "Number of vertices connected to it",
+                                                "Total number of edges in the graph",
+                                                "Total number of vertices in the graph"
+                                            ],
+                                            "answer": "Number of edges incident to the vertex"
+                                        },
+                                        {
+                                            "question": "A graph with no cycles is called?",
+                                            "options": [
+                                                "Cyclic graph",
+                                                "Acyclic graph",
+                                                "Complete graph",
+                                                "Weighted graph"
+                                            ],
+                                            "answer": "Acyclic graph"
+                                        },
+                                        {
+                                            "question": "Which traversal technique uses a queue?",
+                                            "options": [
+                                                "Depth First Search (DFS)",
+                                                "Breadth First Search (BFS)",
+                                                "Dijkstra's Algorithm",
+                                                "Prim's Algorithm"
+                                            ],
+                                            "answer": "Breadth First Search (BFS)"
+                                        },
+                                        {
+                                            "question": "In an undirected graph, what is the sum of degrees of all vertices?",
+                                            "options": [
+                                                "Equal to the number of vertices",
+                                                "Twice the number of edges",
+                                                "Half the number of edges",
+                                                "Equal to the number of edges"
+                                            ],
+                                            "answer": "Twice the number of edges"
+                                        },
+                                        {
+                                            "question": "A graph in which each pair of distinct vertices is connected by a unique edge is called?",
+                                            "options": [
+                                                "Bipartite graph",
+                                                "Complete graph",
+                                                "Eulerian graph",
+                                                "Tree"
+                                            ],
+                                            "answer": "Complete graph"
+                                        },
+                                        {
+                                            "question": "Which of the following is true for a tree?",
+                                            "options": [
+                                                "It contains cycles",
+                                                "It is always connected",
+                                                "It has equal number of vertices and edges",
+                                                "It has multiple paths between vertices"
+                                            ],
+                                            "answer": "It is always connected"
+                                        },
+                                        {
+                                            "question": "The adjacency matrix of an undirected graph is always?",
+                                            "options": [
+                                                "Symmetric",
+                                                "Diagonal",
+                                                "Sparse",
+                                                "Non-square"
+                                            ],
+                                            "answer": "Symmetric"
+                                        },
+                                        {
+                                            "question": "A path that visits every edge exactly once in a graph is called?",
+                                            "options": [
+                                                "Hamiltonian path",
+                                                "Eulerian path",
+                                                "Shortest path",
+                                                "Bipartite path"
+                                            ],
+                                            "answer": "Eulerian path"
+                                        },
+                                        {
+                                            "question": "A connected graph with N vertices and N-1 edges is always a?",
+                                            "options": [
+                                                "Tree",
+                                                "Cycle",
+                                                "Bipartite graph",
+                                                "Complete graph"
+                                            ],
+                                            "answer": "Tree"
+                                        },
+                                        {
+                                            "question": "In a directed graph, what is an in-degree of a vertex?",
+                                            "options": [
+                                                "Number of edges coming into the vertex",
+                                                "Number of edges going out of the vertex",
+                                                "Sum of incoming and outgoing edges",
+                                                "None of the above"
+                                            ],
+                                            "answer": "Number of edges coming into the vertex"
+                                        },
+                                        {
+                                            "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+                                            "options": [
+                                                "Kruskal's Algorithm",
+                                                "Prim's Algorithm",
+                                                "Dijkstra's Algorithm",
+                                                "Floyd-Warshall Algorithm"
+                                            ],
+                                            "answer": "Dijkstra's Algorithm"
+                                        },
+                                        {
+                                            "question": "Which of the following algorithms is used to find a minimum spanning tree?",
+                                            "options": [
+                                                "Floyd-Warshall Algorithm",
+                                                "Prim's Algorithm",
+                                                "Bellman-Ford Algorithm",
+                                                "Depth First Search"
+                                            ],
+                                            "answer": "Prim's Algorithm"
+                                        },
+                                        {
+                                            "question": "A bipartite graph is a graph where the vertices can be divided into how many independent sets?",
+                                            "options": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4"
+                                            ],
+                                            "answer": "2"
+                                        },
+                                        {
+                                            "question": "Which of the following graphs has an even degree for every vertex?",
+                                            "options": [
+                                                "Hamiltonian graph",
+                                                "Eulerian graph",
+                                                "Tree",
+                                                "Planar graph"
+                                            ],
+                                            "answer": "Eulerian graph"
+                                        },
+                                        {
+                                            "question": "A graph is called connected if:",
+                                            "options": [
+                                                "It contains a cycle",
+                                                "It has no isolated vertices",
+                                                "There is a path between every pair of vertices",
+                                                "It contains a spanning tree"
+                                            ],
+                                            "answer": "There is a path between every pair of vertices"
+                                        },
+                                        {
+                                            "question": "Which graph representation is more space-efficient for sparse graphs?",
+                                            "options": [
+                                                "Adjacency matrix",
+                                                "Adjacency list",
+                                                "Incidence matrix",
+                                                "Path matrix"
+                                            ],
+                                            "answer": "Adjacency list"
+                                        },
+                                        {
+                                            "question": "A complete bipartite graph is denoted as:",
+                                            "options": [
+                                                "Kn",
+                                                "Kmn",
+                                                "K2n",
+                                                "K1n"
+                                            ],
+                                            "answer": "Kmn"
+                                        },
+                                        {
+                                            "question": "Which traversal technique uses a stack?",
+                                            "options": [
+                                                "Depth First Search (DFS)",
+                                                "Breadth First Search (BFS)",
+                                                "Dijkstra's Algorithm",
+                                                "Prim's Algorithm"
+                                            ],
+                                            "answer": "Depth First Search (DFS)"
+                                        },
+                                        {
+                                            "question": "In an adjacency list representation of a graph, the space complexity is:",
+                                            "options": [
+                                                "O(V²)",
+                                                "O(V+E)",
+                                                "O(E²)",
+                                                "O(VE)"
+                                            ],
+                                            "answer": "O(V+E)"
+                                        },
+                                        {
+                                            "question": "Which of the following is an example of a weighted graph?",
+                                            "options": [
+                                                "Social network connections",
+                                                "Map of cities with distances",
+                                                "Family tree",
+                                                "Friendship graph"
+                                            ],
+                                            "answer": "Map of cities with distances"
+                                        },
+                                        {
+                                            "question": "If a graph has exactly one edge between every pair of vertices, it is called a:",
+                                            "options": [
+                                                "Sparse graph",
+                                                "Cyclic graph",
+                                                "Complete graph",
+                                                "Null graph"
+                                            ],
+                                            "answer": "Complete graph"
+                                        },
+                                        {
+                                            "question": "Which type of graph contains no repeated edges or vertices?",
+                                            "options": [
+                                                "Simple graph",
+                                                "Multi-graph",
+                                                "Directed graph",
+                                                "Planar graph"
+                                            ],
+                                            "answer": "Simple graph"
+                                        },
+                                        {
+                                            "question": "Which algorithm is used for topological sorting?",
+                                            "options": [
+                                                "Kruskal's Algorithm",
+                                                "Prim's Algorithm",
+                                                "Depth First Search (DFS)",
+                                                "Dijkstra's Algorithm"
+                                            ],
+                                            "answer": "Depth First Search (DFS)"
+                                        },
+                                        {
+                                            "question": "Which property is true for a Hamiltonian path?",
+                                            "options": [
+                                                "Visits every edge exactly once",
+                                                "Visits every vertex exactly once",
+                                                "Starts and ends at the same vertex",
+                                                "Contains no cycles"
+                                            ],
+                                            "answer": "Visits every vertex exactly once"
+                                        },
+                                        {
+                                            "question": "A planar graph is a graph that:",
+                                            "options": [
+                                                "Can be drawn without edges crossing",
+                                                "Has cycles",
+                                                "Contains weighted edges",
+                                                "Has an Eulerian path"
+                                            ],
+                                            "answer": "Can be drawn without edges crossing"
+                                        },
+                                        {
+                                            "question": "What is the time complexity of BFS and DFS?",
+                                            "options": [
+                                                "O(V+E)",
+                                                "O(V²)",
+                                                "O(E log V)",
+                                                "O(V log V)"
+                                            ],
+                                            "answer": "O(V+E)"
+                                        },
+                                        {
+                                            "question": "Which theorem helps determine if a graph contains an Eulerian cycle?",
+                                            "options": [
+                                                "König's theorem",
+                                                "Euler's theorem",
+                                                "Hall's theorem",
+                                                "Dirac's theorem"
+                                            ],
+                                            "answer": "Euler's theorem"
+                                        },
+                                        {
+                                            "question": "A cycle graph is a graph that:",
+                                            "options": [
+                                                "Has no edges",
+                                                "Contains exactly one cycle",
+                                                "Is complete",
+                                                "Is disconnected"
+                                            ],
+                                            "answer": "Contains exactly one cycle"
+                                        },
+                                        {
+                                            "question": "In which type of graph are all vertices of even degree?",
+                                            "options": [
+                                                "Complete graph",
+                                                "Eulerian graph",
+                                                "Tree",
+                                                "Bipartite graph"
+                                            ],
+                                            "answer": "Eulerian graph"
+                                        },
+                                        {
+                                            "question": "In which graph representation are edges stored explicitly?",
+                                            "options": [
+                                                "Adjacency matrix",
+                                                "Adjacency list",
+                                                "Edge list",
+                                                "Incidence matrix"
+                                            ],
+                                            "answer": "Edge list"
+                                        },
+                                        {
+                                            "question": "If a graph has 6 vertices and is a complete graph, how many edges will it have?",
+                                            "questionRead": "_'n(n-1)/2'_",
+                                            "options": [
+                                                "12",
+                                                "15",
+                                                "20",
+                                                "30"
+                                            ],
+                                            "answer": "15"
+                                        },
+                                        {
+                                            "question": "If a tree has 10 vertices, how many edges does it contain?",
+                                            "questionRead": "_'n-1'_",
+                                            "options": [
+                                                "8",
+                                                "9",
+                                                "10",
+                                                "11"
+                                            ],
+                                            "answer": "9"
+                                        },
+                                        {
+                                            "question": "In an undirected graph with 8 vertices and 16 edges, what is the sum of the degrees of all vertices?",
+                                            "questionRead": "_'2E'_",
+                                            "options": [
+                                                "16",
+                                                "24",
+                                                "32",
+                                                "40"
+                                            ],
+                                            "answer": "32"
+                                        },
+                                        {
+                                            "question": "If a graph has 5 vertices and the degree of each vertex is 3, what is the total number of edges?",
+                                            "questionRead": "_'sum of degrees / 2'_",
+                                            "options": [
+                                                "7",
+                                                "8",
+                                                "10",
+                                                "15"
+                                            ],
+                                            "answer": "7"
+                                        },
+                                        {
+                                            "question": "What is the minimum number of edges in a connected graph with 7 vertices?",
+                                            "questionRead": "_'n-1'_",
+                                            "options": [
+                                                "6",
+                                                "7",
+                                                "8",
+                                                "9"
+                                            ],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "In a bipartite graph with partition sizes of 4 and 5, what is the maximum number of edges possible?",
+                                            "questionRead": "_'m * n'_",
+                                            "options": [
+                                                "9",
+                                                "10",
+                                                "20",
+                                                "25"
+                                            ],
+                                            "answer": "20"
+                                        },
+                                        {
+                                            "question": "If an adjacency matrix is used to represent a graph with 6 vertices, what is the total number of entries in the matrix?",
+                                            "questionRead": "_'n^2'_",
+                                            "options": [
+                                                "12",
+                                                "18",
+                                                "36",
+                                                "42"
+                                            ],
+                                            "answer": "36"
+                                        },
+                                        {
+                                            "question": "How many spanning trees can be formed in a complete graph with 4 vertices?",
+                                            "questionRead": "_'n^(n-2)'_",
+                                            "options": [
+                                                "12",
+                                                "14",
+                                                "16",
+                                                "64"
+                                            ],
+                                            "answer": "16"
+                                        },
+                                        {
+                                            "question": "If a directed graph has 4 vertices and each vertex has an in-degree of 2, what is the total number of edges?",
+                                            "questionRead": "_'sum of in-degrees = sum of out-degrees'_",
+                                            "options": [
+                                                "4",
+                                                "6",
+                                                "8",
+                                                "10"
+                                            ],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "In a complete bipartite graph K(3,4), how many edges are there?",
+                                            "questionRead": "_'m * n'_",
+                                            "options": [
+                                                "7",
+                                                "10",
+                                                "12",
+                                                "15"
+                                            ],
+                                            "answer": "12"
+                                        },
+                                        {
+                                            "question": "If a simple undirected graph has 9 vertices and 36 edges, what is the average degree of a vertex?",
+                                            "questionRead": "_'2E / V'_",
+                                            "options": [
+                                                "6",
+                                                "8",
+                                                "10",
+                                                "12"
+                                            ],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "How many edges are there in a simple cycle graph with 8 vertices?",
+                                            "questionRead": "_'n'_",
+                                            "options": [
+                                                "6",
+                                                "7",
+                                                "8",
+                                                "9"
+                                            ],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "If a directed graph has 5 vertices and each vertex has an out-degree of 3, what is the total number of edges?",
+                                            "questionRead": "_'sum of out-degrees'_",
+                                            "options": [
+                                                "10",
+                                                "12",
+                                                "15",
+                                                "20"
+                                            ],
+                                            "answer": "15"
+                                        },
+                                        {
+                                            "question": "For a graph with 10 vertices and 45 edges, what is the maximum possible degree of a vertex?",
+                                            "questionRead": "_'n-1'_",
+                                            "options": [
+                                                "8",
+                                                "9",
+                                                "10",
+                                                "11"
+                                            ],
+                                            "answer": "9"
+                                        },
+                                        {
+                                            "question": "If a tree has 15 vertices, how many leaves does it have if it is a binary tree?",
+                                            "questionRead": "_'n - internal nodes'_",
+                                            "options": [
+                                                "7",
+                                                "8",
+                                                "9",
+                                                "10"
+                                            ],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "What is the number of edges in a star graph with 6 vertices?",
+                                            "questionRead": "_'n-1'_",
+                                            "options": [
+                                                "4",
+                                                "5",
+                                                "6",
+                                                "7"
+                                            ],
+                                            "answer": "5"
+                                        },
+                                        {
+                                            "question": "If a tree has a maximum degree of 3 and 8 vertices, what is the number of edges?",
+                                            "questionRead": "_'n-1'_",
+                                            "options": [
+                                                "5",
+                                                "6",
+                                                "7",
+                                                "8"
+                                            ],
+                                            "answer": "7"
+                                        },
+                                        {
+                                            "question": "A graph has 12 vertices, and each vertex has a degree of 4. How many edges are there?",
+                                            "questionRead": "_'sum of degrees / 2'_",
+                                            "options": [
+                                                "24",
+                                                "30",
+                                                "36",
+                                                "48"
+                                            ],
+                                            "answer": "24"
+                                        },
+                                        {
+                                            "question": "In a complete graph with 8 vertices, how many spanning trees can be formed?",
+                                            "questionRead": "_'n^(n-2)'_",
+                                            "options": [
+                                                "8",
+                                                "64",
+                                                "512",
+                                                "40320"
+                                            ],
+                                            "answer": "40320"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is a graph in graph theory?",
+                                            "answer": "A graph is a mathematical structure used to model relationships between objects. It consists of a set of vertices (nodes) and edges (links) that connect pairs of vertices."
+                                        },
+                                        {
+                                            "question": "What is the difference between directed and undirected graphs?",
+                                            "answer": "In an undirected graph, edges have no direction, meaning they can be traversed both ways. In a directed graph (digraph), edges have a specific direction from one vertex to another."
+                                        },
+                                        {
+                                            "question": "What is a complete graph?",
+                                            "answer": "A complete graph is a type of graph in which every pair of distinct vertices is connected by a unique edge. In a complete graph with 'n' vertices, there are n(n-1)/2 edges."
+                                        },
+                                        {
+                                            "question": "What is the degree of a vertex in a graph?",
+                                            "answer": "The degree of a vertex in an undirected graph is the number of edges connected to it. In a directed graph, the in-degree is the number of incoming edges, and the out-degree is the number of outgoing edges."
+                                        },
+                                        {
+                                            "question": "What is the adjacency matrix representation of a graph?",
+                                            "answer": "An adjacency matrix is a way to represent a graph using a 2D array where rows and columns represent vertices, and the presence of an edge between vertices is indicated by a non-zero value."
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Network Optimization in a Delivery Service",
+                                            "description": "A logistics company wants to optimize its delivery routes using graph theory. The cities are represented as vertices, and the roads connecting them are edges with weights representing distances. The company aims to find the shortest path for delivery and minimize transportation costs.",
+                                            "mcq": [
+                                                {
+                                                    "question": "Which algorithm is best suited to find the shortest path between two cities in a weighted graph?",
+                                                    "options": [
+                                                        "Depth First Search (DFS)",
+                                                        "Breadth First Search (BFS)",
+                                                        "Dijkstra's Algorithm",
+                                                        "Kruskal's Algorithm"
+                                                    ],
+                                                    "answer": "Dijkstra's Algorithm"
+                                                },
+                                                {
+                                                    "question": "What type of graph is most appropriate for modeling the delivery network?",
+                                                    "options": [
+                                                        "Undirected graph",
+                                                        "Directed graph",
+                                                        "Complete graph",
+                                                        "Bipartite graph"
+                                                    ],
+                                                    "answer": "Directed graph"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Social Media Network Analysis",
+                                            "description": "A social media company wants to analyze user interactions using graph theory. Users are represented as vertices, and interactions (likes, shares, and messages) are represented as directed edges. The goal is to identify influential users and optimize content sharing strategies.",
+                                            "mcq": [
+                                                {
+                                                    "question": "What is the most suitable way to represent the social media network in terms of graph theory?",
+                                                    "options": [
+                                                        "Adjacency matrix",
+                                                        "Adjacency list",
+                                                        "Incidence matrix",
+                                                        "Path matrix"
+                                                    ],
+                                                    "answer": "Adjacency list"
+                                                },
+                                                {
+                                                    "question": "In the given social media network, what graph traversal algorithm can be used to identify the most connected users?",
+                                                    "options": [
+                                                        "Breadth First Search (BFS)",
+                                                        "Depth First Search (DFS)",
+                                                        "Dijkstra's Algorithm",
+                                                        "Prim's Algorithm"
+                                                    ],
+                                                    "answer": "Breadth First Search (BFS)"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                       
+                                },
+                                {
+                                    name: "Module 5",
+                                    id: "module-5",
+                                    mcq: [
+                                        {
+                                            "question": "The arithmetic mean of an AP and the mean of the first and last term of an AP:",
+                                            "questionRead": "",
+                                            "options": ["equal", "unequal", "square of each other", "none of the above"],
+                                            "answer": "equal"
+                                        },
+                                        {
+                                            "question": "The mean height of 25 male workers in a factory is 61 cm and the mean height of 35 female workers in the same factory is 58 cm. The combined mean height of 60 workers in the factory is:",
+                                            "questionRead": "",
+                                            "options": ["59.25", "59.5", "59.75", "58.75"],
+                                            "answer": "59.25"
+                                        },
+                                        {
+                                            "question": "The average of the square of the numbers 0, 1, 2, 3, 4,……., n is:",
+                                            "questionRead": "*x̄ equals the formula '(n(n+1))/2', '(n(n+1)(2n+1))/6', '(n(n+1)(n+2))/6', '(n(n+1))/6'*",
+                                            "options": ["(n(n+1))/2", "(n(n+1)(2n+1))/6", "(n(n+1)(n+2))/6", "(n(n+1))/6"],
+                                            "answer": "(n(n+1)(2n+1))/6"
+                                        },
+                                        {
+                                            "question": "The mean of 100 items is 49. It was discovered that three items, which should have been 60, 70, and 80, were wrongly read as 40, 20, and 50, respectively. The correct mean is:",
+                                            "questionRead": "",
+                                            "options": ["48", "89", "50", "80"],
+                                            "answer": "50"
+                                        },
+                                        {
+                                            "question": "The arithmetic mean of an AP and the mean of the first and last term of an AP:",
+                                            "options": ["equal", "unequal", "square of each other", "none of the above"],
+                                            "answer": "equal"
+                                        },
+                                        {
+                                            "question": "The mean height of 25 male workers in a factory is 61 cm and the mean height of 35 female workers in the same factory is 58 cm. The combined mean height of 60 workers in the factory is:",
+                                            "options": ["59.25", "59.5", "59.75", "58.75"],
+                                            "answer": "59.25"
+                                        },
+                                        {
+                                            "question": "The average of the square of the numbers 0, 1, 2, 3, 4,……., n is:",
+                                            "options": ["(n(n+1))/2", "(n(n+1)(2n+1))/6", "(n(n+1)(n+2))/6", "(n(n+1))/6"],
+                                            "answer": "(n(n+1)(2n+1))/6"
+                                        },
+                                        {
+                                            "question": "The mean of 100 items is 49. It was discovered that three items, which should have been 60, 70, and 80, were wrongly read as 40, 20, and 50, respectively. The correct mean is:",
+                                            "options": ["48", "89", "50", "80"],
+                                            "answer": "50"
+                                        },
+                                        {
+                                            "question": "In the case of a frequency distribution, the class that contains the median is called the:",
+                                            "options": ["modal class", "median class", "mean class", "quartile class"],
+                                            "answer": "median class"
+                                        },
+                                        {
+                                            "question": "Which of the following is true about variance?",
+                                            "options": ["It is always a positive value", "It can be negative", "It is always equal to zero", "None of the above"],
+                                            "answer": "It is always a positive value"
+                                        },
+                                        {
+                                            "question": "The value of the mean of a set of numbers will change if we:",
+                                            "options": ["increase all values by a constant", "multiply all values by a constant", "both of the above", "none of the above"],
+                                            "answer": "both of the above"
+                                        },
+                                        {
+                                            "question": "In a moderately skewed distribution, if the median is 20 and the mode is 25, what is the value of the mean?",
+                                            "options": ["23", "24", "26", "22"],
+                                            "answer": "23"
+                                        },
+                                        {
+                                            "question": "Which measure of central tendency is most affected by extreme values?",
+                                            "options": ["Mean", "Median", "Mode", "None of the above"],
+                                            "answer": "Mean"
+                                        },
+                                        {
+                                            "question": "What does the term 'skewness' refer to in a data distribution?",
+                                            "options": ["Symmetry", "Peakedness", "Asymmetry", "None of the above"],
+                                            "answer": "Asymmetry"
+                                        },
+                                        {
+                                            "question": "What is the measure of dispersion that is most commonly used to describe variability?",
+                                            "options": ["Mean", "Variance", "Range", "Standard Deviation"],
+                                            "answer": "Standard Deviation"
+                                        },
+                                        {
+                                            "question": "Which of the following is not a type of graphical representation of data?",
+                                            "options": ["Bar Graph", "Histogram", "Pie Chart", "Matrix"],
+                                            "answer": "Matrix"
+                                        },
+                                        {
+                                            "question": "Which of the following is the correct formula for the variance of a sample?",
+                                            "options": ["Σ(x - x̄)²/n", "Σ(x - x̄)²/(n-1)", "Σ(x - μ)²/n", "Σ(x - μ)²/(n-1)"],
+                                            "answer": "Σ(x - x̄)²/(n-1)"
+                                        },
+                                        {
+                                            "question": "Kurtosis is a measure of:",
+                                            "options": ["Spread of data", "Shape of distribution", "Asymmetry", "Central tendency"],
+                                            "answer": "Shape of distribution"
+                                        },
+                                        {
+                                            "question": "What is the term used to describe a situation where the mean is less than the median?",
+                                            "options": ["Positively skewed", "Negatively skewed", "Symmetrical", "None of the above"],
+                                            "answer": "Negatively skewed"
+                                        },
+                                        {
+                                            "question": "Which of the following is a type of skewness?",
+                                            "options": ["Positive skewness", "Negative skewness", "Zero skewness", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "In a frequency distribution, the measure of central tendency that is least affected by outliers is:",
+                                            "options": ["Mean", "Median", "Mode", "None of the above"],
+                                            "answer": "Median"
+                                        },
+                                        {
+                                            "question": "The relationship between the mean, median, and mode for a positively skewed distribution is:",
+                                            "options": ["Mean < Median < Mode", "Mean > Median > Mode", "Mean = Median = Mode", "None of the above"],
+                                            "answer": "Mean > Median > Mode"
+                                        },
+                                        {
+                                            "question": "Which of the following statements is true for a normal distribution?",
+                                            "options": ["Mean, median, and mode are equal", "The mean is less than the median", "The mean is greater than the median", "None of the above"],
+                                            "answer": "Mean, median, and mode are equal"
+                                        },
+                                        {
+                                            "question": "Which of the following is not a measure of central tendency?",
+                                            "options": ["Mean", "Mode", "Variance", "Median"],
+                                            "answer": "Variance"
+                                        },
+                                        {
+                                            "question": "The quartile deviation is also known as:",
+                                            "options": ["Interquartile range", "Range", "Mean deviation", "Standard deviation"],
+                                            "answer": "Interquartile range"
+                                        },
+                                        {
+                                            "question": "For a distribution, the sum of squared deviations from the mean is minimized when using which measure of central tendency?",
+                                            "options": ["Median", "Mode", "Mean", "None of the above"],
+                                            "answer": "Mean"
+                                        },
+                                        {
+                                            "question": "Which of the following describes a symmetric distribution?",
+                                            "options": ["The left side is a mirror image of the right side", "The mean is greater than the median", "The mode is less than the median", "None of the above"],
+                                            "answer": "The left side is a mirror image of the right side"
+                                        },
+                                        {
+                                            "question": "The standard deviation is:",
+                                            "options": ["The square root of variance", "The square of variance", "The sum of all deviations", "None of the above"],
+                                            "answer": "The square root of variance"
+                                        },
+                                        {
+                                            "question": "Which of the following is used to measure the degree of spread in a dataset?",
+                                            "options": ["Variance", "Mean", "Median", "Mode"],
+                                            "answer": "Variance"
+                                        },
+                                        {
+                                            "question": "In a data set, the median is 25, and the mode is 20. The mean is 30. The distribution is:",
+                                            "options": ["Symmetric", "Positively skewed", "Negatively skewed", "None of the above"],
+                                            "answer": "Positively skewed"
+                                        },
+                                        {
+                                            "question": "The formula for calculating the range of a dataset is:",
+                                            "options": ["Maximum - Minimum", "Mean - Median", "Variance + Standard deviation", "None of the above"],
+                                            "answer": "Maximum - Minimum"
+                                        },
+                                        {
+                                            "question": "Which measure of central tendency is most appropriate when dealing with extreme values or outliers?",
+                                            "options": ["Mean", "Median", "Mode", "None of the above"],
+                                            "answer": "Median"
+                                        },
+                                        {
+                                            "question": "The standard deviation is a better measure of dispersion than the range because:",
+                                            "options": ["It uses all data points", "It only considers the extremes", "It is always greater than the mean", "None of the above"],
+                                            "answer": "It uses all data points"
+                                        },
+                                        {
+                                            "question": "Which measure is commonly used to describe the spread or dispersion of a dataset?",
+                                            "options": ["Mean", "Range", "Standard deviation", "Mode"],
+                                            "answer": "Standard deviation"
+                                        },
+                                        {
+                                            "question": "In a negatively skewed distribution, the mean is:",
+                                            "options": ["Less than the median", "Greater than the median", "Equal to the median", "None of the above"],
+                                            "answer": "Less than the median"
+                                        },
+                                        {
+                                            "question": "The difference between the largest and smallest values in a dataset is known as the:",
+                                            "options": ["Variance", "Standard deviation", "Range", "Interquartile range"],
+                                            "answer": "Range"
+                                        },
+                                        {
+                                            "question": "Which of the following methods can be used to calculate the arithmetic mean?",
+                                            "options": ["Direct method", "Short-cut method", "Step-deviation method", "All of the above"],
+                                            "answer": "All of the above"
+                                        },
+                                        {
+                                            "question": "Which of the following statements is true for a highly skewed distribution?",
+                                            "options": ["The mean is greater than the median", "The median is greater than the mode", "The mean, median, and mode are equal", "None of the above"],
+                                            "answer": "The mean is greater than the median"
+                                        },
+                                        {
+                                            "question": "Which of the following is used to measure how spread out data points are around the mean?",
+                                            "options": ["Variance", "Range", "Median", "Mean"],
+                                            "answer": "Variance"
+                                        },
+                                        {
+                                            "question": "In a normal distribution, the value of skewness is:",
+                                            "options": ["Positive", "Negative", "Zero", "None of the above"],
+                                            "answer": "Zero"
+                                        },
+                                        {
+                                            "question": "Which of the following is true about the geometric mean?",
+                                            "options": ["It is used for positive values", "It is equal to the arithmetic mean", "It cannot be used with negative values", "None of the above"],
+                                            "answer": "It is used for positive values"
+                                        },
+                                        {
+                                            "question": "What is the value of \( 5 + 3 \times 2 \)?",
+                                            "options": ["16", "11", "13", "10"],
+                                            "answer": "11"
+                                        },
+                                        {
+                                            "question": "Simplify \( (7 + 3) \times 2 - 4 \)?",
+                                            "options": ["16", "18", "14", "20"],
+                                            "answer": "16"
+                                        },
+                                        {
+                                            "question": "Evaluate \( 9 - 3 \times 2 + 5 \)?",
+                                            "options": ["8", "7", "6", "10"],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "Find the value of \( \frac{12}{3} \times 2 + 4 \)?",
+                                            "options": ["10", "8", "12", "14"],
+                                            "answer": "10"
+                                        },
+                                        {
+                                            "question": "What is the value of \( 6 \times (5 + 2) \)?",
+                                            "options": ["42", "36", "30", "28"],
+                                            "answer": "42"
+                                        },
+                                        {
+                                            "question": "Simplify \( 4 + 6 \times 3 - 2 \)?",
+                                            "options": ["14", "18", "16", "12"],
+                                            "answer": "14"
+                                        },
+                                        {
+                                            "question": "Evaluate \( \frac{15}{3} + 5 \times 2 \)?",
+                                            "options": ["15", "16", "18", "20"],
+                                            "answer": "15"
+                                        },
+                                        {
+                                            "question": "What is the result of \( 8 \div 2 \times (2 + 2) \)?",
+                                            "options": ["16", "12", "10", "14"],
+                                            "answer": "16"
+                                        },
+                                        {
+                                            "question": "Evaluate \( (4 \times 3) + 5 \div 5 \)?",
+                                            "options": ["12", "13", "14", "15"],
+                                            "answer": "13"
+                                        },
+                                        {
+                                            "question": "Find the value of \( 5 \times 2 - (3 + 1) \)?",
+                                            "options": ["6", "7", "9", "8"],
+                                            "answer": "6"
+                                        },
+                                        {
+                                            "question": "Simplify \( 3 \times 2 + 10 \div 2 \)?",
+                                            "options": ["9", "8", "10", "12"],
+                                            "answer": "9"
+                                        },
+                                        {
+                                            "question": "What is \( 2 \times 5 + 8 \div 4 \)?",
+                                            "options": ["12", "14", "10", "13"],
+                                            "answer": "12"
+                                        },
+                                        {
+                                            "question": "Evaluate \( 4 + 6 \div 3 \times 2 \)?",
+                                            "options": ["8", "10", "12", "14"],
+                                            "answer": "8"
+                                        },
+                                        {
+                                            "question": "Find the value of \( 7 + (8 - 4) \times 3 \)?",
+                                            "options": ["19", "21", "22", "20"],
+                                            "answer": "19"
+                                        },
+                                        {
+                                            "question": "Evaluate \( 6 \times 4 - 5 \div 5 \)?",
+                                            "options": ["24", "22", "20", "26"],
+                                            "answer": "24"
+                                        },
+                                        {
+                                            "question": "What is the value of \( (2 + 3) \times (4 + 2) \)?",
+                                            "options": ["30", "24", "20", "28"],
+                                            "answer": "30"
+                                        },
+                                        {
+                                            "question": "Find the result of \( 8 - 2 \times 3 + 5 \)?",
+                                            "options": ["15", "12", "13", "14"],
+                                            "answer": "13"
+                                        },
+                                        {
+                                            "question": "Simplify \( \frac{25}{5} \times 3 - 4 \)?",
+                                            "options": ["11", "9", "12", "10"],
+                                            "answer": "11"
+                                        },
+                                        {
+                                            "question": "What is \( 3 \times (2 + 5) \div 7 \)?",
+                                            "options": ["3", "4", "2", "5"],
+                                            "answer": "3"
+                                        },
+                                        {
+                                            "question": "Find the value of \( 5 + (8 \div 2) \times 3 \)?",
+                                            "options": ["20", "19", "22", "18"],
+                                            "answer": "20"
+                                        }
+                                    ],                                                                            
+                                    brief: [
+                                        {
+                                            "question": "What is the importance of measures of central tendency in data analysis?",
+                                            "questionRead": "",
+                                            "answer": "Measures of central tendency, including mean, median, and mode, provide a central value for a dataset, summarizing it with a single representative number. They help simplify complex data and make it easier to analyze and compare. The mean offers an overall view, the median is useful for skewed data, and the mode identifies the most frequent value.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        },
+                                        {
+                                            "question": "What is the difference between range and standard deviation?",
+                                            "questionRead": "",
+                                            "answer": "Range is the difference between the largest and smallest values and provides a simple measure of spread. Standard deviation, however, measures how much values deviate from the mean and considers all data points. Unlike range, standard deviation provides a more comprehensive view of data variability and is less influenced by outliers.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        },
+                                        {
+                                            "question": "How is skewness calculated and what does it indicate?",
+                                            "questionRead": "",
+                                            "answer": "Skewness measures the asymmetry of a data distribution. It is calculated using the formula: Skewness = 3(Mean - Median)/Standard Deviation. Positive skewness indicates a longer right tail, while negative skewness indicates a longer left tail. A skewness of 0 suggests a symmetric distribution.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        },
+                                        {
+                                            "question": "What are quartiles and how do they divide the data?",
+                                            "questionRead": "",
+                                            "answer": "Quartiles divide data into four equal parts: Q1 (25th percentile), Q2 (50th percentile or median), and Q3 (75th percentile). They help understand data distribution and identify outliers. The interquartile range (IQR), calculated as Q3 - Q1, measures the spread of the middle 50% of the data.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        },
+                                        {
+                                            "question": "What is kurtosis and how is it used in data analysis?",
+                                            "questionRead": "",
+                                            "answer": "Kurtosis measures the 'tailedness' of a distribution, indicating the presence of extreme values. High kurtosis suggests heavy tails with more outliers, while low kurtosis indicates lighter tails. It helps in assessing data risk and variability, useful in finance and quality control.",
+                                            "codeBlock": "",
+                                            "language": ""
+                                        }
+                                    ],
+                                    case_study: [
+                                        {
+                                            "title": "Case Study 1: Employee Salary Analysis",
+                                            "description": "A company conducted an analysis of the monthly salaries of 50 employees. The data collected revealed a mean salary of $50,000, with a standard deviation of $5,000. The company wants to understand the salary distribution and identify if the data is normally distributed or skewed. Additionally, they want to assess if there are any outliers based on the interquartile range (IQR).",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "mcq": [
+                                                {
+                                                    "question": "If the mean salary is $50,000 and the median salary is $48,000, what can be inferred about the salary distribution?",
+                                                    "questionRead": "",
+                                                    "options": ["Positively skewed", "Negatively skewed", "Symmetric", "Cannot be determined"],
+                                                    "answer": "Positively skewed"
+                                                },
+                                                {
+                                                    "question": "Which measure would be most appropriate to detect potential salary outliers?",
+                                                    "questionRead": "",
+                                                    "options": ["Mean", "Mode", "Interquartile Range (IQR)", "Standard Deviation"],
+                                                    "answer": "Interquartile Range (IQR)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Case Study 2: Student Exam Performance",
+                                            "description": "A school conducted an analysis of student scores in a mathematics test. The average score was found to be 72, with a mode of 75 and a median of 78. Teachers suspect the distribution may not be symmetric and need to determine if the data is skewed. They also want to calculate the spread of scores using variance.",
+                                            "codeBlock": "",
+                                            "language": "",
+                                            "mcq": [
+                                                {
+                                                    "question": "Based on the provided data (mean < median), what type of skewness is present in the score distribution?",
+                                                    "questionRead": "",
+                                                    "options": ["Positively skewed", "Negatively skewed", "Symmetric", "Uniform"],
+                                                    "answer": "Negatively skewed"
+                                                },
+                                                {
+                                                    "question": "Which measure would best represent the spread of scores in the dataset?",
+                                                    "questionRead": "",
+                                                    "options": ["Mean", "Variance", "Mode", "Median"],
+                                                    "answer": "Variance"
+                                                }
+                                            ]
+                                        }
+                                    ]                                                                        
+                                }
+                            ]
+                        }
                     ]
                     }
                 ]
