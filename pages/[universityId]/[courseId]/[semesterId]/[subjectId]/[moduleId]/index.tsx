@@ -39,7 +39,7 @@ export default function ModulePage() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-grow p-6 bg-gray-100 overflow-auto scrollbar-hidden">
+      <div className="flex-grow p-4 bg-gray-100 overflow-auto scrollbar-hidden">
         <h1 className="text-2xl font-bold mb-6">{currentModule.name}</h1>
 
         {/* Accordion Section */}

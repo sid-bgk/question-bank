@@ -6,7 +6,7 @@ interface QuestionReadProps {
 
 export default function QuestionRead({ content }: QuestionReadProps) {
   return (
-    <div className="bg-gray-100 p-4 rounded-md mt-4">
+    <div className="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-lg mt-4">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );
