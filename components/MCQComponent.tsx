@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { CodeBlock } from "./CodeBlock";
 import { AutoSelectToggle } from "./AuoSelectToggle";
+import { ShuffleToggle } from "./ShuffleToggle"; // New component
 import QuestionRead from "./QuestionRead";
 
 interface MCQComponentProps {
@@ -15,10 +16,33 @@ interface MCQComponentProps {
   }[];
 }
 
+// Fisher-Yates shuffle algorithm
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export default function MCQComponent({ mcqs }: MCQComponentProps) {
   const [feedback, setFeedback] = useState<{ [key: number]: string }>({});
   const [autoSelect, setAutoSelect] = useState(false);
+  const [shuffleOptions, setShuffleOptions] = useState(false); // New state
   const [selectedOptions, setSelectedOptions] = useState<{ [key: number]: string }>({});
+  const [shuffledOptions, setShuffledOptions] = useState<{ [key: number]: string[] }>({});
+
+  // Shuffle options when shuffle toggle or mcqs change
+  useEffect(() => {
+    if (shuffleOptions) {
+      const newShuffled: { [key: number]: string[] } = {};
+      mcqs.forEach((q, index) => {
+        newShuffled[index] = shuffleArray(q.options);
+      });
+      setShuffledOptions(newShuffled);
+    }
+  }, [shuffleOptions, mcqs]);
 
   const handleSelect = (index: number, selectedOption: string) => {
     setSelectedOptions((prev) => ({ ...prev, [index]: selectedOption }));
@@ -33,17 +57,23 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
 
   const handleAutoSelectToggle = (isAutoSelect: boolean) => {
     setAutoSelect(isAutoSelect);
-
     if (isAutoSelect) {
       const newSelectedOptions: { [key: number]: string } = {};
       mcqs.forEach((q, index) => {
         newSelectedOptions[index] = q.answer;
       });
-      setFeedback({});
       setSelectedOptions(newSelectedOptions);
     } else {
-      setFeedback({});
       setSelectedOptions({});
+    }
+    setFeedback({});
+  };
+
+  const handleShuffleToggle = (shouldShuffle: boolean) => {
+    setShuffleOptions(shouldShuffle);
+    if (!shouldShuffle) {
+      setSelectedOptions({});
+      setFeedback({});
     }
   };
 
@@ -51,7 +81,10 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
     <div className="mb-8">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-800">MCQs</h2>
-        <AutoSelectToggle onToggle={handleAutoSelectToggle} />
+        <div className="flex gap-4">
+          <ShuffleToggle onToggle={handleShuffleToggle} />
+          <AutoSelectToggle onToggle={handleAutoSelectToggle} />
+        </div>
       </div>
 
       {mcqs.map((q, index) => (
@@ -61,7 +94,7 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
             <ReactMarkdown className="mt-2 text-gray-900">{q.question}</ReactMarkdown>
           </h3>
 
-          {q.questionRead && (<QuestionRead content={q.questionRead} />)}
+          {q.questionRead && <QuestionRead content={q.questionRead} />}
 
           {q.codeBlock && (
             <div className="mb-4">
@@ -70,7 +103,7 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
           )}
 
           <div className="mt-4">
-            {q.options.map((option, i) => (
+            {(shuffleOptions ? shuffledOptions[index] : q.options)?.map((option, i) => (
               <label
                 key={i}
                 className={`block mb-2 p-2 rounded-lg cursor-pointer border ${
