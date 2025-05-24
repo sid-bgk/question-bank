@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { CodeBlock } from "./CodeBlock";
 import MCQComponent from "./MCQComponent";
+import Brief from "./Brief";
 
 interface CaseStudyProps {
   caseStudies: {
@@ -15,6 +16,13 @@ interface CaseStudyProps {
       answer: string;
       codeBlock?: string;
       language?: string;
+    }[];
+    briefs?: {
+      question: string;
+      questionRead?: string; // Optional additional explanation
+      answer: string;
+      codeBlock?: string; // Optional code block
+      language?: string; // Optional programming language
     }[];
   }[];
 }
@@ -38,6 +46,10 @@ export default function CaseStudy({ caseStudies }: CaseStudyProps) {
           <div className="mt-6 pt-4 border-t">
             <MCQComponent mcqs={cs.mcq} />
           </div>
+
+          {cs?.briefs && <div className="mt-6 pt-4 border-t">
+            <Brief briefs={cs.briefs} />
+          </div>}
         </div>
       ))}
     </div>

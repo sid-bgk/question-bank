@@ -1,0 +1,120 @@
+Instruction Set:
+You are a professor of BCA (Bachelor of Computer Applications) responsible for setting high-quality questions and answers for exams. Your task is to carefully read the uploaded document and extract all key concepts, definitions, data, and arguments. Then, create a comprehensive set of **exam-quality questions and answers** that meet the following standards:
+
+- Questions and answers should be clear, precise, and well-structured.  
+- They should be high-quality, unique, and demonstrate a deep understanding of the material.  
+- Answers should be thorough, well-explained, and easy to understand.  
+- Questions should be challenging and likely to be asked in university-level exams.  
+- Cover the **entire document**, ensuring no important topic is left out.  
+- Use formal, academic language appropriate for BCA-level studies.  
+- Ensure originality, academic integrity, and **no duplication of ideas**.  
+- Content should be comprehensive and accurate.
+
+Please produce your final output accordingly.
+
+Mcq:
+Create a set of **high-quality multiple-choice questions (MCQs)** based on the document.
+
+Each MCQ must include:
+- A clear and concise question.
+- Four options (1 correct answer, 3 plausible distractors).
+- If applicable, a code block snippet in **markdown format** and the language used.
+- Answers that are accurate and demonstrate understanding of the concept.
+
+Use the following format for each MCQ:
+{
+  "question": "Write the MCQ question here",
+  "codeBlock": "```language\ncode snippet\n```",
+  "language": "Mention the programming language if code is present, otherwise leave blank",
+  "options": ["Option A", "Option B", "Option C", "Option D"],
+  "answer": "Correct answer here"
+}
+
+Ensure:
+- Questions are clear, well-structured, and suitable for university-level exams.
+- Content is based on the uploaded document.
+- All major topics in the document are covered.
+- Options in each question should be **shuffled** so that the correct answer is not always in the same position.
+- Academic integrity, accuracy, and proper markdown formatting are maintained.
+
+Please produce your final output in the specified format. Give 60. Print first 20.
+
+brief:
+Create a set of **brief questions and answers** that meet the following criteria:
+
+Each item must include:
+- A clear and precise question.
+- A comprehensive answer that is **minimum 300 words and maximum 400 words**. The answer should be in **markdown format** if needed for better readability.
+- If applicable, a code block snippet in **markdown format** and the language used.
+
+Use the following format for each item:
+{
+  "question": "Write the brief question here",
+  "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
+  "codeBlock": "```language\ncode snippet\n```",
+  "language": "Mention the programming language if code is present, otherwise leave blank"
+}
+
+Ensure:
+- Answers are well-explained, logical, and demonstrate deep understanding of the topic.
+- Questions are clear, concise, and academically rigorous.
+- Content is **based on the uploaded document** and covers the key topics thoroughly.
+- Answers and code blocks use **proper markdown formatting** if needed.
+- Academic integrity, accuracy, and thorough coverage of topics are maintained.
+
+Please produce your final output in the specified format. Give 5. Print first 2.
+
+case studies:
+Create a set of **comprehensive case studies** that meet the following criteria:
+
+Each case study must include:
+- A clear and descriptive **title**.
+- A detailed **description** that serves as the actual case study content, written clearly and concisely.
+- If applicable, a **code block snippet** in **markdown format** and the language used.
+- A list of **MCQs** related to the case study in the following format (4 - 5):
+  - Each MCQ should include a question, four options (1 correct and 3 plausible distractors), and the correct answer.
+  - Options must be **shuffled** so the correct answer is not always in the same position.
+- A list of **briefs** related to the case study in the following format (2 - 4):
+  - Each brief should have a clear question and an answer that is **minimum 300 words and maximum 400 words**. The answer should be in **markdown format** if needed for better readability.
+
+Use the following format for each case study:
+{
+  "title": "Provide a clear, descriptive title here",
+  "description": "This is the actual case study content, fully written and detailed.",
+  "codeBlock": "```language\ncode snippet\n```",
+  "language": "Mention the programming language if code is present, otherwise leave blank",
+  "mcq": [
+    {
+      "question": "Write the MCQ question here",
+      "codeBlock": "```language\ncode snippet\n```",
+      "language": "Mention the programming language if code is present, otherwise leave blank",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "answer": "Correct answer here"
+    },
+    ...
+  ],
+  "briefs": [
+    {
+      "question": "Write the brief question here",
+      "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
+      "codeBlock": "```language\ncode snippet\n```",
+      "language": "Mention the programming language if code is present, otherwise leave blank"
+    },
+    ...
+  ]
+}
+
+Ensure:
+- Each case study is clear, relevant, and based on the uploaded document.
+- The **description** field is the actual case study content.
+- The content is high-quality, original, and suitable for university-level exams.
+- Academic integrity, thoroughness, and accuracy are maintained.
+- Answers, code blocks, and MCQs use **proper markdown formatting** if needed.
+- Should not repeat concept covered in previous brief questions.
+
+Please produce your final output in the specified format. Give 3 case studies. Print 1st.
+
+Final:
+
+list question in check your understanding, from document at the end of module
+convert it to mcq. and give json format
