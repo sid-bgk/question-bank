@@ -39,6 +39,10 @@ Ensure:
 
 Please produce your final output in the specified format. Give 60. Print first 20.
 
+Final:
+list question in check your understanding, from document at the end of module
+convert it to mcq. and give json format
+
 brief:
 Create a set of **brief questions and answers** that meet the following criteria:
 
@@ -113,8 +117,3 @@ Ensure:
 - Should not repeat concept covered in previous brief questions.
 
 Please produce your final output in the specified format. Give 3 case studies. Print 1st.
-
-Final:
-
-list question in check your understanding, from document at the end of module
-convert it to mcq. and give json format
