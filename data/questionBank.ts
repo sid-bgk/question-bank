@@ -26496,8 +26496,9 @@ export const questionBank = {
     "showExplanation": true,
     "explanation": "`Z23` is for encounter for immunization (vaccination)."
   }
-]
-
+],
+brief: [],
+case_study: []
                                         }
                                     ]
 
