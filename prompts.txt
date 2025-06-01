@@ -25,7 +25,7 @@ Each MCQ must include:
 Use the following format for each MCQ:
 {
   "question": "Write the MCQ question here",
-  "codeBlock": "code snippet",
+  "codeBlock": "code snippet (don't incule ```)",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "options": ["Option A", "Option B", "Option C", "Option D"],
   "answer": "Correct answer here",
@@ -38,6 +38,7 @@ Ensure:
 - All major topics in the document are covered.
 - Options in each question should be **shuffled** so that the correct answer is not always in the same position.
 - Academic integrity, accuracy, and proper markdown formatting are maintained.
+- Don't include code in question string or answer string
 
 Please produce your final output in the specified format. Give 60. Print first 20.
 
@@ -59,7 +60,7 @@ Each MCQ must include:
 Use the following format for each MCQ:
 {
   "question": "Write the MCQ question here",
-  "codeBlock": "code snippet",
+  "codeBlock": "code snippet (don't incule ```)",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "options": ["Option A", "Option B", "Option C", "Option D"],
   "answer": "Correct answer here",
@@ -67,12 +68,14 @@ Use the following format for each MCQ:
 }
 
 Ensure:
+- Dont't include code in question
 - Questions require understanding of C syntax and data structures as presented in the module
 - Questions are clear, well-structured, and suitable for university-level exams.
 - Content is based on the uploaded document.
 - All major topics in the document are covered.
 - Options in each question should be **shuffled** so that the correct answer is not always in the same position.
 - Academic integrity, accuracy, and proper markdown formatting are maintained.
+- Don't include code in question string or answer string
 
 Please produce your final output in the specified format. Give 20. Print first 10 in given format.
 
@@ -89,7 +92,7 @@ Use the following format for each item:
 {
   "question": "Write the brief question here",
   "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
-  "codeBlock": "code snippet",
+  "codeBlock": "code snippet (don't incule ```)",
   "language": "Mention the programming language if code is present, otherwise leave blank"
 }
 
@@ -99,6 +102,7 @@ Ensure:
 - Content is **based on the uploaded document** and covers the key topics thoroughly.
 - Answers and code blocks use **proper markdown formatting** if needed.
 - Academic integrity, accuracy, and thorough coverage of topics are maintained.
+- Don't include code in question string or answer string
 
 Please produce your final output in the specified format. Give 5. Print first 2.
 
@@ -119,12 +123,12 @@ Use the following format for each case study:
 {
   "title": "Provide a clear, descriptive title here",
   "description": "This is the actual case study content, fully written and detailed.",
-  "codeBlock": "code snippet",
+  "codeBlock": "code snippet (don't incule ```)",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "mcq": [
     {
       "question": "Write the MCQ question here",
-      "codeBlock": "code snippet",
+      "codeBlock": "code snippet (don't incule ```)",
       "language": "Mention the programming language if code is present, otherwise leave blank",
       "options": ["Option A", "Option B", "Option C", "Option D"],
       "answer": "Correct answer here"
@@ -135,7 +139,7 @@ Use the following format for each case study:
     {
       "question": "Write the brief question here",
       "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
-      "codeBlock": "code snippet",
+      "codeBlock": "code snippet (don't incule ```)",
       "language": "Mention the programming language if code is present, otherwise leave blank"
     },
     ...
@@ -149,6 +153,7 @@ Ensure:
 - Academic integrity, thoroughness, and accuracy are maintained.
 - Answers, code blocks, and MCQs use **proper markdown formatting** if needed.
 - Should not repeat concept covered in previous brief questions.
+- Don't include code in question string or answer string
 
 Please produce your final output in the specified format. Give 3 case studies. Print 1st.
 
@@ -170,12 +175,12 @@ Use the following format for each case study:
 {
   "title": "Provide a clear, descriptive title here",
   "description": "This is the actual case study content, fully written and detailed.",
-  "codeBlock": "code snippet",
+  "codeBlock": "code snippet (don't incule ```)",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "mcq": [
     {
       "question": "Write the MCQ question here",
-      "codeBlock": "code snippet",
+      "codeBlock": "code snippet (don't incule ```)",
       "language": "Mention the programming language if code is present, otherwise leave blank",
       "options": ["Option A", "Option B", "Option C", "Option D"],
       "answer": "Correct answer here",
@@ -187,7 +192,7 @@ Use the following format for each case study:
     {
       "question": "Write the brief question here (must include 1 coding problem-solving question)",
       "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
-      "codeBlock": "code snippet",
+      "codeBlock": "code snippet (don't incule ```)",
       "language": "Mention the programming language if code is present, otherwise leave blank",
       "explanation": "Short explanation in markdown format (optional, for the correct answer only)"
     },
@@ -203,5 +208,6 @@ Ensure:
 - Academic integrity, thoroughness, and accuracy are maintained.
 - Answers, code blocks, and MCQs use **proper markdown formatting** if needed.
 - Should not repeat concept covered in previous brief questions.
+- Don't include code in question string or answer string
 
 Please produce your final output in the specified format. Give 1.
