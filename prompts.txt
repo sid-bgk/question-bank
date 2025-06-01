@@ -9,6 +9,7 @@ You are a professor of BCA (Bachelor of Computer Applications) responsible for s
 - Use formal, academic language appropriate for BCA-level studies.  
 - Ensure originality, academic integrity, and **no duplication of ideas**.  
 - Content should be comprehensive and accurate.
+- An optional short explanation in markdown format, specifically explaining why the correct answer is correct.
 
 Please produce your final output accordingly.
 
@@ -24,10 +25,11 @@ Each MCQ must include:
 Use the following format for each MCQ:
 {
   "question": "Write the MCQ question here",
-  "codeBlock": "```language\ncode snippet\n```",
+  "codeBlock": "code snippet",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "options": ["Option A", "Option B", "Option C", "Option D"],
-  "answer": "Correct answer here"
+  "answer": "Correct answer here",
+  "explanation": "Short explanation in markdown format (optional, for the correct answer only)"
 }
 
 Ensure:
@@ -43,6 +45,38 @@ Final:
 list question in check your understanding, from document at the end of module
 convert it to mcq. and give json format
 
+MCQ_coding:
+
+Create a set of high-quality coding-based multiple-choice questions (MCQs) based on the uploaded document.
+
+Each MCQ must include:
+- A clear and precise question testing practical coding knowledge, such as code output prediction, identifying errors, or selecting the correct implementation.
+- Four options (1 correct answer, 3 plausible distractors).
+- If applicable, a code block snippet in **markdown format** and the language used.
+- Answers that are accurate and demonstrate understanding of the concept.
+- An optional short explanation in markdown format, specifically explaining why the correct answer is correct.
+
+Use the following format for each MCQ:
+{
+  "question": "Write the MCQ question here",
+  "codeBlock": "code snippet",
+  "language": "Mention the programming language if code is present, otherwise leave blank",
+  "options": ["Option A", "Option B", "Option C", "Option D"],
+  "answer": "Correct answer here",
+  "explanation": "Short explanation in markdown format (optional, for the correct answer only)"
+}
+
+Ensure:
+- Questions require understanding of C syntax and data structures as presented in the module
+- Questions are clear, well-structured, and suitable for university-level exams.
+- Content is based on the uploaded document.
+- All major topics in the document are covered.
+- Options in each question should be **shuffled** so that the correct answer is not always in the same position.
+- Academic integrity, accuracy, and proper markdown formatting are maintained.
+
+Please produce your final output in the specified format. Give 20. Print first 10 in given format.
+
+
 brief:
 Create a set of **brief questions and answers** that meet the following criteria:
 
@@ -55,7 +89,7 @@ Use the following format for each item:
 {
   "question": "Write the brief question here",
   "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
-  "codeBlock": "```language\ncode snippet\n```",
+  "codeBlock": "code snippet",
   "language": "Mention the programming language if code is present, otherwise leave blank"
 }
 
@@ -85,12 +119,12 @@ Use the following format for each case study:
 {
   "title": "Provide a clear, descriptive title here",
   "description": "This is the actual case study content, fully written and detailed.",
-  "codeBlock": "```language\ncode snippet\n```",
+  "codeBlock": "code snippet",
   "language": "Mention the programming language if code is present, otherwise leave blank",
   "mcq": [
     {
       "question": "Write the MCQ question here",
-      "codeBlock": "```language\ncode snippet\n```",
+      "codeBlock": "code snippet",
       "language": "Mention the programming language if code is present, otherwise leave blank",
       "options": ["Option A", "Option B", "Option C", "Option D"],
       "answer": "Correct answer here"
@@ -101,7 +135,7 @@ Use the following format for each case study:
     {
       "question": "Write the brief question here",
       "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
-      "codeBlock": "```language\ncode snippet\n```",
+      "codeBlock": "code snippet",
       "language": "Mention the programming language if code is present, otherwise leave blank"
     },
     ...
@@ -117,3 +151,57 @@ Ensure:
 - Should not repeat concept covered in previous brief questions.
 
 Please produce your final output in the specified format. Give 3 case studies. Print 1st.
+
+case_study_coding:
+Create a set of **comprehensive case studies** that meet the following criteria:
+
+Each case study must include:
+- A clear and descriptive **title**.
+- A detailed **description** that serves as the actual case study content, written clearly and concisely.
+- If applicable, a **code block snippet** in **markdown format** and the language used.
+- A list of **MCQs** related to the case study in the following format (4 - 5):
+  - Each MCQ should include a question, four options (1 correct and 3 plausible distractors), and the correct answer.
+  - Options must be **shuffled** so the correct answer is not always in the same position.
+- A list of **briefs** related to the case study in the following format (2 - 4):
+  - Each brief should have a clear question and an answer that is **minimum 300 words and maximum 400 words**. The answer should be in **markdown format** if needed for better readability.
+  - One of the briefs should specifically focus on solving a coding problem based on the case study. The problem should be clearly stated, and the solution should include a detailed explanation with code snippets in markdown format.
+
+Use the following format for each case study:
+{
+  "title": "Provide a clear, descriptive title here",
+  "description": "This is the actual case study content, fully written and detailed.",
+  "codeBlock": "code snippet",
+  "language": "Mention the programming language if code is present, otherwise leave blank",
+  "mcq": [
+    {
+      "question": "Write the MCQ question here",
+      "codeBlock": "code snippet",
+      "language": "Mention the programming language if code is present, otherwise leave blank",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "answer": "Correct answer here",
+      "explanation": "Short explanation in markdown format (optional, for the correct answer only)"
+    },
+    ...
+  ],
+  "briefs": [
+    {
+      "question": "Write the brief question here (must include 1 coding problem-solving question)",
+      "answer": "A comprehensive, well-structured answer in **minimum 300 and maximum 400 words**. Should be in markdown format if appropriate.",
+      "codeBlock": "code snippet",
+      "language": "Mention the programming language if code is present, otherwise leave blank",
+      "explanation": "Short explanation in markdown format (optional, for the correct answer only)"
+    },
+    ...
+  ]
+}
+
+Ensure:
+- The coding problem-solving brief should focus on applying module concepts.
+- Each case study is clear, relevant, and based on the uploaded document.
+- The **description** field is the actual case study content.
+- The content is high-quality, original, and suitable for university-level exams.
+- Academic integrity, thoroughness, and accuracy are maintained.
+- Answers, code blocks, and MCQs use **proper markdown formatting** if needed.
+- Should not repeat concept covered in previous brief questions.
+
+Please produce your final output in the specified format. Give 1.

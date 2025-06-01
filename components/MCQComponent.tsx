@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { CodeBlock } from "./CodeBlock";
 import { AutoSelectToggle } from "./AuoSelectToggle";
-import { ShuffleToggle } from "./ShuffleToggle"; // New component
+import { ShuffleToggle } from "./ShuffleToggle";
 import QuestionRead from "./QuestionRead";
 
 interface MCQComponentProps {
@@ -13,6 +13,8 @@ interface MCQComponentProps {
     language?: string;
     options: string[];
     answer: string;
+    explanation?: string;
+    showExplanation?: boolean;
   }[];
 }
 
@@ -29,7 +31,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 export default function MCQComponent({ mcqs }: MCQComponentProps) {
   const [feedback, setFeedback] = useState<{ [key: number]: string }>({});
   const [autoSelect, setAutoSelect] = useState(false);
-  const [shuffleOptions, setShuffleOptions] = useState(false); // New state
+  const [shuffleOptions, setShuffleOptions] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState<{ [key: number]: string }>({});
   const [shuffledOptions, setShuffledOptions] = useState<{ [key: number]: string[] }>({});
 
@@ -48,11 +50,15 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
     setSelectedOptions((prev) => ({ ...prev, [index]: selectedOption }));
 
     const isCorrect = selectedOption === mcqs[index].answer;
-    const message = isCorrect
+    const baseMessage = isCorrect
       ? `✅ Correct! The answer is ${mcqs[index].answer}.`
       : `❌ Incorrect! The correct answer is ${mcqs[index].answer}.`;
 
-    setFeedback((prev) => ({ ...prev, [index]: message }));
+    const explanation = isCorrect && mcqs[index].explanation
+      ? `💡 Explanation: ${mcqs[index].explanation}`
+      : "";
+
+    setFeedback((prev) => ({ ...prev, [index]: baseMessage + explanation }));
   };
 
   const handleAutoSelectToggle = (isAutoSelect: boolean) => {
@@ -131,13 +137,21 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
             ))}
           </div>
 
-          <p
-            className={`mt-4 text-base font-semibold ${
-              feedback[index]?.startsWith("❌") ? "text-red-800" : "text-green-800"
-            }`}
-          >
-            {autoSelect ? "\u00A0" : feedback[index] || "\u00A0"}
-          </p>
+          <div className="mt-4 text-base font-semibold">
+            <ReactMarkdown
+              className={`${
+                feedback[index]?.startsWith("❌") ? "text-red-800" : "text-green-800"
+              } whitespace-pre-wrap`}
+            >
+              {autoSelect
+                ? q.showExplanation
+                  ? `✅ The answer is ${q.answer}.${
+                      q.explanation ? `\n\n💡 Explanation: ${q.explanation}` : ""
+                    }`
+                  : `✅ The answer is ${q.answer}.`
+                : feedback[index] || "\u00A0"}
+            </ReactMarkdown>
+          </div>
         </div>
       ))}
     </div>
