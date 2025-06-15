@@ -135,20 +135,16 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
                 {option}
               </label>
             ))}
-          </div>
-
-          <div className="mt-4 text-base font-semibold">
+          </div>          <div className="mt-4 text-base font-semibold">
             <ReactMarkdown
               className={`${
                 feedback[index]?.startsWith("❌") ? "text-red-800" : "text-green-800"
               } whitespace-pre-wrap`}
             >
               {autoSelect
-                ? q.showExplanation
-                  ? `✅ The answer is ${q.answer}.${
-                      q.explanation ? `\n\n💡 Explanation: ${q.explanation}` : ""
-                    }`
-                  : `✅ The answer is ${q.answer}.`
+                ? `✅ The answer is ${q.answer}.${
+                    q.explanation ? `\n\n💡 Explanation: ${q.explanation}` : ""
+                  }`
                 : feedback[index] || "\u00A0"}
             </ReactMarkdown>
           </div>
