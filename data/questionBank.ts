@@ -48146,7 +48146,7 @@ export const questionBank = {
                   modules: [
                     {
                       id: "module-1",
-                      name: "Module 1",
+                      name: "Module 1: 101 Questions",
                       mcq: [
                         {
                           question:
@@ -49534,6 +49534,1670 @@ export const questionBank = {
                           showExplanation: true,
                           explanation:
                             "`Z23` is for encounter for immunization (vaccination).",
+                        },
+                      ],
+                      brief: [],
+                      case_study: [],
+                    },
+                    {
+                      id: "module-2",
+                      name: "Module 2: Anatomy and Billings",
+                      mcq: [
+                        {
+                          question:
+                            "What term could describe an inflammation of the plantar, causing foot or heel pain when walking or running?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Plantar fascitis",
+                            "b. Tenodesis",
+                            "c. Tenolysis",
+                            "d. Tendon fascitis",
+                          ],
+                          answer: "a. Plantar fascitis",
+                          explanation:
+                            "You can find this answer by studying or knowing medical terminology.",
+                        },
+                        {
+                          question:
+                            "Blephroplasty describes what type of a procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Surgical reduction of the upper/lower eyelids to remove excess fat, skin, and muscle",
+                            "b. Treatment for spider veins with injections of sclerosing solution",
+                            "c. Replacement of damaged skin with healthy tissue taken from a donor",
+                            "d. Destruction of tissue by burning or freezing",
+                          ],
+                          answer:
+                            "a. Surgical reduction of the upper/lower eyelids to remove excess fat, skin, and muscle",
+                          explanation:
+                            "You can find this answer in the index of the CPT Professional Edition. Once you locate the term, cross reference the code(s) to determine the type of procedure.",
+                        },
+                        {
+                          question:
+                            "Which autoimmune disorder will eventually destroy the thyroid gland?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Hayem-Farber disease",
+                            "b. Alzheimer’s thyroiditis",
+                            "c. Lou Gehrig’s disease",
+                            "d. Hashimoto’s thyroiditis",
+                          ],
+                          answer: "d. Hashimoto’s thyroiditis",
+                          explanation:
+                            "You can find this answer in the ICD-9-CM index under Thyroiditis, Hashimoto’s and cross reference it to determine the type of disease.",
+                        },
+                        {
+                          question:
+                            "Which of the following statements best describes a rheumatologist?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. A specialist who provides medical care and drug treatments focused on mental and cognitive disorders.",
+                            "b. A specialist who provides treatment to women during pregnancy, childbirth, and their aftercare",
+                            "c. A specialist who provides the diagnosis and treatment of disease characterized by inflammation of the connective tissues.",
+                            "d. A specialist who provides the diagnosis and surgical treatment of bone disorders",
+                          ],
+                          answer:
+                            "c. A specialist who provides the diagnosis and treatment of disease characterized by inflammation of the connective tissues.",
+                          explanation:
+                            "This question is an example of an answer that you could not find in the source materials allowed for the CPC exam. This type of question is based on general knowledge of medical specialties.",
+                        },
+                        {
+                          question:
+                            "A patient suffered a burn that involved the epidermis, dermis, and subcutaneous layers with some muscle involvement. What degree of burn would describe this injury?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. First-degree, superficial with blisters",
+                            "b. Second-degree, partial thickness with muscle",
+                            "c. Third-degree, full thickness",
+                            "d. None of the above",
+                          ],
+                          answer: "c. Third-degree, full thickness",
+                          explanation:
+                            "The degree of a burn is determined by the layers of skin involved. A third degree burn, also known as a full thickness burn, involves damage to all three layers of skin and possibly the muscle. You could find this by looking up burn in the ICD-9-CM book and cross referencing to that section for further definition.",
+                        },
+                        {
+                          question:
+                            "In which part of the body would you find the choroid?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Brain",
+                            "b. Eyeball",
+                            "c. Muscles of the hand",
+                            "d. Spinal column",
+                          ],
+                          answer: "b. Eyeball",
+                          explanation:
+                            "You can find this answer in the CPT Professional Edition in the illustrations of anatomical and procedural review at the front of the book. You could also find this answer by looking in the in the CPT index under Choroid and then cross referencing the procedures.",
+                        },
+                        {
+                          question:
+                            "Which combining form refers to the small intestine?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. enter/o",
+                            "b. gastr/o",
+                            "c. celi/o",
+                            "d. col/o",
+                          ],
+                          answer: "a. enter/o",
+                          explanation:
+                            "This question is best answered by studying or knowing medical terminology. However you could also discover the correct answer by using the CPT Professional Edition index and looking up procedures that begin with enter/o.",
+                        },
+                        {
+                          question: "An ERG is what type of a procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Electroretinography",
+                            "b. Electrorenalography",
+                            "c. Electroretinograph",
+                            "d. Electrorhidogram",
+                          ],
+                          answer: "a. Electroretinography",
+                          explanation:
+                            "You can find the answer in the index of the CPT Professional Edition by looking up ERG.",
+                        },
+                        {
+                          question:
+                            "Which term refers to the anus, rectum, and the cecum?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. rectal",
+                            "b. anorectal",
+                            "c. esophageal",
+                            "d. ilium",
+                          ],
+                          answer: "b. anorectal",
+                          explanation:
+                            "This answer comes from studying medical terminology. You can break down the term anorectal (an/o – anus, rect – rectum, and –al pertaining to).",
+                        },
+                        {
+                          question:
+                            "Which term does not refer to a level of consciousness?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Syncope",
+                            "b. Stupor",
+                            "c. Coma",
+                            "d. Sciatica",
+                          ],
+                          answer: "d. Sciatica",
+                          explanation:
+                            "Sciatica is an inflammation of the sciatic nerve that results in pain, burning, and tingling along the course of the nerve through the thigh and leg. You could find the answer by looking up each term in the ICD-9-CM index, if necessary.",
+                        },
+                        {
+                          question:
+                            "What type of condition describes a patient diagnosed with oligospermia?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Knots is the varicose veins",
+                            "b. An inflammation of the prostate gland",
+                            "c. An abnormally low number of sperm in the semen",
+                            "d. Failure to ovulate",
+                          ],
+                          answer:
+                            "c. An abnormally low number of sperm in the semen",
+                          explanation:
+                            "This is when a man produces very little sperm count. The ICD-9-CM alphabetical index refers you to code 606.1 for Oligiospermia. In the tabular section oligiospermia is a type male infertility and most ICD-9-CM manuals have a definition under this diagnosis that states: Insufficient number of sperm in semen. Oligio means few and spermia (sperma) means sperm.",
+                        },
+                        {
+                          question: "What does the term cystopexy mean?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Inflammation of the spinal cord and brain",
+                            "b. Surgical fixation of the urinary bladder",
+                            "c. Surgical suture of the knee joints",
+                            "d. Crushing procedure to remove cysts",
+                          ],
+                          answer: "b. Surgical fixation of the urinary bladder",
+                          explanation:
+                            "You can find the answer by breaking down the medical term cystopexy (cyst/o – urinary bladder, pexy – surgical fixation). The CPT Professional Edition lists a few surgical procedure suffixes in the front of the book, which are helpful for learning medical terminology.",
+                        },
+                        {
+                          question:
+                            "What is an episiotomy and why would a patient need to have this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Surgical suturing of the rectum caused by extensive tissue damage following a bowel repair",
+                            "b. Surgical incision of the vulva to facilitate delivery of a baby",
+                            "c. Surgical puncture of the cervix to remove fluid",
+                            "d. Surgical creation of an opening into the small intestine to provide relief of excessive gastritis",
+                          ],
+                          answer:
+                            "b. Surgical incision of the vulva to facilitate delivery of a baby",
+                          explanation:
+                            "You can find this answer in the index of the CPT Professional Edition under the procedure Episiotomy, then cross referencing the code. You could also reference the list in the front of the book that describes surgical procedures (suffix otomy– cutting into or incision).",
+                        },
+                        {
+                          question:
+                            "What direction describes raising the foot, pulling the toes toward the shin?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Protraction",
+                            "b. Dorsiflection",
+                            "c. Plantar flexion",
+                            "d. Pronation",
+                          ],
+                          answer: "b. Dorsiflection",
+                          explanation:
+                            "This is an example of an answer that you may not be able to find in the resource material available for the CPC exam. Studying and knowing anatomy and medical terminology is the best way to answer this question.",
+                        },
+                        {
+                          question:
+                            "Which artery opens to allow oxygen-rich blood to pass from the left ventricle into the aorta where the blood is delivered to the rest of the body?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Renal",
+                            "b. Aortic",
+                            "c. Superior vena cava",
+                            "d. Inferior vena cava",
+                          ],
+                          answer: "b. Aortic",
+                          explanation:
+                            "The aorta is an artery not a vein. There are four types of valves that regulate blood flow through the heart. 1. The tricuspid valve regulates blood flow between the right atrium and right ventricle. 2. The pulmonary valve controls blood flow from the right ventricle into the pulmonary arteries, which carry oxygen-poor blood to the lungs to pick up oxygen. 3. The mitral valve lets oxygen-rich blood from the lungs pass from the left atrium into the left ventricle. 4. The aortic valve opens to allow oxygen-rich blood to pass from the left ventricle into the aorta, the largest artery, where this blood is delivered to the rest of the body.",
+                        },
+                        {
+                          question:
+                            "What syndrome is a condition caused by abnormal production of the hormone gastrin?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Vogt-Koyanagi",
+                            "b. Silvestroni-Bianco",
+                            "c. Sudeck-Leriche",
+                            "d. Zollinger-Ellison",
+                          ],
+                          answer: "d. Zollinger-Ellison",
+                          explanation:
+                            "You can find this answer in the ICD-9-CM index under Syndrome, Zollinger-Ellison. Once you locate the code, cross reference to review the definition provided.",
+                        },
+                        {
+                          question:
+                            "How can air pass through the upper respiratory tract?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Via the nose, nasal cavity, nasopharynx, oropharynx, laryngopharynx, and larynx into the lower respiratory system.",
+                            "b. Via the nose, larynx, and bronchus",
+                            "c. Via nose, larynx, bronchus, and trachea",
+                            "d. Via nose, larynx, bronchus, trachea, and pleura",
+                          ],
+                          answer:
+                            "a. Via the nose, nasal cavity, nasopharynx, oropharynx, laryngopharynx, and larynx into the lower respiratory system.",
+                          explanation:
+                            "This is an example of an answer that you may not be able to find in the resource material available for the CPC exam. Studying and knowing anatomy and medical terminology is the best way to answer this question. The lower respiratory tract consists of the trachea, bronchi, bronchioles, alveoli, and capillaries of the lungs.",
+                        },
+                        {
+                          question: "What is the uvula?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. A receptacle for urine before it is voided.",
+                            "b. A female organ used to contain and nourish the embryo and fetus from the time the fertilized egg is implanted to the time of birth of the fetus.",
+                            "c. A small soft structure hanging from the free edge of the soft palate in midline above the root of the tongue. It is composed of muscle, connective tissue, and mucous membrane.",
+                            "d. A canal, used for the discharge of urine, that extends from the bladder to the outside of the body.",
+                          ],
+                          answer:
+                            "c. A small soft structure hanging from the free edge of the soft palate in midline above the root of the tongue. It is composed of muscle, connective tissue, and mucous membrane.",
+                          explanation:
+                            "You can find this answer by looking up uvula in the CPT Professional Edition and cross referencing the codes listed. This will provide information about where the uvula is located in the body.",
+                        },
+                        {
+                          question: "What bones make up the axial skeleton?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Skull, rib cage, and spine",
+                            "b. Spine, collar bones, and arms",
+                            "c. Shoulder bones, pelvic bones, arms, and legs",
+                            "d. Coccyx, ulna, femur, and tibia",
+                          ],
+                          answer: "a. Skull, rib cage, and spine",
+                          explanation:
+                            "This is an example of an answer that you may not be able to find using the resource material available for the CPC exam. Studying and learning anatomy and medical terminology is the best way to answer this question.",
+                        },
+                        {
+                          question: "What term refers to white blood cells?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Erythrocytes",
+                            "b. Monocytes",
+                            "c. Lymphocytes",
+                            "d. Leukocytes",
+                          ],
+                          answer: "d. Leukocytes",
+                          explanation:
+                            "This is an example of an answer that you may not be able to find in the resource material available for the CPC exam. Studying and knowing anatomy and medical terminology is the best way to answer this question. Break down the word (leuk/o – white and cytes – cell).",
+                        },
+                        {
+                          question:
+                            "Which statement(s) describe a passive natural acquired immunity process?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Use of immunoglobulin harvested from a donor who developed resistance against specific antigens",
+                            "b. The passage of antibodies through the placenta or breast milk",
+                            "c. Immunization that uses a greatly weakened form of the antigen, thus enabling the body to develop antibodies in response to this intentional exposure",
+                            "d. Both A and C",
+                          ],
+                          answer:
+                            "b. The passage of antibodies through the placenta or breast milk",
+                          explanation:
+                            "This is an example of an answer that you may not be able to find in the resource material available for the CPC exam. Studying and knowing anatomy and medical terminology is the best way to answer this question. Read the answers carefully. Both the use of vaccination and immunoglobulins harvested are “artificial” not “natural” means of immunity.",
+                        },
+                        {
+                          question: "What does the olecranon process refer to?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. The elbow",
+                            "b. Excision of a tumor in the large intestine",
+                            "c. Plasma membranes",
+                            "d. Use of a surgical endoscope in the knee",
+                          ],
+                          answer: "a. The elbow",
+                          explanation:
+                            "You can find this answer in the CPT Professional Edition in the index under Olecranon Process. If you cross reference the codes, you will discover the answer is the elbow.",
+                        },
+                        {
+                          question:
+                            "What is the difference between entropion and ectropion?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Entropion is the inward turning of the eyelid and ectropion is the outward turning of the eyelid.",
+                            "B. Entropion is the incomplete closure of the eyes and ectropion is the drooping of the eyelids.",
+                            "C. Entropion is the outward turning of the eyelid and ectropion is the inward turning of the eyelid.",
+                            "D. Entropion is the drooping of the eyelid due to nerve disorder and ectropion is the drooping of the eyelid due to muscle disorder.",
+                          ],
+                          answer:
+                            "A. Entropion is the inward turning of the eyelid and ectropion is the outward turning of the eyelid.",
+                          explanation:
+                            "The definitions of ectropion and entropion can be found in the ICD-9-CM tabular index. The alphabetic index refers you to code 374.00 for Entropion and 374.10 for Ectropion.",
+                        },
+                        {
+                          question:
+                            "What type of graft is used when pigskin is applied to a burn wound?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Xenograft",
+                            "B. Allograft",
+                            "C. Autograft",
+                            "D. Pinch graft",
+                          ],
+                          answer: "A. Xenograft",
+                          explanation:
+                            "CPT® defines xenograft: Application of non-human skin graft or biologic wound dressing (example, porcine tissue or pigskin) to a part of the recipient’s body following debridement of the burn wound or area of traumatic injury, soft tissue infection and/or tissue necrosis, or surgery. The index of your CPT® manual has Xenograft referring you to codes 15400-15401.",
+                        },
+                        {
+                          question:
+                            "Ventral, umbilical, spigelian and incisional are types of:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Surgical approaches",
+                            "B. Hernias",
+                            "C. Organs found in the digestive system",
+                            "D. Cardiac catheterizations",
+                          ],
+                          answer: "B. Hernias",
+                          explanation:
+                            "These are types of hernias. CPT® codes 49491-49659 are categorized by the type of hernias to be repaired.",
+                        },
+                        {
+                          question:
+                            "Fracturing the acetabulum involves what area?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Skull",
+                            "B. Shoulder",
+                            "C. Pelvis",
+                            "D. Leg",
+                          ],
+                          answer: "C. Pelvis",
+                          explanation:
+                            "The acetabulum is the cup-shaped socket of the hip joint which is part of the pelvis. You can locate this answer in the ICD-9-CM manual. In the alphabetic index look up Fracture/ acetabulum and you are referred to code 808.0. In the tabular index this code falls under the category code 808, Fracture of pelvis.",
+                        },
+                        {
+                          question:
+                            "When a patient is having a tenotomy performed on the abductor hallucis muscle, where is this muscle located?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Foot",
+                            "B. Upper Arm",
+                            "C. Upper Leg",
+                            "D. Hand",
+                          ],
+                          answer: "A. Foot",
+                          explanation:
+                            "The abductor hallucis is a muscle of the foot that abducts the big toe. In the CPT® index under Tenotomy there are many anatomical areas to choose from, but you will find this muscle located in the description of code 28240. All the codes in that section deal with the foot.",
+                        },
+                        {
+                          question:
+                            "What is the term used for inflammation of the bone and bone marrow?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Chondromatosis",
+                            "B. Osteochondritis",
+                            "C. Costochondritis",
+                            "D. Osteomyelitis",
+                          ],
+                          answer: "D. Osteomyelitis",
+                          explanation:
+                            "Osteomyelitis is an inflammation of bone and bone marrow caused by a bacterial infection which can lead to a reduction of blood supply to the bone. In the ICD-9-CM alphabetical index, osteomyelitis guides you to code 730.2. In the tabular index, category code 730 is Osteomyelitis, periostitis, and other infections involving bone.",
+                        },
+                        {
+                          question: "The root word trich/o means:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Hair",
+                            "B. Sebum",
+                            "C. Eyelid",
+                            "D. Trachea",
+                          ],
+                          answer: "A. Hair",
+                          explanation:
+                            "Trich/o means hair. In the ICD-9-CM alphabetical index look for a diagnosis that starts with Trich. The first diagnosis that starts with that root word is, Trichiasis referring you to code 704.2. In the tabular section for category 704 is Diseases of hair and hair follicles.",
+                        },
+                        {
+                          question:
+                            "Complete this series: Frontal lobe, Parietal lobe, Temporal lobe, ____________.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Medulla lobe",
+                            "B. Occipital lobe",
+                            "C. Middle lobe",
+                            "D. Inferior lobe",
+                          ],
+                          answer: "B. Occipital lobe",
+                          explanation:
+                            "The series of terms are lobes found in the brain. You can find an illustration of the brain showing the different lobes in your CPT® manual in the beginning of the Nervous System section.",
+                        },
+                        {
+                          question:
+                            "A patient is having pyeloplasty performed to treat a uretero-pelvic junction obstruction. What is being performed?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Surgical repair of the bladder",
+                            "B. Removal of the kidney",
+                            "C. Cutting into the ureter",
+                            "D. Surgical reconstruction of the renal pelvis",
+                          ],
+                          answer:
+                            "D. Surgical reconstruction of the renal pelvis",
+                          explanation:
+                            "Pyeloplasty is the surgical reconstruction or revision of the pelvis of the kidney (renal) to correct an obstruction. The CPT® manual index refers you to codes 50400-40504, and 50544 for Pyeloplasty. The code is found under the Repair heading in the Tabular and the code description states “plastic operation on renal pelvis” to help you know what is being performed.",
+                        },
+                        {
+                          question:
+                            "Which of the following is an example of electronic data?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. A digital X-ray",
+                            "B. An explanation of benefits",
+                            "C. An advance beneficiary notice",
+                            "D. A written prescription",
+                          ],
+                          answer: "A. A digital X-ray",
+                          explanation:
+                            "While B, C, or D might be done electronically, by definition they aren’t required to be done electronically. A digital X-ray is an X-ray with an image that is stored electronically rather than on film, and so A is the correct answer.",
+                        },
+                        {
+                          question:
+                            "Which of the following health plans does not fall under HIPAA?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Medicaid",
+                            "B. Medicare",
+                            "C. Workers’ compensation",
+                            "D. Private plans",
+                          ],
+                          answer: "C. Workers’ compensation",
+                          explanation:
+                            "Workers’ compensation is excluded from the definition of a health plan under the Health Insurance Portability and Accountability Act (HIPAA). Therefore, Workers Comp plans are not required to meet HIPAA standards for privacy, security or code sets.",
+                        },
+                        {
+                          question:
+                            "Guidelines from which of the following code sets are included as part of the code set requirements under HIPAA?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. CPT®",
+                            "B. ICD-9-CM",
+                            "C. HCPCS Level II",
+                            "D. ADA Dental Codes",
+                          ],
+                          answer: "B. ICD-9-CM",
+                          explanation:
+                            "ICD-9-CM guidelines are the only guidelines specifically mentioned in HIPAA. While HIPAA requires the use of the other code sets listed, there is no specific mention of the other guidelines in the law.",
+                        },
+                        {
+                          question:
+                            "Which of the following is an example of a case in which a diabetes-related problem exists and the code for diabetes is never sequenced first?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. If the patient has an underdose of insulin due to an insulin pump malfunction",
+                            "B. If the patient is being treated for secondary diabetes",
+                            "C. If the patient is being treated for Type II diabetes",
+                            "D. If the patient has hyperglycemia that is not responding to medication",
+                          ],
+                          answer:
+                            "A. If the patient has an underdose of insulin due to an insulin pump malfunction",
+                          explanation:
+                            "The guidelines read: An underdose of insulin due to an insulin pump failure should be assigned 996.57, Mechanical complication due to insulin pump, as the principal or first listed code, followed by the appropriate diabetes mellitus code based on documentation.",
+                        },
+                        {
+                          question:
+                            "Glomerulonephritis is an inflammation affecting which system?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Digestive",
+                            "B. Nervous",
+                            "C. Urinary",
+                            "D. Cardiovascular",
+                          ],
+                          answer: "C. Urinary",
+                          explanation:
+                            "Glomerulnephritis is a form of nephritis marked by inflammation of the glomeruli of the kidney. The ICD-9-CM alphabetical index refers you to code 583.9 for Glomerulonephritis. In the tabular index this code is found in the chapter for DISEASES OF THE GENITOURINARY SYSTEM.",
+                        },
+                        {
+                          question:
+                            "When a patient has fractured the proximal end of his humerus, where is the fracture located?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Upper end of the arm",
+                            "B. Lower end of the leg",
+                            "C. Upper end of the leg",
+                            "D. Lower end of the arm",
+                          ],
+                          answer: "A. Upper end of the arm",
+                          explanation:
+                            "The humerus is the bone extending from the shoulder to the elbow. In the ICD-9-CM index Fracture, humerus, proximal end refers you to see Fracture/humerus/ upper end.",
+                        },
+                        {
+                          question:
+                            "What is another term for when a physician performs a reduction on a displaced fracture?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Casting",
+                            "B. Manipulation",
+                            "C. Skeletal traction",
+                            "D. External fixation",
+                          ],
+                          answer: "B. Manipulation",
+                          explanation:
+                            "The subsection guidelines in the CPT® manual in the Musculoskeletal System section defines Manipulation: is used throughout the musculoskeletal fracture and dislocation subsections to specifically mean the attempted reduction or restoration of a fracture or joint dislocation to its normal anatomic alignment by the application of manually applied force.",
+                        },
+                        {
+                          question: "What does oligiospermia mean?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Presence of blood in the semen",
+                            "B. Deficiency of sperm in semen",
+                            "C. Having sperm in urine",
+                            "D. Formation of spermatozoa",
+                          ],
+                          answer: "B. Deficiency of sperm in semen",
+                          explanation:
+                            "Oligiospermia is a type of male infertility. The ICD-9-CM alphabetical index refers you to code 606.1. The definition includes: Insufficient number of sperm in semen. Oligio means few and spermia (sperma) means sperm.",
+                        },
+                        {
+                          question:
+                            "Thoracentesis is removing fluid or air from the:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Lung",
+                            "B. Chest cavity",
+                            "C. Thoracic vertebrae",
+                            "D. Heart",
+                          ],
+                          answer: "B. Chest cavity",
+                          explanation:
+                            "Thoracentesis is indexed in the CPT® manual guiding you to codes 32421-32422. The code description has pleural cavity. Pleura is a thin serous membrane that envelops each lung and folds back to make a lining for the chest cavity. Thorac/o means chest or chest wall.",
+                        },
+                        {
+                          question: "An angiogram is a study to look inside:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Female Reproductive System",
+                            "B. Urinary System",
+                            "C. Blood Vessels",
+                            "D. Breasts",
+                          ],
+                          answer: "C. Blood Vessels",
+                          explanation:
+                            "An angiogram is an X-ray photograph or an imaging technique that uses contrast/dye to look inside blood vessels. The CPT® index under Angiography refers to codes in the Radiology section in which many arteries are listed in alphabetical order.",
+                        },
+                        {
+                          question:
+                            "When a person has labyrinthitis what has the inflammation?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Inner ear",
+                            "B. Brain",
+                            "C. Conjunctiva",
+                            "D. Spine",
+                          ],
+                          answer: "A. Inner ear",
+                          explanation:
+                            "Labyrinthitis is an inflammation of the inner ear which can cause vertigo and vomiting. In the alphabetical index, look for Labyrinthitis and you will see next to the term inner ear in parenthesis.",
+                        },
+                        {
+                          question:
+                            "Which place of service code should be reported on the physician’s claim for a surgical procedure performed in an ASC?",
+                          codeBlock: "",
+                          language: "",
+                          options: ["A. 21", "B. 22", "C. 24"],
+                          answer: "C. 24",
+                          explanation:
+                            "Place of service codes are reported on the CMS-1500 to identify the location where a service was provided. In the front of the CPT® is a list of all place of service codes. A service provided in an ASC is reported with POS code 24.",
+                        },
+                        {
+                          question: "What is orchitis?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Inner ear imbalance",
+                            "B. Lacrimal infection",
+                            "C. Inflammation of testis",
+                            "D. Inflammation of an ilioinguinal hernia",
+                          ],
+                          answer: "C. Inflammation of testis",
+                          explanation:
+                            "Orchitis is marked by painful swelling of the testis. It may occur without cause, or be the result of infection. The Greek root orchis means testicle, and –itis is a suffix indicating inflammation or infection.",
+                        },
+                        {
+                          question:
+                            "The wound was debrided. What was done to the wound?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. It was closed with layered sutures and dressed",
+                            "B. It was medicated and left open to heal",
+                            "C. It was cleansed of foreign materials or dead tissue",
+                            "D. It was examined radiographically for defects",
+                          ],
+                          answer:
+                            "C. It was cleansed of foreign materials or dead tissue",
+                          explanation:
+                            "Debridement is the removal of foreign materials and dead tissue from a wound so that clean, vital tissue is all that remains. Debridement can be surgical, with dissection of nonvital tissue, or it can be a manual process.",
+                        },
+                        {
+                          question:
+                            "Which of the following patients might be documented as having meconium staining?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Woman with renal failure",
+                            "B. Teenage boy with sickle cell anemia",
+                            "C. Newborn with pneumonia",
+                            "D. Man with alcoholic cirrhosis of liver",
+                          ],
+                          answer: "C. Newborn with pneumonia",
+                          explanation:
+                            "Meconium is fetal stool, composed of materials ingested in utero. It is usually expelled in a neonate’s first bowel movements, but during stress before or during birth, may be expelled into the amniotic fluid. It can be inhaled into the fetal lung and cause pneumonia at birth. Meconium staining refers to discoloration of the amniotic fluid, or of the neonate.",
+                        },
+                        {
+                          question:
+                            "Which of the following anatomical sites have septums?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Nose, heart",
+                            "B. Kidney, lung",
+                            "C. Sternum, coccyx",
+                            "D. Orbit, ovary",
+                          ],
+                          answer: "A. Nose, heart",
+                          explanation:
+                            "Both the heart and the nose have a septum, defined as a wall dividing two chambers. The nasal septum separates the two nostrils. A septum also divides the right and left atriums and right and left ventricles of the heart.",
+                        },
+                        {
+                          question:
+                            "Lordosis is a disorder of which anatomical site?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Spine",
+                            "B. Integument",
+                            "C. Male genitalia",
+                            "D. Nasal sinus",
+                          ],
+                          answer: "A. Spine",
+                          explanation:
+                            "Lordosis is a spinal deformity in which the anterior curvature of the lumbar spine is excessive. It can lead to lower back pain. The answer to this question is easily found by looking in the ICD-9-CM Index.",
+                        },
+                        {
+                          question:
+                            "Which of the following place of service codes is reported for fracture care performed by an orthopedic physician in the emergency department?",
+                          codeBlock: "",
+                          language: "",
+                          options: ["A. 11", "B. 20", "C. 22", "D. 23"],
+                          answer: "D. 23",
+                          explanation:
+                            "Place of service codes are reported on the claim form to identify the site of the service provided. In this case, the services are rendered in the emergency department which is reported with POS 23. The place of service codes can be found in the CPT® manual.",
+                        },
+                        {
+                          question:
+                            "Which of the following is an example of fraud?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Reporting the code for ultrasound guidance when used to perform a liver biopsy.",
+                            "B. Reporting a biopsy and excision performed on the same skin lesion during the same encounter.",
+                            "C. Failing to append modifier 26 on an X-ray that is performed in the physician’s office.",
+                            "D. Failure to append modifier 57 on the EM service performed the day prior to a minor procedure.",
+                          ],
+                          answer:
+                            "B. Reporting a biopsy and excision performed on the same skin lesion during the same encounter.",
+                          explanation:
+                            "Answer B is the only example of unbundling of CPT® which would result in a fraudulent claim. A biopsy performed on the same lesion as an excision during the same encounter is an incidental service and is not reported separately.",
+                        },
+                        {
+                          question: "What occurs in angiography?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. The veins or arteries are viewed by X-ray",
+                            "B. The patient is checked for angina",
+                            "C. The heart is viewed using ultrasonography",
+                            "D. The electrical current of the heart is mapped",
+                          ],
+                          answer:
+                            "A. The veins or arteries are viewed by X-ray",
+                          explanation:
+                            "Angi- is a Greek combining form for 'a vessel' and the suffix -graphy refers to writing or a graph. In angiography, an imaging technique is used to allow the visualization of the inside of blood vessels. An opaque contrast agent is usually injected and X-ray performed so the veins and arteries can be reviewed.",
+                        },
+                        {
+                          question: "Meatus describes:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Septum",
+                            "B. Muscle",
+                            "C. Passageway",
+                            "D. Nutrient",
+                          ],
+                          answer: "C. Passageway",
+                          explanation:
+                            "Meatus is a Latin word meaning passage, and describes any of numerous passages within the body that have external openings: acoustic meatus (ear canal); urinary meatus (urethra); and nasal meatus (openings into the sinus).",
+                        },
+                        {
+                          question:
+                            "Which of the following is not like the other three?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Radius",
+                            "B. Femur",
+                            "C. Tibia",
+                            "D. Calcaneus",
+                          ],
+                          answer: "D. Calcaneus",
+                          explanation:
+                            "The first three bones listed are all long bones. The calcaneus is a triangular shaped bone in the foot – not a long bone. Long bones have a shaft and two heads and provide structure, mobility, and strength to the body.",
+                        },
+                        {
+                          question: "What is the function of the esophagus?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. To carry air from the pharynx into the lungs",
+                            "B. To carry nutrients from the pharynx into the larynx",
+                            "C. To carry air from the nose into the larynx",
+                            "D. To carry nutrients from the pharynx into the stomach",
+                          ],
+                          answer:
+                            "D. To carry nutrients from the pharynx into the stomach",
+                          explanation:
+                            "The esophagus lies between the trachea and the spine. It carries nutrients into the stomach. The esophagus of an adult is about 25 cm long and is lined with muscles that contract to push food into the stomach. Glands along the lining produce mucus to facilitate food movement.",
+                        },
+                        {
+                          question:
+                            "For a patient who has had a primary malignancy of the thyroid cartilage that was completely excised a year ago, which of the following statements is TRUE?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. When no further treatment is provided and there is no evidence of any existing primary malignancy, code V10.87.",
+                            "B. When further treatment is provided and there is evidence of an existing metastasis, code first V10.87 and then 161.3.",
+                            "C. Any mention of extension, invasion, or metastasis to another site is coded as a 239.1.",
+                            "D. When further treatment is provided and there is evidence of an existing metastasis, code first 197.3",
+                          ],
+                          answer:
+                            "A. When no further treatment is provided and there is no evidence of any existing primary malignancy, code V10.87.",
+                          explanation:
+                            "According to ICD-9-CM Official Coding Guidelines, when the patient has completed treatment for cancer and there is not an existing malignancy, select a personal history of malignancy by site. From the index, look up history/malignant neoplasm (of)/thyroid.",
+                        },
+                        {
+                          question:
+                            "In order to use the critical care codes, which of the following statements is TRUE?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Critical care services can be provided in an internist’s office",
+                            "B. Critical care services provided for more than 15 minutes but less than 30 minutes should be billed with 99291 and modifier 52.",
+                            "C. Time spent reviewing laboratory test results or discussing the critically ill patient’s care with other medical staff in the unit or at the nursing station on the floor cannot be included in the determination of critical care time.",
+                            "D. Critical care services can only be billed if the patient is in a licensed emergency room or intensive care type unit (i.e., cardiac, surgical, respiratory).",
+                          ],
+                          answer:
+                            "A. Critical care services can be provided in an internist’s office",
+                          explanation:
+                            "Critical care services can be provided at any site. If the patient is critically ill, the services provided can be coded with critical care regardless of where the services take place. A minimum of 30 minutes of critical care must be performed in order to report 99291.",
+                        },
+                        {
+                          question:
+                            "Which of the following statements regarding advanced beneficiary notices (ABN) is TRUE?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. ABN must specify only the CPT® code that Medicare is expected to deny.",
+                            "B. Generic ABN which states that a Medicare denial of payment is possible or the internist is unaware whether Medicare will deny payment or not is acceptable.",
+                            "C. An ABN must be completed before delivery of items or services are provided.",
+                            "D. An ABN must be obtained from a patient even in a medical emergency when the services to be provided are not covered.",
+                          ],
+                          answer:
+                            "C. An ABN must be completed before delivery of items or services are provided.",
+                          explanation:
+                            "An ABN must include the service that may be denied, an estimated cost of the patient’s responsibility if Medicare denies the service and the response for the potential denial. Generic ABNs are not allowed. The ABN must be signed prior to providing the service. Signing of the ABN cannot be obtained during a medical emergency.",
+                        },
+                        {
+                          question:
+                            "Which of the following services are covered by Medicare Part B?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Inpatient chemotherapy",
+                            "B. Minor surgery performed in a physician’s office",
+                            "C. Routine dental care",
+                            "D. Assisted living facility",
+                          ],
+                          answer:
+                            "B. Minor surgery performed in a physician’s office",
+                          explanation:
+                            "Services performed by physicians are covered by Medicare Part B. Inpatient services are covered by Part A. Medicare does not cover routine dental care.",
+                        },
+                        {
+                          question: "What is the approach in PTCA?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. The pancreatic and common bile ducts are accessed via the stomach and duodenum.",
+                            "B. A catheter is threaded through an extremity vein and into the heart.",
+                            "C. A bronchoscope is threaded down the throat and into the alveoli of the lung.",
+                            "D. Through a wide, open incision, the ankle fracture is reduced and internal fixation placed.",
+                          ],
+                          answer:
+                            "B. A catheter is threaded through an extremity vein and into the heart.",
+                          explanation:
+                            "Percutaneous transluminal coronary angioplasty (PTCA) mechanically widens narrowed blood vessels in the heart. The approach is transluminal, meaning a catheter is threaded through the skin and into a blood vessel, then carried into the heart artery where it will make the repair.",
+                        },
+                        {
+                          question:
+                            "A patient with a contralateral fracture has what?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. A second fracture on the same side",
+                            "B. Multiple and complete bone fractures",
+                            "C. A fracture of only the surface of the bone",
+                            "D. A fracture on the opposite side",
+                          ],
+                          answer: "D. A fracture on the opposite side",
+                          explanation:
+                            "Contra is derived from a Latin root meaning against, and lateral, from a Latin form meaning side. Contralateral means occurring on the opposite side. The opposite of contralateral is ipsilateral, meaning occurring on the same side.",
+                        },
+                        {
+                          question: "What is ascites?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Fluid in the abdomen",
+                            "B. Enlarged liver and spleen",
+                            "C. Abdominal malignancy",
+                            "D. Abdominal tenderness",
+                          ],
+                          answer: "A. Fluid in the abdomen",
+                          explanation:
+                            "In ascites, fluid collects in the peritoneal cavity of the abdomen. Ascites is typically caused by cirrhosis, malignancy, or heart failure. It is usually managed medically but may be treated with paracentesis.",
+                        },
+                        {
+                          question:
+                            "Which of the following is a disorder of the facial nerve?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Exotropia",
+                            "B. Tarsal tunnel syndrome",
+                            "C. Brachial plexis lesions",
+                            "D. Bell’s palsy",
+                          ],
+                          answer: "D. Bell’s palsy",
+                          explanation:
+                            "Bell’s palsy is a common disorder of the facial nerve and causes an inability to control facial muscles of expression. It may be caused by a brain tumor, stroke, or Lyme disease, but can be idiopathic and transient.",
+                        },
+                        {
+                          question:
+                            "Which of the following describes functions of the lymphatic system?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Remove excess fluid from tissue and transports and protect the body against disease",
+                            "B. Maintain blood pressure and circulate hormones throughout the body",
+                            "C. Return carbon dioxide to the lungs and protect the body against disease",
+                            "D. Circulate hormones throughout body and return carbon dioxide to the lungs",
+                          ],
+                          answer:
+                            "A. Remove excess fluid from tissue and transports and protect the body against disease",
+                          explanation:
+                            "The lymphatic system has three main functions: to collect interstitial fluid, produce lymphocytes for fighting disease, and absorb fats from the intestine and transport them to the blood.",
+                        },
+                        {
+                          question:
+                            "Islets of Langerhans are found in which organ?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Kidney",
+                            "B. Parathyroid gland",
+                            "C. Pancreas",
+                            "D. Liver",
+                          ],
+                          answer: "C. Pancreas",
+                          explanation:
+                            "The islets of Langerhans produce hormones, most notably insulin, within the pancreas. Insulin causes cells to take up glucose from the blood.",
+                        },
+                        {
+                          question:
+                            "Which of the following conditions would most likely be attributed to hyperlipidemia?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Atherosclerosis",
+                            "B. Multiple myeloma",
+                            "C. Kwashiorkor",
+                            "D. Pernicious anemia",
+                          ],
+                          answer: "A. Atherosclerosis",
+                          explanation:
+                            "Hyperlipidemia occurs when too many fats are circulating in the blood and can lead to the buildup of fatty plaque in the blood vessels. This fatty plaque is also known as atherosclerosis.",
+                        },
+                        {
+                          question:
+                            "Which of the following statements regarding the ICD-9-CM coding conventions is TRUE?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. If the same condition is described as both acute and chronic and separate subentries exist in the Alphabetic Index at the same indentation level, code only the acute condition.",
+                            "B. Only assign a combination code when the Alphabetic Index explanation directs the coder to use it.",
+                            "C. An ICD-9-CM code is still valid even if it has not been coded to the full number of digits required for that code.",
+                            "D. Signs and symptoms that are integral to the disease process should not be assigned as additional codes, unless otherwise instructed.",
+                          ],
+                          answer:
+                            "D. Signs and symptoms that are integral to the disease process should not be assigned as additional codes, unless otherwise instructed.",
+                          explanation:
+                            "According to the ICD-9-CM Official Coding Guidelines, do not report signs and symptoms that are integral to a definitive diagnosis. When the same condition is diagnosed as acute and chronic and there is a separate code for both, report both codes. An ICD-9-CM code is not valid unless it is coded to the highest level of specificity.",
+                        },
+                        {
+                          question:
+                            "Which modifier should be append to a CPT®, for which the provider had a patient sign an ABN form because there is a possibility the service may be denied because the patient’s diagnosis might not meet medical necessity for the covered service?",
+                          codeBlock: "",
+                          language: "",
+                          options: ["A. GJ", "B. GA", "C. GB", "D. GY"],
+                          answer: "B. GA",
+                          explanation:
+                            "An ABN is a waiver of liability. When a patient has been informed a service that is otherwise covered by Medicare but might not be covered in a particular instance, an ABN is signed. To inform Medicare the ABN has been signed, append modifier GA.",
+                        },
+                        {
+                          question:
+                            "What is the patient’s right when it involves making changes in the personal medical record?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. Patient must work through an attorney to revise any portion of the personal medical information.",
+                            "B. They should be able to obtain copies of the medical record and request corrections of errors and mistakes.",
+                            "C. It is a violation of federal health care law to revise a patient medical record.",
+                            "D. Revision of the patient medical record depends solely on the facility’s compliance program policy.",
+                          ],
+                          answer:
+                            "B. They should be able to obtain copies of the medical record and request corrections of errors and mistakes.",
+                          explanation:
+                            "Under HIPAA regulations, patients have the right to receive a copy of their medical record and request that errors are corrected.",
+                        },
+                      ],
+                      brief: [],
+                      case_study: [],
+                    },
+                    {
+                      id: "module-3",
+                      name: "Module 3: Integumentary System",
+                      mcq: [
+                        {
+                          question:
+                            "James suffered a severe crushing injury to his left upper leg. Two days after surgery, Dr. Barnes completed a dressing change under general anesthesia. How would you report this service?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 16020-LT",
+                            "b. 15852, 01232, J2060",
+                            "c. 01232-P6",
+                            "d. 15852-LT",
+                          ],
+                          answer: "d. 15852-LT",
+                          explanation:
+                            "15852 includes 'under anesthesia (other than local).' Modifier -LT indicates the side of the body involved.",
+                        },
+                        {
+                          question:
+                            "Dr. Jess removed a 4.5 cm (excised diameter) cystic lesion from Amy’s forehead. The ulcerated lesion was anesthetized with 20 mg of 1% Lidocaine and then elliptically excised. The wound was closed with a layered suture technique and a sterile dressing applied. The wound closure, according to Dr. Jess’s documentation, was 5.3 cm. How would you report this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 11446, 12053-51",
+                            "b. 11646, 12013-51",
+                            "c. 11446, J2001 x 2, 12013-59",
+                            "d. 11313, 12053-59",
+                          ],
+                          answer: "a. 11446, 12053-51",
+                          explanation:
+                            "Excision of a benign lesion (e.g., cyst) is reported with 11446; layered closure is intermediate and reported separately.",
+                        },
+                        {
+                          question:
+                            "Martha has a non-healing wound on the tip of her nose. After an evaluation by Dr. Martino, a dermatologist, Martha is scheduled for a procedure the following week. Dr. Martino documented an autologous split thickness skin graft to the tip of Martha’s nose. A simple debridement of granulated tissues is completed prior to the placement. Using a dermatome, a split thickness skin graft was harvested from the left thigh. The graft is placed onto the nose defect and secured with sutures. The donor site is examined, which confirms good hemostasis. How would you report this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 99213-25, 15050",
+                            "b. 15050, 15004, 15005-59",
+                            "c. 15335, 11041-59",
+                            "d. 15120",
+                          ],
+                          answer: "d. 15120",
+                          explanation:
+                            "Code 15120 is appropriate for split-thickness skin autograft harvested and applied to a different site.",
+                        },
+                        {
+                          question:
+                            "A patient had a chest wall tumor excised. The procedure involved the ribs with plastic reconstruction, and mediastinal lymphadenectomy. How would you report this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 19272, 32503-59",
+                            "b. 19272",
+                            "c. 32503, 19271-59, 21632-59",
+                            "d. 32422, 19260-51",
+                          ],
+                          answer: "b. 19272",
+                          explanation:
+                            "CPT code 19272 covers excision of chest wall tumor and should not be reported with 32503.",
+                        },
+                        {
+                          question:
+                            "Dr. Alexis completed Mohs surgery on Ralph’s left arm. She reported routine stains on all slides, mapping, and color coding of specimens. The procedure was accomplished in three stages with a total of seven blocks in the second stage. How would you report Dr. Alexis’ services?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 17313, 17314-58, 17315-59, 88314-59",
+                            "b. 17311, 17312 x 7",
+                            "c. 17313, 17314 x 2, 17315 x 2",
+                            "d. 17311, 88302, 17314 x 3, 17312 x 7",
+                          ],
+                          answer: "c. 17313, 17314 x 2, 17315 x 2",
+                          explanation:
+                            "17313 covers the first stage; 17314 covers the next two stages; 17315 x 2 accounts for two extra blocks in the second stage.",
+                        },
+                        {
+                          question:
+                            "How should you code an excision of a lesion when completed with an adjacent tissue transfer or rearrangement?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. The excision is always reported in addition to the adjacent tissue transfer or rearrangement.",
+                            "b. The excision is not separately reported with adjacent tissue transfer or rearrangement codes.",
+                            "c. Code only malignant lesions in addition to the adjacent tissue transfer or rearrangement codes.",
+                            "d. Code the lesion with a modifier -51 and code in addition to the adjacent tissue transfer or rearrangement codes",
+                          ],
+                          answer:
+                            "b. The excision is not separately reported with adjacent tissue transfer or rearrangement codes.",
+                          explanation:
+                            "The CPT Professional Edition subcategory guidelines for Adjacent Tissue Transfer or Rearrangement procedures state that the excision (including lesion) is included in the code and is not separately reportable.",
+                        },
+                        {
+                          question:
+                            "Tina fell from a step ladder while clearing drain gutters at her home. She suffered contusions and multiple lacerations. At the emergency room she received sutures for lacerations to her arm, hand, and foot. The doctor completed the following repairs: superficial repair to the arm of 12.8 cm, a single-layered closure of 7.9 cm that required extensive cleaning and removal of glass from the hand, and a simple repair to the foot of 9.6 cm How would you report the wound repairs?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 12034, 12036, 12046, 12007",
+                            "b. 12006, 12034-59",
+                            "c. 12044, 12006-51",
+                            "d. 12005, 12004 x 2",
+                          ],
+                          answer: "c. 12044, 12006-51",
+                          explanation:
+                            "According to CPT Repair guidelines, the most complex repair is coded first (intermediate repair to hand - 12044), and the simple repairs (arm and foot) are summed and reported second (12006) with modifier -51 for multiple procedures.",
+                        },
+                        {
+                          question:
+                            "Which modifier would you use if a re-excision procedure is performed during the postoperative period of the primary excision of a malignant lesion?",
+                          codeBlock: "",
+                          language: "",
+                          options: ["a. 76", "b. 59", "c. 58", "d. 79"],
+                          answer: "c. 58",
+                          explanation:
+                            "CPT guidelines under Excision – Malignant Lesions specify: 'Append modifier -58 if the re-excision procedure is performed during the postoperative period of the primary excision procedure.'",
+                        },
+                        {
+                          question:
+                            "James had a malignant lesion removed from his right arm (excised diameter 4.6 cm). During the same visit the dermatologist noticed a new growth on James’ left arm. Dr. Terry took a biopsy of the new lesion and sent it in for pathology. The biopsy site required a simple closure. How would Dr. Terry report the biopsy procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. The biopsy is included in the primary procedure and not reported",
+                            "b. 11100-59",
+                            "c. 11406, 11100-59",
+                            "d. 11100, 12001, 11406-51",
+                          ],
+                          answer: "b. 11100-59",
+                          explanation:
+                            "Biopsies of different lesions or sites on the same date as another procedure are reported separately. Modifier -59 identifies that they are distinct lesions.",
+                        },
+                        {
+                          question:
+                            "46 year old female had a previous biopsy that indicated positive margins anteriorly on the right side of her neck. A 0.5 cm margin was drawn out and a 15 blade scalpel was used for full excision of an 8cm lesion. Light undermining of all margins was performed along with layered closure. The specimen was sent for permanent histopathologic examination. What are the code(s) for this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11426",
+                            "B. 11626",
+                            "C. 11626, 12044-51",
+                            "D. 11426, 13132, 13133",
+                          ],
+                          answer: "C. 11626, 12044-51",
+                          explanation:
+                            "CPT guidelines state that excision of malignant lesions with intermediate or complex closure should have the repair coded separately. Hence, 11626 for excision and 12044-51 for intermediate layered closure.",
+                        },
+                        {
+                          question:
+                            "30 year old female is having debridement performed on an infected ulcer with eschar on the right foot. Using sharp dissection, the ulcer and eschar infection was debrided all the way to down to the bone of the foot. The bone had to be minimally trimmed because of a sharp point at the end of the metatarsal. After debriding the area, there was minimal bleeding because of very poor circulation of the foot. It seems that the toes next to the ulcer may have some involvement and cultures were taken. The area was dressed with sterile saline and dressings and then wrapped. What CPT code should be reported?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11000",
+                            "B. 11011",
+                            "C. 11044",
+                            "D. 15004",
+                          ],
+                          answer: "C. 11044",
+                          explanation:
+                            "The ulcer was debrided all the way to the bone of the foot, making code 11044 the correct procedure for debridement including bone.",
+                        },
+                        {
+                          question:
+                            "64 year old female who has multiple sclerosis fell from her walker and landed on a glass table. She lacerated her forehead, cheek and chin and the total length of these lacerations was 6 cm. Her right arm and left leg had deep cuts measuring 5 cm on each extremity. Her right hand and right foot had a total of 3 cm lacerations. The ED physician repaired the lacerations as follows: The forehead, cheek, and chin had debridement and cleaning of glass debris with the lacerations being closed with 6-0 Prolene sutures. The arm and leg were repaired by 6-0 Vicryl subcutaneous sutures and prolene sutures on the skin. The hand and foot were closed with adhesive strips. Select the appropriate procedure codes for this visit.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 12014, 12034-51, 12002-51, 11041-51",
+                            "B. 12053, 12034-51, 12002-51",
+                            "C. 12014, 12034-51, 11041-51",
+                            "D. 12053, 12034-51",
+                          ],
+                          answer: "D. 12053, 12034-51",
+                          explanation:
+                            "Intermediate repair of the face totals 6 cm (12053). The right arm and left leg had intermediate repairs totaling 10 cm (12034). Adhesive strips used on hand and foot are not coded as per CPT Repair (Closure) guidelines.",
+                        },
+                        {
+                          question:
+                            "13. PRE OP DIAGNOSIS: Left Breast Abnormal MMX or Palpable Mass; Other Disorders Of Breast PROCEDURE: Automated Stereotactic Biopsy Left Breast FINDINGS: Lesion is located in the lateral region, just at or below the level of the nipple on the 90 degree lateral view. There is a subglandular implant in place. I discussed the procedure with the patient today including risks, benefits and alternatives. Specifically discussed was the fact that the implant would be displaced out of the way during this biopsy procedure. Possibility of injury to the implant was discussed with the patient. Patient has signed the consent form and wishes to proceed with the biopsy. The patient was placed prone on the stereotactic table; the left breast was then imaged from the inferior approach. The lesion of interest is in the anterior portion of the breast away from the implant which was displaced back toward the chest wall. After imaging was obtained and stereotactic guidance used to target coordinates for the biopsy, the left breast was prepped with Betadine. 1% lidocaine was injected subcutaneously for local anesthetic. Additional lidocaine with epinephrine was then injected through the indwelling needle. The SenoRx needle was then placed into the area of interest. Under stereotactic guidance we obtained 9 core biopsy samples using vacuum and cutting technique. The specimen radiograph confirmed representative sample of calcification was removed. The tissue marking clip was deployed into the biopsy cavity successfully. This was confirmed by final stereotactic digital image and confirmed by post core biopsy mammogram left breast. The clip is visualized projecting over the lateral anterior left breast in satisfactory position. No obvious calcium is visible on the final post core biopsy image in the area of interest. The patient tolerated the procedure well. There were no apparent complications. The biopsy site was dressed with Steri-Strips, bandage and ice pack in the usual manner. The patient did receive written and verbal post-biopsy instructions. The patient left our department in good condition. IMPRESSION: 1. SUCCESSFUL STEREOTACTIC CORE BIOPSY OF LEFT BREAST CALCIFICATIONS. 2. SUCCESSFUL DEPLOYMENT OF THE TISSUE MARKING CLIP INTO THE BIOPSY CAVITY 3. PATIENT LEFT OUR DEPARTMENT IN GOOD CONDITION TODAY WITH POST-BIOPSY INSTRUCTIONS. 4. PATHOLOGY REPORT IS PENDING; AN ADDENDUM WILL BE ISSUED AFTER WE RECEIVE THE PATHOLOGY REPORT. What are the codes for the procedures?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 19103, 19295, 77031-26",
+                            "B. 19101, 19295",
+                            "C. 19102, 19295, 76942-26",
+                            "D. 19102, 77012-26",
+                          ],
+                          answer: "A. 19103, 19295, 77031-26",
+                          explanation:
+                            "The procedure used a SenoRx needle with stereotactic guidance and placement of a tissue marking clip. 19103 is for automated core biopsy using imaging guidance, 77031 is for stereotactic localization, and 19295 is for the placement of the metallic clip.",
+                        },
+                        {
+                          question:
+                            "53-year-old male for removal of 2 lesions located on his nose and lower lip. Lesions were identified and marked. Utilizing a 3-mm punch, a biopsy was taken of the left supratip nasal area. The lower lip lesion of 4mm in size was shaved to the level of the superficial dermis. What are the codes for these procedures?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11100, 11101",
+                            "B. 11100-59, 11310-51",
+                            "C. 17000, 17003",
+                            "D. 11440, 11310-51",
+                          ],
+                          answer: "B. 11100-59, 11310-51",
+                          explanation:
+                            "The punch biopsy (11100) and the shave removal (11310) are reported separately. Modifier -59 indicates different sites; modifier -51 for multiple procedures.",
+                        },
+                        {
+                          question:
+                            "76-year-old has dermatochalasis on bilateral upper eyelids. A belpharoplasty will be performed on the eyelids. A lower incision line was marked at approximately 5 mm above the lid margin along the crease. Then using a pinch test with forceps the amount of skin to be resected was determined and marked. An elliptical incision was performed on the left eyelid and the skin was excised. In a similar fashion the same procedure was performed on the right eye. The wounds were closed with sutures. The correct CPT codes are?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 15822, 15823-51",
+                            "B. 15823-50",
+                            "C. 15822-50",
+                            "D. 15820-LT, 15820-RT",
+                          ],
+                          answer: "B. 15823-50",
+                          explanation:
+                            "The procedure involved blepharoplasty of both upper eyelids for dermatochalasis. Modifier -50 indicates a bilateral procedure; 15823 includes excision of excessive skin with functional indication.",
+                        },
+                        {
+                          question:
+                            "Patient has basal cell carcinoma on his upper back. A map was prepared to correspond to the area of skin where the excisions of the tumor will be performed using Mohs micrographic surgery technique. There were three tissue blocks that were prepared for cryostat, sectioned, and removed in the first stage. Then a second stage had six tissue blocks which were also cut and stained for microscopic examination. The entire base and margins of the excised pieces of tissue were examined by the surgeon. No tumor was identified after the final stage of the microscopically controlled surgery. What procedure codes should be reported?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 17313, 17314 x 2",
+                            "B. 17313, 17315",
+                            "C. 17260, 17313, 17314",
+                            "D. 17313,17314, 17315",
+                          ],
+                          answer: "D. 17313,17314, 17315",
+                          explanation:
+                            "The first stage had three tissue blocks (17313). The second stage had six tissue blocks, requiring two codes: 17314 for the first five and 17315 for the sixth block.",
+                        },
+                        {
+                          question:
+                            "45 year old male is in outpatient surgery to excise a basal cell carcinoma of the right nose and have reconstruction with an advancement flap. The 1.2 cm lesion with an excised diameter of 1.5 cm was excised with a 15-blade scalpel down to the level of the subcutaneous tissue, totaling a primary defect of 1.8 cm. Electrocautery was used for hemostasis. An adjacent tissue transfer of 3 sq cm was taken from the nasolabial fold and was advanced into the primary defect. Which CPT code(s) should be used?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 14060",
+                            "B. 11642, 14060",
+                            "C. 11642, 15115",
+                            "D. 15574",
+                          ],
+                          answer: "A. 14060",
+                          explanation:
+                            "According to CPT guidelines, when adjacent tissue transfer (e.g., advancement flap) is performed, the excision of the lesion is not reported separately. Code 14060 covers both excision and repair.",
+                        },
+                        {
+                          question:
+                            "24 year old patient had an abscess by her vulva which burst. She has developed a soft tissue infection caused by gas gangrene. The area was debrided of necrotic infected tissue. All of the pus was removed and irrigation was performed with a liter of saline until clear and clean. The infected area was completely drained and the wound was packed gently with sterile saline moistened gauze and pads were placed on top of this. The correct CPT code is:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 56405",
+                            "B. 10061",
+                            "C. 11004",
+                            "D. 11042",
+                          ],
+                          answer: "C. 11004",
+                          explanation:
+                            "11004 is the correct code for debridement of soft tissue infection in the perineal area due to gas gangrene.",
+                        },
+                        {
+                          question:
+                            "19. 76-year-old female had a recent mammographic and ultrasound abnormality in the 6 o’clock position of the left breast. She underwent core biopsies which showed the presence of a papilloma. The plan now is for needle localization with excisional biopsy to rule out occult malignancy. After undergoing preoperative needle localization with hookwire needle injection with methylene blue, the patient was brought to the operating room and was placed on the operating room table in the supine position where she underwent laryngeal mask airway (LMA) anesthesia. The left breast was prepped and draped in a sterile fashion. A radial incision was then made in the 6 o'clock position of the left breast corresponding to the tip of the needle localizing wire. Using blunt and sharp dissection, we performed a generous excisional biopsy around the needle localizing wire including all of the methylene blue-stained tissues. The specimen was then submitted for radiologic confirmation followed by permanent section pathology. Once hemostasis was assured, digital palpation of the depths of the wound field failed to reveal any other palpable abnormalities. At this point, the wound was closed in 2 layers with 3-0 Vicryl and 5-0 Monocryl. Steri-Strips were applied. Local anesthetic was infiltrated for postoperative analgesia. What CPT and ICD-9-CM codes describe this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 19100, 611.72",
+                            "B. 19102, 174.9",
+                            "C. 19120, 793.80",
+                            "D. 19125, 217",
+                          ],
+                          answer: "D. 19125, 217",
+                          explanation:
+                            "Papilloma is classified as a benign breast condition, reported with ICD-9-CM code 217. CPT 19125 is appropriate for excisional biopsy of breast tissue following preoperative radiologic marker placement (needle localization).",
+                        },
+                        {
+                          question:
+                            "20. Indication: Patient has a hypertrophic scar on the posterior side of the left leg at the level of the knee. This has begun to restrict his mobility. Physical therapy trial was unsuccessful. Procedure: After the proper induction of anesthesia, the subcutaneous tissue of the patient’s left leg beneath the scar was infiltrated with crystalloid solution containing epinephrine to minimize blood loss. The scar was then excised down to viable dermis. Hemostasis was obtained with epinephrine soaked pads. Skin was harvested from the patient’s thigh in a split thickness fashion and was used to cover the 90 sq cm defect created by the surgery. The graft was secured with skin staples and then dressed with fine mesh gauze followed by medication-soaked gauze. The donor site was dressed with mesh followed by Adaptic, followed by a dry dressing and an Ace wrap.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 15110-52, 15002",
+                            "B. 15100, 11406",
+                            "C. 15100, 15002",
+                          ],
+                          answer: "C. 15100, 15002",
+                          explanation:
+                            "CPT 15002 is used for the excision of the hypertrophic scar to prepare the recipient site, and 15100 is used for the application of a split-thickness skin graft to cover the 90 sq cm defect.",
+                        },
+                        {
+                          question:
+                            "The physician is called in to perform repairs for a 17-year-old girl involved in a motor vehicle accident. She sustained an 8.6 cm laceration to her forehead, a 5.5 cm laceration to her right cheek, a 4 cm laceration to her left cheek, a 4 cm laceration across her chin, and a 12.5 cm laceration to her chest. The wound on her chin required a layered closure. All other wounds required complex closure.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 13132, 13133 x 4, 13101, 12052",
+                            "B. 13132, 13133 x 3, 13133-52, 13101, 13102, 12052",
+                            "C. 13132, 13133 x 3, 13101, 13102, 12052",
+                            "D. 13131, 13132, 13133 x 3, 13101, 13102, 12052",
+                          ],
+                          answer: "C. 13132, 13133 x 3, 13101, 13102, 12052",
+                          explanation:
+                            "Chin wound with layered closure is reported as intermediate (12052); complex closures on forehead and cheeks total 18.1 cm: 13132 + 13133 x3; chest closure (12.5 cm) reported with 13101 and 13102.",
+                        },
+                        {
+                          question:
+                            "A 36-year-old male presents to have multiple lesions destroyed. Three benign lesions on his face are destroyed and five actinic keratoses on his left arm are destroyed. Code for the procedures.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 17000, 17003",
+                            "B. 17000, 17003 x 4, 17110",
+                            "C. 17110",
+                            "D. 17280 x 5, 17000, 17003",
+                          ],
+                          answer: "B. 17000, 17003 x 4, 17110",
+                          explanation:
+                            "17000 is for the first premalignant lesion (actinic keratosis), 17003 x 4 for the remaining four. 17110 is for destruction of the three benign lesions.",
+                        },
+                        {
+                          question:
+                            "23. A 15-year-old boy was burned in a fire and assessed to have received burns to 75 percent of his total body surface area. He was transferred to a burn center for definitive treatment. Once stable, he was brought to the OR. Procedure: Due to extent of the patient’s burns and lack of sufficient donor sites, his full-thickness burns will be excised and covered with porcine grafts, and a split-thickness skin biopsy will be harvested for preparation of autologous grafts to be applied in the coming weeks, when available. After induction of anesthesia, extensive debridement of the full-thickness burns was undertaken. Attention was first directed to the patient’s face, neck, and scalp. A total of 500 sq cm in this area received full-thickness burns. The eschar involving this area was excised down to viable tissue. Hemostasis was achieved using electrocautery. Attention was then turned to the trunk. A total of 950 sq cm in this area received full-thickness burns. The eschar involving this area was excised down to viable tissue. Hemostasis was achieved. Attention was then turned to the arms and legs. A total of 725 sq cm received full-thickness burns. The eschar involving this area was excised down to viable tissue. Hemostasis was achieved. Attention was then turned to the hands and feet. A total of 300 sq cm in this area received full-thickness burns. The eschar involving this area was excised down to viable tissue. All involved areas were then covered with porcine graft. Finally a split thickness skin graft of 0.015 inches in depth was harvested using a dermatome from a separate donor site. A total of 85 sq cm was recovered. What procedures codes would be reported service?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 15300, 15301 x 10, 15320, 15321 x 10, 15004, 15005, 15002, 15003",
+                            "B. 15420, 15421 x 7, 15400, 15401 x 16, 15004, 15005 x 16, 15002, 15003 x 7",
+                            "C. 15420, 15421 x 7, 15400, 15401 x 16, 15004, 15005 x 7, 15002, 15003 x 16, 15040",
+                            "D. 15420, 15421 x 7, 15400, 15401 x 16, 15004, 15005 x 7, 15002, 15003 x 16",
+                          ],
+                          answer:
+                            "C. 15420, 15421 x 7, 15400, 15401 x 16, 15004, 15005 x 7, 15002, 15003 x 16, 15040",
+                          explanation:
+                            "Porcine grafts are reported with codes 15420/15421 (head/neck/hands/feet) and 15400/15401 (trunk/arms/legs). Burn eschar excisions are coded with 15004/15005 and 15002/15003 based on area. 15040 is reported for harvesting the autograft from a separate site using dermatome.",
+                        },
+                        {
+                          question:
+                            "24. The left breast was prepped and draped in a sterile fashion. An incision from the 3 around to the 9 o’clock position on the areolar border on its inferior aspect was made in the skin and extended to the subcutaneous tissue. The breast mass was excised by sharp dissection. The mass was found to be approximately 1.5 - 2 cm in maximum dimension. Frozen section revealed clear margins. Hemostasis was made adequate using electrocautery and the Argon beam coagulator. After this was accomplished, the skin margins were reapproximated with running inverted 3-0 Vicryl subcuticular suture. Select the procedure and diagnosis codes.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 19120, 611.72",
+                            "B. 19301, 611.72",
+                            "C. 19125, 217",
+                            "D. 19101, 611.79",
+                          ],
+                          answer: "A. 19120, 611.72",
+                          explanation:
+                            "CPT code 19120 is used for excision of a breast mass when no radiologic marker is placed. The ICD-9-CM code 611.72 corresponds to a lump or mass in the breast.",
+                        },
+                        {
+                          question:
+                            "25. This 37-year-old paraplegic has developed a sacral decubitus ulcer. He is brought to the OR today for debridement of the pressure ulcer with a split-thickness skin graft to cover the defect. The patient was placed prone on the operative table after induction of adequate endotracheal anesthesia. The sacral area was prepped and draped sterilely, and the ulcer is inspected. The area is debrided extensively to healthy tissue. Involved bone, including part of the coccyx, was also removed. Once the area was clear of necrotic tissue, the site was prepared for a skin graft. A split-thickness skin graft was harvested from the thigh with a dermatome. Total graft size was 25 sq. cm. The graft was sutured in place using 6-0 Vicryl. The harvest site was closed primarily with skin staples. Dressings were applied. Needle counts were correct x 2. The patient tolerated the procedure well. Code the procedure(s).",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 15002, 15100-51",
+                            "B. 15937, 15100-51",
+                            "C. 15937",
+                          ],
+                          answer: "B. 15937, 15100-51",
+                          explanation:
+                            "15937 is reported for excisional debridement of a sacral pressure ulcer with ostectomy. 15100 is used for the split-thickness skin graft, and modifier -51 indicates multiple procedures.",
+                        },
+                        {
+                          question:
+                            "The patient is a 32-year-old female who was discovered to have breast cancer on the right side. She was treated with mastectomy followed by chemotherapy and radiation therapy. She now elects to proceed with reconstruction by TRAM flap. Code for the reconstruction.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 19364",
+                            "B. 19361",
+                            "C. 19316",
+                            "D. 19367",
+                          ],
+                          answer: "D. 19367",
+                          explanation:
+                            "TRAM (transverse rectus abdominis myocutaneous) flap breast reconstruction is reported using code 19367.",
+                        },
+                        {
+                          question:
+                            "27. A 55-year-old male presents in the office with an ingrown toenail on the right and left foot. The procedure was discussed in detail and the patient elected to have it performed. The right foot was prepped and draped in sterile fashion. The right great toe was anesthetized with 50/50 solution of 2 percent lidocaine and .05 percent Marcaine. A mini-tourniquet was placed around the toe for hemostasis. The lateral border was incised and excised in total. Phenol was then applied, the toe was then flushed. Tourniquet was released and dressing applied. At this time the patient elected to only have one performed and will return in two weeks for the left foot. Code the procedure.",
+                          codeBlock: "",
+                          language: "",
+                          options: ["A. 11765", "B. 11750", "C. 11752"],
+                          answer: "B. 11750",
+                          explanation:
+                            "The documentation describes complete excision of the lateral nail border with phenol application, which aligns with CPT 11750 – excision of nail and nail matrix for permanent removal, commonly used for treatment of ingrown toenail.",
+                        },
+                        {
+                          question:
+                            "28. Pre-Procedure Diagnosis: Basal cell carcinoma, left chin. Procedure: Wide local excision of 3.0 cm with 0.3 cm margin basal cell carcinoma of the left chin with a 4 cm closure. Procedure: The patient’s left chin was examined. The site of intended excision was marked out. The site was then prepped. The patient was then prepped and draped in the usual fashion. A 15 blade scalpel was then used to make an incision in the previously marked site. It was carried down to the subcuticular fat. The lesion was then sharply dissected off underlying tissue bed using a 15-blade scalpel. It was tagged for pathologic orientation. The hyfrecator was used for hemostasis. The wound edges were then undermined. The wound was then closed by advancing the tissue surrounding the lesion and closing in layers with 3-0 Vicryl for the deep layer, followed by 5-0 Prolene for the skin. The skin closure was in a running subcuticular fashion. Steri-Strips were then applied. What are the procedure and diagnosis codes?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11644, 12052-51, 173.3",
+                            "B. 11643, 12013-51, 173.3",
+                            "C. 11444, 12052-51, 239.2",
+                            "D. 11443, 12013-51, 239.2",
+                          ],
+                          answer: "A. 11644, 12052-51, 173.3",
+                          explanation:
+                            "11644 is used for excision of a malignant lesion on the face measuring over 3.1 cm. Intermediate layered closure of the chin is reported with 12052. The diagnosis code 173.3 refers to basal cell carcinoma of the face.",
+                        },
+                        {
+                          question:
+                            "29. The physician removes a tumor from the patient’s neck using the Mohs micrographic surgery technique. During the first stage, the physician takes four tissue blocks and reviews them under a microscope. The exam of the tissue blocks reveals a second stage is necessary to remove areas where the tumor is still present. The physician removes two additional tissue blocks. What are the appropriate CPT® codes for reporting the procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 17311, 17312, 17315",
+                            "B. 17313, 17315",
+                            "C. 17313, 17314, 17315",
+                            "D. 17311, 17312",
+                          ],
+                          answer: "D. 17311, 17312",
+                          explanation:
+                            "CPT 17311 is used for the first stage of Mohs micrographic surgery on head, neck, hands, feet, or genitalia. 17312 is reported for each additional stage. Since only two blocks were removed in the second stage and did not exceed five blocks, 17315 (which is for additional blocks beyond five per stage) is not required.",
+                        },
+                        {
+                          question:
+                            "Using ultrasound guidance, the physician performed a percutaneous needle core biopsy on a suspicious lump on the patient’s right breast. This procedure was performed in the physician’s office. Code this encounter.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 10022-RT",
+                            "B. 19101-RT, 76942",
+                            "C. 19102-RT, 76942",
+                            "D. 19102-RT",
+                          ],
+                          answer: "C. 19102-RT, 76942",
+                          explanation:
+                            "19102 is for percutaneous needle biopsy of breast; 76942 is the ultrasound guidance code. Both are required to accurately reflect the service.",
+                        },
+                        {
+                          question:
+                            "Dr. Smith performed a cryosurgery to destroy three premalignant lesions for a patient. Which code(s) should you report for this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 17106",
+                            "b. 17260",
+                            "c. 17003 x 3",
+                            "d. 17000, 17003 x 2",
+                          ],
+                          answer: "d. 17000, 17003 x 2",
+                          explanation:
+                            "17000 is reported for the first premalignant lesion (e.g., actinic keratosis), and 17003 is reported for each additional lesion. For three lesions: 17000 and 17003 x 2.",
+                        },
+                        {
+                          question:
+                            "32. Which codes should be reported for the following case?\nPreoperative diagnosis: Lesion, left hand\nConfirmed by pathology postoperative diagnosis: Primary malignant carcinoma, left hand\nProcedure performed: Excision of malignant carcinoma, left hand\nAnesthesia: General; 40 ml of lidocaine was infiltrated into the wound prior to making the incision\nProcedure: The patient was brought to the operative suite where the left hand was prepped and dressed. A circular incision was made to include the 1-cm lesion with narrowest margins of 0.6 cm with dissection down to subcutaneous tissue. Homeostasis was obtained; the wound was closed with simple mattress sutures. The patient tolerated the procedure well and was returned to the recovery room in good condition with sterile dressing in place.",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 11603, 173.6",
+                            "b. 11622, 173.6",
+                            "c. 11423, 198.2",
+                            "d. 11403, 198.2",
+                          ],
+                          answer: "a. 11603, 173.6",
+                          explanation:
+                            "The excised diameter includes the lesion (1.0 cm) plus the narrowest margins (0.6 cm), totaling 1.6 cm. According to CPT guidelines, code 11603 applies to malignant skin lesion excision with a total excised diameter between 1.1 and 2.0 cm. ICD-9-CM code 173.6 represents a malignant skin neoplasm of the upper limb, including the hand.",
+                        },
+                        {
+                          question:
+                            "Nancy underwent a fine needle aspiration with imaging guidance for a lesion in the right breast. During the aspiration procedure, a percutaneous metallic clip was placed in the right breast. Which codes describe this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 10022-RT, 19295-RT",
+                            "b. 10021-RT, 19295-RT",
+                            "c. 19290-RT, 19297-59",
+                            "d. 19295-59, 10021-RT",
+                          ],
+                          answer: "a. 10022-RT, 19295-RT",
+                          explanation:
+                            "10022 is for fine needle aspiration with imaging guidance, and 19295 is for placement of metallic localization clip in the breast. Both are appropriate for this encounter.",
+                        },
+                        {
+                          question:
+                            "Which of the following procedures could be coded with a breast reconstruction with free flap?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. Harvesting of the flap",
+                            "b. Microvascular transfer",
+                            "c. Closure of the donor site and inset shaping the flap into a breast",
+                            "d. None of the above",
+                          ],
+                          answer: "d. None of the above",
+                          explanation:
+                            "As per CPT® guidelines, all of the listed components are included in the code for breast reconstruction using a free flap and should not be reported separately.",
+                        },
+                        {
+                          question:
+                            "Barry underwent a complex incision and drainage due to a postoperative wound infection, which required an extensive secondary closure of the surgical site. Which codes describe this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 13160, 10081-59",
+                            "b. 10121, 12020-51",
+                            "c. 13160, 10180-51",
+                            "d. 10061, 12021-59",
+                          ],
+                          answer: "c. 13160, 10180-51",
+                          explanation:
+                            "10180 is for incision and drainage of complex post-op wound infection; 13160 is used for secondary wound closure. Modifier -51 indicates multiple procedures performed.",
+                        },
+                        {
+                          question:
+                            "Stephanie discovered a lesion on her trunk and was referred to Dr. Ralph, a trained Mohs surgeon, for treatment. Stephanie had no prior pathology of this lesion; therefore, Dr. Ralph completed a diagnostic skin biopsy with frozen section prior to the surgery. After reviewing the biopsy results, Dr. Ralph took the patient to the procedure suite and performed a Mohs surgery that same day. Dr. Ralph’s final report indicated the procedure required three stages, including five tissue blocks in each stage. He had to take an additional four blocks in stage two to verify margins and cell structure. Which codes should Dr. Ralph report for this entire encounter?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 17313, 17314 x 2, 17315 x 4, 11100-59, 88331-59",
+                            "b. 17313, 17314 x 2, 17315-59",
+                            "c. 17311, 17312 x 2, 17315",
+                            "d. 17311, 17312 x 4, 17315-59, 11101-51, 88331-51",
+                          ],
+                          answer:
+                            "a. 17313, 17314 x 2, 17315 x 4, 11100-59, 88331-59",
+                          explanation:
+                            "Mohs surgery is coded based on anatomic location and number of stages and blocks. Add-on codes are used for additional blocks. Frozen section biopsy (11100) is reported separately due to no prior pathology.",
+                        },
+                        {
+                          question:
+                            "Mark cut his hand and arm while working on his car. Dr. Bill applied sutures to both the arm and hand wounds. An intermediate closure of 16 cm was placed in the arm and a simple closure of 3.6 cm was placed in the hand. Which codes should Dr. Bill report?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 12004, 12035-59",
+                            "b. 12035, 12042-59",
+                            "c. 12035, 12002-51",
+                            "d. 13132, 12036-51",
+                          ],
+                          answer: "c. 12035, 12002-51",
+                          explanation:
+                            "Intermediate repair (16 cm) of the arm is coded with 12035. The simple repair (3.6 cm) of the hand is coded with 12002 and appended with modifier -51.",
+                        },
+                        {
+                          question:
+                            "A patient underwent an excision of a 2.1-cm diameter malignant lesion on her nose. An 11.2-sq-cm adjacent tissue transfer was required to repair the primary and secondary defect sites. How should you code this procedure?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 11643, 14061-59",
+                            "b. 14061",
+                            "c. 11646, 13152-51, 13153-51",
+                            "d. 11443, 12054-59",
+                          ],
+                          answer: "b. 14061",
+                          explanation:
+                            "CPT guidelines state that when adjacent tissue transfer is performed, the excision of the malignant lesion is not separately reportable. 14061 includes the excision and repair.",
+                        },
+                        {
+                          question:
+                            "39. Glen required a replacement of his nonbiodegradable drug delivery implant system. Glen was taken into the procedure suite where he was prepped. Dr. Roberts injected a local anesthetic and made a 3.2-cm incision in the skin for removal of the previous cylinder. He then replaced the cylinder and sutured the new device in place with a single running stitch. The 3.2-cm trunk wound was closed with simple sutures. The device was tested, with excellent results. The patient tolerated the procedure well and was released from care with a sterile dressing in place. How should this procedure be coded?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "a. 11983, 12032-51",
+                            "b. 11977, 12032-59",
+                            "c. 11981, 11982-51, 11983-51, 12002-59",
+                            "d. 11983, 12002-51",
+                          ],
+                          answer: "d. 11983, 12002-51",
+                          explanation:
+                            "CPT code 11983 is used for removal and reinsertion of a nonbiodegradable drug delivery implant. 12002 is used for a simple closure of the trunk wound. Modifier -51 indicates multiple procedures were performed.",
+                        },
+                        {
+                          question:
+                            "Two malignant lesions on the scalp measuring 1.1 cm and 2.0 cm, and one malignant lesion on the neck measuring 2.2 cm were destroyed. Electrocautery was used for the first two lesions and laser was used for the third lesion. The procedures should be coded as:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 17276",
+                            "B. 17273, 17272",
+                            "C. 17273, 17272, 17272",
+                            "D. 17274, 17273",
+                          ],
+                          answer: "C. 17273, 17272, 17272",
+                          explanation:
+                            "Destruction of each malignant lesion is coded separately. 17273 is for lesion on the neck (2.2 cm), 17272 is for scalp lesions (2.0 and 1.1 cm).",
+                        },
+                        {
+                          question:
+                            "41. OPERATIVE REPORT\nPREOPERATIVE DIAGNOSIS: Possible basal cell carcinoma.\nPOSTOPERATIVE DIAGNOSIS: Basal cell carcinoma.\nPROCEDURE PERFORMED: Excision lesion 4.3 cm x 2 cm Left thigh\nFTSG from calf to thigh\nANESTHESIA: General by LMA.\n\nDESCRIPTION OF PROCEDURE: After undergoing adequate general anesthesia and after DuraPrep prepping the left thigh and draping with cloth towels and drapes, 0.25 percent Marcaine with epinephrine, total of 30 cc, was used to anesthetize the skin.\n\nA lesion slightly over 4 cm was observed on the patient's left thigh. A small portion was removed and sent for frozen section analysis. This returned Basal Cell carcinoma. Per prior consent, we removed the remaining lesion with a .75 surrounding margin. Due to size and location of this lesion the decision was made to harvest a full thickness skin graft from his left lower leg.\n\nLower leg was prepped and draped and 0.25 percent Marcaine was given. Excision of 5 cm x 5cm full thickness graft was obtained and placed on back table for prep. We returned to the thigh area. All edges were trimmed and the graft was placed into the defect and sewn with a\nrunning #3-0 Vicryl, the skin edges were approximated with a running subcuticular #4-0 Vicryl and further sealed with Dermabond. Hemostasis was well controlled. The wound was irrigated with normal saline.\n\nWhat are the correct procedure code(s)?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11406, 15770, 12032",
+                            "B. 11606, 15220, 15221",
+                            "C. 11402, 15220",
+                            "D. 11602, 15220, 15221",
+                          ],
+                          answer: "B. 11606, 15220, 15221",
+                          explanation:
+                            "The excision is reported with 11606 based on the total excised diameter (4.3 cm lesion + 0.75 cm margin on all sides = 5.8 cm). The full-thickness skin graft size (5 cm x 5 cm = 25 sq cm) is reported with 15220 for the first 20 sq cm and 15221 for the additional 5 sq cm.",
+                        },
+                        {
+                          question:
+                            "42. Preoperative Diagnosis: Left axillary hidradenitis.\nPostoperative Diagnosis: Left axillary hidradenitis.\nOperation: Excision of hidradenitis.\nIndications: The patient is a 62-year-old female with chronically infected left axillary hidradenitis.\nDescription of Operation: With the patient in supine position and under general anesthesia, the left axilla was prepped and draped in the usual sterile fashion. An elliptical skin incision was made in the axilla to excise most of the hidradenitis tracts. The incision was carried down through subcutaneous tissue. The underlying subcutaneous tissue was excised. Bleeding points were controlled by means of electrocautery. The wound was then irrigated with a dilute antibiotic solution. The subcutaneous tissues were closed with a continuous suture of 2-0 Vicryl. The skin edges were stapled together a dry dressing was applied. The patient tolerated the procedure satisfactorily. Sponge and needle counts were correct.\nThe correct CPT® code for this procedure:",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11470",
+                            "B. 11450",
+                            "C. 11451",
+                            "D. 11462",
+                          ],
+                          answer: "B. 11450",
+                          explanation:
+                            "The procedure involved excision of hidradenitis with intermediate layered closure in the axillary region, which is appropriately coded as 11450.",
+                        },
+                        {
+                          question:
+                            "43. OPERATIVE REPORT\nFIRST SURGICAL ASSISTANT: W. P., M.D\n\nANESTHESIA: Monitored anesthesia care with local anesthetic\nPREOPERATIVE DIAGNOSIS (ES): Left chest wall mass\nPOSTOPERATIVE DIAGNOSIS (ES): Left chest wall mass\nNAME OF OPERATION: Left chest wall mass excision\nINDICATIONS FOR PROCEDURE: Mr. C is a 63-year-old gentleman who presented to the outpatient clinic with a palpable left chest wall mass. Clinical characteristics suggested a benign lipoma. However, because of the very large size of the mass and the fact that it had increased in size rapidly I recommended a complete excision for definitive diagnosis. He presents today for that purpose.\nOPERATIVE FINDINGS: The patient had a left chest wall mass excised without difficulty. The mass measured approximately 7 centimeters and had the benign appearance of a lipoma.\nDESCRIPTION OF PROCEDURE: Mr. C was brought to the operating room and placed supine on the operating room table. Because this was a sedation case, no sequential compression devices were applied. However, a single dose of Ancef 1 gram was administered intravenously 10 minutes prior to the incision time. Sedation was then initiated with propofol and Fentanyl and the patient was prepped and draped in the standard surgical fashion. The left chest wall mass was palpated and an incision directly over it along the Langer's line was planned. This was infiltrated with a mixture of 1 percent plain lidocaine and 0.5 percent plain Marcaine. The incision was then made and carried down through the dermis with electrocautery. We then opened the subcutaneous tissue of the skin and immediately encountered an organized mass that has a benign appearance of a lipoma. Using careful blunt and sharp dissection, we were able to completely excise this mass around its entire circumference leaving the capsule intact. Once we had the mass largely excised from the anterior, superior, inferior, lateral, and medial approaches the mass was everted from the chest wall. The mass was then removed from its posterior attachments using electrocautery. The mass was then passed off the field. Attention was then turned to the wound. Aggressive hemostasis was obtained with electrocautery. The wound was irrigated with copious amounts of sterile saline. A deep 3-0 Vicryl stitch was then placed to reapproximate the pectoralis fascia. The deep dermal layer was then reapproximated with interrupted 3-0 Vicryl stitches. The skin was reapproximated with a running subcuticular using 4-0 Monocryl. Dermabond dressing was applied. The patient tolerated the procedure well, was awakened, and transferred to the recovery room.\nThe specimens removed include the left chest wall mass, which measured 7 centimeters. Estimated blood loss was minimal. Intravenous fluids were 700 milliliters of crystalloid. Sponge, instrument, and needle counts were correct at the end of the case. The condition of the patient on discharge from the operating room was stable.\nSPECIMENS REMOVED: Left chest wall mass measuring 7 cm\nWhat is the correct CPT® code?",
+                          codeBlock: "",
+                          language: "",
+                          options: [
+                            "A. 11406",
+                            "B. 21555",
+                            "C. 19120",
+                            "D. 21552",
+                          ],
+                          answer: "D. 21552",
+                          explanation:
+                            "Excision of a soft tissue tumor greater than 5 cm located on the chest wall is reported with CPT code 21552.",
                         },
                       ],
                       brief: [],
