@@ -26,18 +26,17 @@ export default function ModulePage() {
 
   if (!currentModule) return <p>Module not found</p>;
   if (!subject) return <p>Subjects not found</p>;
-
   return (
     <div className="flex h-screen text-gray-800">
       <div
-        className={`fixed lg:relative z-40 bg-gray-800 text-white w-64 h-screen overflow-y-auto transition-transform ${
+        className={`fixed lg:static z-40 bg-gray-800 text-white w-64 h-screen overflow-y-auto transition-transform flex-shrink-0 ${
           isSidebarVisible ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0`}
       >
         <Sidebar modules={subject.modules} />
       </div>
 
-      <div className="flex-grow p-4 bg-gray-100 overflow-auto scrollbar-hidden">
+      <div className="flex-1 p-4 bg-gray-100 overflow-auto scrollbar-hidden min-w-0">
         <h1 className="text-2xl font-bold mb-6">{currentModule.name}</h1>
 
         <div className="space-y-4">
