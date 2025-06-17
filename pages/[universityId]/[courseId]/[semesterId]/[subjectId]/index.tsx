@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { questionBank } from "../../../../../data/questionBank";
 
@@ -14,7 +15,12 @@ export default function ModuleSelectionPage() {
   if (!subject) return <p className="text-white">Subject not found</p>;
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
+    <>
+      <Head>
+        <title>{subject.name} - Select Module | Question Bank</title>
+        <meta name="description" content={`Choose a module from ${subject.name} to access detailed practice questions and study materials`} />
+      </Head>
+      <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
       <div className="max-w-2xl w-full bg-white p-6 shadow-md rounded">
         <h1 className="text-2xl font-bold mb-6 text-center">{subject.name}</h1>
         <h2 className="text-xl font-semibold mb-4">Select a Module</h2>
@@ -23,13 +29,13 @@ export default function ModuleSelectionPage() {
             <Link
               key={module.id}
               href={`/${universityId}/${courseId}/${semesterId}/${subjectId}/${module.id}`}
-              className="block p-4 bg-blue-500 text-white text-center rounded hover:bg-blue-700"
+              className="block p-4 bg-blue-700 text-white text-center rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               {module.name}
             </Link>
-          ))}
-        </div>
+          ))}        </div>
       </div>
     </div>
+    </>
   );
 }
