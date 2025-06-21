@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Sidebar from "../../../../../../components/Sidebar";
 import MCQ from "../../../../../../components/MCQ";
@@ -7,9 +6,47 @@ import CaseStudy from "../../../../../../components/CaseStudy";
 import { questionBank } from "../../../../../../data/questionBank";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-export default function ModulePage() {
-  const router = useRouter();
+type Module = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0]['modules'][0];
+type Subject = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0];
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    const paths = questionBank.universities.flatMap((university) =>
+        university.courses.flatMap((course) =>
+            course.semesters.flatMap((semester) =>
+                semester.subjects.flatMap((subject) =>
+                    subject.modules.map((module) => ({
+                        params: {
+                            universityId: university.id,
+                            courseId: course.id,
+                            semesterId: semester.id,
+                            subjectId: subject.id,
+                            moduleId: module.id,
+                        },
+                    }))
+                )
+            )
+        )
+    );
+    return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps<{ currentModule: Module, subject: Subject }> = async ({ params }) => {
+    const university = questionBank.universities.find((u) => u.id === params?.universityId);
+    const course = university?.courses.find((c) => c.id === params?.courseId);
+    const semester = course?.semesters.find((s) => s.id === params?.semesterId);
+    const subject = semester?.subjects.find((sub) => sub.id === params?.subjectId);
+    const currentModule = subject?.modules.find((mod) => mod.id === params?.moduleId);
+
+    if (!currentModule || !subject) {
+        return { notFound: true };
+    }
+
+    return { props: { currentModule, subject } };
+};
+
+export default function ModulePage({ currentModule, subject }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
@@ -17,31 +54,20 @@ export default function ModulePage() {
   const toggleAccordion = (section: string) =>
     setActiveSection((prev) => (prev === section ? null : section));
 
-  const { universityId, courseId, semesterId, subjectId, moduleId } = router.query;
-
-  const university = questionBank.universities.find((u) => u.id === universityId);
-  const course = university?.courses.find((c) => c.id === courseId);
-  const semester = course?.semesters.find((s) => s.id === semesterId);
-  const subject = semester?.subjects.find((sub) => sub.id === subjectId);
-  const currentModule = subject?.modules.find((mod) => mod.id === moduleId);
-
-  if (!currentModule) return <p>Module not found</p>;
-  if (!subject) return <p>Subjects not found</p>;
   return (
     <>
       <Head>
-        <title>{currentModule.name} | Practice – OrbiPath</title>
+        <title>{`${currentModule.name} | Practice – OrbiPath`}</title>
       </Head>
-      <div className="flex h-screen text-gray-800">
-        <div
-          className={`fixed lg:static z-40 bg-gray-800 text-white w-64 h-screen overflow-y-auto transition-transform flex-shrink-0 ${
+      <div className="flex text-gray-800 w-full">
+        <Sidebar
+          modules={subject.modules}
+          className={`fixed lg:static z-40 bg-gray-800 text-white w-64 overflow-y-auto transition-transform flex-shrink-0 ${
             isSidebarVisible ? "translate-x-0" : "-translate-x-full"
           } lg:translate-x-0`}
-        >
-          <Sidebar modules={subject.modules} />
-        </div>
+        />
 
-        <div className="flex-1 p-4 bg-gray-100 overflow-auto scrollbar-hidden min-w-0">
+        <div className="flex-1 p-4 bg-gray-50 overflow-auto scrollbar-hidden min-w-0">
           <h1 className="text-2xl font-bold mb-6">{currentModule.name}</h1>
 
           <div className="space-y-4">
@@ -98,6 +124,7 @@ export default function ModulePage() {
         <button
           onClick={toggleSidebar}
           className="fixed bottom-6 right-6 z-50 bg-blue-500 text-white p-4 rounded-full shadow-lg lg:hidden"
+          aria-label="Toggle sidebar"
         >
           <FaBars className="w-6 h-6" />
         </button>

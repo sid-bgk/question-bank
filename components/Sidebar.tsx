@@ -6,14 +6,15 @@ interface SidebarProps {
     id: string;
     name: string;
   }[];
+  className?: string;
 }
 
-export default function Sidebar({ modules }: SidebarProps) {
+export default function Sidebar({ modules, className }: SidebarProps) {
   const router = useRouter();
   const { universityId, courseId, semesterId, subjectId, moduleId } = router.query;
 
   return (
-    <div className="w-64 bg-gray-800 text-white h-screen p-4 overflow-y-auto">
+    <div className={`h-full p-4 ${className || ''}`}>
       <h2 className="text-lg font-bold mb-4">Modules</h2>
       <ul>
         {modules.map((mod) => (
