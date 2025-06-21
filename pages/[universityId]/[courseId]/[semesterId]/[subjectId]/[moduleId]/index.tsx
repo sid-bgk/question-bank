@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Sidebar from "../../../../../../components/Sidebar";
 import MCQ from "../../../../../../components/MCQ";
 import Brief from "../../../../../../components/Brief";
