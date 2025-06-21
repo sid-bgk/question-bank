@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useEffect } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   // Add performance monitoring
@@ -24,11 +25,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-gray-50">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow flex-shrink-0 flex overflow-hidden">
           <Component {...pageProps} />
         </main>
+        <Footer />
       </div>
     </>
   );
