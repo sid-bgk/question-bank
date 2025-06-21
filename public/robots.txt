@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: 
+Allow: /
+
+# Sitemap locations
+Sitemap: https://practice.orbipath.com/sitemap.xml
+Sitemap: https://practice.orbipath.com/sitemap-index.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1 

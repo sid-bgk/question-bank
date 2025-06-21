@@ -17,9 +17,9 @@ export default function Header() {
       {/* Breadcrumb Navigation */}
       <div className="flex items-center space-x-2">
         {/* Home Link */}
-        <FaHome className="text-blue-500 w-6 h-6" />
-        <Link href="/" className="text-blue-500 hover:underline">
-          Home
+        <Link href="/" className="flex items-center space-x-2 text-blue-500 hover:underline">
+            <FaHome className="w-6 h-6" />
+            <span>Home</span>
         </Link>
 
         {/* Previous Route for Mobile */}

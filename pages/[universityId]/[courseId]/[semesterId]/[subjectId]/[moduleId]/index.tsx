@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Sidebar from "../../../../../../components/Sidebar";
 import MCQ from "../../../../../../components/MCQ";
 import Brief from "../../../../../../components/Brief";
@@ -10,6 +11,9 @@ import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'ne
 
 type Module = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0]['modules'][0];
 type Subject = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0];
+type Semester = typeof questionBank.universities[0]['courses'][0]['semesters'][0];
+type Course = typeof questionBank.universities[0]['courses'][0];
+type University = typeof questionBank.universities[0];
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = questionBank.universities.flatMap((university) =>
@@ -32,21 +36,33 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps<{ currentModule: Module, subject: Subject }> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<{ 
+    currentModule: Module; 
+    subject: Subject; 
+    semester: Semester;
+    course: Course;
+    university: University;
+}> = async ({ params }) => {
     const university = questionBank.universities.find((u) => u.id === params?.universityId);
     const course = university?.courses.find((c) => c.id === params?.courseId);
     const semester = course?.semesters.find((s) => s.id === params?.semesterId);
     const subject = semester?.subjects.find((sub) => sub.id === params?.subjectId);
     const currentModule = subject?.modules.find((mod) => mod.id === params?.moduleId);
 
-    if (!currentModule || !subject) {
+    if (!currentModule || !subject || !semester || !course || !university) {
         return { notFound: true };
     }
 
-    return { props: { currentModule, subject } };
+    return { props: { currentModule, subject, semester, course, university } };
 };
 
-export default function ModulePage({ currentModule, subject }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function ModulePage({ 
+    currentModule, 
+    subject, 
+    semester, 
+    course, 
+    university 
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
@@ -54,10 +70,45 @@ export default function ModulePage({ currentModule, subject }: InferGetStaticPro
   const toggleAccordion = (section: string) =>
     setActiveSection((prev) => (prev === section ? null : section));
 
+  const description = `Practice ${currentModule.name} questions for ${subject.name} at ${university.name}. Access MCQs, brief answers, and case studies for comprehensive exam preparation.`;
+  const canonicalUrl = `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}/${subject.id}/${currentModule.id}`;
+
   return (
     <>
       <Head>
         <title>{`${currentModule.name} | Practice – OrbiPath`}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={`${currentModule.name} | Practice – OrbiPath`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonicalUrl} />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content={`${currentModule.name} | Practice – OrbiPath`} />
+        <meta name="twitter:description" content={description} />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Course",
+              "name": currentModule.name,
+              "description": description,
+              "provider": {
+                "@type": "Organization",
+                "name": university.name
+              },
+              "coursePrerequisites": {
+                "@type": "Course",
+                "name": subject.name
+              }
+            })
+          }}
+        />
       </Head>
       <div className="flex text-gray-800 w-full">
         <Sidebar
@@ -75,9 +126,9 @@ export default function ModulePage({ currentModule, subject }: InferGetStaticPro
               <div>
                 <button
                   onClick={() => toggleAccordion("mcq")}
-                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300"
+                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300 transition-colors"
                 >
-                  MCQs
+                  MCQs ({currentModule.mcq.length})
                 </button>
                 {activeSection === "mcq" && (
                   <div className="p-4 bg-white border rounded shadow-md">
@@ -91,9 +142,9 @@ export default function ModulePage({ currentModule, subject }: InferGetStaticPro
               <div>
                 <button
                   onClick={() => toggleAccordion("brief")}
-                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300"
+                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300 transition-colors"
                 >
-                  Brief Answers
+                  Brief Answers ({currentModule.brief.length})
                 </button>
                 {activeSection === "brief" && (
                   <div className="p-4 bg-white border rounded shadow-md">
@@ -107,9 +158,9 @@ export default function ModulePage({ currentModule, subject }: InferGetStaticPro
               <div>
                 <button
                   onClick={() => toggleAccordion("case-study")}
-                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300"
+                  className="w-full text-left font-bold bg-gray-200 py-2 px-4 rounded hover:bg-gray-300 transition-colors"
                 >
-                  Case Studies
+                  Case Studies ({currentModule.case_study.length})
                 </button>
                 {activeSection === "case-study" && (
                   <div className="p-4 bg-white border rounded shadow-md">
