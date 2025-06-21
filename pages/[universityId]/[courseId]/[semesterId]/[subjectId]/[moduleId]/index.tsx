@@ -124,6 +124,7 @@ export default function ModulePage({ currentModule, subject }: InferGetStaticPro
         <button
           onClick={toggleSidebar}
           className="fixed bottom-6 right-6 z-50 bg-blue-500 text-white p-4 rounded-full shadow-lg lg:hidden"
+          aria-label="Toggle sidebar"
         >
           <FaBars className="w-6 h-6" />
         </button>

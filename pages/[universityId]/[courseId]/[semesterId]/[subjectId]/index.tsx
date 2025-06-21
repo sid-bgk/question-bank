@@ -54,7 +54,7 @@ export default function ModuleSelectionPage({ subject, universityId, courseId, s
                     <Link
                         key={module.id}
                         href={`/${universityId}/${courseId}/${semesterId}/${subject.id}/${module.id}`}
-                        className="block p-4 bg-blue-500 text-white text-center rounded hover:bg-blue-700"
+                        className="block p-4 bg-blue-600 text-white text-center rounded hover:bg-blue-700"
                     >
                         {module.name}
                     </Link>

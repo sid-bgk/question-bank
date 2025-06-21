@@ -48,7 +48,7 @@ export default function SubjectPage({ semester, universityId, courseId }: InferG
                     <Link
                         key={subject.id}
                         href={`/${universityId}/${courseId}/${semester.id}/${subject.id}`}
-                        className="block p-4 bg-blue-500 text-white text-center rounded hover:bg-blue-700"
+                        className="block p-4 bg-blue-600 text-white text-center rounded hover:bg-blue-700"
                     >
                         {subject.name}
                     </Link>

@@ -30,7 +30,7 @@ export default function CoursePage({ university }: InferGetStaticPropsType<typeo
           <Link
             key={course.id}
             href={`/${university.id}/${course.id}`}
-            className="block p-4 bg-green-500 text-white text-center rounded hover:bg-green-700"
+            className="block p-4 bg-green-600 text-white text-center rounded hover:bg-green-700"
           >
             {course.name}
           </Link>

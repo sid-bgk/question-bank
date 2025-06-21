@@ -33,7 +33,7 @@ export default function SemesterPage({ course, universityId }: InferGetStaticPro
                     <Link
                         key={semester.id}
                         href={`/${universityId}/${course.id}/${semester.id}`}
-                        className="block p-4 bg-purple-500 text-white text-center rounded hover:bg-purple-700"
+                        className="block p-4 bg-purple-600 text-white text-center rounded hover:bg-purple-700"
                     >
                         {semester.name}
                     </Link>
