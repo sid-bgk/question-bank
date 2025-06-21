@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Head from "next/head";
 import { questionBank } from "../../data/questionBank";
 import { useRouter } from "next/router";
 
@@ -11,12 +10,7 @@ export default function CoursePage() {
   if (!university) return <p>University not found</p>;
 
   return (
-    <>
-      <Head>
-        <title>{university.name} - Select Course | Question Bank</title>
-        <meta name="description" content={`Choose a course from ${university.name} to access practice questions and study materials`} />
-      </Head>
-      <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
+    <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
       <div className="max-w-2xl w-full bg-white p-6 shadow-md rounded">
         <h1 className="text-2xl font-bold mb-6 text-center">{university.name}</h1>
         <h2 className="text-xl font-semibold mb-4">Select a Course</h2>
@@ -29,9 +23,9 @@ export default function CoursePage() {
             >
               {course.name}
             </Link>
-          ))}        </div>
+          ))}
+        </div>
       </div>
     </div>
-    </>
   );
 }
