@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test App Loading</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .loading { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>App Loading Test</h1>
+    <div id="status" class="status loading">Testing app loading...</div>
+    
+    <button onclick="testApp()">Test App Loading</button>
+    <button onclick="testRobots()">Test Robots.txt</button>
+    <button onclick="testSitemap()">Test Sitemap</button>
+    
+    <div id="results"></div>
+
+    <script>
+        async function testApp() {
+            const status = document.getElementById('status');
+            const results = document.getElementById('results');
+            
+            status.className = 'status loading';
+            status.textContent = 'Testing app loading...';
+            
+            try {
+                const startTime = Date.now();
+                const response = await fetch('http://localhost:3000/', {
+                    method: 'GET',
+                    headers: {
+                        'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)'
+                    }
+                });
+                
+                const loadTime = Date.now() - startTime;
+                const html = await response.text();
+                
+                // Check for title
+                const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+                const title = titleMatch ? titleMatch[1] : 'No title found';
+                
+                // Check for server-rendered content
+                const hasNextData = html.includes('__NEXT_DATA__');
+                const hasContent = html.includes('Select a University') || html.includes('question-bank');
+                
+                status.className = 'status success';
+                status.textContent = `✅ App loaded successfully in ${loadTime}ms`;
+                
+                results.innerHTML = `
+                    <div class="status success">
+                        <strong>App Test Results:</strong><br>
+                        • Status: ${response.status}<br>
+                        • Load Time: ${loadTime}ms<br>
+                        • Title: "${title}"<br>
+                        • Server Rendered: ${hasNextData ? 'Yes' : 'No'}<br>
+                        • Has Content: ${hasContent ? 'Yes' : 'No'}<br>
+                        • Content Length: ${html.length} characters
+                    </div>
+                `;
+                
+            } catch (error) {
+                status.className = 'status error';
+                status.textContent = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        async function testRobots() {
+            const results = document.getElementById('results');
+            
+            try {
+                const response = await fetch('http://localhost:3000/robots.txt');
+                const content = await response.text();
+                
+                results.innerHTML = `
+                    <div class="status success">
+                        <strong>Robots.txt Test:</strong><br>
+                        • Status: ${response.status}<br>
+                        • Content: <pre>${content}</pre>
+                    </div>
+                `;
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="status error">
+                        <strong>Robots.txt Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        async function testSitemap() {
+            const results = document.getElementById('results');
+            
+            try {
+                const response = await fetch('http://localhost:3000/sitemap.xml');
+                const content = await response.text();
+                
+                results.innerHTML = `
+                    <div class="status success">
+                        <strong>Sitemap Test:</strong><br>
+                        • Status: ${response.status}<br>
+                        • Content Length: ${content.length} characters<br>
+                        • Is XML: ${content.includes('<?xml') ? 'Yes' : 'No'}
+                    </div>
+                `;
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="status error">
+                        <strong>Sitemap Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        // Auto-test on page load
+        window.addEventListener('load', () => {
+            setTimeout(testApp, 1000);
+        });
+    </script>
+</body>
+</html> 
