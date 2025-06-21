@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { questionBank } from "../../../../data/questionBank";
 import { useRouter } from "next/router";
 
@@ -12,7 +13,12 @@ export default function SubjectPage() {
   if (!semester) return <p>Semester not found</p>;
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
+    <>
+      <Head>
+        <title>{semester.name} - Select Subject | Question Bank</title>
+        <meta name="description" content={`Choose a subject from ${semester.name} to practice with course-specific MCQs and study questions`} />
+      </Head>
+      <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6 text-gray-800">
       <div className="max-w-2xl w-full bg-white p-6 shadow-md rounded">
         <h1 className="text-2xl font-bold mb-6 text-center">{semester.name}</h1>
         <h2 className="text-xl font-semibold mb-4">Select a Subject</h2>
@@ -21,13 +27,13 @@ export default function SubjectPage() {
             <Link
               key={subject.id}
               href={`/${universityId}/${courseId}/${semesterId}/${subject.id}`}
-              className="block p-4 bg-blue-500 text-white text-center rounded hover:bg-blue-700"
+              className="block p-4 bg-blue-700 text-white text-center rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               {subject.name}
             </Link>
-          ))}
-        </div>
+          ))}        </div>
       </div>
     </div>
+    </>
   );
 }
