@@ -24,11 +24,40 @@ export default function CoursePage({ university }: InferGetStaticPropsType<typeo
   const description = `Explore ${university.name} courses and practice questions. Access comprehensive study materials for various subjects and modules.`;
   const canonicalUrl = `https://practice.orbipath.com/${university.id}`;
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": university.name,
+    "description": description,
+    "url": canonicalUrl,
+    "publisher": {
+      "@type": "Organization",
+      "name": "OrbiPath",
+      "url": "https://orbipath.com"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": `${university.name} Courses`,
+      "description": `Available courses at ${university.name}`,
+      "numberOfItems": university.courses.length,
+      "itemListElement": university.courses.map((course, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Course",
+          "name": course.name,
+          "url": `https://practice.orbipath.com/${university.id}/${course.id}`
+        }
+      }))
+    }
+  };
+
   return (
     <PageLayout 
       title={university.name}
       description={description}
       canonicalUrl={canonicalUrl}
+      structuredData={structuredData}
     >
       <h1 className="text-2xl font-bold mb-6 text-center">{university.name}</h1>
       <h2 className="text-xl font-semibold mb-4">Select a Course</h2>

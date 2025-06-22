@@ -4,6 +4,8 @@ import PageLayout from "../../../../components/PageLayout";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
 type Semester = typeof questionBank.universities[0]['courses'][0]['semesters'][0];
+type Course = typeof questionBank.universities[0]['courses'][0];
+type University = typeof questionBank.universities[0];
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = questionBank.universities.flatMap((university) =>
@@ -20,34 +22,80 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps<{ semester: Semester; universityId: string; courseId: string }> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<{ semester: Semester; university: University; course: Course }> = async ({ params }) => {
     const university = questionBank.universities.find((u) => u.id === params?.universityId);
     const course = university?.courses.find((c) => c.id === params?.courseId);
     const semester = course?.semesters.find((s) => s.id === params?.semesterId);
 
-    if (!semester || !params?.universityId || !params?.courseId) {
+    if (!semester || !university || !course) {
         return { notFound: true };
     }
 
     return {
         props: {
             semester,
-            universityId: params.universityId as string,
-            courseId: params.courseId as string,
+            university,
+            course,
         },
     };
 };
 
-export default function SubjectPage({ semester, universityId, courseId }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function SubjectPage({ semester, university, course }: InferGetStaticPropsType<typeof getStaticProps>) {
+    const description = `Explore ${semester.name} subjects for ${course.name} at ${university.name}. Access comprehensive study materials and practice questions.`;
+    const canonicalUrl = `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}`;
+
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": semester.name,
+        "description": description,
+        "url": canonicalUrl,
+        "publisher": {
+            "@type": "Organization",
+            "name": "OrbiPath",
+            "url": "https://orbipath.com"
+        },
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": university.name,
+            "url": `https://practice.orbipath.com/${university.id}`
+        },
+        "coursePrerequisites": {
+            "@type": "Course",
+            "name": course.name,
+            "url": `https://practice.orbipath.com/${university.id}/${course.id}`
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": `${semester.name} Subjects`,
+            "description": `Available subjects for ${semester.name}`,
+            "numberOfItems": semester.subjects.length,
+            "itemListElement": semester.subjects.map((subject, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                    "@type": "Course",
+                    "name": subject.name,
+                    "url": `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}/${subject.id}`
+                }
+            }))
+        }
+    };
+
     return (
-        <PageLayout title={semester.name}>
+        <PageLayout 
+            title={semester.name}
+            description={description}
+            canonicalUrl={canonicalUrl}
+            structuredData={structuredData}
+        >
             <h1 className="text-2xl font-bold mb-6 text-center">{semester.name}</h1>
             <h2 className="text-xl font-semibold mb-4">Select a Subject</h2>
             <div className="grid grid-cols-1 gap-4">
                 {semester.subjects.map((subject) => (
                     <Link
                         key={subject.id}
-                        href={`/${universityId}/${courseId}/${semester.id}/${subject.id}`}
+                        href={`/${university.id}/${course.id}/${semester.id}/${subject.id}`}
                         className="block p-4 bg-blue-600 text-white text-center rounded hover:bg-blue-700"
                     >
                         {subject.name}
