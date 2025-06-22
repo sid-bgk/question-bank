@@ -5,11 +5,28 @@ interface PageLayoutProps {
   title: string;
   description?: string;
   canonicalUrl?: string;
+  structuredData?: object;
 }
 
-export default function PageLayout({ children, title, description, canonicalUrl }: PageLayoutProps) {
+export default function PageLayout({ children, title, description, canonicalUrl, structuredData }: PageLayoutProps) {
   const defaultDescription = "Practice questions and study materials for university courses";
   const metaDescription = description || defaultDescription;
+  
+  // Default structured data if none provided
+  const defaultStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": title,
+    "description": metaDescription,
+    "url": canonicalUrl || "https://practice.orbipath.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OrbiPath",
+      "url": "https://orbipath.com"
+    }
+  };
+
+  const finalStructuredData = structuredData || defaultStructuredData;
   
   return (
     <>
@@ -26,6 +43,14 @@ export default function PageLayout({ children, title, description, canonicalUrl 
         {/* Twitter */}
         <meta name="twitter:title" content={`${title} | Practice – OrbiPath`} />
         <meta name="twitter:description" content={metaDescription} />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(finalStructuredData)
+          }}
+        />
       </Head>
       <div className="flex flex-col items-center p-6 text-gray-800 w-full">
         <div className="max-w-2xl w-full bg-white p-6 shadow-md rounded">

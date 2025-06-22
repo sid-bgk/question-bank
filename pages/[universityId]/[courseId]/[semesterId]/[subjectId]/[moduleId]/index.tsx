@@ -97,6 +97,12 @@ export default function ModulePage({
               "@type": "Course",
               "name": currentModule.name,
               "description": description,
+              "url": canonicalUrl,
+              "publisher": {
+                "@type": "Organization",
+                "name": "OrbiPath",
+                "url": "https://orbipath.com"
+              },
               "provider": {
                 "@type": "Organization",
                 "name": university.name
