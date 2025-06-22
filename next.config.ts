@@ -1,6 +1,4 @@
 import type { NextConfig } from "next";
-// @ts-ignore
-import withPWA from 'next-pwa';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -26,27 +24,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-const config = withPWA({
-  dest: 'public',
-  register: true,
-  skipWaiting: false,
-  disable: process.env.NODE_ENV === 'development',
-  fallbacks: {
-    document: '/offline.html',
-  },
-  runtimeCaching: [
-    {
-      urlPattern: /^https?.*/,
-      handler: 'NetworkFirst',
-      options: {
-        cacheName: 'offlineCache',
-        expiration: {
-          maxEntries: 200,
-        },
-        networkTimeoutSeconds: 3,
-      },
-    },
-  ],
-})(nextConfig);
-
-export default config;
+export default nextConfig;
