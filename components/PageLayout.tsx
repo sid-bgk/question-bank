@@ -1,11 +1,13 @@
 import Head from 'next/head';
+import StructuredData from './StructuredData';
+import { PageStructuredData } from '../lib/structuredData';
 
 interface PageLayoutProps {
   children: React.ReactNode;
   title: string;
   description?: string;
   canonicalUrl?: string;
-  structuredData?: object;
+  structuredData?: PageStructuredData;
 }
 
 export default function PageLayout({ children, title, description, canonicalUrl, structuredData }: PageLayoutProps) {
@@ -27,17 +29,11 @@ export default function PageLayout({ children, title, description, canonicalUrl,
         {/* Twitter */}
         <meta name="twitter:title" content={`${title} | Practice – OrbiPath`} />
         <meta name="twitter:description" content={metaDescription} />
-        
-        {/* Structured Data - only add if provided */}
-        {structuredData && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(structuredData)
-            }}
-          />
-        )}
       </Head>
+      
+      {/* Consolidated Structured Data */}
+      <StructuredData pageData={structuredData} />
+      
       <div className="flex flex-col items-center p-6 text-gray-800 w-full">
         <div className="max-w-2xl w-full bg-white p-6 shadow-md rounded">
           {children}

@@ -28,45 +28,31 @@ export default function SemesterPage({ course, university }: InferGetStaticProps
     const description = `Explore ${course.name} at ${university.name}. Access semester-wise study materials, practice questions, and comprehensive learning resources.`;
     const canonicalUrl = `https://practice.orbipath.com/${university.id}/${course.id}`;
     
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "Course",
-        "name": course.name,
-        "description": description,
-        "url": canonicalUrl,
-        "publisher": {
-            "@type": "Organization",
-            "name": "OrbiPath",
-            "url": "https://orbipath.com"
-        },
-        "provider": {
-            "@type": "EducationalOrganization",
-            "name": university.name,
-            "url": `https://practice.orbipath.com/${university.id}`
-        },
-        "mainEntity": {
-            "@type": "ItemList",
-            "name": `${course.name} Semesters`,
-            "description": `Available semesters for ${course.name}`,
-            "numberOfItems": course.semesters.length,
-            "itemListElement": course.semesters.map((semester, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "item": {
-                    "@type": "Course",
-                    "name": semester.name,
-                    "url": `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}`
-                }
-            }))
-        }
-    };
-    
     return (
         <PageLayout 
             title={course.name}
             description={description}
             canonicalUrl={canonicalUrl}
-            structuredData={structuredData}
+            structuredData={{
+                type: 'Course',
+                name: course.name,
+                description: description,
+                url: canonicalUrl,
+                breadcrumbs: [
+                    { name: 'Home', url: 'https://practice.orbipath.com', position: 1 },
+                    { name: university.name, url: `https://practice.orbipath.com/${university.id}`, position: 2 },
+                    { name: course.name, url: canonicalUrl, position: 3 }
+                ],
+                courseData: {
+                    provider: { name: university.name, url: `https://practice.orbipath.com/${university.id}` }
+                },
+                itemList: course.semesters.map((semester, index) => ({
+                    name: semester.name,
+                    url: `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}`,
+                    position: index + 1,
+                    type: 'Course'
+                }))
+            }}
         >
             <h1 className="text-2xl font-bold mb-6 text-center">{course.name}</h1>
             <h2 className="text-xl font-semibold mb-4">Select a Semester</h2>

@@ -7,6 +7,7 @@ import { questionBank } from "../../../../../../data/questionBank";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
+import StructuredData from "../../../../../../components/StructuredData";
 
 type Module = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0]['modules'][0];
 type Subject = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0];
@@ -87,34 +88,30 @@ export default function ModulePage({
         {/* Twitter */}
         <meta name="twitter:title" content={`${currentModule.name} | Practice – OrbiPath`} />
         <meta name="twitter:description" content={description} />
-        
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Course",
-              "name": currentModule.name,
-              "description": description,
-              "url": canonicalUrl,
-              "publisher": {
-                "@type": "Organization",
-                "name": "OrbiPath",
-                "url": "https://orbipath.com"
-              },
-              "provider": {
-                "@type": "Organization",
-                "name": university.name
-              },
-              "coursePrerequisites": {
-                "@type": "Course",
-                "name": subject.name
-              }
-            })
-          }}
-        />
       </Head>
+      
+      {/* Consolidated Structured Data */}
+      <StructuredData 
+        pageData={{
+          type: 'Course',
+          name: currentModule.name,
+          description: description,
+          url: canonicalUrl,
+          breadcrumbs: [
+            { name: 'Home', url: 'https://practice.orbipath.com', position: 1 },
+            { name: university.name, url: `https://practice.orbipath.com/${university.id}`, position: 2 },
+            { name: course.name, url: `https://practice.orbipath.com/${university.id}/${course.id}`, position: 3 },
+            { name: semester.name, url: `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}`, position: 4 },
+            { name: subject.name, url: `https://practice.orbipath.com/${university.id}/${course.id}/${semester.id}/${subject.id}`, position: 5 },
+            { name: currentModule.name, url: canonicalUrl, position: 6 }
+          ],
+          courseData: {
+            provider: { name: university.name, url: `https://practice.orbipath.com/${university.id}` },
+            prerequisites: subject.name
+          }
+        }}
+      />
+      
       <div className="flex text-gray-800 w-full">
         <Sidebar
           modules={subject.modules}
