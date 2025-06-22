@@ -13,11 +13,32 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<{ university: University }> = async ({ params }) => {
-  const university = questionBank.universities.find((u) => u.id === params?.universityId);
-  if (!university) {
+  try {
+    const university = questionBank.universities.find((u) => u.id === params?.universityId);
+    if (!university) {
+      return { notFound: true };
+    }
+    
+    // Only return essential data to reduce payload size
+    const universityData = {
+      id: university.id,
+      name: university.name,
+      courses: university.courses.map(course => ({
+        id: course.id,
+        name: course.name
+      }))
+    };
+    
+    return { 
+      props: { 
+        university: universityData as University 
+      },
+      revalidate: 3600 // Revalidate every hour
+    };
+  } catch (error) {
+    console.error('Error in getStaticProps:', error);
     return { notFound: true };
   }
-  return { props: { university } };
 };
 
 export default function CoursePage({ university }: InferGetStaticPropsType<typeof getStaticProps>) {

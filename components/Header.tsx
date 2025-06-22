@@ -15,11 +15,11 @@ export default function Header() {
   return (
     <div className="bg-gray-100 p-4 shadow-md flex items-center justify-between sticky top-0 z-50">
       {/* Breadcrumb Navigation */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 text-gray-800">
         {/* Home Link */}
         <Link href="/" className="flex items-center space-x-2 text-blue-500 hover:underline">
             <FaHome className="w-6 h-6" />
-            <span>Home</span>
+            <span className="text-gray-800">Home</span>
         </Link>
 
         {/* Previous Route for Mobile */}
@@ -42,7 +42,7 @@ export default function Header() {
               <span key={index} className="flex items-center space-x-2">
                 <span className="mx-2">/</span>
                 {index === pathSegments.length - 1 ? (
-                  <span className="text-gray-600 capitalize">{segment.replace(/-/g, " ")}</span>
+                  <span className="text-gray-800 capitalize">{segment.replace(/-/g, " ")}</span>
                 ) : (
                   <Link href={href} className="text-blue-500 hover:underline capitalize">
                     {segment.replace(/-/g, " ")}

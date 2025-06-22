@@ -19,37 +19,57 @@ export const getStaticProps: GetStaticProps<{ universities: University[] }> = as
 };
 
 export default function Home({ universities }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const structuredData = {
+  const webSiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "OrbiPath Practice",
     "description": "Practice questions and study materials for university courses",
     "url": "https://practice.orbipath.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://practice.orbipath.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    },
     "publisher": {
       "@type": "Organization",
       "name": "OrbiPath",
       "url": "https://orbipath.com"
-    },
-    "mainEntity": {
-      "@type": "ItemList",
-      "name": "University Question Banks",
-      "description": "Available university question banks for practice",
-      "numberOfItems": universities.length,
-      "itemListElement": universities.map((university, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "item": {
-          "@type": "EducationalOrganization",
-          "name": university.name,
-          "url": `https://practice.orbipath.com/${university.id}`
-        }
-      }))
     }
+  };
+
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OrbiPath",
+    "url": "https://orbipath.com",
+    "description": "Educational technology platform providing practice questions and study materials",
+    "sameAs": [
+      "https://practice.orbipath.com"
+    ]
+  };
+
+  const itemListData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "University Question Banks",
+    "numberOfItems": universities.length,
+    "itemListElement": universities.map((university, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "EducationalOrganization",
+        "name": university.name,
+        "url": `https://practice.orbipath.com/${university.id}`
+      }
+    }))
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://practice.orbipath.com"
+      }
+    ]
   };
 
   return (
@@ -58,7 +78,25 @@ export default function Home({ universities }: InferGetStaticPropsType<typeof ge
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData)
+            __html: JSON.stringify(webSiteData)
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationData)
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(itemListData)
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbData)
           }}
         />
       </Head>
