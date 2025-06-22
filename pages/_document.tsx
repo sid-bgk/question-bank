@@ -25,23 +25,6 @@ export default function Document() {
         {/* Additional SEO meta tags */}
         <meta name="author" content="OrbiPath" />
         <meta name="keywords" content="university, practice questions, study materials, education, courses, modules" />
-        
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "EducationalOrganization",
-              "name": "OrbiPath Practice",
-              "description": "Practice questions and study materials for university courses",
-              "url": "https://practice.orbipath.com",
-              "sameAs": [
-                "https://practice.orbipath.com"
-              ]
-            })
-          }}
-        />
       </Head>
       <body className="antialiased">
         <Main />
