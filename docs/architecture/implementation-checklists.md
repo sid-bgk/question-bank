@@ -26,13 +26,13 @@
 
 ### 3. Exam Runner Screen
 
-- [ ] Create `ExamRunner.tsx` component
-- [ ] Load shuffled questions using deterministic `exam-seed`
-- [ ] Render questions with `QuestionView`
-- [ ] Implement navigation (next, previous, direct jump)
-- [ ] Store answers and palette state in `examSession`
-- [ ] Implement timer based on `examStartAt`
-- [ ] Add controls: Mark for Review, Clear Response, Submit Section
+- [x] Create `ExamRunner.tsx` component
+- [x] Load shuffled questions using deterministic `exam-seed`
+- [x] Render questions with `QuestionView`
+- [x] Implement navigation (next, previous, direct jump)
+- [x] Store answers and palette state in `examSession`
+- [x] Implement timer based on `examStartAt`
+- [x] Add controls: Mark for Review, Clear Response, Submit Section
 - [ ] Match UI to design reference
 
 ### 4. Question View Component
