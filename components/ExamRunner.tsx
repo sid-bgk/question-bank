@@ -2,6 +2,7 @@ import React, { useEffect, useState, memo } from "react";
 import { ArrowLeftIcon, ArrowRightIcon, BookmarkIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { questionBank } from "../data/questionBank";
 import { Pie } from 'react-chartjs-2';
+import type { ChartData, ChartOptions } from 'chart.js';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import {
   Chart as ChartJS,
@@ -22,24 +23,6 @@ interface MCQ {
   explanation?: string;
 }
 
-// Utility: Deterministic shuffle using a seed
-function seededShuffle<T>(array: T[], seed: number): T[] {
-  let m = array.length, t: T, i: number;
-  let s = seed;
-  const seededRandom = () => {
-    s = Math.sin(s) * 10000;
-    return s - Math.floor(s);
-  };
-  const arr = [...array];
-  while (m) {
-    i = Math.floor(seededRandom() * m--);
-    t = arr[m];
-    arr[m] = arr[i];
-    arr[i] = t;
-  }
-  return arr;
-}
-
 // Utility: Fetch MCQs for a given path (from localStorage)
 function getMCQsFromConfig(): MCQ[] {
   try {
@@ -53,19 +36,20 @@ function getMCQsFromConfig(): MCQ[] {
     }
     // fallback: fetch all questions for section (legacy)
     const { university, course, semester, subject, module } = config;
-    const universityObj = questionBank.universities.find((u: any) => u.id === university);
+    const universityObj = questionBank.universities.find((u: { id: string }) => u.id === university);
     if (!universityObj) return [];
-    const courseObj = universityObj.courses.find((c: any) => c.id === course);
+    const courseObj = universityObj.courses.find((c: { id: string }) => c.id === course);
     if (!courseObj) return [];
-    const semesterObj = courseObj.semesters.find((s: any) => s.id === semester);
+    const semesterObj = courseObj.semesters.find((s: { id: string }) => s.id === semester);
     if (!semesterObj) return [];
-    const subjectObj = semesterObj.subjects.find((su: any) => su.id === subject);
+    const subjectObj = semesterObj.subjects.find((su: { id: string }) => su.id === subject);
     if (!subjectObj) return [];
-    const moduleObj = subjectObj.modules.find((m: any) => m.id === module);
+    const moduleObj = subjectObj.modules.find((m: { id: string }) => m.id === module);
     if (!moduleObj) return [];
     // Only allow valid keys
     if (!['mcq', 'brief', 'case_study'].includes(sectionKey)) sectionKey = 'mcq';
-    return (moduleObj as any)[sectionKey] || [];
+    const sectionQuestions = (moduleObj as Record<string, unknown>)[sectionKey];
+    return Array.isArray(sectionQuestions) ? (sectionQuestions as MCQ[]) : [];
   } catch {
     return [];
   }
@@ -85,7 +69,7 @@ function loadExamSession(questionsLen: number, sectionKey: string): ExamSessionA
     if (session && Array.isArray(session.answers)) {
       // Build array of length questionsLen, filling with answers for this section at correct indices (0-based)
       const arr: ExamSessionAnswer[] = Array.from({length: questionsLen}, () => ({} as ExamSessionAnswer));
-      session.answers.forEach((a: any) => {
+      session.answers.forEach((a: ExamSessionAnswer) => {
         if (a.sectionKey === sectionKey && typeof a.questionIndex === 'number' && a.questionIndex >= 0 && a.questionIndex < questionsLen) {
           arr[a.questionIndex] = a;
         }
@@ -104,7 +88,7 @@ function saveExamSession(sectionKey: string, answers: ExamSessionAnswer[]) {
     if (!Array.isArray(session.answers)) session.answers = [];
   } catch {}
   // Remove old answers for this section
-  session.answers = (session.answers || []).filter((a: any) => a.sectionKey !== sectionKey);
+  session.answers = (session.answers || []).filter((a: ExamSessionAnswer) => a.sectionKey !== sectionKey);
   // Add new answers for this section
   session.answers = [...session.answers, ...answers];
   localStorage.setItem('examSession', JSON.stringify(session));
@@ -129,34 +113,6 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
   }
   const durationSec = durationMin * 60;
 
-  // Helper: get section duration from exam-config (in minutes)
-  function getSectionDuration(): number {
-    try {
-      const config = JSON.parse(localStorage.getItem("exam-config") || "null");
-      const sectionKey = localStorage.getItem("currentSection") || "mcq";
-      console.log('[ExamRunner] exam-config:', config);
-      console.log('[ExamRunner] currentSection:', sectionKey);
-      if (!config) return 30;
-      // Find the section config for the current section
-      if (Array.isArray(config.sections)) {
-        const section = config.sections.find((s: any) => s.sectionKey === sectionKey);
-        console.log('[ExamRunner] section config:', section);
-        if (section && section.duration) {
-          console.log('[ExamRunner] section.duration:', section.duration);
-          return section.duration;
-        }
-      }
-      // Fallback to global duration
-      if (config.duration) {
-        console.log('[ExamRunner] global duration:', config.duration);
-        return config.duration;
-      }
-    } catch (e) {
-      console.log('[ExamRunner] getSectionDuration error:', e);
-    }
-    return 30;
-  }
-
   // Helper: get all available sections for the current module from exam-config
   function getAvailableSections(): { sectionKey: string; label: string }[] {
     try {
@@ -166,7 +122,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
         { sectionKey: 'brief', label: 'Briefs' },
         { sectionKey: 'case_study', label: 'Case Study' },
       ];
-      return config.sections.map((s: any) => {
+      return config.sections.map((s: { sectionKey: string }) => {
         let label = s.sectionKey;
         if (label === 'mcq') label = 'MCQ';
         if (label === 'brief') label = 'Briefs';
@@ -182,41 +138,8 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     }
   }
 
-  // Helper: get questions for a given sectionKey
-  function getQuestionsForSection(sectionKey: string): MCQ[] {
-    try {
-      const config = JSON.parse(localStorage.getItem("exam-config") || "null");
-      if (!config) return [];
-      const { university, course, semester, subject, module } = config;
-      const universityObj = questionBank.universities.find((u: any) => u.id === university);
-      if (!universityObj) return [];
-      const courseObj = universityObj.courses.find((c: any) => c.id === course);
-      if (!courseObj) return [];
-      const semesterObj = courseObj.semesters.find((s: any) => s.id === semester);
-      if (!semesterObj) return [];
-      const subjectObj = semesterObj.subjects.find((su: any) => su.id === subject);
-      if (!subjectObj) return [];
-      const moduleObj = subjectObj.modules.find((m: any) => m.id === module);
-      if (!moduleObj) return [];
-      return (moduleObj as any)[sectionKey] || [];
-    } catch {
-      return [];
-    }
-  }
-  // Helper: get answers for a given section (by index range)
-  function getAnswersForSection(sectionIdx: number, sectionQuestionsLen: number): ExamSessionAnswer[] {
-    // All answers for all sections are stored sequentially in examSession, so we need to compute the offset
-    // We'll assume sections are always in the same order as getAvailableSections()
-    let offset = 0;
-    for (let i = 0; i < sectionIdx; i++) {
-      const sec = getAvailableSections()[i];
-      offset += getQuestionsForSection(sec.sectionKey).length;
-    }
-    return answers.slice(offset, offset + sectionQuestionsLen);
-  }
-
   // Track sectionKey in state to force rerender on change
-  const [sectionKey, setSectionKey] = useState(() => localStorage.getItem("currentSection") || "mcq");
+  const [sectionKey, setSectionKey] = useState<string>(() => localStorage.getItem("currentSection") || "mcq");
 
   // Get or set exam start time
   let startAt = localStorage.getItem("examStartAt");
@@ -233,8 +156,6 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       const startTime = new Date(startAt as string).getTime();
       const elapsed = Math.floor((now - startTime) / 1000);
       const rem = durationSec - elapsed;
-      // setRemaining(rem > 0 ? rem : 0); // Removed
-      // setExpired(rem <= 0); // Removed
       if (rem <= 0 && interval) {
         clearInterval(interval);
       }
@@ -244,10 +165,10 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, []);
+  }, [durationSec, startAt]);
 
   // --- Modal snapshot state ---
-  const [modalStats, setModalStats] = useState<any>(null);
+  const [modalStats, setModalStats] = useState<null | Record<string, unknown>>(null);
 
   // When opening modal, capture a snapshot of stats
   const openFinishModal = () => {
@@ -256,7 +177,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     const attempted = answers.filter(ans => ans.selectedOption).length;
     const markedForReview = answers.filter(ans => ans.markedForReview).length;
     const unattempted = totalQuestions - attempted;
-    const pieData = {
+    const pieData: ChartData<'pie', number[], unknown> = {
       labels: ['Attempted', 'Marked for Review', 'Unattempted'],
       datasets: [
         {
@@ -270,7 +191,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
         },
       ],
     };
-    const pieOptions = {
+    const pieOptions: ChartOptions<'pie'> = {
       plugins: {
         legend: { display: false },
       },
@@ -278,12 +199,16 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       responsive: true,
       maintainAspectRatio: false,
     };
-    const sectionSummary = getAvailableSections().map((s, idx) => {
-      const sectionQuestions = getQuestionsForSection(s.sectionKey);
-      const sectionAnswers = getAnswersForSection(idx, sectionQuestions.length);
+    // Section summary for modal (accurate per section)
+    const sectionSummary: SectionSummary[] = getAvailableSections().map((s) => {
+      // Use selected questions from examQuestions in localStorage
+      const examQuestions = JSON.parse(localStorage.getItem("examQuestions") || "null");
+      const sectionQuestions = Array.isArray(examQuestions?.[s.sectionKey]) ? examQuestions[s.sectionKey] : [];
+      const sectionAnswers = loadExamSession(sectionQuestions.length, s.sectionKey);
       const attempted = sectionAnswers.filter(ans => ans && ans.selectedOption).length;
       const review = sectionAnswers.filter(ans => ans && ans.markedForReview).length;
-      const unattempted = sectionQuestions.length - attempted;
+      const unattempted = sectionAnswers.filter(ans => !ans.selectedOption && !ans.markedForReview).length;
+      // Status: Completed if all attempted or unattempted is 0, else In Progress
       const status = unattempted === 0 ? 'Completed' : 'In Progress';
       return {
         name: s.label,
@@ -322,19 +247,13 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     return <div className="p-8 text-center text-gray-500">No questions found for this section.</div>;
   }
 
-  // Format remaining time as HH:MM:SS
-  function formatTime(sec: number) {
-    const h = Math.floor(sec / 3600);
-    const m = Math.floor((sec % 3600) / 60);
-    const s = sec % 60;
-    return [h, m, s].map(n => n.toString().padStart(2, '0')).join(":");
-  }
+  // Removed unused formatTime
 
   const q = questions[current];
   const a = answers[current] || {};
 
   // Palette state helpers
-  const getPaletteState = (idx: number) => {
+  const getPaletteState = (idx: number): 'review' | 'attempted' | 'unattempted' => {
     const ans = answers[idx];
     if (ans?.markedForReview) return 'review';
     if (ans?.selectedOption) return 'attempted';
@@ -366,8 +285,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     });
   };
 
-  // Attempted count
-  const attemptedCount = answers.filter(ans => ans.selectedOption).length;
+  // Attempted count (removed unused variable)
 
   // Section dropdown change handler
   function handleSectionChange(e: React.ChangeEvent<HTMLSelectElement>) {
@@ -384,7 +302,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
         <>
           <div className="text-xl font-bold text-gray-800 mb-2">Select an option</div>
           <div className="flex flex-col gap-4 mb-4">
-            {q.options && Array.isArray(q.options) ? q.options.map((opt: string, idx: number) => (
+            {q.options && Array.isArray(q.options) ? q.options.map((opt: string) => (
               <label key={opt} className={`flex items-center gap-3 cursor-pointer select-none border border-gray-200 rounded-lg px-4 py-3 bg-gray-50 hover:bg-blue-50 transition-colors ${a.selectedOption === opt ? 'ring-2 ring-blue-600 border-blue-600' : ''}`}>
                 <input type="radio" name="option" className="accent-blue-600 h-5 w-5" checked={a.selectedOption === opt} onChange={() => handleSelectOption(opt)} disabled={expired} />
                 <span className="text-base text-gray-700">{opt}</span>
@@ -406,8 +324,8 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       );
     } else if (sectionKey === 'case_study') {
       // Type guard for case_study
-      const title = typeof q === 'object' && 'title' in q ? (q as any).title : '';
-      const description = typeof q === 'object' && 'description' in q ? (q as any).description : '';
+      const title = typeof q === 'object' && 'title' in q ? (q as { title: string }).title : '';
+      const description = typeof q === 'object' && 'description' in q ? (q as { description: string }).description : '';
       return (
         <div className="flex flex-col gap-4 mb-4">
           <div className="text-xl font-bold text-gray-800 mb-2">Case Study</div>
@@ -420,54 +338,27 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     }
   }
 
-  // Calculate summary for modal
-  const totalQuestions = questions.length;
-  const attempted = answers.filter(ans => ans.selectedOption).length;
-  const markedForReview = answers.filter(ans => ans.markedForReview).length;
-  const unattempted = totalQuestions - attempted;
-  const pieData = {
-    labels: ['Attempted', 'Marked for Review', 'Unattempted'],
-    datasets: [
-      {
-        data: [attempted, markedForReview, unattempted],
-        backgroundColor: [
-          '#2563eb', // blue-600
-          '#f59e42', // yellow-400
-          '#e5e7eb', // gray-200
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
-  const pieOptions = {
-    plugins: {
-      legend: { display: false },
-    },
-    cutout: '70%',
-    responsive: true,
-    maintainAspectRatio: false,
-  };
-
-  // Section summary for modal (accurate per section)
-  const sectionSummary = getAvailableSections().map((s, idx) => {
-    const sectionQuestions = getQuestionsForSection(s.sectionKey);
-    const sectionAnswers = getAnswersForSection(idx, sectionQuestions.length);
-    const attempted = sectionAnswers.filter(ans => ans && ans.selectedOption).length;
-    const review = sectionAnswers.filter(ans => ans && ans.markedForReview).length;
-    const unattempted = sectionQuestions.length - attempted;
-    // Status: Completed if all attempted or unattempted is 0, else In Progress
-    const status = unattempted === 0 ? 'Completed' : 'In Progress';
-    return {
-      name: s.label,
-      status,
-      attempted,
-      review,
-      unattempted,
-    };
-  });
+  // Removed unused modal summary variables
 
   // Memoized modal to prevent unnecessary re-renders
-  const FinishTestModal = memo(function FinishTestModal({ totalQuestions, attempted, markedForReview, unattempted, pieData, pieOptions, sectionSummary, onClose }: any) {
+  interface SectionSummary {
+    name: string;
+    status: string;
+    attempted: number;
+    review: number;
+    unattempted: number;
+  }
+  interface FinishTestModalProps {
+    totalQuestions: number;
+    attempted: number;
+    markedForReview: number;
+    unattempted: number;
+    pieData: ChartData<'pie', number[], unknown>;
+    pieOptions: ChartOptions<'pie'>;
+    sectionSummary: SectionSummary[];
+    onClose: () => void;
+  }
+  const FinishTestModal = memo(function FinishTestModal({ totalQuestions, attempted, markedForReview, unattempted, pieData, pieOptions, sectionSummary, onClose }: FinishTestModalProps) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
         <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-8 relative">
@@ -510,7 +401,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
                 </tr>
               </thead>
               <tbody>
-                {sectionSummary.map((s: any, idx: number) => (
+                {sectionSummary.map((s: SectionSummary, idx: number) => (
                   <tr key={s.name} className="border-t text-gray-900">
                     <td className="py-2 px-3">{idx + 1}</td>
                     <td className="py-2 px-3">{s.name}</td>
@@ -613,7 +504,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       </div>
       {/* Attempted Count: Centered below header */}
       <div className="w-full flex justify-center mt-2 mb-2">
-        <div className="text-sm text-gray-500 font-semibold bg-white bg-opacity-80 px-4 py-1 rounded shadow-sm">Attempted {attemptedCount}/{questions.length}</div>
+        <div className="text-sm text-gray-500 font-semibold bg-white bg-opacity-80 px-4 py-1 rounded shadow-sm">Attempted {answers.filter(ans => ans.selectedOption).length}/{questions.length}</div>
       </div>
       {/* Main Content */}
       <div className="flex flex-1 items-stretch overflow-hidden min-h-0">
@@ -636,7 +527,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
                 <div className="text-lg font-bold text-gray-800 mb-2">Question {current + 1}</div>
                 <div className="text-base text-gray-700 mb-6 whitespace-pre-line">{
                   sectionKey === 'case_study'
-                    ? (typeof q === 'object' && 'title' in q ? (q as any).title : '')
+                    ? (typeof q === 'object' && 'title' in q ? (q as { title: string }).title : '')
                     : q.question
                 }</div>
                 <label className="inline-flex items-center gap-2 cursor-pointer select-none mb-4">
@@ -676,12 +567,12 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
         >Next</button>
       </div>
       {/* Render modal if open */}
-      {showFinishModal && modalStats && <FinishTestModal {...modalStats} onClose={() => setShowFinishModal(false)} />}
+      {showFinishModal && modalStats && <FinishTestModal {...(modalStats as unknown as FinishTestModalProps)} onClose={() => setShowFinishModal(false)} />}
     </div>
   );
 };
 
 export default ExamRunner;
 
-(ExamRunner as any).hideHeader = true;
-(ExamRunner as any).hideFooter = true; 
+(ExamRunner as unknown as { hideHeader?: boolean }).hideHeader = true;
+(ExamRunner as unknown as { hideFooter?: boolean }).hideFooter = true; 

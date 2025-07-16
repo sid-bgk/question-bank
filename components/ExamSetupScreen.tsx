@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { questionBank } from "../data/questionBank";
+import Link from "next/link";
 
-const SECTION_TYPES = [
-  { key: "mcq", label: "MCQ" },
-  { key: "brief", label: "Briefs" },
-  { key: "case_study", label: "Case Study" },
-];
+interface SectionInput {
+  sectionKey: string;
+  checked: boolean;
+  questionCount: string;
+  marks: string;
+  maxQuestions: number;
+}
 
 interface ExamSetupScreenProps {
   onProceed?: () => void;
@@ -18,51 +21,52 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
   const [semester, setSemester] = useState("");
   const [subject, setSubject] = useState("");
   const [module, setModule] = useState("");
-  const [sectionInputs, setSectionInputs] = useState<any[]>([]);
+  const [sectionInputs, setSectionInputs] = useState<SectionInput[]>([]);
   const [duration, setDuration] = useState("");
   const [durationError, setDurationError] = useState("");
   const [saveMessage, setSaveMessage] = useState("");
-  const [buttonHover, setButtonHover] = useState(false);
 
   // Dynamic dropdown data
   const universities = questionBank.universities || [];
-  const selectedUniversity = universities.find((u: any) => u.id === university);
+  const selectedUniversity = universities.find((u) => u.id === university);
   const courses = selectedUniversity?.courses || [];
-  const selectedCourse = courses.find((c: any) => c.id === course);
+  const selectedCourse = courses.find((c) => c.id === course);
   const semesters = selectedCourse?.semesters || [];
-  const selectedSemester = semesters.find((s: any) => s.id === semester);
+  const selectedSemester = semesters.find((s) => s.id === semester);
   const subjects = selectedSemester?.subjects || [];
-  const selectedSubject = subjects.find((sj: any) => sj.id === subject);
+  const selectedSubject = subjects.find((sj) => sj.id === subject);
   const modules = selectedSubject?.modules || [];
-  const selectedModule = modules.find((m: any) => m.id === module);
+  const selectedModule = modules.find((m) => m.id === module);
 
   // Get available sections for the selected module
-  let dynamicSections: { key: string; label: string; maxQuestions: number }[] = [];
-  if (selectedModule) {
-    if (Array.isArray(selectedModule.mcq) && selectedModule.mcq.length > 0) {
-      dynamicSections.push({ key: "mcq", label: "MCQ", maxQuestions: selectedModule.mcq.length });
+  const dynamicSections = useMemo(() => {
+    const sections: { key: string; label: string; maxQuestions: number }[] = [];
+    if (selectedModule) {
+      if (Array.isArray(selectedModule.mcq) && selectedModule.mcq.length > 0) {
+        sections.push({ key: "mcq", label: "MCQ", maxQuestions: selectedModule.mcq.length });
+      }
+      if (Array.isArray(selectedModule.brief) && selectedModule.brief.length > 0) {
+        sections.push({ key: "brief", label: "Briefs", maxQuestions: selectedModule.brief.length });
+      }
+      if (Array.isArray(selectedModule.case_study) && selectedModule.case_study.length > 0) {
+        sections.push({ key: "case_study", label: "Case Study", maxQuestions: selectedModule.case_study.length });
+      }
     }
-    if (Array.isArray(selectedModule.brief) && selectedModule.brief.length > 0) {
-      dynamicSections.push({ key: "brief", label: "Briefs", maxQuestions: selectedModule.brief.length });
-    }
-    if (Array.isArray(selectedModule.case_study) && selectedModule.case_study.length > 0) {
-      dynamicSections.push({ key: "case_study", label: "Case Study", maxQuestions: selectedModule.case_study.length });
-    }
-  }
+    return sections;
+  }, [selectedModule]);
 
   // Sync sectionInputs with dynamicSections (prefill with maxQuestions and marks=1, checked by default)
   useEffect(() => {
     setSectionInputs(
       dynamicSections.map(section => ({
-        sectionKey: section!.key,
+        sectionKey: section.key,
         checked: true,
-        questionCount: String(section!.maxQuestions),
+        questionCount: String(section.maxQuestions),
         marks: "1",
-        maxQuestions: section!.maxQuestions,
-        // shuffle removed
+        maxQuestions: section.maxQuestions,
       }))
     );
-  }, [module]);
+  }, [module, dynamicSections]);
 
   // On mount, pre-fill from exam-config if exists
   useEffect(() => {
@@ -85,7 +89,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
     setSectionInputs(prev => {
       const updated = [...prev];
       if (field === "checked") {
-        updated[index] = { ...updated[index], checked: value };
+        updated[index] = { ...updated[index], checked: Boolean(value) };
       } else {
         updated[index] = { ...updated[index], [field]: value };
       }
@@ -174,7 +178,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
       localStorage.setItem("exam-config", JSON.stringify(config));
       setSaveMessage("Exam setup saved successfully!");
       if (onProceed) onProceed();
-    } catch (e) {
+    } catch {
       setSaveMessage("Failed to save exam setup.");
     }
   };
@@ -184,41 +188,46 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
 
   return (
     <div className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+      <div className="absolute top-6 left-6">
+        <Link href="/" className="inline-block px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          ← Back to Home
+        </Link>
+      </div>
       {step === 1 && (
         <div className="bg-white p-6 rounded-lg shadow-xl min-w-[340px] max-w-[400px] flex flex-col text-gray-900">
           <h2 className="mt-0 mb-4 font-extrabold text-xl tracking-tight text-blue-900">Exam Setup</h2>
           <label className="block font-semibold mb-1 text-sm">University</label>
           <select value={university} onChange={e => setUniversity(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400">
             <option value="">Select University</option>
-            {universities.map((u: any) => (
+            {universities.map((u: { id: string; name: string }) => (
               <option key={u.id} value={u.id}>{u.name}</option>
             ))}
           </select>
           <label className="block font-semibold mb-1 text-sm">Course</label>
           <select value={course} onChange={e => setCourse(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!university}>
             <option value="">Select Course</option>
-            {courses.map((c: any) => (
+            {courses.map((c: { id: string; name: string }) => (
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
           </select>
           <label className="block font-semibold mb-1 text-sm">Semester</label>
           <select value={semester} onChange={e => setSemester(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!course}>
             <option value="">Select Semester</option>
-            {semesters.map((s: any) => (
+            {semesters.map((s: { id: string; name: string }) => (
               <option key={s.id} value={s.id}>{s.name}</option>
             ))}
           </select>
           <label className="block font-semibold mb-1 text-sm">Subject</label>
           <select value={subject} onChange={e => setSubject(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!semester}>
             <option value="">Select Subject</option>
-            {subjects.map((sj: any) => (
+            {subjects.map((sj: { id: string; name: string }) => (
               <option key={sj.id} value={sj.id}>{sj.name}</option>
             ))}
           </select>
           <label className="block font-semibold mb-1 text-sm">Module</label>
           <select value={module} onChange={e => setModule(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-4 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!subject}>
             <option value="">Select Module</option>
-            {modules.map((m: any) => (
+            {modules.map((m: { id: string; name: string }) => (
               <option key={m.id} value={m.id}>{m.name}</option>
             ))}
           </select>
@@ -238,29 +247,29 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
             <div className="mb-4 text-gray-500 text-sm">No sections available for this module.</div>
           )}
           {dynamicSections.map((section, idx) => (
-            <div key={section!.key} className="mb-4 flex flex-col gap-1">
+            <div key={section.key} className="mb-4 flex flex-col gap-1">
               <div className="flex items-center mb-1">
                 <input
                   type="checkbox"
-                  checked={sectionInputs[idx]?.checked}
+                  checked={Boolean(sectionInputs[idx]?.checked)}
                   onChange={e => handleSectionInputChange(idx, "checked", e.target.checked)}
                   className="mr-2 h-4 w-4 accent-blue-600"
                 />
-                <span className="font-bold text-base text-gray-900">{section!.label}</span>
+                <span className="font-bold text-base text-gray-900">{section.label}</span>
               </div>
               <div className="flex items-center gap-2 ml-6 text-sm">
                 <label className="font-medium text-gray-900">Questions</label>
                 <input
                   type="number"
                   min={1}
-                  max={section!.maxQuestions}
+                  max={section.maxQuestions}
                   value={sectionInputs[idx]?.questionCount}
                   onChange={e => handleSectionInputChange(idx, "questionCount", e.target.value)}
                   className="w-16 px-2 py-1 text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
                   disabled={!sectionInputs[idx]?.checked}
-                  placeholder={`Max ${section!.maxQuestions}`}
+                  placeholder={`Max ${section.maxQuestions}`}
                 />
-                <span className="text-gray-500 text-xs">/ {section!.maxQuestions}</span>
+                <span className="text-gray-500 text-xs">/ {section.maxQuestions}</span>
                 <label className="font-medium text-gray-900 ml-2">Marks</label>
                 <input
                   type="number"

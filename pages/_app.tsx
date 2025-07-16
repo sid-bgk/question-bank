@@ -5,6 +5,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  // Use type assertion to extend NextPage with optional static properties
+  type NextPageWithLayout = typeof Component & { hideHeader?: boolean; hideFooter?: boolean };
+  const Comp = Component as NextPageWithLayout;
   return (
     <>
       <Head>
@@ -12,11 +15,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Practice questions and study materials for university courses" />
       </Head>
       <div className="flex flex-col min-h-screen bg-gray-50">
-        {!(Component as any).hideHeader && <Header />}
+        {!Comp.hideHeader && <Header />}
         <main className="flex-grow flex-shrink-0 flex overflow-hidden">
           <Component {...pageProps} />
         </main>
-        {!(Component as any).hideFooter && <Footer />}
+        {!Comp.hideFooter && <Footer />}
       </div>
     </>
   );

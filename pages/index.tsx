@@ -37,6 +37,11 @@ export default function Home({ universities }: InferGetStaticPropsType<typeof ge
         }))
       }}
     >
+      <div className="flex justify-center mb-8">
+        <Link href="/exam" className="inline-block px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded shadow hover:bg-green-700 transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+          Go to Exam Mode
+        </Link>
+      </div>
       <h1 className="text-2xl font-bold mb-6 text-center">Select a University</h1>
       <div className="grid grid-cols-1 gap-4">
         {universities.map((university) => (

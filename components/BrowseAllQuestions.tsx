@@ -57,7 +57,7 @@ const BrowseAllQuestions: React.FC<BrowseAllQuestionsProps> = ({ questions, answ
                   </div>
                 </div>
                 <div className="flex flex-col gap-2 mb-2">
-                  {q.options.map((opt, i) => {
+                  {q.options.map((opt) => {
                     const isOptCorrect = opt === q.answer;
                     const isUser = opt === a.selectedOption;
                     let color = "bg-gray-100 border-gray-300 text-gray-800";
