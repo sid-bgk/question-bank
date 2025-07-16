@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ExamSetupScreen from "../components/ExamSetupScreen";
 import SectionSelector from "../components/SectionSelector";
 import ExamRunner from "../components/ExamRunner";
+import ResultView from "../components/ResultView";
 
 const getSectionsFromConfig = (config: any) => {
   if (!config || !config.sections) return [];
@@ -15,10 +16,12 @@ const getSectionsFromConfig = (config: any) => {
 };
 
 const ExamPage: React.FC = () => {
-  const [step, setStep] = useState<"setup" | "section" | "exam">("setup");
+  const [step, setStep] = useState<"setup" | "section" | "exam" | "result">("setup");
   const [sections, setSections] = useState<any[]>([]);
 
   const handleSetupProceed = () => {
+    // Reset exam start time for a new exam
+    localStorage.removeItem('examStartAt');
     // After setup, load sections from config and go to section selector
     const config = JSON.parse(localStorage.getItem("exam-config") || "null");
     const sectionList = getSectionsFromConfig(config);
@@ -31,6 +34,11 @@ const ExamPage: React.FC = () => {
     setStep("exam");
   };
 
+  // Handler to go to result view (to be passed to ExamRunner)
+  const handleExamFinish = () => {
+    setStep("result");
+  };
+
   if (step === "setup") {
     return <ExamSetupScreen onProceed={handleSetupProceed} />;
   }
@@ -38,7 +46,22 @@ const ExamPage: React.FC = () => {
     return <SectionSelector sections={sections} onStart={handleSectionStart} />;
   }
   if (step === "exam") {
-    return <ExamRunner />;
+    return <ExamRunner onFinish={handleExamFinish} />;
+  }
+  if (step === "result") {
+    // Placeholder data for now
+    return (
+      <ResultView
+        totalScore={8}
+        maxScore={10}
+        failedQuestions={[
+          { question: "What is 2+2?", userAnswer: "3", correctAnswer: "4" },
+          { question: "Capital of France?", userAnswer: "Berlin", correctAnswer: "Paris" },
+        ]}
+        onRetryFailed={() => {}}
+        onRetakeExam={() => {}}
+      />
+    );
   }
   return null;
 };

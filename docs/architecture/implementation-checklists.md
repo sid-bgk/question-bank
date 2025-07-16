@@ -37,12 +37,12 @@
 
 ### 4. Question View Component
 
-- [ ] Create `QuestionView.tsx` component
-- [ ] Display question and options
-- [ ] Shuffle options deterministically
-- [ ] Implement answer selection, clear, and flag for review
-- [ ] Show state indicators (Attempted, Marked for Review, Unanswered)
-- [ ] Match UI to design reference
+- [x] Create `QuestionView.tsx` component
+- [x] Display question and options
+- [x] Shuffle options deterministically
+- [x] Implement answer selection, clear, and flag for review
+- [x] Show state indicators (Attempted, Marked for Review, Unanswered)
+- [x] Match UI to design reference
 
 ---
 
@@ -50,11 +50,11 @@
 
 ### 5. Test Summary Screen
 
-- [ ] Create `TestSummary.tsx` component
-- [ ] Show attempted, unattempted, marked-for-review counts
-- [ ] Display section-wise breakdown
-- [ ] Add CTAs: Submit Test, Review Answers
-- [ ] Match UI to design reference
+- [x] Create `TestSummary.tsx` component
+- [x] Show attempted, unattempted, marked-for-review counts
+- [x] Display section-wise breakdown
+- [x] Add CTAs: Submit Test, Review Answers
+- [x] Match UI to design reference
 
 ### 6. Result View Screen
 

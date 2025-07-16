@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import { ArrowLeftIcon, ArrowRightIcon, BookmarkIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { questionBank } from "../data/questionBank";
 import { Pie } from 'react-chartjs-2';
@@ -10,6 +10,7 @@ import {
   Legend
 } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
+import Timer from "./Timer";
 
 // MCQ type
 interface MCQ {
@@ -92,13 +93,24 @@ function saveExamSession(answers: ExamSessionAnswer[]) {
   localStorage.setItem('examSession', JSON.stringify({ answers }));
 }
 
-const ExamRunner: React.FC = () => {
+interface ExamRunnerProps {
+  onFinish?: () => void;
+}
+
+const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
   const [questions, setQuestions] = useState<MCQ[]>([]);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<ExamSessionAnswer[]>([]);
-  const [remaining, setRemaining] = useState<number>(0); // in seconds
   const [expired, setExpired] = useState(false);
   const [showFinishModal, setShowFinishModal] = useState(false);
+
+  // Get global duration from config
+  const config = JSON.parse(localStorage.getItem("exam-config") || "null");
+  let durationMin = 30;
+  if (config && typeof config.duration === 'number' && config.duration > 0) {
+    durationMin = config.duration;
+  }
+  const durationSec = durationMin * 60;
 
   // Helper: get section duration from exam-config (in minutes)
   function getSectionDuration(): number {
@@ -189,27 +201,84 @@ const ExamRunner: React.FC = () => {
   // Track sectionKey in state to force rerender on change
   const [sectionKey, setSectionKey] = useState(() => localStorage.getItem("currentSection") || "mcq");
 
-  // Timer effect: always update timer every second
+  // Get or set exam start time
+  let startAt = localStorage.getItem("examStartAt");
+  if (!startAt) {
+    startAt = new Date().toISOString();
+    localStorage.setItem("examStartAt", startAt);
+  }
+
+  // Timer effect: always update timer every second, using global duration
   useEffect(() => {
-    let startAt = localStorage.getItem("examStartAt");
-    if (!startAt) {
-      startAt = new Date().toISOString();
-      localStorage.setItem("examStartAt", startAt);
-    }
-    const config = JSON.parse(localStorage.getItem("exam-config") || "null");
-    const durationMin = config && config.duration ? config.duration : 30;
-    const durationSec = durationMin * 60;
+    let interval: NodeJS.Timeout | null = null;
     function updateTimer() {
-      // startAt is always a string here
-      const elapsed = Math.floor((Date.now() - new Date(startAt as string).getTime()) / 1000);
+      const now = Date.now();
+      const startTime = new Date(startAt as string).getTime();
+      const elapsed = Math.floor((now - startTime) / 1000);
       const rem = durationSec - elapsed;
-      setRemaining(rem > 0 ? rem : 0);
-      setExpired(rem <= 0);
+      // setRemaining(rem > 0 ? rem : 0); // Removed
+      // setExpired(rem <= 0); // Removed
+      if (rem <= 0 && interval) {
+        clearInterval(interval);
+      }
     }
     updateTimer();
-    const interval = setInterval(updateTimer, 1000);
-    return () => clearInterval(interval);
+    interval = setInterval(updateTimer, 1000);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
   }, []);
+
+  // --- Modal snapshot state ---
+  const [modalStats, setModalStats] = useState<any>(null);
+
+  // When opening modal, capture a snapshot of stats
+  const openFinishModal = () => {
+    // Calculate summary for modal (snapshot)
+    const totalQuestions = questions.length;
+    const attempted = answers.filter(ans => ans.selectedOption).length;
+    const markedForReview = answers.filter(ans => ans.markedForReview).length;
+    const unattempted = totalQuestions - attempted;
+    const pieData = {
+      labels: ['Attempted', 'Marked for Review', 'Unattempted'],
+      datasets: [
+        {
+          data: [attempted, markedForReview, unattempted],
+          backgroundColor: [
+            '#2563eb', // blue-600
+            '#f59e42', // yellow-400
+            '#e5e7eb', // gray-200
+          ],
+          borderWidth: 1,
+        },
+      ],
+    };
+    const pieOptions = {
+      plugins: {
+        legend: { display: false },
+      },
+      cutout: '70%',
+      responsive: true,
+      maintainAspectRatio: false,
+    };
+    const sectionSummary = getAvailableSections().map((s, idx) => {
+      const sectionQuestions = getQuestionsForSection(s.sectionKey);
+      const sectionAnswers = getAnswersForSection(idx, sectionQuestions.length);
+      const attempted = sectionAnswers.filter(ans => ans && ans.selectedOption).length;
+      const review = sectionAnswers.filter(ans => ans && ans.markedForReview).length;
+      const unattempted = sectionQuestions.length - attempted;
+      const status = unattempted === 0 ? 'Completed' : 'In Progress';
+      return {
+        name: s.label,
+        status,
+        attempted,
+        review,
+        unattempted,
+      };
+    });
+    setModalStats({ totalQuestions, attempted, markedForReview, unattempted, pieData, pieOptions, sectionSummary });
+    setShowFinishModal(true);
+  };
 
   // When sectionKey changes, reload questions and answers, but do NOT reset timer
   useEffect(() => {
@@ -298,7 +367,7 @@ const ExamRunner: React.FC = () => {
     if (sectionKey === 'mcq') {
       return (
         <>
-          <div className="text-lg font-bold text-gray-800 mb-2">Select an option</div>
+          <div className="text-xl font-bold text-gray-800 mb-2">Select an option</div>
           <div className="flex flex-col gap-4 mb-4">
             {q.options && Array.isArray(q.options) ? q.options.map((opt: string, idx: number) => (
               <label key={opt} className={`flex items-center gap-3 cursor-pointer select-none border border-gray-200 rounded-lg px-4 py-3 bg-gray-50 hover:bg-blue-50 transition-colors ${a.selectedOption === opt ? 'ring-2 ring-blue-600 border-blue-600' : ''}`}>
@@ -307,8 +376,8 @@ const ExamRunner: React.FC = () => {
               </label>
             )) : <div className="text-gray-400">No options available.</div>}
           </div>
-          <button className="text-blue-700 text-sm font-semibold hover:underline flex items-center gap-1" onClick={handleClearResponse} disabled={expired}>
-            <TrashIcon className="w-4 h-4" />
+          <button className="text-blue-700 text-base font-semibold hover:underline flex items-center gap-1" onClick={handleClearResponse} disabled={expired}>
+            <TrashIcon className="w-5 h-5" />
             Clear Response
           </button>
         </>
@@ -316,8 +385,8 @@ const ExamRunner: React.FC = () => {
     } else if (sectionKey === 'brief') {
       return (
         <div className="flex flex-col gap-4 mb-4">
-          <div className="text-lg font-bold text-gray-800 mb-2">Your Answer</div>
-          <textarea className="w-full border border-gray-300 rounded p-2 min-h-[100px]" placeholder="Type your answer here..." disabled={expired} />
+          <div className="text-xl font-bold text-gray-800 mb-2">Your Answer</div>
+          <textarea className="w-full border border-gray-300 rounded p-2 min-h-[100px] text-lg" placeholder="Type your answer here..." disabled={expired} />
         </div>
       );
     } else if (sectionKey === 'case_study') {
@@ -326,9 +395,9 @@ const ExamRunner: React.FC = () => {
       const description = typeof q === 'object' && 'description' in q ? (q as any).description : '';
       return (
         <div className="flex flex-col gap-4 mb-4">
-          <div className="text-lg font-bold text-gray-800 mb-2">Case Study</div>
-          <div className="font-semibold text-blue-900 mb-2">{title}</div>
-          <div className="text-gray-700 mb-2 whitespace-pre-line">{description}</div>
+          <div className="text-xl font-bold text-gray-800 mb-2">Case Study</div>
+          <div className="font-semibold text-blue-900 mb-2 text-lg">{title}</div>
+          <div className="text-gray-700 mb-2 whitespace-pre-line text-lg">{description}</div>
         </div>
       );
     } else {
@@ -382,15 +451,15 @@ const ExamRunner: React.FC = () => {
     };
   });
 
-  // Modal component
-  function FinishTestModal() {
+  // Memoized modal to prevent unnecessary re-renders
+  const FinishTestModal = memo(function FinishTestModal({ totalQuestions, attempted, markedForReview, unattempted, pieData, pieOptions, sectionSummary, onClose }: any) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
         <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-8 relative">
           {/* Close Icon */}
           <button
             className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-            onClick={() => setShowFinishModal(false)}
+            onClick={onClose}
             aria-label="Close"
           >
             <XMarkIcon className="w-6 h-6" />
@@ -426,7 +495,7 @@ const ExamRunner: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                {sectionSummary.map((s, idx) => (
+                {sectionSummary.map((s: any, idx: number) => (
                   <tr key={s.name} className="border-t text-gray-900">
                     <td className="py-2 px-3">{idx + 1}</td>
                     <td className="py-2 px-3">{s.name}</td>
@@ -442,17 +511,19 @@ const ExamRunner: React.FC = () => {
           <div className="flex justify-end gap-4 mt-6">
             <button
               className="px-6 py-2 bg-red-600 text-white font-bold rounded hover:bg-red-700 transition-colors"
-              onClick={() => {/* TODO: End test logic here */}}
+              onClick={() => {
+                if (onFinish) onFinish();
+              }}
             >Yes, End Test</button>
             <button
               className="px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors"
-              onClick={() => setShowFinishModal(false)}
+              onClick={onClose}
             >No, Back to Test</button>
           </div>
         </div>
       </div>
     );
-  }
+  });
 
   return (
     <div className="w-full h-screen flex flex-col bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
@@ -517,8 +588,12 @@ const ExamRunner: React.FC = () => {
         </div>
         {/* Right: Timer and Finish Test */}
         <div className="flex items-center gap-6 min-w-[260px] justify-end ml-auto">
-          <span className="font-mono text-gray-700 text-base">Section Time: <span className="font-bold">{formatTime(remaining)}</span></span>
-          <button className="ml-4 px-4 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors" onClick={() => setShowFinishModal(true)} disabled={expired}>Finish Test</button>
+          <span className="font-mono text-gray-700 text-base">
+            Section Time: <span className="font-bold">
+              <Timer durationSec={durationSec} startAt={startAt} onExpire={() => setExpired(true)} />
+            </span>
+          </span>
+          <button className="ml-4 px-4 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors" onClick={openFinishModal}>Finish Test</button>
         </div>
       </div>
       {/* Attempted Count: Centered below header */}
@@ -586,7 +661,7 @@ const ExamRunner: React.FC = () => {
         >Next</button>
       </div>
       {/* Render modal if open */}
-      {showFinishModal && <FinishTestModal />}
+      {showFinishModal && modalStats && <FinishTestModal {...modalStats} onClose={() => setShowFinishModal(false)} />}
     </div>
   );
 };
