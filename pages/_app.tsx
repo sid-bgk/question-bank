@@ -12,11 +12,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Practice questions and study materials for university courses" />
       </Head>
       <div className="flex flex-col min-h-screen bg-gray-50">
-        <Header />
+        {!(Component as any).hideHeader && <Header />}
         <main className="flex-grow flex-shrink-0 flex overflow-hidden">
           <Component {...pageProps} />
         </main>
-        <Footer />
+        {!(Component as any).hideFooter && <Footer />}
       </div>
     </>
   );
