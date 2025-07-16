@@ -10,7 +10,7 @@ interface ResultViewProps {
   totalScore: number;
   maxScore: number;
   failedQuestions: FailedQuestion[];
-  onRetryFailed: () => void;
+  onBrowseAll: () => void;
   onRetakeExam: () => void;
 }
 
@@ -18,7 +18,7 @@ const ResultView: React.FC<ResultViewProps> = ({
   totalScore,
   maxScore,
   failedQuestions,
-  onRetryFailed,
+  onBrowseAll,
   onRetakeExam,
 }) => {
   return (
@@ -47,10 +47,10 @@ const ResultView: React.FC<ResultViewProps> = ({
         </div>
         <div className="flex gap-4 mt-6">
           <button
-            className="px-6 py-2 bg-yellow-500 text-white font-bold rounded hover:bg-yellow-600 transition-colors"
-            onClick={onRetryFailed}
+            className="px-6 py-2 bg-purple-600 text-white font-bold rounded hover:bg-purple-700 transition-colors"
+            onClick={onBrowseAll}
           >
-            Retry Failed Questions
+            Browse All Questions
           </button>
           <button
             className="px-6 py-2 bg-blue-600 text-white font-bold rounded hover:bg-blue-800 transition-colors"

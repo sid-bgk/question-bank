@@ -26,6 +26,28 @@ const ExamPage: React.FC = () => {
     const config = JSON.parse(localStorage.getItem("exam-config") || "null");
     const sectionList = getSectionsFromConfig(config);
     setSections(sectionList);
+
+    // Select only the first N questions for each checked section and store in localStorage
+    if (config && config.sections && config.module) {
+      const { university, course, semester, subject, module } = config;
+      const questionBank = require("../data/questionBank").questionBank;
+      const universityObj = questionBank.universities.find((u: any) => u.id === university);
+      const courseObj = universityObj?.courses.find((c: any) => c.id === course);
+      const semesterObj = courseObj?.semesters.find((s: any) => s.id === semester);
+      const subjectObj = semesterObj?.subjects.find((su: any) => su.id === subject);
+      const moduleObj = subjectObj?.modules.find((m: any) => m.id === module);
+      const examQuestions: Record<string, any[]> = {};
+      if (moduleObj) {
+        config.sections.forEach((section: any) => {
+          if (!section.checked) return;
+          const allQuestions = moduleObj[section.sectionKey] || [];
+          const count = Number(section.questionCount) || 0;
+          examQuestions[section.sectionKey] = allQuestions.slice(0, count);
+        });
+      }
+      localStorage.setItem("examQuestions", JSON.stringify(examQuestions));
+    }
+
     setStep("section");
   };
 
@@ -49,17 +71,65 @@ const ExamPage: React.FC = () => {
     return <ExamRunner onFinish={handleExamFinish} />;
   }
   if (step === "result") {
-    // Placeholder data for now
+    // Load config, answers, and questions from localStorage
+    const config = JSON.parse(localStorage.getItem("exam-config") || "null");
+    const session = JSON.parse(localStorage.getItem("examSession") || "null");
+    const answers = session && Array.isArray(session.answers) ? session.answers : [];
+    const examQuestions = JSON.parse(localStorage.getItem("examQuestions") || "null");
+
+    // Helper to get all questions for all checked sections (from examQuestions)
+    function getAllQuestionsAndMarks() {
+      if (!config || !Array.isArray(config.sections) || !examQuestions) return { questions: [], marks: [] };
+      let questions: any[] = [];
+      let marks: any[] = [];
+      config.sections.forEach((section: any) => {
+        if (!section.checked) return;
+        const sectionQuestions = examQuestions[section.sectionKey] || [];
+        questions = questions.concat(sectionQuestions);
+        marks = marks.concat(Array(sectionQuestions.length).fill(Number(section.marks)));
+      });
+      return { questions, marks };
+    }
+
+    const { questions, marks } = getAllQuestionsAndMarks();
+    const sessionAnswers = Array.isArray(session?.answers) ? session.answers : [];
+    let totalScore = 0;
+    let maxScore = 0;
+    const failedQuestions: any[] = [];
+    let questionIdx = 0;
+    config.sections.forEach((section: any) => {
+      if (!section.checked) return;
+      const sectionQuestions = examQuestions[section.sectionKey] || [];
+      for (let i = 0; i < sectionQuestions.length; i++) {
+        const q = sectionQuestions[i];
+        const mark = Number(section.marks) || 1;
+        maxScore += mark;
+        // Find the answer for this sectionKey and questionIndex
+        const a = sessionAnswers.find((ans: any) => ans.sectionKey === section.sectionKey && ans.questionIndex === i) || {};
+        if (a.selectedOption === q.answer) {
+          totalScore += mark;
+        } else {
+          failedQuestions.push({
+            question: q.question,
+            userAnswer: a.selectedOption || "No answer",
+            correctAnswer: q.answer,
+          });
+        }
+        questionIdx++;
+      }
+    });
+
+    console.log('DEBUG: config', config);
+    console.log('DEBUG: questions', questions);
+    console.log('DEBUG: marks', marks);
+    console.log('DEBUG: answers', answers);
     return (
       <ResultView
-        totalScore={8}
-        maxScore={10}
-        failedQuestions={[
-          { question: "What is 2+2?", userAnswer: "3", correctAnswer: "4" },
-          { question: "Capital of France?", userAnswer: "Berlin", correctAnswer: "Paris" },
-        ]}
-        onRetryFailed={() => {}}
-        onRetakeExam={() => {}}
+        totalScore={totalScore}
+        maxScore={maxScore}
+        failedQuestions={failedQuestions}
+        onBrowseAll={() => {}}
+        onRetakeExam={() => { window.location.reload(); }}
       />
     );
   }

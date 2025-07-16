@@ -59,6 +59,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
         questionCount: String(section!.maxQuestions),
         marks: "1",
         maxQuestions: section!.maxQuestions,
+        // shuffle removed
       }))
     );
   }, [module]);
@@ -253,6 +254,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
                   className="w-14 px-2 py-1 text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
                   disabled={!sectionInputs[idx]?.checked}
                 />
+                {/* Shuffle checkbox removed */}
               </div>
             </div>
           ))}

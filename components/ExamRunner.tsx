@@ -46,6 +46,12 @@ function getMCQsFromConfig(): MCQ[] {
     const config = JSON.parse(localStorage.getItem("exam-config") || "null");
     let sectionKey = localStorage.getItem("currentSection") || "mcq";
     if (!config) return [];
+    // Use only the selected questions from examQuestions
+    const examQuestions = JSON.parse(localStorage.getItem("examQuestions") || "null");
+    if (examQuestions && examQuestions[sectionKey]) {
+      return examQuestions[sectionKey];
+    }
+    // fallback: fetch all questions for section (legacy)
     const { university, course, semester, subject, module } = config;
     const universityObj = questionBank.universities.find((u: any) => u.id === university);
     if (!universityObj) return [];
@@ -66,31 +72,42 @@ function getMCQsFromConfig(): MCQ[] {
 }
 
 interface ExamSessionAnswer {
+  sectionKey: string;
   questionIndex: number;
   selectedOption?: string;
   markedForReview?: boolean;
 }
 
-function loadExamSession(questionsLen: number): ExamSessionAnswer[] {
-  if (typeof window === 'undefined') return Array(questionsLen).fill({});
+function loadExamSession(questionsLen: number, sectionKey: string): ExamSessionAnswer[] {
+  if (typeof window === 'undefined') return Array.from({length: questionsLen}, () => ({} as ExamSessionAnswer));
   try {
     const session = JSON.parse(localStorage.getItem('examSession') || 'null');
     if (session && Array.isArray(session.answers)) {
-      // Ensure array is correct length
-      const arr = Array(questionsLen).fill({});
+      // Build array of length questionsLen, filling with answers for this section at correct indices (0-based)
+      const arr: ExamSessionAnswer[] = Array.from({length: questionsLen}, () => ({} as ExamSessionAnswer));
       session.answers.forEach((a: any) => {
-        if (typeof a === 'object' && typeof a.questionIndex === 'number') {
+        if (a.sectionKey === sectionKey && typeof a.questionIndex === 'number' && a.questionIndex >= 0 && a.questionIndex < questionsLen) {
           arr[a.questionIndex] = a;
         }
       });
       return arr;
     }
   } catch {}
-  return Array(questionsLen).fill({});
+  return Array.from({length: questionsLen}, () => ({} as ExamSessionAnswer));
 }
 
-function saveExamSession(answers: ExamSessionAnswer[]) {
-  localStorage.setItem('examSession', JSON.stringify({ answers }));
+function saveExamSession(sectionKey: string, answers: ExamSessionAnswer[]) {
+  // Merge with existing answers for other sections
+  let session: { answers: ExamSessionAnswer[] } = { answers: [] };
+  try {
+    session = JSON.parse(localStorage.getItem('examSession') || '{"answers":[]}');
+    if (!Array.isArray(session.answers)) session.answers = [];
+  } catch {}
+  // Remove old answers for this section
+  session.answers = (session.answers || []).filter((a: any) => a.sectionKey !== sectionKey);
+  // Add new answers for this section
+  session.answers = [...session.answers, ...answers];
+  localStorage.setItem('examSession', JSON.stringify(session));
 }
 
 interface ExamRunnerProps {
@@ -288,20 +305,18 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       seed = Date.now().toString();
       localStorage.setItem("exam-seed", seed);
     }
-    // Convert seed to number for shuffle
-    const seedNum = parseInt(seed.slice(-6), 10) || 42;
+    // Remove shuffling: use questions as-is from examQuestions
     const mcqs = getMCQsFromConfig();
-    const shuffled = seededShuffle(mcqs, seedNum);
-    setQuestions(shuffled);
-    setAnswers(loadExamSession(shuffled.length));
+    setQuestions(mcqs);
+    setAnswers(loadExamSession(mcqs.length, sectionKey));
     setCurrent(0); // reset to first question
   }, [sectionKey]);
 
   useEffect(() => {
     if (answers.length === questions.length && questions.length > 0) {
-      saveExamSession(answers);
+      saveExamSession(sectionKey, answers);
     }
-  }, [answers, questions.length]);
+  }, [answers, questions.length, sectionKey]);
 
   if (!questions.length) {
     return <div className="p-8 text-center text-gray-500">No questions found for this section.</div>;
@@ -330,21 +345,21 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
   const handleSelectOption = (option: string) => {
     setAnswers(prev => {
       const next = [...prev];
-      next[current] = { ...next[current], questionIndex: current, selectedOption: option };
+      next[current] = { ...next[current], sectionKey, questionIndex: current, selectedOption: option };
       return next;
     });
   };
   const handleMarkForReview = () => {
     setAnswers(prev => {
       const next = [...prev];
-      next[current] = { ...next[current], questionIndex: current, markedForReview: !next[current]?.markedForReview };
+      next[current] = { ...next[current], sectionKey, questionIndex: current, markedForReview: !next[current]?.markedForReview };
       return next;
     });
   };
   const handleClearResponse = () => {
     setAnswers(prev => {
       const next = [...prev];
-      next[current] = { ...next[current], questionIndex: current };
+      next[current] = { ...next[current], sectionKey, questionIndex: current };
       delete next[current].selectedOption;
       delete next[current].markedForReview;
       return next;
