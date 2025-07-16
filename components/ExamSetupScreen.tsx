@@ -64,6 +64,22 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
     );
   }, [module]);
 
+  // On mount, pre-fill from exam-config if exists
+  useEffect(() => {
+    const config = JSON.parse(localStorage.getItem("exam-config") || "null");
+    if (config) {
+      setUniversity(config.university || "");
+      setCourse(config.course || "");
+      setSemester(config.semester || "");
+      setSubject(config.subject || "");
+      setModule(config.module || "");
+      setDuration(config.duration ? String(config.duration) : "");
+      if (Array.isArray(config.sections)) {
+        setSectionInputs(config.sections);
+      }
+    }
+  }, []);
+
   // Update sectionInputs on input/checkbox change
   const handleSectionInputChange = (index: number, field: "questionCount" | "marks" | "checked", value: string | boolean) => {
     setSectionInputs(prev => {

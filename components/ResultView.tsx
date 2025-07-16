@@ -4,6 +4,7 @@ interface FailedQuestion {
   question: string;
   userAnswer: string;
   correctAnswer: string;
+  originalIndex?: number; // Added for original question order
 }
 
 interface ResultViewProps {
@@ -37,7 +38,7 @@ const ResultView: React.FC<ResultViewProps> = ({
             <ul className="divide-y divide-gray-200">
               {failedQuestions.map((fq, idx) => (
                 <li key={idx} className="py-4">
-                  <div className="font-semibold text-gray-800 mb-1">Q{idx + 1}: {fq.question}</div>
+                  <div className="font-semibold text-gray-800 mb-1">Q{fq.originalIndex !== undefined ? fq.originalIndex + 1 : idx + 1}: {fq.question}</div>
                   <div className="text-sm text-gray-600 mb-1">Your Answer: <span className="text-red-600">{fq.userAnswer}</span></div>
                   <div className="text-sm text-gray-600">Correct Answer: <span className="text-green-700">{fq.correctAnswer}</span></div>
                 </li>

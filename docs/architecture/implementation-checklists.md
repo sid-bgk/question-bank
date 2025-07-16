@@ -58,10 +58,11 @@
 
 ### 6. Result View Screen
 
-- [ ] Create `ResultView.tsx` component
-- [ ] Calculate and display total score
-- [ ] List failed (incorrect) questions
-- [ ] Add buttons: Retry Failed Questions, Retake Full Exam
-- [ ] Match UI to design reference
+- [x] Create `ResultView.tsx` component
+- [x] Calculate and display total score
+- [x] List failed (incorrect) questions
+- [x] Add buttons: Browse All Questions (review), Retake Full Exam
+- [x] Match UI to design reference
+- [x] Implement Browse All Questions review screen and integrate into exam flow
 
 ---

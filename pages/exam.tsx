@@ -3,6 +3,7 @@ import ExamSetupScreen from "../components/ExamSetupScreen";
 import SectionSelector from "../components/SectionSelector";
 import ExamRunner from "../components/ExamRunner";
 import ResultView from "../components/ResultView";
+import BrowseAllQuestions from "../components/BrowseAllQuestions";
 
 const getSectionsFromConfig = (config: any) => {
   if (!config || !config.sections) return [];
@@ -16,7 +17,7 @@ const getSectionsFromConfig = (config: any) => {
 };
 
 const ExamPage: React.FC = () => {
-  const [step, setStep] = useState<"setup" | "section" | "exam" | "result">("setup");
+  const [step, setStep] = useState<"setup" | "section" | "exam" | "result" | "browse">("setup");
   const [sections, setSections] = useState<any[]>([]);
 
   const handleSetupProceed = () => {
@@ -113,6 +114,7 @@ const ExamPage: React.FC = () => {
             question: q.question,
             userAnswer: a.selectedOption || "No answer",
             correctAnswer: q.answer,
+            originalIndex: questionIdx,
           });
         }
         questionIdx++;
@@ -128,10 +130,37 @@ const ExamPage: React.FC = () => {
         totalScore={totalScore}
         maxScore={maxScore}
         failedQuestions={failedQuestions}
-        onBrowseAll={() => {}}
-        onRetakeExam={() => { window.location.reload(); }}
+        onBrowseAll={() => setStep("browse")}
+        onRetakeExam={() => {
+          localStorage.removeItem('examSession');
+          localStorage.removeItem('examQuestions');
+          localStorage.removeItem('examStartAt');
+          setStep('setup');
+        }}
       />
     );
+  }
+  if (step === "browse") {
+    // Reconstruct the full questions and answers arrays in the same order as the exam/result
+    const config = JSON.parse(localStorage.getItem("exam-config") || "null");
+    const examQuestions = JSON.parse(localStorage.getItem("examQuestions") || "null");
+    const session = JSON.parse(localStorage.getItem("examSession") || "null");
+    const sessionAnswers = Array.isArray(session?.answers) ? session.answers : [];
+    let allQuestions: any[] = [];
+    let allAnswers: any[] = [];
+    if (config && Array.isArray(config.sections) && examQuestions) {
+      config.sections.forEach((section: any) => {
+        if (!section.checked) return;
+        const sectionQuestions = examQuestions[section.sectionKey] || [];
+        allQuestions = allQuestions.concat(sectionQuestions);
+        for (let i = 0; i < sectionQuestions.length; i++) {
+          // Find the answer for this sectionKey and questionIndex
+          const a = sessionAnswers.find((ans: any) => ans.sectionKey === section.sectionKey && ans.questionIndex === i) || {};
+          allAnswers.push(a);
+        }
+      });
+    }
+    return <BrowseAllQuestions questions={allQuestions} answers={allAnswers} onBack={() => setStep("result")} />;
   }
   return null;
 };
