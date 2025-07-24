@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import ExamSetupScreen from "../components/ExamSetupScreen";
-import SectionSelector from "../components/SectionSelector";
-import ExamRunner from "../components/ExamRunner";
-import ResultView from "../components/ResultView";
-import BrowseAllQuestions from "../components/BrowseAllQuestions";
+import { ExamSetupScreen, SectionSelector, ExamRunner, ResultView, BrowseAllQuestions } from "../components/exam";
 import { questionBank } from "../data/questionBank";
 
 interface SectionConfig {

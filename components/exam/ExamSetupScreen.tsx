@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { questionBank } from "../data/questionBank";
+import { questionBank } from "../../data/questionBank";
 import Link from "next/link";
 
 interface SectionInput {
