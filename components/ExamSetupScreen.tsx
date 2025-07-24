@@ -187,52 +187,52 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
   const canProceedToSection = university && course && semester && subject && module;
 
   return (
-    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
-      <div className="absolute top-6 left-6">
-        <Link href="/" className="inline-block px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 font-sans p-4">
+      <div className="absolute top-4 sm:top-6 left-4 sm:left-6">
+        <Link href="/" className="inline-block px-3 sm:px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm sm:text-base">
           ← Back to Home
         </Link>
       </div>
       {step === 1 && (
-        <div className="bg-white p-6 rounded-lg shadow-xl min-w-[340px] max-w-[400px] flex flex-col text-gray-900">
-          <h2 className="mt-0 mb-4 font-extrabold text-xl tracking-tight text-blue-900">Exam Setup</h2>
-          <label className="block font-semibold mb-1 text-sm">University</label>
-          <select value={university} onChange={e => setUniversity(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400">
+        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-xl w-full max-w-[400px] flex flex-col text-gray-900">
+          <h2 className="mt-0 mb-4 font-extrabold text-lg sm:text-xl tracking-tight text-blue-900">Exam Setup</h2>
+          <label className="block font-semibold mb-1 text-xs sm:text-sm">University</label>
+          <select value={university} onChange={e => setUniversity(e.target.value)} className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400">
             <option value="">Select University</option>
             {universities.map((u: { id: string; name: string }) => (
               <option key={u.id} value={u.id}>{u.name}</option>
             ))}
           </select>
-          <label className="block font-semibold mb-1 text-sm">Course</label>
-          <select value={course} onChange={e => setCourse(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!university}>
+          <label className="block font-semibold mb-1 text-xs sm:text-sm">Course</label>
+          <select value={course} onChange={e => setCourse(e.target.value)} className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!university}>
             <option value="">Select Course</option>
             {courses.map((c: { id: string; name: string }) => (
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
           </select>
-          <label className="block font-semibold mb-1 text-sm">Semester</label>
-          <select value={semester} onChange={e => setSemester(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!course}>
+          <label className="block font-semibold mb-1 text-xs sm:text-sm">Semester</label>
+          <select value={semester} onChange={e => setSemester(e.target.value)} className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!course}>
             <option value="">Select Semester</option>
             {semesters.map((s: { id: string; name: string }) => (
               <option key={s.id} value={s.id}>{s.name}</option>
             ))}
           </select>
-          <label className="block font-semibold mb-1 text-sm">Subject</label>
-          <select value={subject} onChange={e => setSubject(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!semester}>
+          <label className="block font-semibold mb-1 text-xs sm:text-sm">Subject</label>
+          <select value={subject} onChange={e => setSubject(e.target.value)} className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-200 rounded mb-3 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!semester}>
             <option value="">Select Subject</option>
             {subjects.map((sj: { id: string; name: string }) => (
               <option key={sj.id} value={sj.id}>{sj.name}</option>
             ))}
           </select>
-          <label className="block font-semibold mb-1 text-sm">Module</label>
-          <select value={module} onChange={e => setModule(e.target.value)} className="w-full px-3 py-2 text-sm border border-gray-200 rounded mb-4 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!subject}>
+          <label className="block font-semibold mb-1 text-xs sm:text-sm">Module</label>
+          <select value={module} onChange={e => setModule(e.target.value)} className="w-full px-3 py-2 text-xs sm:text-sm border border-gray-200 rounded mb-4 bg-gray-50 focus:outline-none focus:border-blue-400" disabled={!subject}>
             <option value="">Select Module</option>
             {modules.map((m: { id: string; name: string }) => (
               <option key={m.id} value={m.id}>{m.name}</option>
             ))}
           </select>
           <button
-            className={`w-full py-2 font-bold text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none ${canProceedToSection ? 'bg-blue-600 hover:bg-blue-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
+            className={`w-full py-2 font-bold text-sm sm:text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none ${canProceedToSection ? 'bg-blue-600 hover:bg-blue-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
             onClick={() => canProceedToSection && setStep(2)}
             disabled={!canProceedToSection}
           >
@@ -241,10 +241,10 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
         </div>
       )}
       {step === 2 && (
-        <div className="bg-white p-6 rounded-lg shadow-xl min-w-[340px] max-w-[400px] flex flex-col text-gray-900">
-          <h3 className="mt-0 mb-4 font-extrabold text-xl tracking-tight text-blue-900">Section Setup</h3>
+        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-xl w-full max-w-[400px] flex flex-col text-gray-900">
+          <h3 className="mt-0 mb-4 font-extrabold text-lg sm:text-xl tracking-tight text-blue-900">Section Setup</h3>
           {dynamicSections.length === 0 && (
-            <div className="mb-4 text-gray-500 text-sm">No sections available for this module.</div>
+            <div className="mb-4 text-gray-500 text-xs sm:text-sm">No sections available for this module.</div>
           )}
           {dynamicSections.map((section, idx) => (
             <div key={section.key} className="mb-4 flex flex-col gap-1">
@@ -255,56 +255,59 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
                   onChange={e => handleSectionInputChange(idx, "checked", e.target.checked)}
                   className="mr-2 h-4 w-4 accent-blue-600"
                 />
-                <span className="font-bold text-base text-gray-900">{section.label}</span>
+                <span className="font-bold text-sm sm:text-base text-gray-900">{section.label}</span>
               </div>
-              <div className="flex items-center gap-2 ml-6 text-sm">
-                <label className="font-medium text-gray-900">Questions</label>
-                <input
-                  type="number"
-                  min={1}
-                  max={section.maxQuestions}
-                  value={sectionInputs[idx]?.questionCount}
-                  onChange={e => handleSectionInputChange(idx, "questionCount", e.target.value)}
-                  className="w-16 px-2 py-1 text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
-                  disabled={!sectionInputs[idx]?.checked}
-                  placeholder={`Max ${section.maxQuestions}`}
-                />
-                <span className="text-gray-500 text-xs">/ {section.maxQuestions}</span>
-                <label className="font-medium text-gray-900 ml-2">Marks</label>
-                <input
-                  type="number"
-                  min={1}
-                  value={sectionInputs[idx]?.marks}
-                  onChange={e => handleSectionInputChange(idx, "marks", e.target.value)}
-                  className="w-14 px-2 py-1 text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
-                  disabled={!sectionInputs[idx]?.checked}
-                />
-                {/* Shuffle checkbox removed */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 ml-6 text-xs sm:text-sm">
+                <div className="flex items-center gap-2">
+                  <label className="font-medium text-gray-900">Questions</label>
+                  <input
+                    type="number"
+                    min={1}
+                    max={section.maxQuestions}
+                    value={sectionInputs[idx]?.questionCount}
+                    onChange={e => handleSectionInputChange(idx, "questionCount", e.target.value)}
+                    className="w-16 px-2 py-1 text-xs sm:text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
+                    disabled={!sectionInputs[idx]?.checked}
+                    placeholder={`Max ${section.maxQuestions}`}
+                  />
+                  <span className="text-gray-500 text-xs">/ {section.maxQuestions}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <label className="font-medium text-gray-900">Marks</label>
+                  <input
+                    type="number"
+                    min={1}
+                    value={sectionInputs[idx]?.marks}
+                    onChange={e => handleSectionInputChange(idx, "marks", e.target.value)}
+                    className="w-14 px-2 py-1 text-xs sm:text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
+                    disabled={!sectionInputs[idx]?.checked}
+                  />
+                </div>
               </div>
             </div>
           ))}
-          <div className="mt-4 mb-0 flex items-center text-sm">
+          <div className="mt-4 mb-0 flex flex-col sm:flex-row items-start sm:items-center gap-2 text-xs sm:text-sm">
             <label className="font-medium text-gray-900">Duration (minutes)</label>
             <input
               type="number"
               min={1}
               value={duration}
               onChange={handleDurationChange}
-              className="w-20 px-2 py-1 text-sm border border-gray-200 rounded ml-3 focus:outline-none focus:border-blue-400"
+              className="w-20 px-2 py-1 text-xs sm:text-sm border border-gray-200 rounded focus:outline-none focus:border-blue-400"
             />
             {durationError && (
-              <div className="text-red-600 ml-2 text-xs font-medium">{durationError}</div>
+              <div className="text-red-600 text-xs font-medium">{durationError}</div>
             )}
           </div>
           <div className="flex gap-2 mt-6">
             <button
-              className="w-1/2 py-2 font-bold text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none bg-gray-200 text-gray-700 hover:bg-gray-300"
+              className="w-1/2 py-2 font-bold text-sm sm:text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none bg-gray-200 text-gray-700 hover:bg-gray-300"
               onClick={() => setStep(1)}
             >
               Back
             </button>
             <button
-              className={`w-1/2 py-2 font-bold text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none ${isFormValid() ? 'bg-green-600 hover:bg-green-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
+              className={`w-1/2 py-2 font-bold text-sm sm:text-base rounded-lg transition-colors duration-200 shadow-md focus:outline-none ${isFormValid() ? 'bg-green-600 hover:bg-green-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
               onClick={handleProceed}
               disabled={!isFormValid()}
             >
@@ -312,7 +315,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
             </button>
           </div>
           {saveMessage && (
-            <div className={`mt-3 font-bold text-sm ${saveMessage.includes('success') ? 'text-green-700' : 'text-red-600'}`}>{saveMessage}</div>
+            <div className={`mt-3 font-bold text-xs sm:text-sm ${saveMessage.includes('success') ? 'text-green-700' : 'text-red-600'}`}>{saveMessage}</div>
           )}
         </div>
       )}

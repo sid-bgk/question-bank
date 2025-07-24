@@ -73,39 +73,39 @@ const SectionSelector: React.FC<SectionSelectorProps> = ({ sections, onStart, mo
   };
 
   return (
-    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
-      <div className="flex flex-col md:flex-row w-full max-w-4xl bg-white rounded-lg shadow-xl overflow-hidden">
-        {/* Left Panel: Summary */}
-        <div className="w-full md:w-1/2 bg-gray-50 p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-gray-200 min-h-[400px]">
-          <h2 className="text-lg font-semibold text-gray-700 mb-2">Hi Candidate,</h2>
-          <h1 className="text-2xl font-extrabold text-blue-900 mb-6">Welcome to {resolvedModuleName} Test.</h1>
-          <div className="flex flex-col gap-4 text-gray-700 text-base">
-            <div className="flex items-center gap-2">
+    <div className="fixed inset-0 w-screen h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 font-sans p-4">
+      <div className="flex flex-col w-full max-w-4xl bg-white rounded-lg shadow-xl overflow-hidden">
+        {/* Top Panel: Summary */}
+        <div className="w-full bg-gray-50 p-4 sm:p-6 lg:p-8 flex flex-col justify-center border-b border-gray-200">
+          <h2 className="text-sm sm:text-lg font-semibold text-gray-700 mb-2">Hi Candidate,</h2>
+          <h1 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-900 mb-4 sm:mb-6">Welcome to {resolvedModuleName} Test.</h1>
+          <div className="flex flex-col gap-2 sm:gap-4 text-gray-700 text-xs sm:text-sm lg:text-base">
+            <div className="flex items-center justify-between">
               <span className="font-bold">Questions</span>
-              <span className="ml-auto">{totalQuestions} Questions</span>
+              <span>{totalQuestions} Questions</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-between">
               <span className="font-bold">Sections</span>
-              <span className="ml-auto">{totalSections} Sections</span>
+              <span>{totalSections} Sections</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-between">
               <span className="font-bold">Test Duration</span>
-              <span className="ml-auto">{formatTime(totalDurationSeconds)}</span>
+              <span>{formatTime(totalDurationSeconds)}</span>
             </div>
           </div>
         </div>
-        {/* Right Panel: Section Selection */}
-        <div className="w-full md:w-1/2 p-8 flex flex-col justify-center min-h-[400px]">
-          <h2 className="text-lg font-bold text-gray-800 mb-2">All done. Ready to start?</h2>
-          <p className="text-sm text-gray-500 mb-6">Select the section you would like to attempt first and then click on Start Test button.</p>
-          <div className="mb-6 flex flex-col gap-4">
+        {/* Bottom Panel: Section Selection */}
+        <div className="w-full p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
+          <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-2">All done. Ready to start?</h2>
+          <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">Select the section you would like to attempt first and then click on Start Test button.</p>
+          <div className="mb-4 sm:mb-6 flex flex-col gap-3 sm:gap-4">
             {sections.map(section => {
               const isSelected = selectedSectionId === section.id;
               return (
                 <div
                   key={section.id}
                   className={
-                    'flex items-center gap-4 p-4 rounded-lg border transition-all cursor-pointer select-none ' +
+                    'flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all cursor-pointer select-none ' +
                     (isSelected
                       ? 'border-blue-600 bg-blue-50 text-blue-900 font-bold shadow-md'
                       : 'border-gray-300 bg-white text-gray-800 hover:shadow-md')
@@ -123,20 +123,20 @@ const SectionSelector: React.FC<SectionSelectorProps> = ({ sections, onStart, mo
                     readOnly
                     tabIndex={-1}
                     className={
-                      'accent-blue-600 h-5 w-5 pointer-events-none ' +
+                      'accent-blue-600 h-4 w-4 sm:h-5 sm:w-5 pointer-events-none mt-0.5 flex-shrink-0 ' +
                       (isSelected ? '' : 'text-gray-400')
                     }
                     aria-label={`Select ${section.name}`}
                   />
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 w-full">
+                  <div className="flex flex-col gap-1 sm:gap-2 w-full">
                     <span className={
-                      'text-base sm:text-lg flex-1 ' +
+                      'text-sm sm:text-base lg:text-lg flex-1 ' +
                       (isSelected ? 'text-blue-900 font-bold' : 'text-gray-800 font-medium')
                     }>
                       {section.name}
                     </span>
                     <span className={
-                      'text-sm sm:text-base flex-1 text-right ' +
+                      'text-xs sm:text-sm lg:text-base flex-1 ' +
                       (isSelected ? 'text-blue-900 font-bold' : 'text-gray-700 font-medium')
                     }>
                       {section.questionCount} Question{section.questionCount !== 1 ? 's' : ''} · {section.questionCount * section.marks} Marks
@@ -146,9 +146,9 @@ const SectionSelector: React.FC<SectionSelectorProps> = ({ sections, onStart, mo
               );
             })}
           </div>
-          {error && <div className="text-red-600 mb-2 font-bold text-sm">{error}</div>}
+          {error && <div className="text-red-600 mb-2 font-bold text-xs sm:text-sm">{error}</div>}
           <button
-            className={`w-full py-2 font-bold text-base rounded transition-colors duration-200 shadow-md focus:outline-none ${selectedSectionId ? 'bg-blue-600 hover:bg-blue-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
+            className={`w-full py-2 sm:py-3 font-bold text-sm sm:text-base rounded transition-colors duration-200 shadow-md focus:outline-none ${selectedSectionId ? 'bg-blue-600 hover:bg-blue-800 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
             onClick={handleStart}
             disabled={!selectedSectionId}
           >

@@ -300,26 +300,26 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
     if (sectionKey === 'mcq') {
       return (
         <>
-          <div className="text-xl font-bold text-gray-800 mb-2">Select an option</div>
-          <div className="flex flex-col gap-4 mb-4">
+          <div className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">Select an option</div>
+          <div className="flex flex-col gap-3 sm:gap-4 mb-4 sm:mb-6">
             {q.options && Array.isArray(q.options) ? q.options.map((opt: string) => (
-              <label key={opt} className={`flex items-center gap-3 cursor-pointer select-none border border-gray-200 rounded-lg px-4 py-3 bg-gray-50 hover:bg-blue-50 transition-colors ${a.selectedOption === opt ? 'ring-2 ring-blue-600 border-blue-600' : ''}`}>
-                <input type="radio" name="option" className="accent-blue-600 h-5 w-5" checked={a.selectedOption === opt} onChange={() => handleSelectOption(opt)} disabled={expired} />
-                <span className="text-base text-gray-700">{opt}</span>
+              <label key={opt} className={`exam-option cursor-pointer select-none border border-gray-200 rounded-lg px-3 sm:px-4 py-3 sm:py-4 bg-gray-50 hover:bg-blue-50 transition-colors gap-3 ${a.selectedOption === opt ? 'ring-2 ring-blue-600 border-blue-600' : ''}`}>
+                <input type="radio" name="option" className="accent-blue-600 h-4 w-4 sm:h-5 sm:w-5 mt-0.5 flex-shrink-0" checked={a.selectedOption === opt} onChange={() => handleSelectOption(opt)} disabled={expired} />
+                <span className="text-sm sm:text-base text-gray-700 leading-relaxed flex-1">{opt}</span>
               </label>
             )) : <div className="text-gray-400">No options available.</div>}
           </div>
-          <button className="text-blue-700 text-base font-semibold hover:underline flex items-center gap-1" onClick={handleClearResponse} disabled={expired}>
-            <TrashIcon className="w-5 h-5" />
+          <button className="text-blue-700 text-sm sm:text-base font-semibold hover:underline flex items-center gap-1" onClick={handleClearResponse} disabled={expired}>
+            <TrashIcon className="w-4 h-4 sm:w-5 sm:h-5" />
             Clear Response
           </button>
         </>
       );
     } else if (sectionKey === 'brief') {
       return (
-        <div className="flex flex-col gap-4 mb-4">
-          <div className="text-xl font-bold text-gray-800 mb-2">Your Answer</div>
-          <textarea className="w-full border border-gray-300 rounded p-2 min-h-[100px] text-lg" placeholder="Type your answer here..." disabled={expired} />
+        <div className="flex flex-col gap-4 mb-4 sm:mb-6">
+          <div className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Your Answer</div>
+          <textarea className="w-full border border-gray-300 rounded p-3 sm:p-4 text-sm sm:text-base min-h-[120px] sm:min-h-[150px] resize-none" placeholder="Type your answer here..." disabled={expired} />
         </div>
       );
     } else if (sectionKey === 'case_study') {
@@ -327,10 +327,10 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
       const title = typeof q === 'object' && 'title' in q ? (q as { title: string }).title : '';
       const description = typeof q === 'object' && 'description' in q ? (q as { description: string }).description : '';
       return (
-        <div className="flex flex-col gap-4 mb-4">
-          <div className="text-xl font-bold text-gray-800 mb-2">Case Study</div>
-          <div className="font-semibold text-blue-900 mb-2 text-lg">{title}</div>
-          <div className="text-gray-700 mb-2 whitespace-pre-line text-lg">{description}</div>
+        <div className="flex flex-col gap-4 mb-4 sm:mb-6">
+          <div className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Case Study</div>
+          <div className="font-semibold text-blue-900 mb-2 text-base sm:text-lg">{title}</div>
+          <div className="text-gray-700 mb-2 whitespace-pre-line text-sm sm:text-lg leading-relaxed">{description}</div>
         </div>
       );
     } else {
@@ -360,71 +360,75 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
   }
   const FinishTestModal = memo(function FinishTestModal({ totalQuestions, attempted, markedForReview, unattempted, pieData, pieOptions, sectionSummary, onClose }: FinishTestModalProps) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
-        <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl p-8 relative">
-          {/* Close Icon */}
-          <button
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-            onClick={onClose}
-            aria-label="Close"
-          >
-            <XMarkIcon className="w-6 h-6" />
-          </button>
-          <div className="flex items-center gap-4 mb-6">
-            <span className="text-xl font-bold text-red-600 flex items-center gap-2"><span className="text-2xl">&#9888;</span>Finish Test</span>
-          </div>
-          <div className="flex gap-8 items-center mb-8">
-            <div className="w-40 h-40">
-              <Pie data={pieData} options={pieOptions} />
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 p-4">
+        <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+          <div className="p-4 sm:p-8 relative">
+            {/* Close Icon */}
+            <button
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+              onClick={onClose}
+              aria-label="Close"
+            >
+              <XMarkIcon className="w-6 h-6" />
+            </button>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-lg sm:text-xl font-bold text-red-600 flex items-center gap-2"><span className="text-xl sm:text-2xl">&#9888;</span>Finish Test</span>
             </div>
-            <div className="flex-1">
-              <div className="text-lg font-semibold mb-2 text-gray-900">Your Test Summary</div>
-              <div className="text-gray-900 text-base mb-1">Total Questions: <span className="font-bold">{totalQuestions}</span></div>
-              <div className="flex gap-4 mt-2">
-                <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-blue-600 inline-block"></span><span className="text-gray-900 font-semibold">Attempted:</span> <span className="font-bold text-gray-900">{attempted}</span></div>
-                <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span><span className="text-gray-900 font-semibold">Revisit:</span> <span className="font-bold text-gray-900">{markedForReview}</span></div>
-                <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-gray-300 border border-gray-400 inline-block"></span><span className="text-gray-900 font-semibold">Unattempted:</span> <span className="font-bold text-gray-900">{unattempted}</span></div>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center mb-6 sm:mb-8">
+              <div className="w-32 h-32 sm:w-40 sm:h-40">
+                <Pie data={pieData} options={pieOptions} />
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <div className="text-base sm:text-lg font-semibold mb-2 text-gray-900">Your Test Summary</div>
+                <div className="text-gray-900 text-sm sm:text-base mb-1">Total Questions: <span className="font-bold">{totalQuestions}</span></div>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-2">
+                  <div className="flex items-center justify-center sm:justify-start gap-2"><span className="w-3 h-3 rounded-full bg-blue-600 inline-block"></span><span className="text-gray-900 font-semibold text-sm">Attempted:</span> <span className="font-bold text-gray-900">{attempted}</span></div>
+                  <div className="flex items-center justify-center sm:justify-start gap-2"><span className="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span><span className="text-gray-900 font-semibold text-sm">Revisit:</span> <span className="font-bold text-gray-900">{markedForReview}</span></div>
+                  <div className="flex items-center justify-center sm:justify-start gap-2"><span className="w-3 h-3 rounded-full bg-gray-300 border border-gray-400 inline-block"></span><span className="text-gray-900 font-semibold text-sm">Unattempted:</span> <span className="font-bold text-gray-900">{unattempted}</span></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mb-6">
-            <div className="text-base font-semibold mb-2 text-gray-900">Section Summary</div>
-            <table className="w-full text-sm border rounded overflow-hidden">
-              <thead>
-                <tr className="bg-gray-100 text-gray-800">
-                  <th className="py-2 px-3 text-left font-semibold">#</th>
-                  <th className="py-2 px-3 text-left font-semibold">Section Name</th>
-                  <th className="py-2 px-3 text-left font-semibold">Status</th>
-                  <th className="py-2 px-3 text-left font-semibold">Attempted</th>
-                  <th className="py-2 px-3 text-left font-semibold">Marked for Review</th>
-                  <th className="py-2 px-3 text-left font-semibold">Unattempted</th>
-                </tr>
-              </thead>
-              <tbody>
-                {sectionSummary.map((s: SectionSummary, idx: number) => (
-                  <tr key={s.name} className="border-t text-gray-900">
-                    <td className="py-2 px-3">{idx + 1}</td>
-                    <td className="py-2 px-3">{s.name}</td>
-                    <td className="py-2 px-3">{s.status}</td>
-                    <td className="py-2 px-3">{s.attempted}</td>
-                    <td className="py-2 px-3">{s.review}</td>
-                    <td className="py-2 px-3">{s.unattempted}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="flex justify-end gap-4 mt-6">
-            <button
-              className="px-6 py-2 bg-red-600 text-white font-bold rounded hover:bg-red-700 transition-colors"
-              onClick={() => {
-                if (onFinish) onFinish();
-              }}
-            >Yes, End Test</button>
-            <button
-              className="px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors"
-              onClick={onClose}
-            >No, Back to Test</button>
+            <div className="mb-6">
+              <div className="text-sm sm:text-base font-semibold mb-2 text-gray-900">Section Summary</div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs sm:text-sm border rounded overflow-hidden">
+                  <thead>
+                    <tr className="bg-gray-100 text-gray-800">
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">#</th>
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">Section</th>
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">Status</th>
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">Done</th>
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">Review</th>
+                      <th className="py-2 px-2 sm:px-3 text-left font-semibold">Left</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sectionSummary.map((s: SectionSummary, idx: number) => (
+                      <tr key={s.name} className="border-t text-gray-900">
+                        <td className="py-2 px-2 sm:px-3">{idx + 1}</td>
+                        <td className="py-2 px-2 sm:px-3">{s.name}</td>
+                        <td className="py-2 px-2 sm:px-3">{s.status}</td>
+                        <td className="py-2 px-2 sm:px-3">{s.attempted}</td>
+                        <td className="py-2 px-2 sm:px-3">{s.review}</td>
+                        <td className="py-2 px-2 sm:px-3">{s.unattempted}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4 mt-6">
+              <button
+                className="px-4 sm:px-6 py-2 bg-red-600 text-white font-bold rounded hover:bg-red-700 transition-colors text-sm sm:text-base"
+                onClick={() => {
+                  if (onFinish) onFinish();
+                }}
+              >Yes, End Test</button>
+              <button
+                className="px-4 sm:px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors text-sm sm:text-base"
+                onClick={onClose}
+              >No, Back to Test</button>
+            </div>
           </div>
         </div>
       </div>
@@ -432,13 +436,13 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
   });
 
   return (
-    <div className="w-full h-screen flex flex-col bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+    <div className="w-full h-screen flex flex-col bg-gradient-to-br from-gray-100 to-gray-200 font-sans exam-container">
       {/* Top Bar */}
-      <div className="relative flex items-center justify-between bg-white shadow px-6 py-3 border-b border-gray-200">
+      <div className="relative flex flex-col sm:flex-row items-center justify-between bg-white shadow px-3 sm:px-6 py-3 border-b border-gray-200">
         {/* Left: Section Dropdown */}
-        <div className="flex items-center gap-4 min-w-[180px]">
+        <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto mb-2 sm:mb-0">
           <select
-            className="px-2 py-1 border rounded text-sm font-semibold text-gray-700 bg-gray-50"
+            className="px-2 py-1 border rounded text-xs sm:text-sm font-semibold text-gray-700 bg-gray-50 flex-1 sm:flex-none"
             value={sectionKey}
             onChange={handleSectionChange}
             disabled={expired}
@@ -449,7 +453,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
           </select>
         </div>
         {/* Center: Question Number Palette */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 bg-gray-50 rounded px-2 py-1 border border-gray-200 shadow-sm">
+        <div className="flex items-center gap-1 sm:gap-2 bg-gray-50 rounded px-2 py-1 border border-gray-200 shadow-sm">
           {/* Left Arrow */}
           <button
             className="rounded bg-gray-200 p-1 text-gray-600 hover:bg-gray-300 flex items-center justify-center"
@@ -457,11 +461,11 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
             disabled={current === 0 || expired}
             aria-label="Previous question"
           >
-            <ArrowLeftIcon className="w-5 h-5" />
+            <ArrowLeftIcon className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
           {/* Previous button */}
           <button
-            className={`w-8 h-8 rounded font-bold border mx-1 transition-colors duration-150 ${current === 0 ? 'bg-gray-200 text-gray-400 border-gray-300' : getPaletteState(current-1) === 'review' ? 'bg-yellow-400 text-white border-yellow-600' : getPaletteState(current-1) === 'attempted' ? 'bg-green-500 text-white border-green-700' : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-50'}`}
+            className={`w-6 h-6 sm:w-8 sm:h-8 rounded font-bold border mx-0.5 sm:mx-1 transition-colors duration-150 text-xs sm:text-sm ${current === 0 ? 'bg-gray-200 text-gray-400 border-gray-300' : getPaletteState(current-1) === 'review' ? 'bg-yellow-400 text-white border-yellow-600' : getPaletteState(current-1) === 'attempted' ? 'bg-green-500 text-white border-green-700' : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-50'}`}
             onClick={() => setCurrent(c => Math.max(0, c - 1))}
             disabled={current === 0 || expired}
           >
@@ -469,14 +473,14 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
           </button>
           {/* Active/current button */}
           <button
-            className={`w-8 h-8 rounded font-bold border mx-1 transition-colors duration-150 bg-blue-600 text-white border-blue-700 ring-2 ring-blue-600 ${getPaletteState(current) === 'review' ? 'bg-yellow-400 text-white border-yellow-600 ring-yellow-600' : ''}`}
+            className={`w-6 h-6 sm:w-8 sm:h-8 rounded font-bold border mx-0.5 sm:mx-1 transition-colors duration-150 bg-blue-600 text-white border-blue-700 ring-2 ring-blue-600 text-xs sm:text-sm ${getPaletteState(current) === 'review' ? 'bg-yellow-400 text-white border-yellow-600 ring-yellow-600' : ''}`}
             disabled
           >
             {current + 1}
           </button>
           {/* Next button */}
           <button
-            className={`w-8 h-8 rounded font-bold border mx-1 transition-colors duration-150 ${current === questions.length - 1 ? 'bg-gray-200 text-gray-400 border-gray-300' : getPaletteState(current+1) === 'review' ? 'bg-yellow-400 text-white border-yellow-600' : getPaletteState(current+1) === 'attempted' ? 'bg-green-500 text-white border-green-700' : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-50'}`}
+            className={`w-6 h-6 sm:w-8 sm:h-8 rounded font-bold border mx-0.5 sm:mx-1 transition-colors duration-150 text-xs sm:text-sm ${current === questions.length - 1 ? 'bg-gray-200 text-gray-400 border-gray-300' : getPaletteState(current+1) === 'review' ? 'bg-yellow-400 text-white border-yellow-600' : getPaletteState(current+1) === 'attempted' ? 'bg-green-500 text-white border-green-700' : 'bg-white text-gray-700 border-gray-300 hover:bg-blue-50'}`}
             onClick={() => setCurrent(c => Math.min(questions.length - 1, c + 1))}
             disabled={current === questions.length - 1 || expired}
           >
@@ -489,27 +493,27 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
             disabled={current === questions.length - 1 || expired}
             aria-label="Next question"
           >
-            <ArrowRightIcon className="w-5 h-5" />
+            <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
         {/* Right: Timer and Finish Test */}
-        <div className="flex items-center gap-6 min-w-[260px] justify-end ml-auto">
-          <span className="font-mono text-gray-700 text-base">
-            Section Time: <span className="font-bold">
+        <div className="flex items-center gap-2 sm:gap-6 w-full sm:w-auto justify-center sm:justify-end mt-2 sm:mt-0">
+          <span className="font-mono text-gray-700 text-xs sm:text-base">
+            <span className="hidden sm:inline">Section Time: </span><span className="font-bold">
               <Timer durationSec={durationSec} startAt={startAt} onExpire={() => setExpired(true)} />
             </span>
           </span>
-          <button className="ml-4 px-4 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors" onClick={openFinishModal}>Finish Test</button>
+          <button className="px-3 sm:px-4 py-1 sm:py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors text-xs sm:text-sm" onClick={openFinishModal}>Finish Test</button>
         </div>
       </div>
       {/* Attempted Count: Centered below header */}
       <div className="w-full flex justify-center mt-2 mb-2">
-        <div className="text-sm text-gray-500 font-semibold bg-white bg-opacity-80 px-4 py-1 rounded shadow-sm">Attempted {answers.filter(ans => ans.selectedOption).length}/{questions.length}</div>
+        <div className="text-xs sm:text-sm text-gray-500 font-semibold bg-white bg-opacity-80 px-3 sm:px-4 py-1 rounded shadow-sm">Attempted {answers.filter(ans => ans.selectedOption).length}/{questions.length}</div>
       </div>
       {/* Main Content */}
-      <div className="flex flex-1 items-stretch overflow-hidden min-h-0">
+      <div className="flex flex-1 items-stretch overflow-hidden min-h-0 exam-content">
         {/* Left Arrow */}
-        <div className="flex flex-col justify-center items-center w-16 bg-transparent">
+        <div className="hidden sm:flex flex-col justify-center items-center w-16 bg-transparent">
           <button
             className="rounded-full bg-blue-700 hover:bg-blue-800 text-white w-10 h-10 flex items-center justify-center shadow transition-colors"
             onClick={() => setCurrent(c => Math.max(0, c - 1))}
@@ -519,31 +523,31 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
           </button>
         </div>
         {/* Center Panel: Dynamic Question */}
-        <div className="flex-1 flex flex-col justify-stretch py-6 px-0 min-h-0">
-          <div className="flex w-full h-full min-h-0 bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="flex-1 flex flex-col justify-stretch py-3 sm:py-6 px-0 min-h-0">
+          <div className="flex flex-col lg:flex-row w-full h-full min-h-0 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Question Area */}
-            <div className="flex-1 p-10 border-r border-gray-100 flex flex-col justify-start min-h-0">
+            <div className="flex-1 p-4 sm:p-6 lg:p-10 border-b lg:border-b-0 lg:border-r border-gray-100 flex flex-col justify-start min-h-0 exam-question-area">
               <div>
-                <div className="text-lg font-bold text-gray-800 mb-2">Question {current + 1}</div>
-                <div className="text-base text-gray-700 mb-6 whitespace-pre-line">{
+                <div className="text-base sm:text-lg font-bold text-gray-800 mb-2">Question {current + 1}</div>
+                <div className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 whitespace-pre-line leading-relaxed">{
                   sectionKey === 'case_study'
                     ? (typeof q === 'object' && 'title' in q ? (q as { title: string }).title : '')
                     : q.question
                 }</div>
                 <label className="inline-flex items-center gap-2 cursor-pointer select-none mb-4">
                   <input type="checkbox" className="accent-blue-600 h-4 w-4" checked={!!a.markedForReview} onChange={handleMarkForReview} disabled={expired} />
-                  <span className="text-sm font-medium text-gray-700 flex items-center gap-1"><BookmarkIcon className="w-4 h-4 text-gray-400" />Revisit Later</span>
+                  <span className="text-xs sm:text-sm font-medium text-gray-700 flex items-center gap-1"><BookmarkIcon className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" />Revisit Later</span>
                 </label>
               </div>
             </div>
             {/* Options/Answer/CaseStudy Area */}
-            <div className="flex-1 p-10 flex flex-col justify-start min-h-0">
+            <div className="flex-1 p-4 sm:p-6 lg:p-10 flex flex-col justify-start min-h-0 exam-options-area">
               {renderQuestion()}
             </div>
           </div>
         </div>
         {/* Right Arrow */}
-        <div className="flex flex-col justify-center items-center w-16 bg-transparent">
+        <div className="hidden sm:flex flex-col justify-center items-center w-16 bg-transparent">
           <button
             className="rounded-full bg-blue-700 hover:bg-blue-800 text-white w-10 h-10 flex items-center justify-center shadow transition-colors"
             onClick={() => setCurrent(c => Math.min(questions.length - 1, c + 1))}
@@ -554,14 +558,14 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
         </div>
       </div>
       {/* Bottom Navigation */}
-      <div className="flex justify-end items-center px-12 py-4 bg-white border-t border-gray-200 gap-4">
+      <div className="flex justify-between sm:justify-end items-center px-4 sm:px-12 py-3 sm:py-4 bg-white border-t border-gray-200 gap-2 sm:gap-4">
         <button
-          className="px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors"
+          className="px-4 sm:px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded hover:bg-gray-300 transition-colors text-sm sm:text-base"
           onClick={() => setCurrent(c => Math.max(0, c - 1))}
           disabled={current === 0 || expired}
         >Previous</button>
         <button
-          className="px-6 py-2 bg-blue-600 text-white font-bold rounded hover:bg-blue-800 transition-colors"
+          className="px-4 sm:px-6 py-2 bg-blue-600 text-white font-bold rounded hover:bg-blue-800 transition-colors text-sm sm:text-base"
           onClick={() => setCurrent(c => Math.min(questions.length - 1, c + 1))}
           disabled={current === questions.length - 1 || expired}
         >Next</button>
