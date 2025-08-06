@@ -38,24 +38,7 @@ const ExamRunner: React.FC<ExamRunnerProps> = ({ onFinish }) => {
 
   const { answers, updateAnswer, clearAnswer } = useExamSession(questions.length, sectionKey);
 
-  // Timer effect: always update timer every second, using global duration
-  useEffect(() => {
-    let interval: NodeJS.Timeout | null = null;
-    function updateTimer() {
-      const now = Date.now();
-      const startTime = new Date(startAt).getTime();
-      const elapsed = Math.floor((now - startTime) / 1000);
-      const rem = durationSec - elapsed;
-      if (rem <= 0 && interval) {
-        clearInterval(interval);
-      }
-    }
-    updateTimer();
-    interval = setInterval(updateTimer, 1000);
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  }, [durationSec, startAt]);
+  // Timer logic is now handled by the Timer component
 
   // --- Modal snapshot state ---
   const [modalStats, setModalStats] = useState<null | Record<string, unknown>>(null);
