@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn build)",
+      "Bash(timeout 30 yarn dev)",
+      "Bash(yarn split-questionbank:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": []
+  }
+}

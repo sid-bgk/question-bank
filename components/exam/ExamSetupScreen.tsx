@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { questionBank } from "../../data/questionBank";
+import { getQuestionBank } from "../../lib/questionBank";
 import Link from "next/link";
 
 interface SectionInput {
@@ -27,6 +27,7 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
   const [saveMessage, setSaveMessage] = useState("");
 
   // Dynamic dropdown data
+  const questionBank = getQuestionBank();
   const universities = questionBank.universities || [];
   const selectedUniversity = universities.find((u) => u.id === university);
   const courses = selectedUniversity?.courses || [];

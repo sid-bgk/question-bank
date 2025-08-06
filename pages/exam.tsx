@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ExamSetupScreen, SectionSelector, ExamRunner, ResultView, BrowseAllQuestions } from "../components/exam";
-import { questionBank } from "../data/questionBank";
+import { getQuestionBank } from "../lib/questionBank";
 
 interface SectionConfig {
   sectionKey: string;
@@ -51,7 +51,7 @@ const ExamPage: React.FC = () => {
 
     if (config && config.sections && config.module) {
       const { university, course, semester, subject, module } = config;
-      // Use imported questionBank
+      const questionBank = getQuestionBank();
       const universityObj = questionBank.universities.find((u) => u.id === university);
       const courseObj = universityObj?.courses.find((c) => c.id === course);
       const semesterObj = courseObj?.semesters.find((s) => s.id === semester);

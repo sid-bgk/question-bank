@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { questionBank } from "../../../../data/questionBank";
+import { getQuestionBank } from "../../../../lib/questionBank";
 import PageLayout from "../../../../components/PageLayout";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-type Semester = typeof questionBank.universities[0]['courses'][0]['semesters'][0];
-type Course = typeof questionBank.universities[0]['courses'][0];
-type University = typeof questionBank.universities[0];
+type Semester = ReturnType<typeof getQuestionBank>['universities'][0]['courses'][0]['semesters'][0];
+type Course = ReturnType<typeof getQuestionBank>['universities'][0]['courses'][0];
+type University = ReturnType<typeof getQuestionBank>['universities'][0];
 
 export const getStaticPaths: GetStaticPaths = async () => {
+    const questionBank = getQuestionBank();
     const paths = questionBank.universities.flatMap((university) =>
         university.courses.flatMap((course) =>
             course.semesters.map((semester) => ({
@@ -23,6 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<{ semester: Semester; university: University; course: Course }> = async ({ params }) => {
+    const questionBank = getQuestionBank();
     const university = questionBank.universities.find((u) => u.id === params?.universityId);
     const course = university?.courses.find((c) => c.id === params?.courseId);
     const semester = course?.semesters.find((s) => s.id === params?.semesterId);

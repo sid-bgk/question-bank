@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { questionBank } from "../../data/questionBank";
+import { getQuestionBank } from "../../lib/questionBank";
 import PageLayout from "../../components/PageLayout";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-type University = typeof questionBank.universities[0];
+type University = ReturnType<typeof getQuestionBank>['universities'][0];
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  const questionBank = getQuestionBank();
   const paths = questionBank.universities.map((university) => ({
     params: { universityId: university.id },
   }));
@@ -14,6 +15,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<{ university: University }> = async ({ params }) => {
   try {
+    const questionBank = getQuestionBank();
     const university = questionBank.universities.find((u) => u.id === params?.universityId);
     if (!university) {
       return { notFound: true };

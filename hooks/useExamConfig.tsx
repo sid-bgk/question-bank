@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { questionBank } from "../data/questionBank";
+import { getQuestionBank } from "../lib/questionBank";
 
 interface MCQ {
   question: string;
@@ -22,6 +22,7 @@ function getMCQsFromConfig(): MCQ[] {
     }
     
     const { university, course, semester, subject, module } = config;
+    const questionBank = getQuestionBank();
     const universityObj = questionBank.universities.find((u: { id: string }) => u.id === university);
     if (!universityObj) return [];
     const courseObj = universityObj.courses.find((c: { id: string }) => c.id === course);
@@ -34,7 +35,7 @@ function getMCQsFromConfig(): MCQ[] {
     if (!moduleObj) return [];
     
     if (!['mcq', 'brief', 'case_study'].includes(sectionKey)) sectionKey = 'mcq';
-    const sectionQuestions = (moduleObj as Record<string, unknown>)[sectionKey];
+    const sectionQuestions = (moduleObj as any)[sectionKey];
     return Array.isArray(sectionQuestions) ? (sectionQuestions as MCQ[]) : [];
   } catch {
     return [];

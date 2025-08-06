@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageLayout from "../components/PageLayout";
-import { questionBank } from "../data/questionBank";
+import { getQuestionBank } from "../lib/questionBank";
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 type University = {
@@ -9,6 +9,7 @@ type University = {
 };
 
 export const getStaticProps: GetStaticProps<{ universities: University[] }> = async () => {
+  const questionBank = getQuestionBank();
   const universities = questionBank.universities.map(u => ({ id: u.id, name: u.name }));
   return {
     props: {
