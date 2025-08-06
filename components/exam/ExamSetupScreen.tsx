@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from "react";
-import { questionBank } from "../../data/questionBank";
+import React, { useState, useEffect } from "react";
+import { getQuestionBankStructure, getModule } from "../../lib/questionBank";
 import Link from "next/link";
 
 interface SectionInput {
@@ -27,33 +27,50 @@ const ExamSetupScreen: React.FC<ExamSetupScreenProps> = ({ onProceed }) => {
   const [saveMessage, setSaveMessage] = useState("");
 
   // Dynamic dropdown data
-  const universities = questionBank.universities || [];
-  const selectedUniversity = universities.find((u) => u.id === university);
+  const structure = getQuestionBankStructure();
+  const universities = structure.universities || [];
+  const selectedUniversity = universities.find((u: { id: string }) => u.id === university);
   const courses = selectedUniversity?.courses || [];
-  const selectedCourse = courses.find((c) => c.id === course);
+  const selectedCourse = courses.find((c: { id: string }) => c.id === course);
   const semesters = selectedCourse?.semesters || [];
-  const selectedSemester = semesters.find((s) => s.id === semester);
+  const selectedSemester = semesters.find((s: { id: string }) => s.id === semester);
   const subjects = selectedSemester?.subjects || [];
-  const selectedSubject = subjects.find((sj) => sj.id === subject);
+  const selectedSubject = subjects.find((sj: { id: string }) => sj.id === subject);
   const modules = selectedSubject?.modules || [];
-  const selectedModule = modules.find((m) => m.id === module);
+  // selectedModule is now loaded dynamically in useEffect
 
   // Get available sections for the selected module
-  const dynamicSections = useMemo(() => {
-    const sections: { key: string; label: string; maxQuestions: number }[] = [];
-    if (selectedModule) {
-      if (Array.isArray(selectedModule.mcq) && selectedModule.mcq.length > 0) {
-        sections.push({ key: "mcq", label: "MCQ", maxQuestions: selectedModule.mcq.length });
+  const [dynamicSections, setDynamicSections] = useState<{ key: string; label: string; maxQuestions: number }[]>([]);
+  
+  useEffect(() => {
+    const loadModuleSections = async () => {
+      if (university && course && semester && subject && module) {
+        try {
+          const moduleData = await getModule(university, course, semester, subject, module);
+          if (moduleData) {
+            const sections: { key: string; label: string; maxQuestions: number }[] = [];
+            if (Array.isArray(moduleData.mcq) && moduleData.mcq.length > 0) {
+              sections.push({ key: "mcq", label: "MCQ", maxQuestions: moduleData.mcq.length });
+            }
+            if (Array.isArray(moduleData.brief) && moduleData.brief.length > 0) {
+              sections.push({ key: "brief", label: "Briefs", maxQuestions: moduleData.brief.length });
+            }
+            if (Array.isArray(moduleData.case_study) && moduleData.case_study.length > 0) {
+              sections.push({ key: "case_study", label: "Case Study", maxQuestions: moduleData.case_study.length });
+            }
+            setDynamicSections(sections);
+          }
+        } catch (error) {
+          console.error('Failed to load module sections:', error);
+          setDynamicSections([]);
+        }
+      } else {
+        setDynamicSections([]);
       }
-      if (Array.isArray(selectedModule.brief) && selectedModule.brief.length > 0) {
-        sections.push({ key: "brief", label: "Briefs", maxQuestions: selectedModule.brief.length });
-      }
-      if (Array.isArray(selectedModule.case_study) && selectedModule.case_study.length > 0) {
-        sections.push({ key: "case_study", label: "Case Study", maxQuestions: selectedModule.case_study.length });
-      }
-    }
-    return sections;
-  }, [selectedModule]);
+    };
+    
+    loadModuleSections();
+  }, [university, course, semester, subject, module]);
 
   // Sync sectionInputs with dynamicSections (prefill with maxQuestions and marks=1, checked by default)
   useEffect(() => {

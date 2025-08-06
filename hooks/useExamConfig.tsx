@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { questionBank } from "../data/questionBank";
+import { getModule } from "../lib/questionBank";
 
 interface MCQ {
   question: string;
@@ -10,7 +10,7 @@ interface MCQ {
   explanation?: string;
 }
 
-function getMCQsFromConfig(): MCQ[] {
+async function getMCQsFromConfig(): Promise<MCQ[]> {
   try {
     const config = JSON.parse(localStorage.getItem("exam-config") || "null");
     let sectionKey = localStorage.getItem("currentSection") || "mcq";
@@ -22,19 +22,13 @@ function getMCQsFromConfig(): MCQ[] {
     }
     
     const { university, course, semester, subject, module } = config;
-    const universityObj = questionBank.universities.find((u: { id: string }) => u.id === university);
-    if (!universityObj) return [];
-    const courseObj = universityObj.courses.find((c: { id: string }) => c.id === course);
-    if (!courseObj) return [];
-    const semesterObj = courseObj.semesters.find((s: { id: string }) => s.id === semester);
-    if (!semesterObj) return [];
-    const subjectObj = semesterObj.subjects.find((su: { id: string }) => su.id === subject);
-    if (!subjectObj) return [];
-    const moduleObj = subjectObj.modules.find((m: { id: string }) => m.id === module);
-    if (!moduleObj) return [];
+    
+    // Dynamic import of module data
+    const moduleData = await getModule(university, course, semester, subject, module);
+    if (!moduleData) return [];
     
     if (!['mcq', 'brief', 'case_study'].includes(sectionKey)) sectionKey = 'mcq';
-    const sectionQuestions = (moduleObj as Record<string, unknown>)[sectionKey];
+    const sectionQuestions = (moduleData as any)[sectionKey];
     return Array.isArray(sectionQuestions) ? (sectionQuestions as MCQ[]) : [];
   } catch {
     return [];
@@ -91,8 +85,10 @@ export function useExamConfig() {
       localStorage.setItem("exam-seed", seed);
     }
     
-    const mcqs = getMCQsFromConfig();
-    setQuestions(mcqs);
+    // Make this async
+    getMCQsFromConfig().then(mcqs => {
+      setQuestions(mcqs);
+    });
   }, [sectionKey]);
 
   const handleSectionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

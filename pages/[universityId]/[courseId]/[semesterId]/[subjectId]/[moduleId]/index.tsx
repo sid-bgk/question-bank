@@ -3,20 +3,90 @@ import Sidebar from "../../../../../../components/Sidebar";
 import MCQ from "../../../../../../components/MCQ";
 import Brief from "../../../../../../components/Brief";
 import CaseStudy from "../../../../../../components/CaseStudy";
-import { questionBank } from "../../../../../../data/questionBank";
+import { getQuestionBankStructure, getModule } from "../../../../../../lib/questionBank";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import StructuredData from "../../../../../../components/StructuredData";
 
-type Module = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0]['modules'][0];
-type Subject = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0];
-type Semester = typeof questionBank.universities[0]['courses'][0]['semesters'][0];
-type Course = typeof questionBank.universities[0]['courses'][0];
-type University = typeof questionBank.universities[0];
+type Module = {
+  id: string;
+  name: string;
+  mcq: Array<{
+    question: string;
+    questionRead?: string;
+    codeBlock?: string;
+    language?: string;
+    options: string[];
+    answer: string;
+    explanation?: string;
+    showExplanation?: boolean;
+  }>;
+  brief: Array<{
+    question: string;
+    questionRead?: string;
+    codeBlock?: string;
+    language?: string;
+    answer: string;
+    explanation?: string;
+  }>;
+  case_study: Array<{
+    title: string;
+    description: string;
+    codeBlock?: string;
+    language?: string;
+    mcq: Array<{
+      question: string;
+      questionRead?: string;
+      codeBlock?: string;
+      language?: string;
+      options: string[];
+      answer: string;
+      explanation?: string;
+      showExplanation?: boolean;
+    }>;
+    brief?: Array<{
+      question: string;
+      questionRead?: string;
+      codeBlock?: string;
+      language?: string;
+      answer: string;
+      explanation?: string;
+    }>;
+    briefs?: Array<{
+      question: string;
+      questionRead?: string;
+      codeBlock?: string;
+      language?: string;
+      answer: string;
+      explanation?: string;
+    }>;
+  }>;
+};
+type Subject = {
+  id: string;
+  name: string;
+  modules: Array<{
+    id: string;
+    name: string;
+  }>;
+};
+type Semester = {
+  id: string;
+  name: string;
+};
+type Course = {
+  id: string;
+  name: string;
+};
+type University = {
+  id: string;
+  name: string;
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = questionBank.universities.flatMap((university) =>
+    const structure = getQuestionBankStructure();
+    const paths = structure.universities.flatMap((university) =>
         university.courses.flatMap((course) =>
             course.semesters.flatMap((semester) =>
                 semester.subjects.flatMap((subject) =>
@@ -43,17 +113,42 @@ export const getStaticProps: GetStaticProps<{
     course: Course;
     university: University;
 }> = async ({ params }) => {
-    const university = questionBank.universities.find((u) => u.id === params?.universityId);
+    const structure = getQuestionBankStructure();
+    
+    // Get metadata for navigation (lightweight)
+    const university = structure.universities.find((u) => u.id === params?.universityId);
     const course = university?.courses.find((c) => c.id === params?.courseId);
     const semester = course?.semesters.find((s) => s.id === params?.semesterId);
     const subject = semester?.subjects.find((sub) => sub.id === params?.subjectId);
-    const currentModule = subject?.modules.find((mod) => mod.id === params?.moduleId);
+    const moduleMetadata = subject?.modules.find((mod) => mod.id === params?.moduleId);
 
-    if (!currentModule || !subject || !semester || !course || !university) {
+    if (!moduleMetadata || !subject || !semester || !course || !university) {
         return { notFound: true };
     }
 
-    return { props: { currentModule, subject, semester, course, university } };
+    // Dynamic import of actual content (THIS IS THE KEY CHANGE)
+    const currentModule = await getModule(
+        params?.universityId as string,
+        params?.courseId as string,
+        params?.semesterId as string,
+        params?.subjectId as string,
+        params?.moduleId as string
+    );
+
+    if (!currentModule) {
+        return { notFound: true };
+    }
+
+    return { 
+        props: { 
+            currentModule,
+            // Pass lightweight metadata for navigation
+            subject: { id: subject.id, name: subject.name, modules: subject.modules },
+            semester: { id: semester.id, name: semester.name },
+            course: { id: course.id, name: course.name },
+            university: { id: university.id, name: university.name }
+        } 
+    };
 };
 
 export default function ModulePage({ 

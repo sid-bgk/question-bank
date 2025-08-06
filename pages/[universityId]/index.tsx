@@ -1,12 +1,20 @@
 import Link from "next/link";
-import { questionBank } from "../../data/questionBank";
+import { getQuestionBankStructure } from "../../lib/questionBank";
 import PageLayout from "../../components/PageLayout";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-type University = typeof questionBank.universities[0];
+type University = {
+  id: string;
+  name: string;
+  courses: Array<{
+    id: string;
+    name: string;
+  }>;
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = questionBank.universities.map((university) => ({
+  const structure = getQuestionBankStructure();
+  const paths = structure.universities.map((university) => ({
     params: { universityId: university.id },
   }));
   return { paths, fallback: false };
@@ -14,12 +22,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<{ university: University }> = async ({ params }) => {
   try {
-    const university = questionBank.universities.find((u) => u.id === params?.universityId);
+    const structure = getQuestionBankStructure();
+    const university = structure.universities.find((u) => u.id === params?.universityId);
     if (!university) {
       return { notFound: true };
     }
     
-    // Only return essential data to reduce payload size
+    // Only return essential data
     const universityData = {
       id: university.id,
       name: university.name,
@@ -33,7 +42,7 @@ export const getStaticProps: GetStaticProps<{ university: University }> = async 
       props: { 
         university: universityData as University 
       },
-      revalidate: 3600 // Revalidate every hour
+      revalidate: 3600
     };
   } catch (error) {
     console.error('Error in getStaticProps:', error);

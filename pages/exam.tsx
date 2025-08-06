@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ExamSetupScreen, SectionSelector, ExamRunner, ResultView, BrowseAllQuestions } from "../components/exam";
-import { questionBank } from "../data/questionBank";
+import { getModule } from "../lib/questionBank";
 
 interface SectionConfig {
   sectionKey: string;
@@ -43,25 +43,23 @@ const ExamPage: React.FC = () => {
   const [step, setStep] = useState<"setup" | "section" | "exam" | "result" | "browse">("setup");
   const [sections, setSections] = useState<Array<Section>>([]);
 
-  const handleSetupProceed = () => {
+  const handleSetupProceed = async () => {
     localStorage.removeItem('examStartAt');
     const config = JSON.parse(localStorage.getItem("exam-config") || "null") as { sections?: SectionConfig[]; module?: string; university?: string; course?: string; semester?: string; subject?: string } | null;
     const sectionList = getSectionsFromConfig(config);
     setSections(sectionList);
 
-    if (config && config.sections && config.module) {
+    if (config && config.sections && config.module && config.university && config.course && config.semester && config.subject) {
       const { university, course, semester, subject, module } = config;
-      // Use imported questionBank
-      const universityObj = questionBank.universities.find((u) => u.id === university);
-      const courseObj = universityObj?.courses.find((c) => c.id === course);
-      const semesterObj = courseObj?.semesters.find((s) => s.id === semester);
-      const subjectObj = semesterObj?.subjects.find((su) => su.id === subject);
-      const moduleObj = subjectObj?.modules.find((m) => m.id === module);
+      
+      // Dynamic loading instead of accessing questionBank directly
+      const moduleData = await getModule(university, course, semester, subject, module);
+      
       const examQuestions: Record<string, unknown[]> = {};
-      if (moduleObj) {
+      if (moduleData) {
         config.sections.forEach((section: SectionConfig) => {
           if (!section.checked) return;
-          const allQuestions = ((moduleObj as unknown) as Record<string, unknown[]>)[section.sectionKey] || [];
+          const allQuestions = (moduleData as Record<string, unknown[]>)[section.sectionKey] || [];
           const count = Number(section.questionCount) || 0;
           examQuestions[section.sectionKey] = allQuestions.slice(0, count);
         });

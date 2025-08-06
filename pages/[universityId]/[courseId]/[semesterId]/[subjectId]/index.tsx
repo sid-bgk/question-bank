@@ -1,15 +1,32 @@
 import Link from "next/link";
-import { questionBank } from "../../../../../data/questionBank";
+import { getQuestionBankStructure } from "../../../../../lib/questionBank";
 import PageLayout from "../../../../../components/PageLayout";
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-type Subject = typeof questionBank.universities[0]['courses'][0]['semesters'][0]['subjects'][0];
-type Semester = typeof questionBank.universities[0]['courses'][0]['semesters'][0];
-type Course = typeof questionBank.universities[0]['courses'][0];
-type University = typeof questionBank.universities[0];
+type Subject = {
+  id: string;
+  name: string;
+  modules: Array<{
+    id: string;
+    name: string;
+  }>;
+};
+type Semester = {
+  id: string;
+  name: string;
+};
+type Course = {
+  id: string;
+  name: string;
+};
+type University = {
+  id: string;
+  name: string;
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = questionBank.universities.flatMap((university) =>
+    const structure = getQuestionBankStructure();
+    const paths = structure.universities.flatMap((university) =>
         university.courses.flatMap((course) =>
             course.semesters.flatMap((semester) =>
                 semester.subjects.map((subject) => ({
@@ -27,7 +44,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps<{ subject: Subject; university: University; course: Course; semester: Semester }> = async ({ params }) => {
-    const university = questionBank.universities.find((u) => u.id === params?.universityId);
+    const structure = getQuestionBankStructure();
+    const university = structure.universities.find((u) => u.id === params?.universityId);
     const course = university?.courses.find((c) => c.id === params?.courseId);
     const semester = course?.semesters.find((s) => s.id === params?.semesterId);
     const subject = semester?.subjects.find((sub) => sub.id === params?.subjectId);
