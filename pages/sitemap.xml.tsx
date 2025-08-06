@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next';
-import { getQuestionBank } from '../lib/questionBank';
+import { getQuestionBankStructure } from '../lib/questionBank';
 
 const Sitemap = () => {
   // This component doesn't render anything
@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   ];
 
   // Generate URLs for all universities, courses, semesters, subjects, and modules
-  const questionBank = getQuestionBank();
+  const questionBank = getQuestionBankStructure();
   questionBank.universities.forEach(university => {
     // University page
     urls.push({

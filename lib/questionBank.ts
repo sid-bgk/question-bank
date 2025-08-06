@@ -31,10 +31,6 @@ export const getQuestionBankStructure = () => {
   };
 };
 
-export const getUniversity = (universityId: string) => {
-  return questionBank.universities.find(u => u.id === universityId);
-};
-
 // Helper function to convert kebab-case to valid identifier
 function toValidIdentifier(str: string): string {
   return str.replace(/-/g, '_').replace(/[^a-zA-Z0-9_]/g, '_');
