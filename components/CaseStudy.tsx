@@ -11,7 +11,7 @@ interface CaseStudyProps {
     language?: string;
     mcq: {
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       options: string[];
       answer: string;
       codeBlock?: string;
@@ -19,7 +19,7 @@ interface CaseStudyProps {
     }[];
     briefs?: {
       question: string;
-      questionRead?: string; // Optional additional explanation
+      questionExplanation?: string; // Optional additional explanation
       answer: string;
       codeBlock?: string; // Optional code block
       language?: string; // Optional programming language

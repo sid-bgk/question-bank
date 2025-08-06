@@ -1,7 +1,7 @@
 // Generated type definitions
 export interface MCQ {
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     options: string[];
@@ -12,7 +12,7 @@ export interface MCQ {
 
 export interface Brief {
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     answer: string;

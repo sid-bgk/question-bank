@@ -3,7 +3,7 @@ import { MCQ } from '../../../../../../types';
 export const mcq: MCQ[] = [
   {
     "question": "The arithmetic mean of an AP and the mean of the first and last term of an AP:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "equal",
       "unequal",
@@ -14,7 +14,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The mean height of 25 male workers in a factory is 61 cm and the mean height of 35 female workers in the same factory is 58 cm. The combined mean height of 60 workers in the factory is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "59.25",
       "59.5",
@@ -25,7 +25,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The average of the square of the numbers 0, 1, 2, 3, 4,……., n is:",
-    "questionRead": "*x̄ equals the formula '(n(n+1))/2', '(n(n+1)(2n+1))/6', '(n(n+1)(n+2))/6', '(n(n+1))/6'*",
+    "questionExplanation": "*x̄ equals the formula '(n(n+1))/2', '(n(n+1)(2n+1))/6', '(n(n+1)(n+2))/6', '(n(n+1))/6'*",
     "options": [
       "(n(n+1))/2",
       "(n(n+1)(2n+1))/6",
@@ -36,7 +36,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The mean of 100 items is 49. It was discovered that three items, which should have been 60, 70, and 80, were wrongly read as 40, 20, and 50, respectively. The correct mean is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "48",
       "89",

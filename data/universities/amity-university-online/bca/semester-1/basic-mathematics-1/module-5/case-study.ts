@@ -9,7 +9,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "If the mean salary is $50,000 and the median salary is $48,000, what can be inferred about the salary distribution?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Positively skewed",
           "Negatively skewed",
@@ -20,7 +20,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "Which measure would be most appropriate to detect potential salary outliers?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Mean",
           "Mode",
@@ -39,7 +39,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "Based on the provided data (mean < median), what type of skewness is present in the score distribution?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Positively skewed",
           "Negatively skewed",
@@ -50,7 +50,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "Which measure would best represent the spread of scores in the dataset?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Mean",
           "Variance",

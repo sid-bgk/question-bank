@@ -29,7 +29,7 @@ export const mcq: MCQ[] = [
       "n(n-1)/2",
       "2n"
     ],
-    "questionRead": "_'n(n-1)/2'_",
+    "questionExplanation": "_'n(n-1)/2'_",
     "answer": "n(n-1)/2"
   },
   {
@@ -404,7 +404,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a graph has 6 vertices and is a complete graph, how many edges will it have?",
-    "questionRead": "_'n(n-1)/2'_",
+    "questionExplanation": "_'n(n-1)/2'_",
     "options": [
       "12",
       "15",
@@ -415,7 +415,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a tree has 10 vertices, how many edges does it contain?",
-    "questionRead": "_'n-1'_",
+    "questionExplanation": "_'n-1'_",
     "options": [
       "8",
       "9",
@@ -426,7 +426,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In an undirected graph with 8 vertices and 16 edges, what is the sum of the degrees of all vertices?",
-    "questionRead": "_'2E'_",
+    "questionExplanation": "_'2E'_",
     "options": [
       "16",
       "24",
@@ -437,7 +437,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a graph has 5 vertices and the degree of each vertex is 3, what is the total number of edges?",
-    "questionRead": "_'sum of degrees / 2'_",
+    "questionExplanation": "_'sum of degrees / 2'_",
     "options": [
       "7",
       "8",
@@ -448,7 +448,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the minimum number of edges in a connected graph with 7 vertices?",
-    "questionRead": "_'n-1'_",
+    "questionExplanation": "_'n-1'_",
     "options": [
       "6",
       "7",
@@ -459,7 +459,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a bipartite graph with partition sizes of 4 and 5, what is the maximum number of edges possible?",
-    "questionRead": "_'m * n'_",
+    "questionExplanation": "_'m * n'_",
     "options": [
       "9",
       "10",
@@ -470,7 +470,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If an adjacency matrix is used to represent a graph with 6 vertices, what is the total number of entries in the matrix?",
-    "questionRead": "_'n^2'_",
+    "questionExplanation": "_'n^2'_",
     "options": [
       "12",
       "18",
@@ -481,7 +481,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "How many spanning trees can be formed in a complete graph with 4 vertices?",
-    "questionRead": "_'n^(n-2)'_",
+    "questionExplanation": "_'n^(n-2)'_",
     "options": [
       "12",
       "14",
@@ -492,7 +492,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a directed graph has 4 vertices and each vertex has an in-degree of 2, what is the total number of edges?",
-    "questionRead": "_'sum of in-degrees = sum of out-degrees'_",
+    "questionExplanation": "_'sum of in-degrees = sum of out-degrees'_",
     "options": [
       "4",
       "6",
@@ -503,7 +503,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a complete bipartite graph K(3,4), how many edges are there?",
-    "questionRead": "_'m * n'_",
+    "questionExplanation": "_'m * n'_",
     "options": [
       "7",
       "10",
@@ -514,7 +514,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a simple undirected graph has 9 vertices and 36 edges, what is the average degree of a vertex?",
-    "questionRead": "_'2E / V'_",
+    "questionExplanation": "_'2E / V'_",
     "options": [
       "6",
       "8",
@@ -525,7 +525,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "How many edges are there in a simple cycle graph with 8 vertices?",
-    "questionRead": "_'n'_",
+    "questionExplanation": "_'n'_",
     "options": [
       "6",
       "7",
@@ -536,7 +536,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a directed graph has 5 vertices and each vertex has an out-degree of 3, what is the total number of edges?",
-    "questionRead": "_'sum of out-degrees'_",
+    "questionExplanation": "_'sum of out-degrees'_",
     "options": [
       "10",
       "12",
@@ -547,7 +547,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "For a graph with 10 vertices and 45 edges, what is the maximum possible degree of a vertex?",
-    "questionRead": "_'n-1'_",
+    "questionExplanation": "_'n-1'_",
     "options": [
       "8",
       "9",
@@ -558,7 +558,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a tree has 15 vertices, how many leaves does it have if it is a binary tree?",
-    "questionRead": "_'n - internal nodes'_",
+    "questionExplanation": "_'n - internal nodes'_",
     "options": [
       "7",
       "8",
@@ -569,7 +569,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the number of edges in a star graph with 6 vertices?",
-    "questionRead": "_'n-1'_",
+    "questionExplanation": "_'n-1'_",
     "options": [
       "4",
       "5",
@@ -580,7 +580,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a tree has a maximum degree of 3 and 8 vertices, what is the number of edges?",
-    "questionRead": "_'n-1'_",
+    "questionExplanation": "_'n-1'_",
     "options": [
       "5",
       "6",
@@ -591,7 +591,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A graph has 12 vertices, and each vertex has a degree of 4. How many edges are there?",
-    "questionRead": "_'sum of degrees / 2'_",
+    "questionExplanation": "_'sum of degrees / 2'_",
     "options": [
       "24",
       "30",
@@ -602,7 +602,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a complete graph with 8 vertices, how many spanning trees can be formed?",
-    "questionRead": "_'n^(n-2)'_",
+    "questionExplanation": "_'n^(n-2)'_",
     "options": [
       "8",
       "64",

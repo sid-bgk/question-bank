@@ -7,7 +7,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "Which of the following properties is NOT required for Alice's set to be a group?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Closure",
           "Associativity",
@@ -18,7 +18,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "If Alice selects the set of integers under modular addition with modulus 7, what is the identity element?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "0",
           "1",
@@ -35,7 +35,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "If the robotic arm moves in 30-degree increments and completes a full cycle at 360 degrees, how many distinct positions does it have?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "6",
           "8",
@@ -46,7 +46,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "What is the generator of the cyclic group formed by the robotic arm's movements?",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "15 degrees",
           "30 degrees",

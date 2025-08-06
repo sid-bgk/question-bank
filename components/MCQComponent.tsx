@@ -8,7 +8,7 @@ import QuestionRead from "./QuestionRead";
 interface MCQComponentProps {
   mcqs: {
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     options: string[];
@@ -100,7 +100,7 @@ export default function MCQComponent({ mcqs }: MCQComponentProps) {
             <ReactMarkdown className="mt-2 text-gray-900">{q.question}</ReactMarkdown>
           </h3>
 
-          {q.questionRead && <QuestionRead content={q.questionRead} />}
+          {q.questionExplanation && <QuestionRead content={q.questionExplanation} />}
 
           {q.codeBlock && (
             <div className="mb-4">

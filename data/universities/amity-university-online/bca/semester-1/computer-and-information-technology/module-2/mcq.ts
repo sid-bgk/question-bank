@@ -63,7 +63,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the value of 2’s complement of binary number 1010?",
-    "questionRead": "_Take the one's complement of '1010' and add '1' to obtain the two's complement._",
+    "questionExplanation": "_Take the one's complement of '1010' and add '1' to obtain the two's complement._",
     "options": [
       "0101",
       "1101",
@@ -84,7 +84,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of the Boolean expression A + A'?",
-    "questionRead": "_A plus A complement results in:_",
+    "questionExplanation": "_A plus A complement results in:_",
     "options": [
       "0",
       "1",
@@ -95,7 +95,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The Boolean expression (A + B)’ is equivalent to:",
-    "questionRead": "_Apply De Morgan's theorem to the expression (A + B)’._",
+    "questionExplanation": "_Apply De Morgan's theorem to the expression (A + B)’._",
     "options": [
       "A' + B'",
       "A'B'",
@@ -406,7 +406,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of the binary addition 1010 + 1101?",
-    "questionRead": "*Read as '1010 plus 1101 in binary'.*",
+    "questionExplanation": "*Read as '1010 plus 1101 in binary'.*",
     "options": [
       "10111",
       "10011",
@@ -417,7 +417,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the decimal number 45 to binary.",
-    "questionRead": "*Read as 'Convert 45 to binary'.*",
+    "questionExplanation": "*Read as 'Convert 45 to binary'.*",
     "options": [
       "101101",
       "101110",
@@ -428,7 +428,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the 2's complement of the binary number 1101.",
-    "questionRead": "*Find the two's complement of '1101'.*",
+    "questionExplanation": "*Find the two's complement of '1101'.*",
     "options": [
       "0010",
       "1110",
@@ -439,7 +439,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the Boolean expression: A + A'B",
-    "questionRead": "*Evaluate 'A OR (A' AND B)'.*",
+    "questionExplanation": "*Evaluate 'A OR (A' AND B)'.*",
     "options": [
       "A + B",
       "B",
@@ -450,7 +450,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of the binary subtraction 1001 - 0110?",
-    "questionRead": "*Read as '1001 minus 0110 in binary'.*",
+    "questionExplanation": "*Read as '1001 minus 0110 in binary'.*",
     "options": [
       "0011",
       "0101",
@@ -461,7 +461,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Simplify the Boolean expression: (A + B)'",
-    "questionRead": "*Apply De Morgan's theorem to '(A + B)'*",
+    "questionExplanation": "*Apply De Morgan's theorem to '(A + B)'*",
     "options": [
       "A' + B'",
       "A'B'",
@@ -472,7 +472,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the octal number 57 to binary.",
-    "questionRead": "*Convert octal '57' to binary.*",
+    "questionExplanation": "*Convert octal '57' to binary.*",
     "options": [
       "101111",
       "110101",
@@ -483,7 +483,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of the hexadecimal addition A3 + 5F?",
-    "questionRead": "*Read as 'A3 plus 5F in hexadecimal'.*",
+    "questionExplanation": "*Read as 'A3 plus 5F in hexadecimal'.*",
     "options": [
       "102",
       "F2",
@@ -494,7 +494,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the binary number 110011 to decimal.",
-    "questionRead": "*Convert '110011' to decimal.*",
+    "questionExplanation": "*Convert '110011' to decimal.*",
     "options": [
       "51",
       "50",
@@ -505,7 +505,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Simplify the Boolean expression: AB + A'B",
-    "questionRead": "*Simplify 'AB + A'B' using Boolean rules.*",
+    "questionExplanation": "*Simplify 'AB + A'B' using Boolean rules.*",
     "options": [
       "B",
       "A",
@@ -516,7 +516,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the one's complement of 101100.",
-    "questionRead": "*Find the one's complement of '101100'.*",
+    "questionExplanation": "*Find the one's complement of '101100'.*",
     "options": [
       "010011",
       "110011",
@@ -527,7 +527,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the binary number 100110 to hexadecimal.",
-    "questionRead": "*Convert '100110' to hexadecimal.*",
+    "questionExplanation": "*Convert '100110' to hexadecimal.*",
     "options": [
       "36",
       "26",
@@ -538,7 +538,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the expression: A + AB",
-    "questionRead": "*Evaluate 'A OR (A AND B)'.*",
+    "questionExplanation": "*Evaluate 'A OR (A AND B)'.*",
     "options": [
       "A",
       "B",
@@ -549,7 +549,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of the binary multiplication 101 x 11?",
-    "questionRead": "*Read as '101 multiplied by 11 in binary'.*",
+    "questionExplanation": "*Read as '101 multiplied by 11 in binary'.*",
     "options": [
       "1111",
       "1101",
@@ -560,7 +560,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the decimal number 255 to hexadecimal.",
-    "questionRead": "*Convert '255' to hexadecimal.*",
+    "questionExplanation": "*Convert '255' to hexadecimal.*",
     "options": [
       "FF",
       "F0",
@@ -571,7 +571,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the output of A.B + A.B' using Boolean algebra.",
-    "questionRead": "*Simplify 'A AND B OR A AND B complement'.*",
+    "questionExplanation": "*Simplify 'A AND B OR A AND B complement'.*",
     "options": [
       "A",
       "B",
@@ -582,7 +582,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Convert the hexadecimal number 1A to decimal.",
-    "questionRead": "*Convert '1A' to decimal.*",
+    "questionExplanation": "*Convert '1A' to decimal.*",
     "options": [
       "26",
       "31",
@@ -593,7 +593,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the result of (A + B)(A + C)?",
-    "questionRead": "*Apply distributive law to '(A + B)(A + C)'.*",
+    "questionExplanation": "*Apply distributive law to '(A + B)(A + C)'.*",
     "options": [
       "A + BC",
       "A + B + C",
@@ -604,7 +604,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the binary representation of the octal number 72.",
-    "questionRead": "*Convert octal '72' to binary.*",
+    "questionExplanation": "*Convert octal '72' to binary.*",
     "options": [
       "111010",
       "110010",
@@ -615,7 +615,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the 2's complement of binary number 1001.",
-    "questionRead": "*Find the two's complement of '1001'.*",
+    "questionExplanation": "*Find the two's complement of '1001'.*",
     "options": [
       "0111",
       "1011",

@@ -3,7 +3,7 @@ import { MCQ } from '../../../../../../types';
 export const mcq: MCQ[] = [
   {
     "question": "If a binary operation * on a set S satisfies the associative law, then (S, *) is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Monoid",
       "Group",
@@ -14,7 +14,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a group, the identity element is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Unique",
       "Not unique",
@@ -25,7 +25,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A group in which the order of multiplication does not matter is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Finite group",
       "Cyclic group",
@@ -36,7 +36,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If (G, *) is a group, the inverse of an element a in G is denoted by:",
-    "questionRead": "*a inverse*",
+    "questionExplanation": "*a inverse*",
     "options": [
       "a^2",
       "a^-1",
@@ -47,7 +47,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A monoid (M, *) is said to be a group if every element of M has:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "An inverse",
       "An identity element",
@@ -58,7 +58,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The order of an element a in a group G is the smallest positive integer n such that:",
-    "questionRead": "*a to the power n equals 1*",
+    "questionExplanation": "*a to the power n equals 1*",
     "options": [
       "a^n = 1",
       "a^n = a",
@@ -69,7 +69,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a subgroup H of a group G has the same order as G, then H is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Normal subgroup",
       "Improper subgroup",
@@ -80,7 +80,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If every element of a group is its own inverse, the group is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Cyclic group",
       "Abelian group",
@@ -91,7 +91,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is an example of a group?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Set of natural numbers under addition",
       "Set of integers under multiplication",
@@ -102,7 +102,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A binary operation * on set S is said to be associative if:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "(a * b) * c = a * (b * c)",
       "(a * b) * c ≠ a * (b * c)",
@@ -113,7 +113,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The identity element in a group is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Unique",
       "Not unique",
@@ -124,7 +124,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If every element of a group is its own inverse, the group is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Cyclic group",
       "Abelian group",
@@ -135,7 +135,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A monoid is a semi-group with:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "An identity element",
       "An inverse element",
@@ -146,7 +146,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In an abelian group, the operation satisfies:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Associativity",
       "Commutativity",
@@ -157,7 +157,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A group with a finite number of elements is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Infinite group",
       "Finite group",
@@ -168,7 +168,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The order of an element 'a' in a group is the smallest positive integer n such that:",
-    "questionRead": "*a to the power n equals identity element*",
+    "questionExplanation": "*a to the power n equals identity element*",
     "options": [
       "a^n = 1",
       "a^n = a",
@@ -179,7 +179,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a subgroup H of a group G has the same order as G, then H is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Normal subgroup",
       "Improper subgroup",
@@ -190,7 +190,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A subgroup H of G is normal if:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "ghg⁻¹ ∈ H for all g in G",
       "H is commutative",
@@ -201,7 +201,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A cyclic group is generated by:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "A single element",
       "Multiple elements",
@@ -212,7 +212,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is not an example of a group?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Set of integers under addition",
       "Set of real numbers under multiplication",
@@ -223,7 +223,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The inverse of an element 'a' in a group G is denoted by:",
-    "questionRead": "*a inverse*",
+    "questionExplanation": "*a inverse*",
     "options": [
       "a^2",
       "a^-1",
@@ -234,7 +234,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If (G, *) is a group, which of the following holds true?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Closure",
       "Associativity",
@@ -245,7 +245,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A group G is called cyclic if:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "It has finite order",
       "It has infinite order",
@@ -256,7 +256,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following properties must a set with a binary operation satisfy to be a group?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Closure, Associativity, Identity, Inverses",
       "Commutativity, Associativity, Identity",
@@ -267,7 +267,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a group G, for every element a, the inverse element is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Unique",
       "Not unique",
@@ -278,7 +278,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A group is called an abelian group if it satisfies which property?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Closure",
       "Associativity",
@@ -289,7 +289,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is a subgroup of (Z, +)?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Set of even integers",
       "Set of odd integers",
@@ -300,7 +300,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A group G is said to be of finite order if:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "It contains a finite number of elements",
       "It has an infinite number of elements",
@@ -311,7 +311,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a group has only one element, it is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Cyclic group",
       "Finite group",
@@ -322,7 +322,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The order of a group G is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "The number of elements in G",
       "The identity element of G",
@@ -333,7 +333,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If the order of an element 'a' in a group is n, then:",
-    "questionRead": "*a to the power n equals identity element*",
+    "questionExplanation": "*a to the power n equals identity element*",
     "options": [
       "a^n = 1",
       "a^n = a",
@@ -344,7 +344,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is not necessarily a property of a group?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Associativity",
       "Commutativity",
@@ -355,7 +355,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following statements is true for all groups?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Every group is commutative",
       "Every group has a unique identity element",
@@ -366,7 +366,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "A subgroup H of a group G is called proper if:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "H is equal to G",
       "H is a subset of G and H ≠ G",
@@ -377,7 +377,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The set of integers under addition forms:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "A group",
       "A monoid",
@@ -388,7 +388,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If every element of a group has finite order, the group is called:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Infinite group",
       "Periodic group",
@@ -399,7 +399,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is true for an identity element e in a group G?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "e * a = a * e = a for all a in G",
       "e * a = a for some a in G",
@@ -410,7 +410,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a group has prime order p, then:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "It is always cyclic",
       "It must be infinite",
@@ -421,7 +421,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If the order of a group G is 6, how many subgroups can G have?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -432,7 +432,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a cyclic group of order 10, how many generators exist?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -443,7 +443,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If the order of an element a in a group is 12, what is the order of a^3?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -454,7 +454,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a group has 8 elements and contains an element of order 4, what is the order of the subgroup generated by this element?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -465,7 +465,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a group of order 15, the possible orders of its elements are:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "1, 3, 5, 15",
       "1, 5, 15",
@@ -476,7 +476,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The order of the symmetric group S3 is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "3",
       "6",
@@ -487,7 +487,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If H is a subgroup of G and |G| = 20, |H| must divide:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "5",
       "10",
@@ -498,7 +498,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The number of elements of order 2 in a group of order 6 is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "1",
       "2",
@@ -509,7 +509,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If the order of a cyclic group is 18, how many elements have order 9?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "0",
       "2",
@@ -520,7 +520,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a cyclic group of order 20 has an element of order 5, how many such elements exist?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -531,7 +531,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a group G has an element of order 8, what is the order of the cyclic subgroup generated by it?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -542,7 +542,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If G is a cyclic group of order 12, how many subgroups does it have?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "3",
       "4",
@@ -553,7 +553,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a cyclic group of order 9, what is the number of elements of order 3?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "0",
       "2",
@@ -564,7 +564,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The number of subgroups of order 5 in a cyclic group of order 15 is:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "0",
       "1",
@@ -575,7 +575,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a cyclic group of order 16, what is the number of elements of order 8?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "0",
       "2",
@@ -586,7 +586,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If a group has an element of order 7, which of the following can be the order of the group?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "14",
       "21",
@@ -597,7 +597,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If G is a cyclic group of order 24, how many generators does it have?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "4",
       "6",
@@ -608,7 +608,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "In a cyclic group of order 11, how many elements are generators?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "2",
       "4",
@@ -619,7 +619,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If G is a group of order 35, the possible orders of elements are:",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "1, 5, 7, 35",
       "1, 5, 7",
@@ -630,7 +630,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If the order of an element in a cyclic group is 30, how many elements have order 6?",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "0",
       "2",

@@ -34,7 +34,7 @@ export interface FullModule {
   name: string;
   mcq: Array<{
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     options: string[];
@@ -44,7 +44,7 @@ export interface FullModule {
   }>;
   brief: Array<{
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     answer: string;
@@ -57,7 +57,7 @@ export interface FullModule {
     language?: string;
     mcq: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       options: string[];
@@ -67,7 +67,7 @@ export interface FullModule {
     }>;
     brief?: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       answer: string;
@@ -75,7 +75,7 @@ export interface FullModule {
     }>;
     briefs?: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       answer: string;

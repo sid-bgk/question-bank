@@ -5,7 +5,7 @@ import QuestionRead from "./QuestionRead";
 interface BriefProps {
   briefs: {
     question: string;
-    questionRead?: string; // Optional additional explanation
+    questionExplanation?: string; // Optional additional explanation
     answer: string;
     codeBlock?: string; // Optional code block
     language?: string; // Optional programming language
@@ -30,7 +30,7 @@ export default function Brief({ briefs }: BriefProps) {
             </ReactMarkdown>
           </h3>
 
-          {brief.questionRead && (<QuestionRead content={brief.questionRead} />)}
+          {brief.questionExplanation && (<QuestionRead content={brief.questionExplanation} />)}
 
           <div className="mb-4">
             <h4 className="text-md font-medium text-gray-700 mb-2">Answer:</h4>

@@ -14,7 +14,7 @@ type Module = {
   name: string;
   mcq: Array<{
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     options: string[];
@@ -24,7 +24,7 @@ type Module = {
   }>;
   brief: Array<{
     question: string;
-    questionRead?: string;
+    questionExplanation?: string;
     codeBlock?: string;
     language?: string;
     answer: string;
@@ -37,7 +37,7 @@ type Module = {
     language?: string;
     mcq: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       options: string[];
@@ -47,7 +47,7 @@ type Module = {
     }>;
     brief?: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       answer: string;
@@ -55,7 +55,7 @@ type Module = {
     }>;
     briefs?: Array<{
       question: string;
-      questionRead?: string;
+      questionExplanation?: string;
       codeBlock?: string;
       language?: string;
       answer: string;

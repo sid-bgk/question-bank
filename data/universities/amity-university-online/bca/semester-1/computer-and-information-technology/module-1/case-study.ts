@@ -7,7 +7,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "**Which of the following is a key feature of third-generation computers?**",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Use of vacuum tubes",
           "Use of transistors",
@@ -18,7 +18,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "**Which component made fourth-generation computers faster and more efficient?**",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "Vacuum tubes",
           "Transistors",
@@ -35,7 +35,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "**Which type of memory is volatile and provides temporary storage?**",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "RAM",
           "ROM",
@@ -46,7 +46,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "**Which memory type stores data permanently even when the power is off?**",
-        "questionRead": "",
+        "questionExplanation": "",
         "options": [
           "RAM",
           "Cache",

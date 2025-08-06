@@ -43,7 +43,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Let P, Q, and R be three atomic propositional declarations. Let X denote (P ∨ Q) → R, and Y denote (P → R)∨(Q → R). Which of the following is a tautology?",
-    "questionRead": "Tautology is a formula that is always true, regardless of the truth values of its components.",
+    "questionExplanation": "Tautology is a formula that is always true, regardless of the truth values of its components.",
     "options": [
       "X ≡ Y",
       "X → Y",
@@ -54,7 +54,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Consider the following propositional statements:\n P1: [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]\n P2: [(A ∨ B) → C] ≡ [(A → C) ∨ (B → C)]\nWhich one of the following is true?",
-    "questionRead": "Consider the logical equivalence of conditionals and conjunctions.",
+    "questionExplanation": "Consider the logical equivalence of conditionals and conjunctions.",
     "options": [
       "P1 is tautology, but not P2",
       "P2 is tautology, but not P1",
@@ -75,7 +75,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is a contradiction?",
-    "questionRead": "A contradiction is a compound statement that is always false.",
+    "questionExplanation": "A contradiction is a compound statement that is always false.",
     "options": [
       "(P ∧ Q) ∧ ~(P ∨ Q)",
       "P ∨ (~P ∧ Q)",
@@ -86,7 +86,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "~(~P) ∧ Q is equal to:",
-    "questionRead": "Use De Morgan's laws to simplify the expression.",
+    "questionExplanation": "Use De Morgan's laws to simplify the expression.",
     "options": [
       "~P ∨ Q",
       "P ∧ Q",
@@ -207,7 +207,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If P = {1,2,3,4} and Q = {3,4,5,6}, find P ∩ Q.",
-    "questionRead": "The intersection ( ∩ ) of two sets includes only the elements common to both sets.",
+    "questionExplanation": "The intersection ( ∩ ) of two sets includes only the elements common to both sets.",
     "options": [
       "{3,4}",
       "{1,2,3,4,5,6}",
@@ -218,7 +218,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If A = {a,b,c} and B = {b,c,d}, find A ∪ B.",
-    "questionRead": "The union ( ∪ ) of two sets includes all unique elements from both sets.",
+    "questionExplanation": "The union ( ∪ ) of two sets includes all unique elements from both sets.",
     "options": [
       "{a,b,c,d}",
       "{b,c}",
@@ -229,7 +229,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the Cartesian product A × B if A = {1,2} and B = {x,y}.",
-    "questionRead": "The Cartesian product A × B is read as 'A cross B' and consists of ordered pairs (a, b) where a ∈ A and b ∈ B.",
+    "questionExplanation": "The Cartesian product A × B is read as 'A cross B' and consists of ordered pairs (a, b) where a ∈ A and b ∈ B.",
     "options": [
       "{(1,x), (1,y), (2,x), (2,y)}",
       "{(x,1), (y,1), (x,2), (y,2)}",
@@ -240,7 +240,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If P → Q and P is false, what can be inferred?",
-    "questionRead": "The implication P → Q is read as 'If P then Q' and is false only when P is true and Q is false.",
+    "questionExplanation": "The implication P → Q is read as 'If P then Q' and is false only when P is true and Q is false.",
     "options": [
       "Q must be true",
       "Q must be false",
@@ -251,7 +251,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate (~P ∨ Q) if P is false and Q is true.",
-    "questionRead": "The expression (~P ∨ Q) is read as 'Not P or Q'. Use truth values to evaluate.",
+    "questionExplanation": "The expression (~P ∨ Q) is read as 'Not P or Q'. Use truth values to evaluate.",
     "options": [
       "True",
       "False",
@@ -262,7 +262,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Simplify the Boolean expression: (A ∧ B) ∨ (~A ∧ B)",
-    "questionRead": "The expression (A ∧ B) ∨ (~A ∧ B) is read as 'A and B or not A and B'. Apply distributive properties to simplify.",
+    "questionExplanation": "The expression (A ∧ B) ∨ (~A ∧ B) is read as 'A and B or not A and B'. Apply distributive properties to simplify.",
     "options": [
       "B",
       "A",
@@ -273,7 +273,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is logically equivalent to [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]?",
-    "questionRead": "The expression [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)] is read as 'A and B implies C is logically equivalent to A implies C and B implies C'.",
+    "questionExplanation": "The expression [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)] is read as 'A and B implies C is logically equivalent to A implies C and B implies C'.",
     "options": [
       "Tautology",
       "Contradiction",
@@ -284,7 +284,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the truth value of P ∧ (~P ∨ Q), when P is false and Q is true.",
-    "questionRead": "The expression P ∧ (~P ∨ Q) is read as 'P and (not P or Q)'. Evaluate using given values.",
+    "questionExplanation": "The expression P ∧ (~P ∨ Q) is read as 'P and (not P or Q)'. Evaluate using given values.",
     "options": [
       "True",
       "False",
@@ -295,7 +295,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the Boolean expression: (A + B)'",
-    "questionRead": "The expression (A + B)' is read as 'not (A or B)'. Apply De Morgan's Law to simplify.",
+    "questionExplanation": "The expression (A + B)' is read as 'not (A or B)'. Apply De Morgan's Law to simplify.",
     "options": [
       "A'B'",
       "A' + B'",
@@ -306,7 +306,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is logically equivalent to (P → Q) ∧ (Q → R)?",
-    "questionRead": "The expression (P → Q) ∧ (Q → R) is read as 'P implies Q and Q implies R'. Use transitivity to simplify.",
+    "questionExplanation": "The expression (P → Q) ∧ (Q → R) is read as 'P implies Q and Q implies R'. Use transitivity to simplify.",
     "options": [
       "P → R",
       "P ∧ Q",
@@ -327,7 +327,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If A = {1,3,5,7} and B = {2,3,4,5}, find A ∩ B.",
-    "questionRead": "The expression A ∩ B is read as 'A intersection B' and includes only elements common to both sets.",
+    "questionExplanation": "The expression A ∩ B is read as 'A intersection B' and includes only elements common to both sets.",
     "options": [
       "{3,5}",
       "{1,7}",
@@ -338,7 +338,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the negation of (P ∨ Q).",
-    "questionRead": "The negation of (P ∨ Q) is read as 'not (P or Q)'. Apply De Morgan's Law.",
+    "questionExplanation": "The negation of (P ∨ Q) is read as 'not (P or Q)'. Apply De Morgan's Law.",
     "options": [
       "~P ∨ Q",
       "~P ∧ ~Q",
@@ -349,7 +349,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the logical expression: (P → Q) ↔ (~Q → ~P).",
-    "questionRead": "The biconditional ( ↔ ) means 'if and only if'. This expression is also known as the contrapositive.",
+    "questionExplanation": "The biconditional ( ↔ ) means 'if and only if'. This expression is also known as the contrapositive.",
     "options": [
       "Always true",
       "Always false",
@@ -360,7 +360,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is the correct representation of De Morgan's law?",
-    "questionRead": "De Morgan's laws state how negation distributes over conjunction and disjunction.",
+    "questionExplanation": "De Morgan's laws state how negation distributes over conjunction and disjunction.",
     "options": [
       "¬(A ∧ B) ≡ ¬A ∨ ¬B",
       "¬(A ∧ B) ≡ A ∨ B",
@@ -371,7 +371,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the logical equivalent of the expression (p → q) ∧ (q → r)?",
-    "questionRead": "*Read as 'p implies q and q implies r'.*",
+    "questionExplanation": "*Read as 'p implies q and q implies r'.*",
     "options": [
       "p → r",
       "p ∨ r",
@@ -382,7 +382,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The simplified form of the Boolean expression (A ∧ B) ∨ (~A ∧ B) is:",
-    "questionRead": "*Read as 'A and B or not A and B'.*",
+    "questionExplanation": "*Read as 'A and B or not A and B'.*",
     "options": [
       "A",
       "B",
@@ -393,7 +393,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is logically equivalent to ¬(p ∧ q)?",
-    "questionRead": "*Read as 'not (p and q)'.*",
+    "questionExplanation": "*Read as 'not (p and q)'.*",
     "options": [
       "¬p ∨ ¬q",
       "¬p ∧ ¬q",
@@ -404,7 +404,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the Boolean expression ~(A ∨ B) if A is false and B is true.",
-    "questionRead": "*Read as 'not (A or B)'.*",
+    "questionExplanation": "*Read as 'not (A or B)'.*",
     "options": [
       "True",
       "False",
@@ -415,7 +415,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the negation of the statement: 'If it rains, then the ground is wet'.",
-    "questionRead": "*Read as 'if it rains then the ground is wet'.*",
+    "questionExplanation": "*Read as 'if it rains then the ground is wet'.*",
     "options": [
       "It rains and the ground is not wet",
       "If it does not rain, the ground is not wet",
@@ -426,7 +426,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the intersection A ∩ B if A = {1,3,5} and B = {3,5,7}.",
-    "questionRead": "*Read as 'A intersection B'.*",
+    "questionExplanation": "*Read as 'A intersection B'.*",
     "options": [
       "{3,5}",
       "{1,3,5,7}",
@@ -437,7 +437,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is logically equivalent to [(A ∧ B) → C] ≡ [(A → C) ∧ (B → C)]?",
-    "questionRead": "*Read as 'A and B implies C is logically equivalent to A implies C and B implies C'.*",
+    "questionExplanation": "*Read as 'A and B implies C is logically equivalent to A implies C and B implies C'.*",
     "options": [
       "Tautology",
       "Contradiction",
@@ -448,7 +448,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following represents the contrapositive of P → Q?",
-    "questionRead": "*Read as 'if P then Q'.*",
+    "questionExplanation": "*Read as 'if P then Q'.*",
     "options": [
       "Q → P",
       "¬Q → ¬P",
@@ -459,7 +459,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the logical equivalent of (p ↔ q)?",
-    "questionRead": "*Read as 'p if and only if q'.*",
+    "questionExplanation": "*Read as 'p if and only if q'.*",
     "options": [
       "(p → q) ∧ (q → p)",
       "(p → q) ∨ (q → p)",
@@ -470,7 +470,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Simplify the expression (p ∧ q) ∨ (¬p ∧ q).",
-    "questionRead": "*Read as 'p and q or not p and q'.*",
+    "questionExplanation": "*Read as 'p and q or not p and q'.*",
     "options": [
       "p",
       "q",
@@ -481,7 +481,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following is a tautology?",
-    "questionRead": "*Read as 'p or not p'.*",
+    "questionExplanation": "*Read as 'p or not p'.*",
     "options": [
       "p ∨ ¬p",
       "p ∧ ¬p",
@@ -492,7 +492,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following represents the union of A and B, where A = {1,2} and B = {2,3}?",
-    "questionRead": "*Read as 'A union B'.*",
+    "questionExplanation": "*Read as 'A union B'.*",
     "options": [
       "{1,2}",
       "{2,3}",
@@ -503,7 +503,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following represents the negation of P ∧ Q?",
-    "questionRead": "*Read as 'not (P and Q)'.*",
+    "questionExplanation": "*Read as 'not (P and Q)'.*",
     "options": [
       "¬P ∧ Q",
       "¬P ∨ ¬Q",
@@ -514,7 +514,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "If (p ∨ q) ∧ r is true, then which of the following is necessarily true?",
-    "questionRead": "*Read as 'p or q and r'.*",
+    "questionExplanation": "*Read as 'p or q and r'.*",
     "options": [
       "r is true",
       "p is true",
@@ -525,7 +525,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "What is the simplified form of the Boolean expression (A + B)'?",
-    "questionRead": "*Read as 'not (A or B)'.*",
+    "questionExplanation": "*Read as 'not (A or B)'.*",
     "options": [
       "A'B'",
       "A' + B'",
@@ -536,7 +536,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Which of the following logical operations is associative?",
-    "questionRead": "*Read as 'AND or OR applied to multiple terms'.*",
+    "questionExplanation": "*Read as 'AND or OR applied to multiple terms'.*",
     "options": [
       "AND",
       "OR",
@@ -547,7 +547,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Find the negation of the statement: 'Some dogs are black'.",
-    "questionRead": "*Read as 'some dogs are black'.*",
+    "questionExplanation": "*Read as 'some dogs are black'.*",
     "options": [
       "No dog is black",
       "All dogs are black",
@@ -558,7 +558,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "Evaluate the Boolean expression: (~P ∨ Q) if P is false and Q is true.",
-    "questionRead": "*Read as 'not P or Q'.*",
+    "questionExplanation": "*Read as 'not P or Q'.*",
     "options": [
       "True",
       "False",
@@ -569,7 +569,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "The negation of 'All students passed' is:",
-    "questionRead": "*Read as 'all students passed'.*",
+    "questionExplanation": "*Read as 'all students passed'.*",
     "options": [
       "Some students failed",
       "No student passed",

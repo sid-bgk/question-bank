@@ -3,7 +3,7 @@ import { MCQ } from '../../../../../../types';
 export const mcq: MCQ[] = [
   {
     "question": "**Identify the five primary components of a computer system.**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Central Processing Unit (CPU), CD-ROM, Mouse, Keyboard, Sound Card",
       "Memory, Video Card, Monitor, Software, Hardware",
@@ -14,7 +14,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**In what way do the primary components of a computer establish communication?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Via the system bus",
       "Utilising memory",
@@ -25,7 +25,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What are the primary functions of the computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Receiving input and producing output",
       "Processing information",
@@ -36,7 +36,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What are the two principal components of the CPU?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Control Unit and Memory",
       "Addresses and Register",
@@ -47,7 +47,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**The different types of memory units are:**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "ROM",
@@ -58,7 +58,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the primary purpose of a computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Entertainment",
       "Data processing",
@@ -69,7 +69,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is considered the brain of the computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Monitor",
       "Keyboard",
@@ -80,7 +80,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does RAM stand for in computing?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Read Access Memory",
       "Random Access Memory",
@@ -91,7 +91,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is a primary storage device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "CD-ROM",
       "RAM",
@@ -102,7 +102,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does ROM stand for?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Read-Only Memory",
       "Random Operation Module",
@@ -113,7 +113,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an output device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Keyboard",
       "Scanner",
@@ -124,7 +124,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What type of software is an operating system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Application software",
       "System software",
@@ -135,7 +135,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of application software?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Windows OS",
       "Microsoft Word",
@@ -146,7 +146,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the full form of CPU?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Central Processing Unit",
       "Control Processing Unit",
@@ -157,7 +157,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which computer generation used vacuum tubes?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "First",
       "Second",
@@ -168,7 +168,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which language is directly understood by the computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Assembly language",
       "Machine language",
@@ -179,7 +179,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the purpose of an operating system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "To manage hardware resources",
       "To run application software",
@@ -190,7 +190,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an input device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Printer",
       "Monitor",
@@ -201,7 +201,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of secondary storage?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "Cache",
@@ -212,7 +212,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does GUI stand for?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Graphical User Interface",
       "General User Interface",
@@ -223,7 +223,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which part of the computer performs calculations and logical operations?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Control Unit",
       "Arithmetic Logic Unit (ALU)",
@@ -234,7 +234,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which computer component is responsible for storing permanent data?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "Hard Disk",
@@ -245,7 +245,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the smallest unit of data in a computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Byte",
       "Bit",
@@ -256,7 +256,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is an example of system software?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "MS Word",
       "Photoshop",
@@ -267,7 +267,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the function of a compiler?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Translate high-level code to machine code",
       "Execute programs",
@@ -278,7 +278,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of volatile memory?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Hard Disk",
       "RAM",
@@ -289,7 +289,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of an optical storage device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Hard Disk",
       "RAM",
@@ -300,7 +300,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is NOT an input device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Mouse",
       "Keyboard",
@@ -311,7 +311,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which type of memory is non-volatile?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "Cache",
@@ -322,7 +322,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does the abbreviation 'USB' stand for?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Universal Storage Bus",
       "Universal System Bus",
@@ -333,7 +333,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which component of a computer temporarily holds data and instructions during processing?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "Hard Disk",
@@ -344,7 +344,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of a primary input device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Monitor",
       "Mouse",
@@ -355,7 +355,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which part of the CPU directs operations and coordinates computer components?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Arithmetic Logic Unit (ALU)",
       "Control Unit (CU)",
@@ -366,7 +366,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the function of an operating system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Hardware management",
       "Data entry",
@@ -377,7 +377,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of an output device?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Scanner",
       "Keyboard",
@@ -388,7 +388,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which generation of computers introduced the use of transistors?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "First",
       "Second",
@@ -399,7 +399,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is a portable computer?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Desktop",
       "Mainframe",
@@ -410,7 +410,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which memory unit is known for its high speed and is used between CPU and RAM?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Cache Memory",
       "Hard Disk",
@@ -421,7 +421,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does the abbreviation 'HTTP' stand for?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Hypertext Transmission Protocol",
       "Hyper Transfer Text Protocol",
@@ -432,7 +432,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is not an example of system software?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Windows OS",
       "Linux",
@@ -443,7 +443,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following devices is used for permanent storage of data?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "RAM",
       "Cache",
@@ -454,7 +454,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is a type of primary memory?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "CD-ROM",
       "Flash Drive",
@@ -465,7 +465,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is NOT a function of an operating system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Memory management",
       "File management",
@@ -476,7 +476,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is NOT an example of secondary storage?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "USB drive",
       "Hard disk",
@@ -487,7 +487,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What does BIOS stand for?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Basic Input Output System",
       "Basic Integrated Operating System",
@@ -498,7 +498,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is an example of an embedded system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Laptop",
       "Smartphone",
@@ -509,7 +509,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What type of software is used to control the basic operations of computer hardware?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "System software",
       "Application software",
@@ -520,7 +520,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following is NOT an example of an operating system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Windows",
       "Linux",
@@ -531,7 +531,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following units is responsible for arithmetic calculations in a CPU?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Control Unit",
       "Arithmetic Logic Unit (ALU)",
@@ -542,7 +542,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which type of memory is faster but has a limited storage capacity?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Hard Disk",
       "Flash Memory",
@@ -553,7 +553,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is the name of the process of starting a computer system?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Shut down",
       "Hibernate",
@@ -564,7 +564,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which of the following devices is used to convert digital signals into analog signals?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Modem",
       "Router",
@@ -575,7 +575,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What kind of printer uses impact technology to print documents?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Laser Printer",
       "Inkjet Printer",
@@ -586,7 +586,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**Which computer generation introduced artificial intelligence concepts?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "First",
       "Second",
@@ -597,7 +597,7 @@ export const mcq: MCQ[] = [
   },
   {
     "question": "**What is an example of cloud storage?**",
-    "questionRead": "",
+    "questionExplanation": "",
     "options": [
       "Google Drive",
       "Hard Disk",

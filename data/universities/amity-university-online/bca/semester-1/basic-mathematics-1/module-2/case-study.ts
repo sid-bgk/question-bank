@@ -7,7 +7,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "What is the simplified form of the Boolean expression (A ∧ B) ∨ (~A ∧ B)?",
-        "questionRead": "The given expression can be simplified using the distributive property of Boolean algebra.",
+        "questionExplanation": "The given expression can be simplified using the distributive property of Boolean algebra.",
         "options": [
           "A",
           "B",
@@ -18,7 +18,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "Which Boolean algebra property is used to simplify (A ∧ B) ∨ (~A ∧ B) to B?",
-        "questionRead": "Consider factoring the common term in the expression.",
+        "questionExplanation": "Consider factoring the common term in the expression.",
         "options": [
           "Absorption Law",
           "Distributive Law",
@@ -35,7 +35,7 @@ export const case_study: CaseStudy[] = [
     "mcq": [
       {
         "question": "What type of logical reasoning is applied to conclude 'If product quality improves, then revenue will rise'?",
-        "questionRead": "The conclusion follows by combining two conditional statements.",
+        "questionExplanation": "The conclusion follows by combining two conditional statements.",
         "options": [
           "Modus Tollens",
           "Contradiction",
@@ -46,7 +46,7 @@ export const case_study: CaseStudy[] = [
       },
       {
         "question": "Which of the following represents the contrapositive of the statement 'If product quality improves, then customer satisfaction increases'?",
-        "questionRead": "The contrapositive of P → Q is ~Q → ~P.",
+        "questionExplanation": "The contrapositive of P → Q is ~Q → ~P.",
         "options": [
           "If customer satisfaction does not increase, then product quality does not improve.",
           "If product quality improves, then customer satisfaction will not increase.",
