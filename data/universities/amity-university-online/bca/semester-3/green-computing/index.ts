@@ -5,8 +5,8 @@ import { module_3 } from './module-3';
 import { module_4 } from './module-4';
 import { module_5 } from './module-5';
 
-export const icd: Subject = {
-    id: "icd",
-    name: "ICD",
+export const green_computing: Subject = {
+    id: "green-computing",
+    name: "Green Computing",
     modules: [module_1, module_2, module_3, module_4, module_5]
 };
